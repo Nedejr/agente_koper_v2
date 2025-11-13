@@ -1,5 +1,9 @@
 # 📚 Documentação: Passo a passo - Módulo de Compras
 
+
+[video:https://youtu.be/qFzqzIoiVE4?si=YoVxiJOkipNVbQWb]
+
+
 **🎥 Vídeo Original:** https://youtu.be/qFzqzIoiVE4?si=YoVxiJOkipNVbQWb
 
 **📊 Total de Seções:** 14
@@ -16,85 +20,145 @@
 - **⏲️ Duração:** 152s
 - **🎬 Link:** [Assistir este trecho](https://youtu.be/qFzqzIoiVE4?si=YoVxiJOkipNVbQWb&t=0)
 - **📦 Módulo:** Compras
-- **🏷️ Categorias:** Operacional, Solicitação, Compras
-- **🔑 Palavras-chave:** fluxo de compras, solicitação, suprimentos, cotação, ordem de compra
+- **🏷️ Categorias:** Operacional, Cadastro, Relatório
+- **🔑 Palavras-chave:** fluxo de compras, solicitação, suprimentos, orçamento, ordem de compra
 
-> **🔍 RESUMO EXECUTIVO:** Esta seção detalha o fluxo de compras no sistema, desde a solicitação até a chegada do produto no estoque. Ela orienta o usuário sobre as diferentes formas de iniciar o processo de compras e como realizar uma solicitação de suprimentos.
+> **🔍 RESUMO EXECUTIVO:** Esta seção detalha o fluxo de compras, desde a solicitação até a chegada do produto no estoque, abordando as diferentes formas de iniciar o processo e como realizar uma solicitação de compra.
 
 **Contexto:**
-Estamos no módulo de compras do sistema, onde o objetivo é entender e executar o fluxo de compras, que abrange desde a solicitação de produtos até a sua chegada no estoque.
+Estamos no módulo de compras do sistema, onde o objetivo é entender o fluxo de compras, que abrange desde a solicitação de produtos até a sua formalização e recebimento no estoque.
 
 **Localização no Sistema:**
 - Caminho de navegação completo: Menu Principal > Módulo Compras > Suprimentos > Solicitações
 - Tela/interface específica: Aba de Solicitações
 
 **Funcionalidade Detalhada:**
-
-O fluxo de compras permite que os usuários solicitem produtos de forma organizada e eficiente. Existem três maneiras principais de iniciar esse fluxo:
-
-1. **Solicitação em Suprimentos**: Ideal para situações onde mais de um usuário está envolvido, como quando um colaborador em uma obra faz uma solicitação que será processada pelo departamento de compras.
-2. **Compras Direto em Orçamentos**: Utilizado quando um único usuário está realizando todo o fluxo, permitindo que ele inicie diretamente a cotação com fornecedores sem a necessidade de uma solicitação prévia.
-3. **Início Direto na Ordem de Compra**: Comum para compras retroativas ou para formalizar compras feitas de última hora.
+O fluxo de compras permite que os usuários solicitem produtos, citem fornecedores e formalizem ordens de compra. Existem três formas principais de iniciar o fluxo:
+1. **Solicitação em Suprimentos:** Usada quando mais de um usuário está envolvido.
+2. **Compras Direto em Orçamentos:** Para um único usuário que já sabe o que precisa.
+3. **Ordem de Compra Direta:** Para compras retroativas ou de última hora.
 
 ### 🔹 Passo a Passo Detalhado:
 
 1. **Acessar a Aba de Solicitações**
-   - Localização: Menu Principal > Módulo Compras > Suprimentos > Aba de Solicitações
-   - Como fazer: Clique na aba "Solicitações" para acessar a interface de solicitações de produtos.
-   - Resultado esperado: A tela de solicitações é exibida, permitindo que o usuário inicie uma nova solicitação.
+   - Localização: Menu Principal > Módulo Compras > Suprimentos > Solicitações
+   - Como fazer: Clique na aba "Solicitações".
+   - Resultado esperado: A tela de solicitações é exibida, permitindo a visualização de todas as solicitações anteriores.
 
-2. **Criar uma Nova Solicitação**
+2. **Criar Nova Solicitação**
    - Localização: Dentro da aba de solicitações, clique no botão **"Mais Solicitação"**.
-   - Como fazer: Clique no botão **"Mais Solicitação"** para abrir o formulário de nova solicitação.
+   - Como fazer: Clique no botão para iniciar uma nova solicitação.
    - Campos/Opções disponíveis:
-     * `Produto`: Selecione um produto da lista de produtos cadastrados.
-   - Resultado esperado: Um formulário para adicionar novos produtos à solicitação é exibido.
+     * `Produto`: Seleção de produtos já cadastrados.
+   - Resultado esperado: A tela de seleção de produtos é exibida.
 
-3. **Selecionar um Produto**
-   - Localização: Tela de especificações da nova solicitação.
-   - Como fazer: Utilize o filtro por categoria, subcategoria ou pesquisa direta para localizar o produto desejado. Você pode arrastar para o lado ou clicar na mãozinha para selecionar o item.
-   - Observações importantes: Se o produto não estiver cadastrado, clique em **"Mais Produto"** para adicionar um novo item.
-   - Resultado esperado: O produto selecionado é adicionado à solicitação.
+3. **Selecionar Produto**
+   - Localização: Tela de seleção de produtos.
+   - Como fazer: Utilize filtros por categoria, subcategoria ou pesquisa direta para localizar o produto desejado.
+   - Observações importantes: Caso não encontre o produto, clique em **"Mais Produto"** para adicionar um novo item.
+   - Resultado esperado: O produto desejado é selecionado.
 
 4. **Definir Especificações do Produto**
-   - Localização: Tela de especificações do produto.
-   - Como fazer: Após selecionar o produto, defina o tipo do produto. Por exemplo, selecione "cimento Portland CP1 de 50 kg".
+   - Localização: Tela de especificações do produto selecionado.
+   - Como fazer: Após selecionar o produto, escolha o tipo específico (ex: cimento Portland CP1 de 50 kg).
    - Campos/Opções disponíveis:
-     * `Tipo de Produto`: Selecione o tipo específico do produto desejado.
-     * `Quantidade`: Insira a quantidade desejada do produto.
-   - Resultado esperado: O tipo e a quantidade do produto são definidos e prontos para serem adicionados à solicitação.
+     * `Tipo de Produto`: Seleção de diferentes tipos de cimento.
+   - Resultado esperado: O tipo de produto é definido e pronto para adição à solicitação.
 
-5. **Adicionar o Produto à Solicitação**
-   - Localização: Na tela de especificações, após definir o tipo e a quantidade.
-   - Como fazer: Clique no botão **"Adicionar"** para incluir o produto na solicitação.
-   - Resultado esperado: O produto é adicionado à lista de produtos da solicitação, permitindo que o usuário selecione vários produtos conforme necessário.
+5. **Adicionar Quantidade**
+   - Localização: Abaixo da seleção do tipo de produto.
+   - Como fazer: Insira a quantidade desejada no campo correspondente e clique em **"Adicionar"**.
+   - Resultado esperado: O produto e a quantidade são adicionados à solicitação.
+
+6. **Selecionar Vários Produtos**
+   - Localização: Tela de especificações.
+   - Como fazer: Repita o processo de seleção e adição para outros produtos conforme necessário.
+   - Resultado esperado: Múltiplos produtos são adicionados à solicitação.
 
 **Campos e Parâmetros:**
 
-| Campo                | Tipo         | Obrigatório | Descrição                                                   | Exemplo                     |
-|----------------------|--------------|-------------|------------------------------------------------------------|-----------------------------|
-| Produto              | Dropdown     | Sim         | Lista de produtos cadastrados no sistema.                  | Cimento Portland CP1 de 50 kg |
-| Tipo de Produto      | Dropdown     | Sim         | Especificação do tipo do produto selecionado.              | Cimento Portland CP1        |
-| Quantidade           | Numérico     | Sim         | Quantidade do produto a ser solicitado.                    | 10                          |
+| Campo               | Tipo          | Obrigatório | Descrição                                      | Exemplo                     |
+|---------------------|---------------|-------------|------------------------------------------------|-----------------------------|
+| Produto             | Dropdown      | Sim         | Seleção de produtos cadastrados                 | Cimento Portland CP1 de 50 kg |
+| Tipo de Produto     | Dropdown      | Sim         | Seleção do tipo específico do produto          | Cimento Portland            |
+| Quantidade          | Numérico      | Sim         | Quantidade do produto a ser solicitado         | 10                          |
 
 **Regras de Negócio:**
-- A solicitação deve ser iniciada a partir da aba de solicitações no módulo de suprimentos.
-- É possível adicionar múltiplos produtos à solicitação antes de finalizá-la.
-- Se um produto não estiver cadastrado, o usuário deve adicionar um novo produto antes de prosseguir.
+- A solicitação deve ser feita para produtos já cadastrados no sistema.
+- É permitido adicionar múltiplos produtos em uma única solicitação.
+- A quantidade deve ser um número positivo.
 
 **Observações Importantes:**
-- Utilize filtros para facilitar a busca de produtos na lista.
-- Verifique se o tipo de produto selecionado é o correto antes de adicionar à solicitação.
-- Evite adicionar produtos desnecessários para manter a solicitação organizada.
+- Utilize filtros para facilitar a busca de produtos.
+- Verifique se o produto desejado está cadastrado antes de tentar adicionar um novo.
+- Evite adicionar produtos em quantidades negativas.
 
 **Conceitos-Chave:**
-- **Fluxo de Compras**: Processo que abrange desde a solicitação de produtos até a sua chegada no estoque.
-- **Solicitação em Suprimentos**: Método de iniciar o fluxo de compras que envolve múltiplos usuários.
+- **Fluxo de Compras**: Processo que abrange desde a solicitação até a formalização da compra e recebimento do produto.
+- **Solicitação em Suprimentos**: Ação de pedir produtos, geralmente envolvendo múltiplos usuários.
+
+**🔧 SOLUÇÃO DE PROBLEMAS (Troubleshooting):**
+
+| Problema                          | Causa Provável                | Solução                                           | Prevenção                                       |
+|-----------------------------------|-------------------------------|--------------------------------------------------|-------------------------------------------------|
+| Produto não encontrado             | Produto não cadastrado        | Clique em **"Mais Produto"** e cadastre-o.      | Verifique o cadastro de produtos antes da solicitação. |
+| Quantidade negativa informada     | Erro de digitação             | Insira um número positivo no campo de quantidade. | Sempre revise os valores antes de adicionar.   |
+
+**💡 DICAS E BOAS PRÁTICAS:**
+- Utilize a pesquisa direta para localizar produtos rapidamente.
+- Sempre verifique as especificações do produto antes de adicionar.
+- Mantenha um registro dos produtos frequentemente solicitados para facilitar futuras solicitações.
+
+**📚 EXEMPLOS PRÁTICOS:**
+
+**Exemplo 1: Solicitação de Cimento**
+```
+Situação: Um engenheiro precisa solicitar cimento para uma obra.
+Ação: 
+  • Acessar a aba de solicitações.
+  • Clicar em "Mais Solicitação".
+  • Filtrar por categoria "Materiais de Construção".
+  • Selecionar "Cimento Portland CP1 de 50 kg".
+  • Inserir a quantidade: 20.
+Resultado: A solicitação de 20 sacos de cimento é criada com sucesso.
+```
+
+**Exemplo 2: Solicitação de Vários Produtos**
+```
+Situação: Um comprador precisa solicitar materiais diversos.
+Ação: 
+  • Acessar a aba de solicitações.
+  • Clicar em "Mais Solicitação".
+  • Filtrar por categoria "Materiais de Construção".
+  • Selecionar "Cimento Portland CP1 de 50 kg" e adicionar 10.
+  • Selecionar "Areia Média" e adicionar 5.
+Resultado: A solicitação é criada com 10 sacos de cimento e 5 de areia.
+```
+
+**🔗 DEPENDÊNCIAS E RELAÇÕES:**
+- **Pré-requisitos:** O produto deve estar cadastrado no sistema.
+- **Habilita:** A criação de ordens de compra após a solicitação.
+- **Relacionado a:** Módulo de Estoque, onde os produtos solicitados serão recebidos.
+
+**🔍 VARIAÇÕES DE BUSCA (Otimização RAG):**
+
+Esta seção responde perguntas formuladas de diferentes formas. Um usuário pode perguntar:
+- **Forma direta:** "Como iniciar o fluxo de compras?"
+- **Com problema:** "Não consigo solicitar um produto, o que fazer?"
+- **Informal:** "Como eu peço um produto?"
+- **Por sintoma:** "Quando não encontro um produto, o que fazer?"
+- **Com dúvida:** "Qual a diferença entre solicitar e comprar direto?"
+
+**Termos alternativos e sinônimos usados para esta funcionalidade:**
+- "Fazer uma solicitação", "pedir um produto", "comprar um item", "cadastrar um pedido".
+- "Ordem de compra", "cotação", "suprimento".
 
 **❓ PERGUNTAS QUE ESTA SEÇÃO RESPONDE:**
-- Como iniciar o fluxo de compras no sistema?
-- Quais são as diferentes formas de solicitar produtos?
-- O que fazer se o produto desejado não estiver cadastrado no sistema?
+- Como faço para solicitar um produto?
+- O que fazer se não encontrar o produto desejado?
+- Como adicionar múltiplos produtos em uma solicitação?
+- O que fazer se a quantidade informada estiver errada?
+- O que preciso ter cadastrado antes de solicitar um produto?
 
 ---
 
@@ -111,96 +175,138 @@ O fluxo de compras permite que os usuários solicitem produtos de forma organiza
 - **⏱️ Minutagem:** 02:30 → 05:04
 - **⏲️ Duração:** 153s
 - **🎬 Link:** [Assistir este trecho](https://youtu.be/qFzqzIoiVE4?si=YoVxiJOkipNVbQWb&t=150)
-- **📦 Módulo:** Compras
-- **🏷️ Categorias:** Configuração, Operacional, Cadastro
-- **🔑 Palavras-chave:** especificar serviços, obra, fluxo de compras, data limite de entrega, comentários
+- **📦 Módulo:** Compras e Serviços
+- **🏷️ Categorias:** Configuração, Operacional, Compras
+- **🔑 Palavras-chave:** especificação de serviços, vínculo com obra, fluxo de caixa, data limite de entrega, comentários
 
-> **🔍 RESUMO EXECUTIVO:** Esta seção detalha o processo de especificação de serviços vinculados a obras no sistema, abordando a configuração de recursos alocados, a definição de datas limite de entrega e a adição de comentários para aprovação, garantindo um fluxo de compras eficiente.
+> **🔍 RESUMO EXECUTIVO:** Esta seção detalha o processo de especificação de serviços em obras, incluindo a criação de vínculos entre produtos e serviços, a definição de datas de entrega e a adição de comentários para aprovação. O objetivo é garantir que os produtos sejam corretamente alocados aos serviços necessários, facilitando o acompanhamento financeiro e operacional.
 
 **Contexto:**
-Estamos na interface do módulo de Compras, onde o usuário pode especificar serviços relacionados a produtos que serão utilizados em obras. O objetivo é garantir que os serviços estejam corretamente vinculados e que as informações necessárias para a aprovação e execução das compras sejam fornecidas.
+Estamos na interface do módulo de Compras e Serviços, onde o usuário pode especificar serviços relacionados a obras. Esta funcionalidade é crucial para gerenciar o fluxo de compras e garantir que os insumos sejam alocados corretamente.
 
 **Localização no Sistema:**
-- Caminho de navegação completo: Menu Principal > Módulo Compras > Especificação de Serviços
+- Caminho de navegação completo: Menu Principal > Módulo Compras e Serviços > Especificação de Serviços
 - Tela/interface específica: Tela de Especificação de Serviços
 
 **Funcionalidade Detalhada:**
-A funcionalidade de especificação de serviços permite ao usuário vincular produtos a serviços específicos dentro de uma obra. Isso é crucial para o gerenciamento de contas a pagar e fluxo de caixa, especialmente em obras onde o acompanhamento de engenharia está completo. O sistema diferencia entre serviços com recursos alocados e aqueles sem, permitindo uma gestão mais eficiente dos insumos necessários.
+A funcionalidade de especificação de serviços permite ao usuário vincular produtos a serviços específicos dentro de uma obra. Isso é especialmente importante quando o acompanhamento da engenharia da obra não está completo, pois o usuário terá acesso apenas ao contas a pagar e ao fluxo de caixa, sem comparativos. Quando a engenharia está completa, o sistema solicita a especificação do serviço, permitindo a criação de apropriações e a visualização de comparativos entre a quantidade planejada e a quantidade já solicitada.
 
 ### 🔹 Passo a Passo Detalhado:
 
 1. **Arrastar e Definir Especificações**
-   - Localização: Lateral da tela de especificação de serviços
-   - Como fazer: O usuário deve arrastar o item desejado para o lado e definir as especificações necessárias.
-   - Resultado esperado: As especificações do serviço são definidas e o sistema atualiza as informações correspondentes.
+   - Localização: Área lateral da tela de Especificação de Serviços
+   - Como fazer: Arraste o item desejado para o lado e defina as especificações necessárias.
+   - Resultado esperado: As especificações do serviço são definidas e salvas no sistema.
 
 2. **Selecionar Local de Consumo**
-   - Localização: Lateral da tela
-   - Como fazer: O usuário deve identificar o local de consumo da obra. Se a obra ainda não tiver o acompanhamento de engenharia completo, o vínculo será apenas com a obra, sem comparativos.
-   - Resultado esperado: O sistema registra o vínculo com a obra, permitindo o gerenciamento de contas a pagar e fluxo de caixa.
+   - Localização: Lateral da tela de Especificação de Serviços
+   - Como fazer: Escolha o local de consumo para o serviço que está sendo especificado.
+   - Observações importantes: Para obras com engenharia incompleta, apenas o vínculo com a obra será criado, sem comparativos.
+   - Resultado esperado: O local de consumo é registrado, permitindo o acompanhamento financeiro.
 
 3. **Especificar Serviços**
    - Localização: Botão "Especificar Serviços"
-   - Como fazer: Clicar no botão "Especificar Serviços" para abrir a interface de seleção.
-   - Observações importantes: O sistema separa serviços com recursos alocados e serviços sem recursos alocados.
-   - Resultado esperado: O usuário pode visualizar e selecionar serviços disponíveis.
+   - Como fazer: Clique no botão para abrir a interface de especificação de serviços.
+   - Campos/Opções disponíveis:
+     * `Serviços com Recurso Alocado`: Lista de serviços que já possuem insumos programados.
+     * `Serviços sem Recurso Alocado`: Lista de serviços que não têm insumos vinculados.
+   - Resultado esperado: O usuário pode escolher para qual serviço o produto será utilizado.
 
-4. **Visualizar Comparativo de Quantidades**
-   - Localização: Interface de especificação de serviços
-   - Como fazer: O sistema já demonstra um comparativo entre a quantidade planejada e a quantidade já solicitada até o momento.
-   - Resultado esperado: O usuário pode verificar a disponibilidade dos insumos necessários para os serviços.
+4. **Salvar Especificações**
+   - Localização: Botão "Salvar" na parte inferior da tela
+   - Como fazer: Após preencher todas as informações, clique no botão "Salvar".
+   - Resultado esperado: As especificações e vínculos são salvos no sistema.
 
 5. **Definir Data Limite de Entrega**
    - Localização: Campo "Data Limite de Entrega"
-   - Como fazer: O campo é preenchido automaticamente com uma data pré-configurada. O usuário pode alterar essa data conforme necessário.
-   - Observações importantes: Se a data limite de entrega for inferior à data solicitada, a solicitação será marcada como urgente.
-   - Resultado esperado: O sistema atualiza o status da solicitação conforme a data limite definida.
+   - Como fazer: Verifique a data preenchida automaticamente ou insira uma nova data.
+   - Observações importantes: Se a data limite for inferior à data de solicitação, a solicitação será marcada como urgente.
+   - Resultado esperado: A data limite de entrega é registrada e, se necessário, a solicitação é marcada como urgente.
 
-6. **Exibir Data Limite ao Fornecedor**
-   - Localização: Campo de seleção para exibir a data limite
-   - Como fazer: O usuário deve selecionar se deseja ou não exibir a data limite ao fornecedor.
-   - Resultado esperado: A configuração é salva e aplicada na comunicação com o fornecedor.
-
-7. **Adicionar Comentários**
-   - Localização: Campo de comentários
-   - Como fazer: Clicar no campo de comentários e digitar a mensagem que será enviada para a aprovação da solicitação.
-   - Observações importantes: O comentário também pode ser exibido para o fornecedor no momento do orçamento, se a opção for selecionada.
-   - Resultado esperado: O comentário é salvo e associado à solicitação.
-
-8. **Salvar Especificações**
-   - Localização: Botão "Salvar"
-   - Como fazer: Clicar no botão "Salvar" para registrar todas as especificações feitas.
-   - Resultado esperado: As informações são salvas no sistema e a solicitação é registrada.
+6. **Adicionar Comentários**
+   - Localização: Campo de comentários abaixo da data limite
+   - Como fazer: Clique no campo de comentários e insira a mensagem desejada.
+   - Resultado esperado: O comentário é salvo e pode ser exibido ao fornecedor no momento do orçamento.
 
 **Campos e Parâmetros:**
 
-| Campo                       | Tipo       | Obrigatório | Descrição                                                                 | Exemplo                |
-|-----------------------------|------------|-------------|---------------------------------------------------------------------------|------------------------|
-| `Local de Consumo`          | Dropdown   | Sim         | Seleção do local onde o produto será consumido.                          | Obra A                 |
-| `Especificar Serviços`      | Botão      | Sim         | Ação para abrir a interface de seleção de serviços.                      | -                      |
-| `Data Limite de Entrega`    | Data       | Sim         | Data limite para a entrega do produto, preenchida automaticamente.       | 2023-10-30             |
-| `Exibir Data ao Fornecedor` | Checkbox   | Não         | Opção para exibir a data limite ao fornecedor.                           | [ ] Exibir             |
-| `Comentários`               | Texto      | Não         | Campo para adicionar comentários sobre a solicitação.                    | "Urgente, por favor."  |
+| Campo                       | Tipo      | Obrigatório | Descrição                                                                 | Exemplo                |
+|-----------------------------|-----------|-------------|---------------------------------------------------------------------------|------------------------|
+| `Local de Consumo`          | Dropdown  | Sim         | Seleção do local onde o serviço será consumido.                          | "Obra A"               |
+| `Serviços com Recurso Alocado` | Lista    | Sim         | Lista de serviços que já têm insumos alocados.                          | "Serviço 1"            |
+| `Serviços sem Recurso Alocado` | Lista    | Não         | Lista de serviços que não têm insumos vinculados.                       | "Serviço 2"            |
+| `Data Limite de Entrega`    | Data      | Sim         | Data limite para a entrega do produto.                                   | "2023-10-30"           |
+| `Comentários`               | Texto     | Não         | Campo para adicionar comentários sobre a solicitação.                    | "Urgente, por favor!"  |
 
 **Regras de Negócio:**
-- Se a obra não tiver o acompanhamento de engenharia completo, o vínculo será apenas com a obra, sem comparativos.
-- Para obras com engenharia completa, o sistema solicitará a especificação do serviço.
-- A data limite de entrega é preenchida automaticamente, podendo ser alterada pelo usuário.
-- Solicitações com data inferior ao limite serão marcadas como urgentes.
-- Comentários podem ser exibidos para o fornecedor, dependendo da seleção do usuário.
+- Se a data limite de entrega for inferior à data atual, a solicitação será marcada como urgente.
+- Os serviços devem ser vinculados a produtos que já tenham insumos alocados para garantir a correta apropriação.
 
 **Observações Importantes:**
-- É importante verificar a configuração da data limite de entrega para evitar solicitações urgentes desnecessárias.
-- Comentários devem ser claros e objetivos para facilitar a aprovação.
+- É recomendável revisar as datas de entrega antes de salvar as especificações.
+- Evite selecionar serviços sem recurso alocado se houver insumos disponíveis.
 
 **Conceitos-Chave:**
-- **Vínculo com Obra**: Relação entre o produto e a obra, que permite o gerenciamento financeiro.
-- **Data Limite de Entrega**: Data que determina a urgência da solicitação e o prazo para entrega do produto.
+- **Vínculo com Obra**: Relação entre produtos e serviços dentro de uma obra, essencial para o controle financeiro.
+- **Data Limite de Entrega**: Data que determina a urgência da solicitação de um produto.
+
+**🔧 SOLUÇÃO DE PROBLEMAS (Troubleshooting):**
+
+| Problema                          | Causa Provável                     | Solução                                         | Prevenção                                      |
+|-----------------------------------|------------------------------------|------------------------------------------------|------------------------------------------------|
+| Solicitação não salva             | Campos obrigatórios não preenchidos| Verifique e preencha todos os campos obrigatórios| Sempre revisar os campos antes de salvar       |
+| Data limite não aceita            | Data inválida ou no passado        | Insira uma data válida e futura                | Use um calendário para verificar datas         |
+| Comentário não aparece para fornecedor | Campo não marcado para exibição | Marque a opção de exibir comentário ao fornecedor | Sempre revisar as opções de exibição           |
+
+**💡 DICAS E BOAS PRÁTICAS:**
+- Sempre especifique serviços com insumos alocados para evitar problemas de apropriação.
+- Utilize comentários para esclarecer solicitações urgentes.
+
+**📚 EXEMPLOS PRÁTICOS:**
+
+**Exemplo 1: Especificação de Serviço com Insumo Alocado**
+```
+Situação: O engenheiro precisa solicitar cimento para a obra.
+Ação: 
+  • Campo Local de Consumo: "Obra A"
+  • Selecionar Serviço: "Cimento - Serviço 1"
+  • Data Limite de Entrega: "2023-10-25"
+Resultado: O produto é vinculado ao serviço e a solicitação é salva com data limite.
+
+```
+
+**Exemplo 2: Solicitação Urgente**
+```
+Situação: Um serviço precisa de entrega imediata.
+Ação: 
+  • Campo Local de Consumo: "Obra B"
+  • Selecionar Serviço: "Areia - Serviço 2"
+  • Data Limite de Entrega: "2023-10-20" (data inferior ao limite)
+Resultado: A solicitação é marcada como urgente e salva no sistema.
+```
+
+**🔗 DEPENDÊNCIAS E RELAÇÕES:**
+- **Pré-requisitos:** A obra deve ter a engenharia completa para realizar comparativos.
+- **Habilita:** O acompanhamento financeiro e a gestão de fluxo de caixa.
+- **Relacionado a:** Módulo de Engenharia e Módulo de Compras.
+
+**🔍 VARIAÇÕES DE BUSCA (Otimização RAG):**
+
+Esta seção responde perguntas formuladas de diferentes formas. Um usuário pode perguntar:
+- **Forma direta:** "Como especificar serviços em uma obra?"
+- **Com problema:** "Não consigo salvar a especificação de serviços, o que fazer?"
+- **Informal:** "Como faço pra colocar um serviço na obra?"
+- **Por sintoma:** "Quando a data de entrega é urgente, como isso afeta a solicitação?"
+
+**Termos alternativos e sinônimos usados para esta funcionalidade:**
+- "Definir serviço", "vincular produto", "especificar insumo", "associar serviço"
 
 **❓ PERGUNTAS QUE ESTA SEÇÃO RESPONDE:**
-- Como especificar serviços vinculados a uma obra?
-- O que acontece se a data limite de entrega for inferior à data solicitada?
-- Como adicionar comentários para a aprovação da solicitação?
+- Como especificar um serviço para uma obra?
+- O que fazer se a data limite de entrega não for aceita?
+- Como adicionar comentários na solicitação de serviços?
+- O que acontece se a data de entrega for urgente?
+- Quais são os pré-requisitos para especificar serviços?
 
 ---
 
@@ -210,7 +316,7 @@ A funcionalidade de especificação de serviços permite ao usuário vincular pr
 
 ---
 
-## 3. Salvamento e Aprovação de Solicitações
+## 3. Salvar Solicitação e Aprovação no Módulo de Compras
 
 **📋 METADADOS:**
 - **ID:** sec_3
@@ -218,83 +324,139 @@ A funcionalidade de especificação de serviços permite ao usuário vincular pr
 - **⏲️ Duração:** 152s
 - **🎬 Link:** [Assistir este trecho](https://youtu.be/qFzqzIoiVE4?si=YoVxiJOkipNVbQWb&t=301)
 - **📦 Módulo:** Compras
-- **🏷️ Categorias:** Operacional, Aprovação, Solicitações
-- **🔑 Palavras-chave:** salvar, rascunho, editar, excluir, aprovação, histórico, comentários, transferência
+- **🏷️ Categorias:** Solicitação, Aprovação, Fluxo de Trabalho, Gestão de Compras
+- **🔑 Palavras-chave:** salvar, rascunho, aprovar, solicitar, compras, histórico, editar
 
-> **🔍 RESUMO EXECUTIVO:** Esta seção detalha o processo de salvamento de solicitações no sistema, incluindo a opção de salvar como rascunho e as etapas de aprovação no módulo de compras. O objetivo é garantir que os usuários compreendam como gerenciar suas solicitações e acompanhar seu status.
+> **🔍 RESUMO EXECUTIVO:** Esta seção detalha o processo de salvar uma solicitação no sistema de compras, incluindo opções de rascunho e aprovação, além de como acompanhar o status da solicitação.
 
 **Contexto:**
-Estamos na interface do módulo de compras, onde o usuário pode salvar solicitações de compra e gerenciar seu status. O foco é entender como salvar uma solicitação, as opções disponíveis e como acompanhar o fluxo de aprovação.
+Estamos no módulo de compras, onde o usuário pode salvar solicitações de compra e gerenciar seu fluxo de aprovação. O objetivo é garantir que as solicitações sejam corretamente salvas e que o solicitante possa acompanhar o status de suas requisições.
 
 **Localização no Sistema:**
-- Caminho de navegação: Menu Principal > Módulo Compras > Solicitações
-- Tela/interface específica: Tela de Solicitações
+- Caminho de navegação completo: Menu Principal > Módulo Compras > Solicitações
+- Tela/interface específica: Tela de Solicitação de Compras
 
 **Funcionalidade Detalhada:**
-A funcionalidade permite que o usuário salve suas solicitações de compra de duas maneiras: como rascunho ou como uma solicitação completa. Salvar como rascunho permite que o usuário feche a tela e retorne posteriormente para completar a solicitação. Uma vez que a solicitação é salva completamente, ela é enviada para o módulo de compras para aprovação. Importante notar que apenas solicitações com status "aberto" podem ser editadas ou excluídas pelo solicitante; após isso, apenas o departamento de compras pode realizar alterações.
+A funcionalidade permite que o usuário salve uma solicitação de compra. O usuário pode optar por salvar a solicitação como um rascunho, permitindo que ele feche a tela e retorne posteriormente para completar ou editar a solicitação. Uma vez que a solicitação é salva completamente, ela é enviada para o módulo de compras para aprovação. É importante notar que a solicitação só pode ser editada ou excluída enquanto estiver com o status "aberto". Após essa etapa, apenas o módulo de compras pode realizar alterações.
 
 ### 🔹 Passo a Passo Detalhado:
 
 1. **Salvar Solicitação**
-   - Localização: Botão **Salvar** na parte inferior da tela de solicitações.
+   - Localização: Botão **Salvar** na parte inferior da tela de solicitação.
    - Como fazer: Clique no botão **Salvar**. Uma janela de opções aparecerá.
    - Campos/Opções disponíveis:
-     * `Salvar como Rascunho`: Permite que a solicitação seja salva sem ser enviada para aprovação, possibilitando edições futuras.
-     * `Salvar Completo`: Envia a solicitação para o módulo de compras.
-   - Resultado esperado: A solicitação é salva conforme a opção escolhida. Se salva como rascunho, o usuário pode fechar a tela e retornar mais tarde.
+     * **Salvar como Rascunho**: Permite que a solicitação seja salva para edição futura.
+     * **Salvar Completo**: Envia a solicitação para o módulo de compras.
+   - Resultado esperado: A solicitação é salva como rascunho ou enviada para o módulo de compras, dependendo da opção escolhida.
 
 2. **Acompanhar Solicitação**
-   - Localização: Tela inicial do módulo de compras.
-   - Como fazer: Acesse a tela inicial para visualizar todas as solicitações pendentes para aprovação.
-   - Observações importantes: O status da solicitação deve ser "aberto" para que o solicitante possa editar ou excluir.
-   - Resultado esperado: O usuário vê um histórico das ações realizadas no fluxo de compras, incluindo a solicitação que acabou de realizar.
+   - Localização: Tela inicial do módulo de compras, seção de **Histórico de Solicitações**.
+   - Como fazer: Acesse a tela inicial do módulo de compras para visualizar todas as solicitações pendentes.
+   - Observações importantes: O solicitante pode acompanhar o status da solicitação e visualizar o histórico de ações realizadas.
+   - Resultado esperado: O usuário vê uma lista de solicitações, incluindo a que acabou de realizar, com informações sobre seu status.
 
 3. **Aprovar Solicitações**
-   - Localização: Tela de Aprovação de Solicitações no módulo de compras.
+   - Localização: Tela de **Aprovação de Solicitações** no módulo de compras.
    - Como fazer: Clique na solicitação pendente que deseja aprovar.
-   - Observações importantes: O campo de urgência é destacado, e um ícone de comentário em verde indica que há um comentário disponível.
-   - Resultado esperado: O responsável pela aprovação pode visualizar detalhes da solicitação e tomar ações.
+   - Campos/Opções disponíveis:
+     * **Aprovar**: Botão com ícone de polegar para cima.
+     * **Reprovar**: Botão com ícone de polegar para baixo.
+     * **Trocar Produto**: Ícone de bolinha com dois risquinhos para substituir por um produto semelhante.
+   - Resultado esperado: A solicitação é aprovada ou reprovada, e o fluxo de compras é atualizado.
 
-4. **Opções de Aprovação**
-   - Localização: Tela de Aprovação de Solicitações.
-   - Como fazer: Clique no ícone de polegar para aprovar ou reprovar a solicitação.
-   - Observações importantes: A aprovação pode ser feita de forma individual (item a item) ou rápida (todos de uma vez).
-   - Resultado esperado: A solicitação é aprovada ou reprovada conforme a ação escolhida.
+4. **Inserir Comentário**
+   - Localização: Campo de comentários na tela de aprovação.
+   - Como fazer: Clique no campo de comentários e digite sua mensagem. Para visualizar comentários existentes, clique no ícone correspondente.
+   - Observações importantes: Comentários são destacados em verde quando há novas mensagens.
+   - Resultado esperado: O comentário é adicionado ou visualizado, permitindo comunicação entre solicitante e aprovador.
 
-5. **Transferência de Produtos**
-   - Localização: Opção de transferência na tela de aprovação.
-   - Como fazer: Após clicar no polegar para aprovar, selecione a opção de transferência.
-   - Observações importantes: O usuário pode escolher entre comprar, transferir ou realizar ambas as ações.
-   - Resultado esperado: O sistema puxa todas as obras relacionadas ao produto e permite que o usuário defina a quantidade a ser transferida.
+5. **Métodos de Aprovação**
+   - Localização: Tela de aprovação de solicitações.
+   - Como fazer: Escolha entre **Aprovação Individual** ou **Aprovação Rápida**.
+   - Observações importantes:
+     * **Aprovação Individual**: Aprova item a item, permitindo transferências de produtos.
+     * **Aprovação Rápida**: Aprova todas as solicitações de uma vez, sem opções de transferência.
+   - Resultado esperado: A solicitação é aprovada conforme o método escolhido.
 
 **Campos e Parâmetros:**
 
-| Campo                | Tipo      | Obrigatório | Descrição                                               | Exemplo               |
-|----------------------|-----------|-------------|--------------------------------------------------------|-----------------------|
-| Salvar como Rascunho| Botão     | Não         | Opção para salvar a solicitação sem enviá-la para aprovação. | [Botão Salvar]        |
-| Salvar Completo      | Botão     | Não         | Opção para enviar a solicitação para o módulo de compras. | [Botão Salvar]        |
-| Status               | Texto     | Sim         | Indica o status da solicitação (aberto, aprovado, etc.). | Aberto                |
-| Comentário           | Texto     | Não         | Campo para inserir ou visualizar comentários sobre a solicitação. | "Urgente"             |
-| Urgente              | Checkbox  | Não         | Indica se a solicitação é urgente.                     | [ ] Urgente           |
+| Campo                  | Tipo        | Obrigatório | Descrição                                             | Exemplo                  |
+|------------------------|-------------|-------------|-----------------------------------------------------|--------------------------|
+| **Salvar como Rascunho** | Botão      | Sim         | Salva a solicitação para edição futura.             | -                        |
+| **Salvar Completo**    | Botão      | Sim         | Envia a solicitação para o módulo de compras.       | -                        |
+| **Comentários**        | Texto       | Não         | Permite adicionar observações sobre a solicitação.   | "Urgente: precisa de revisão" |
+| **Aprovar/Reprovar**   | Botão       | Sim         | Aprova ou reprova a solicitação.                     | -                        |
+| **Trocar Produto**     | Ícone       | Não         | Permite substituir o produto solicitado por outro.   | -                        |
 
 **Regras de Negócio:**
-- Solicitações podem ser editadas ou excluídas apenas se estiverem com status "aberto".
-- Após a aprovação, o fluxo da solicitação é interrompido se for reprovada.
-- O responsável pela aprovação pode realizar alterações, como trocar produtos, se necessário.
+- A solicitação pode ser editada ou excluída apenas enquanto estiver com o status "aberto".
+- O histórico de ações é atualizado conforme o fluxo de compras avança.
+- O aprovador pode optar por aprovar individualmente ou rapidamente, dependendo da necessidade.
 
 **Observações Importantes:**
-- É recomendado salvar como rascunho se houver incertezas sobre a solicitação.
+- É recomendável salvar a solicitação como rascunho se não estiver pronta para envio imediato.
 - Evite deixar solicitações pendentes por muito tempo para não atrasar o processo de compras.
-- Verifique sempre o status da solicitação antes de tentar editá-la.
+- Verifique se todos os campos obrigatórios estão preenchidos antes de salvar.
 
 **Conceitos-Chave:**
-- **Rascunho**: Estado em que a solicitação é salva, mas não enviada para aprovação.
-- **Aprovação Rápida**: Método que permite aprovar várias solicitações de uma vez, sem a necessidade de aprovar item a item.
+- **Rascunho**: Estado de uma solicitação que ainda pode ser editada.
+- **Aprovação**: Processo de validação de uma solicitação de compra por um responsável.
+
+**🔧 SOLUÇÃO DE PROBLEMAS (Troubleshooting):**
+
+| Problema                       | Causa Provável                  | Solução                                           | Prevenção                                   |
+|--------------------------------|---------------------------------|--------------------------------------------------|---------------------------------------------|
+| Solicitação não salva          | Campos obrigatórios não preenchidos | Preencha todos os campos obrigatórios e tente novamente. | Verifique os campos antes de salvar.       |
+| Não consegue aprovar           | Falta de permissões             | Consulte o administrador para verificar suas permissões. | Solicite as permissões necessárias previamente. |
+| Comentário não aparece         | Não foi salvo corretamente      | Verifique se o botão de salvar foi clicado.     | Sempre clique em salvar após adicionar comentários. |
+
+**💡 DICAS E BOAS PRÁTICAS:**
+- Utilize a opção de rascunho para evitar perdas de informações.
+- Mantenha um registro de solicitações urgentes para priorização.
+- Revise os comentários antes de enviar para garantir clareza.
+
+**📚 EXEMPLOS PRÁTICOS:**
+
+**Exemplo 1: Solicitação de Compra Urgente**
+```
+Situação: Um funcionário precisa de cimento para uma obra.
+Ação: O funcionário salva a solicitação como rascunho para adicionar mais detalhes depois.
+  • Campo de produto: "Cimento"
+  • Campo de urgência: "Sim"
+Resultado: A solicitação é salva e pode ser editada posteriormente.
+```
+
+**Exemplo 2: Aprovação de Solicitação**
+```
+Situação: Um gerente precisa aprovar uma solicitação de compra.
+Ação: O gerente acessa a tela de aprovação e clica no botão de aprovar.
+Resultado: A solicitação é aprovada e o status é atualizado para "Aprovado".
+```
+
+**🔗 DEPENDÊNCIAS E RELAÇÕES:**
+- **Pré-requisitos:** O usuário deve ter permissões adequadas para salvar e aprovar solicitações.
+- **Habilita:** A aprovação de solicitações permite que o fluxo de compras continue.
+- **Relacionado a:** Funcionalidades de gestão de estoque e relatórios de compras.
+
+**🔍 VARIAÇÕES DE BUSCA (Otimização RAG):**
+
+Esta seção responde perguntas formuladas de diferentes formas. Um usuário pode perguntar:
+- **Forma direta:** "Como salvar uma solicitação de compra?"
+- **Com problema:** "Não consigo salvar minha solicitação, o que fazer?"
+- **Informal:** "Como faço para guardar meu pedido?"
+- **Por sintoma:** "Quando minha solicitação não aparece, o que está errado?"
+- **Alternativa:** "Como aprovar uma solicitação de compra?"
+
+**Termos alternativos e sinônimos usados para esta funcionalidade:**
+- "Salvar pedido", "guardar solicitação", "aprovar compra", "editar solicitação"
+- "Rascunho", "aprovação", "fluxo de compras", "status da solicitação"
 
 **❓ PERGUNTAS QUE ESTA SEÇÃO RESPONDE:**
-- Como posso salvar uma solicitação no sistema?
-- O que acontece se eu salvar uma solicitação como rascunho?
-- Quais são as opções disponíveis para aprovar uma solicitação no módulo de compras?
+- Como posso salvar uma solicitação de compra?
+- O que fazer se minha solicitação não for salva?
+- Como aprovar uma solicitação no módulo de compras?
+- O que fazer se não consigo aprovar uma solicitação?
+- Quais são os requisitos para salvar uma solicitação?
 
 ---
 
@@ -304,98 +466,149 @@ A funcionalidade permite que o usuário salve suas solicitações de compra de d
 
 ---
 
-## 4. Aprovação e Finalização de Produtos
+## 4. Aprovação e Finalização de Cotações
 
 **📋 METADADOS:**
 - **ID:** sec_4
 - **⏱️ Minutagem:** 07:31 → 10:04
 - **⏲️ Duração:** 153s
 - **🎬 Link:** [Assistir este trecho](https://youtu.be/qFzqzIoiVE4?si=YoVxiJOkipNVbQWb&t=451)
-- **📦 Módulo:** Aprovação de Produtos
-- **🏷️ Categorias:** Aprovação, Orçamento, Fornecedores
-- **🔑 Palavras-chave:** aprovação, produtos, orçamento, fornecedores, cotação, e-mail
+- **📦 Módulo:** Gestão de Compras
+- **🏷️ Categorias:** Aprovação, Cotações, Fornecedores, Compras
+- **🔑 Palavras-chave:** Aprovação, Cotação, Fornecedor, Orçamento, Compra Vulsa
 
-> **🔍 RESUMO EXECUTIVO:** Esta seção detalha o processo de aprovação de produtos, incluindo a definição do local de entrega e a finalização do processo, seja para gerar um orçamento ou uma compra. O objetivo é otimizar a gestão de cotações com fornecedores.
+> **🔍 RESUMO EXECUTIVO:** Esta seção detalha o processo de aprovação de produtos e finalização de cotações no sistema, permitindo que o usuário compreenda como gerenciar eficientemente a aprovação de itens e a escolha entre orçamento e compra direta.
 
 **Contexto:**
-Estamos na etapa de aprovação de produtos dentro do módulo de Aprovação de Produtos. O objetivo é aprovar os itens selecionados, definir o local de entrega e finalizar o processo para seguir com a cotação ou compra.
+Estamos na interface de gestão de compras, onde o usuário pode aprovar produtos e definir o próximo passo no processo de aquisição, seja gerando um orçamento ou uma compra direta.
 
 **Localização no Sistema:**
-- Caminho de navegação completo: Menu Principal > Aprovação de Produtos > Aprovação
+- Caminho de navegação completo: Menu Principal > Gestão de Compras > Aprovação de Produtos
 - Tela/interface específica: Tela de Aprovação de Produtos
 
 **Funcionalidade Detalhada:**
-A funcionalidade de aprovação permite que o usuário aprove múltiplos produtos de uma só vez, evitando a necessidade de aprovar item a item. Após a aprovação, o usuário deve identificar o local de entrega dos produtos e finalizar o processo, escolhendo entre gerar um orçamento ou uma compra direta.
+A funcionalidade de aprovação permite que o usuário aprove produtos em uma única ação, especialmente útil quando há múltiplos itens. Após a aprovação, o usuário pode identificar o local de entrega e finalizar o processo, escolhendo entre gerar um orçamento ou uma compra direta. A escolha de orçamento é comum quando o usuário deseja comparar preços de diferentes fornecedores.
 
 ### 🔹 Passo a Passo Detalhado:
 
-1. **Confirmar as Quantidades e Salvar**
+1. **Confirmar Quantidades e Salvar**
    - Localização: Tela de Aprovação de Produtos
    - Como fazer: Após revisar as quantidades dos produtos, clique no botão **Salvar**.
    - Campos/Opções disponíveis:
-     * `Quantidade`: Campo onde o usuário insere a quantidade de cada produto.
-   - Resultado esperado: Os produtos aparecem como **aprovados** na tela.
+     * `Quantidade`: Campo numérico onde o usuário insere a quantidade de cada produto.
+   - Resultado esperado: Os produtos aparecem como aprovados na lista.
 
-2. **Identificar o Local de Entrega**
-   - Localização: Tela de Aprovação de Produtos, seção de entrega.
-   - Como fazer: Após salvar, localize a seção para identificar o **local de entrega** e preencha as informações necessárias.
-   - Resultado esperado: O local de entrega é definido e salvo.
+2. **Identificar Local de Entrega**
+   - Localização: Tela de Aprovação de Produtos
+   - Como fazer: Após salvar, localize o campo para identificar o local de entrega e preencha com as informações necessárias.
+   - Campos/Opções disponíveis:
+     * `Local de Entrega`: Campo de texto onde o usuário insere o endereço ou nome do local.
+   - Resultado esperado: O local de entrega é salvo e associado aos produtos aprovados.
 
-3. **Aprovação e Fluxo de Finalização**
-   - Localização: Parte superior da tela de Aprovação de Produtos.
-   - Como fazer: Clique no botão **Aprovar**. É importante notar que se o usuário sair dessa aba sem aprovar, a aprovação será desfeita.
-   - Resultado esperado: Produtos aprovados são gerados para o local de entrega.
+3. **Finalizar Aprovação**
+   - Localização: Tela de Aprovação de Produtos
+   - Como fazer: Clique no botão **Finalizar**.
+   - Observações importantes: Se o usuário sair da aba antes de finalizar, a aprovação será desfeita.
+   - Resultado esperado: O sistema gera um registro de produtos aprovados e apresenta opções para o próximo passo.
 
-4. **Finalizar o Processo**
-   - Localização: Após a aprovação, clique na opção **Finalizar**.
-   - Como fazer: Na tela de finalização, escolha entre as opções de **Gerar Orçamento** ou **Compra Vulsa**.
-   - Observações importantes: A opção de **Compra Vulsa** é utilizada quando o usuário já tem um fornecedor definido e os valores acordados.
-   - Resultado esperado: O sistema avança para a próxima etapa, dependendo da opção escolhida.
+4. **Escolher Próximo Passo**
+   - Localização: Tela de Finalização
+   - Como fazer: Após clicar em **Finalizar**, selecione entre as opções **Gerar Orçamento** ou **Compra Vulsa**.
+   - Campos/Opções disponíveis:
+     * `Gerar Orçamento`: Opção para criar uma referência de cotação com fornecedores.
+     * `Compra Vulsa`: Opção para criar uma ordem de compra diretamente.
+   - Resultado esperado: O sistema direciona o usuário para a tela de listagem de fornecedores.
 
 5. **Selecionar Fornecedores**
-   - Localização: Tela de listagem de fornecedores.
-   - Como fazer: O sistema automaticamente puxa fornecedores que fornecem o tipo de produto. O usuário pode optar por excluir todos e selecionar apenas os fornecedores desejados.
-   - Campos/Opções disponíveis:
-     * `Fornecedor`: Lista de fornecedores disponíveis.
-   - Resultado esperado: Apenas os fornecedores selecionados são incluídos na cotação.
+   - Localização: Tela de Listagem de Fornecedores
+   - Como fazer: O sistema automaticamente filtra fornecedores que fornecem o tipo de produto. O usuário pode optar por excluir fornecedores indesejados e selecionar apenas os desejados.
+   - Observações importantes: O relacionamento entre fornecedores e produtos é configurado previamente no cadastro de parceiros.
+   - Resultado esperado: Apenas os fornecedores selecionados são considerados para a cotação.
 
 6. **Enviar E-mail para Fornecedores**
-   - Localização: Após selecionar os fornecedores.
-   - Como fazer: O sistema possui um processo automático que envia um e-mail para os fornecedores selecionados, que poderão acessar as informações e preencher os dados necessários.
-   - Resultado esperado: O e-mail é enviado e as informações retornam automaticamente para o sistema.
-
-7. **Salvar a Aprovação Finalizada**
-   - Localização: Tela de Aprovação de Produtos.
-   - Como fazer: Clique no botão **Salvar** para finalizar a aprovação e manter o histórico.
-   - Resultado esperado: A aprovação é finalizada e registrada no histórico do sistema.
+   - Localização: Tela de Listagem de Fornecedores
+   - Como fazer: Após selecionar os fornecedores, salve as configurações. O sistema enviará automaticamente um e-mail para os fornecedores selecionados.
+   - Resultado esperado: Os fornecedores recebem um e-mail com as informações necessárias para preencher e retornar ao sistema.
 
 **Campos e Parâmetros:**
 
-| Campo                | Tipo         | Obrigatório | Descrição                                           | Exemplo                |
-|----------------------|--------------|-------------|----------------------------------------------------|------------------------|
-| `Quantidade`         | Numérico     | Sim         | Quantidade de produtos a serem aprovados.         | 10                     |
-| `Local de Entrega`   | Texto        | Sim         | Endereço onde os produtos serão entregues.        | Rua Exemplo, 123       |
-| `Fornecedor`         | Dropdown     | Sim         | Lista de fornecedores disponíveis para cotação.    | Fornecedor A, B, C     |
+| Campo                | Tipo         | Obrigatório | Descrição                                           | Exemplo                  |
+|----------------------|--------------|-------------|----------------------------------------------------|--------------------------|
+| `Quantidade`         | Numérico     | Sim         | Quantidade de produtos a serem aprovados.         | 10                       |
+| `Local de Entrega`   | Texto        | Sim         | Endereço ou nome do local onde os produtos serão entregues. | Rua das Flores, 123     |
+| `Fornecedor`         | Dropdown     | Sim         | Lista de fornecedores disponíveis para cotação.    | Fornecedor A, Fornecedor B |
+| `Opção de Finalização` | Botão      | Sim         | Escolha entre gerar orçamento ou compra vulsa.     | Gerar Orçamento, Compra Vulsa |
 
 **Regras de Negócio:**
-- A aprovação de produtos deve ser realizada antes de finalizar o processo.
-- Se o usuário sair da aba sem aprovar, a aprovação será desfeita.
-- O sistema filtra automaticamente os fornecedores com base nos produtos selecionados.
-- O envio de e-mail para fornecedores é automático após a seleção.
+- A aprovação de produtos deve ser confirmada antes de finalizar o processo.
+- Se o usuário sair da aba de aprovação sem salvar, a aprovação será desfeita.
+- O sistema filtra automaticamente fornecedores com base nos produtos selecionados.
 
 **Observações Importantes:**
-- É essencial salvar as alterações após cada etapa para evitar perda de dados.
-- Evite sair da aba de aprovação antes de finalizar, pois isso pode desfazer as aprovações realizadas.
-- Certifique-se de que os fornecedores estão corretamente cadastrados e vinculados aos produtos.
+- É crucial salvar as informações após cada etapa para evitar perda de dados.
+- Erros comuns incluem não selecionar fornecedores ou não preencher o local de entrega.
+- O cadastro de fornecedores deve estar completo para que o filtro funcione corretamente.
 
 **Conceitos-Chave:**
-- **Aprovação de Produtos**: Processo de validar e autorizar a aquisição de produtos no sistema.
-- **Compra Vulsa**: Compra direta de produtos sem passar pelo processo de cotação.
+- **Aprovação de Produtos**: Processo de validar e confirmar a aquisição de itens no sistema.
+- **Cotação**: Solicitação de preços a fornecedores para comparação antes da compra.
+
+**🔧 SOLUÇÃO DE PROBLEMAS (Troubleshooting):**
+
+| Problema                          | Causa Provável                    | Solução                                      | Prevenção                                 |
+|-----------------------------------|-----------------------------------|----------------------------------------------|-------------------------------------------|
+| Não consigo salvar a aprovação     | Campos obrigatórios não preenchidos | Verifique se todos os campos obrigatórios estão preenchidos. | Sempre revisar os campos antes de salvar. |
+| E-mail não enviado para fornecedores | Problemas de configuração de e-mail | Verifique as configurações de e-mail no sistema. | Testar as configurações de e-mail periodicamente. |
+| Fornecedor não aparece na lista    | Não está cadastrado corretamente | Verifique o cadastro do fornecedor e a relação com os produtos. | Manter o cadastro de fornecedores atualizado. |
+
+**💡 DICAS E BOAS PRÁTICAS:**
+- Sempre revise as quantidades antes de salvar.
+- Utilize a opção de orçamento quando não tiver certeza do fornecedor.
+- Mantenha um registro dos fornecedores e suas cotações para futuras referências.
+
+**📚 EXEMPLOS PRÁTICOS:**
+
+**Exemplo 1: Aprovação de Produtos para Orçamento**
+```
+Situação: O usuário precisa aprovar 15 unidades de um produto específico.
+Ação: 
+  • Campo `Quantidade`: "15"
+  • Campo `Local de Entrega`: "Armazém Central"
+Resultado: Os produtos são aprovados e o local de entrega é salvo.
+```
+
+**Exemplo 2: Finalização de Compra Vulsa**
+```
+Situação: O usuário já conhece o fornecedor e deseja realizar uma compra direta.
+Ação: 
+  • Selecionar a opção `Compra Vulsa`
+  • Escolher o fornecedor "Fornecedor A"
+Resultado: O sistema cria uma ordem de compra diretamente sem passar pela cotação.
+```
+
+**🔗 DEPENDÊNCIAS E RELAÇÕES:**
+- **Pré-requisitos:** O cadastro de fornecedores deve estar completo e atualizado.
+- **Habilita:** A geração de ordens de compra e cotações.
+- **Relacionado a:** Módulo de Cadastro de Fornecedores e Gestão de Compras.
+
+**🔍 VARIAÇÕES DE BUSCA (Otimização RAG):**
+
+Esta seção responde perguntas formuladas de diferentes formas. Um usuário pode perguntar:
+- **Forma direta:** "Como aprovar produtos no sistema?"
+- **Com problema:** "Não consigo finalizar a aprovação, o que fazer?"
+- **Informal:** "Como eu aprovo os itens que comprei?"
+- **Por sintoma:** "O que acontece se eu sair da aba sem salvar?"
+- **Com dúvida:** "Qual a diferença entre orçamento e compra vulsa?"
+
+**Termos alternativos e sinônimos usados para esta funcionalidade:**
+- "Aprovação de itens", "Finalização de cotações", "Gerar orçamento", "Compra direta", "Selecionar fornecedores".
 
 **❓ PERGUNTAS QUE ESTA SEÇÃO RESPONDE:**
-- Como aprovar múltiplos produtos de uma só vez?
-- O que acontece se eu sair da aba de aprovação sem finalizar?
-- Como selecionar fornecedores para a cotação de produtos aprovados?
+- Como aprovar produtos no sistema?
+- O que fazer se a aprovação não for salva?
+- Como escolher entre orçamento e compra vulsa?
+- O que acontece se eu sair da aba sem salvar?
+- O que preciso fazer antes de aprovar produtos?
 
 ---
 
@@ -416,107 +629,147 @@ A funcionalidade de aprovação permite que o usuário aprove múltiplos produto
 - **🏷️ Categorias:** Operacional, Cadastro, Relatório
 - **🔑 Palavras-chave:** cotações, fornecedor, proposta, condições de pagamento, entrega
 
-> **🔍 RESUMO EXECUTIVO:** Esta seção orienta sobre o processo de preenchimento de cotações por fornecedores, detalhando cada etapa desde o recebimento do e-mail até a proposta de condições de pagamento e informações de entrega.
+> **🔍 RESUMO EXECUTIVO:** Esta seção detalha o processo de preenchimento de cotações por fornecedores, incluindo como acessar o link, preencher informações e propor condições de pagamento. O objetivo é garantir que os fornecedores possam enviar suas ofertas de forma clara e organizada.
 
 **Contexto:**
-Estamos no módulo de Processo de Compras, onde o fornecedor é convidado a participar do processo de cotações. O objetivo é permitir que o fornecedor preencha e envie suas propostas de forma clara e organizada.
+Estamos na fase do sistema onde um fornecedor, após receber um e-mail de convite, deve acessar um link para preencher uma cotação de produtos solicitados pela empresa. Este processo é essencial para a formalização de propostas e condições de pagamento.
 
 **Localização no Sistema:**
 - Caminho de navegação completo: Menu Principal > Módulo Processo de Compras > Submenu Cotações
-- Tela/interface específica: Tela de Preenchimento de Cotações
+- Tela/interface específica: Formulário de Preenchimento de Cotações
 
 **Funcionalidade Detalhada:**
 
-A funcionalidade permite que o fornecedor receba um e-mail com um convite para participar do processo de compras, onde ele poderá acessar um link para preencher sua oferta. O sistema apresenta informações sobre a empresa do fornecedor, lista de produtos, quantidades solicitadas e campos para preenchimento de valores e condições de pagamento.
+A funcionalidade permite que o fornecedor preencha uma cotação com informações sobre produtos e condições de pagamento. O fornecedor acessa um link enviado por e-mail, onde pode visualizar detalhes da empresa solicitante, produtos, quantidades e valores. O sistema calcula automaticamente o valor total e permite sugestões de produtos alternativos.
 
 ### 🔹 Passo a Passo Detalhado:
 
-1. **Recebimento do E-mail**
-   - Localização: Caixa de entrada do e-mail do fornecedor
-   - Como fazer: O fornecedor deve abrir o e-mail que contém o convite.
-   - Conteúdo do e-mail: O e-mail inicia com "Olá, nome do fornecedor. Como parceiro credenciado, nome da sua empresa, você está convidado para fazer parte do nosso processo de compras. Por favor, clique abaixo e preencha sua oferta."
-   - Resultado esperado: O fornecedor visualiza o convite e o link para o orçamento.
+1. **Acesso ao Link de Cotação**
+   - Localização: E-mail recebido pelo fornecedor
+   - Como fazer: O fornecedor deve abrir o e-mail e clicar no link que diz "clique abaixo e preencha sua oferta".
+   - Resultado esperado: O fornecedor é redirecionado para a página de preenchimento da cotação.
 
-2. **Acesso ao Link de Orçamento**
-   - Localização: E-mail recebido
-   - Como fazer: O fornecedor deve clicar no link fornecido no e-mail.
-   - Resultado esperado: O fornecedor é direcionado para uma nova página onde poderá preencher a proposta.
+2. **Visualização das Informações da Empresa**
+   - Localização: Página de preenchimento da cotação
+   - Como fazer: Após o redirecionamento, o fornecedor verá as informações da empresa solicitante na parte superior da página.
+   - Resultado esperado: O fornecedor tem uma visão clara de quem está solicitando a cotação.
 
-3. **Visualização das Informações da Empresa**
-   - Localização: Página de preenchimento de cotações
-   - Como fazer: O fornecedor visualiza as informações da sua empresa na parte superior da página.
-   - Resultado esperado: O fornecedor confirma que as informações estão corretas.
+3. **Preenchimento da Cotação**
+   - Localização: Seção de produtos e quantidades
+   - Como fazer: O fornecedor verá uma lista de produtos e a quantidade solicitada, que já vem preenchida automaticamente. O fornecedor pode alterar a quantidade, se necessário.
+   - Campos/Opções disponíveis:
+     * `Quantidade`: Campo numérico, preenchido automaticamente, pode ser alterado.
+   - Resultado esperado: O fornecedor ajusta a quantidade conforme necessário.
 
-4. **Preenchimento da Relação de Produtos e Quantidades**
-   - Localização: Abaixo das informações da empresa
-   - Como fazer: O fornecedor visualiza a lista de produtos e quantidades solicitadas, onde a quantidade a ser entregue é preenchida automaticamente.
-   - Observações importantes: O fornecedor pode alterar a quantidade se necessário.
-   - Resultado esperado: O fornecedor ajusta a quantidade conforme desejado.
+4. **Inserção do Valor Unitário**
+   - Localização: Campo de valor unitário na cotação
+   - Como fazer: O fornecedor deve inserir o valor unitário de cada produto na coluna correspondente.
+   - Resultado esperado: O sistema calcula automaticamente o valor total com base na quantidade e no valor unitário inserido.
 
-5. **Inserção do Valor Unitário**
-   - Localização: Campo de valor unitário
-   - Como fazer: O fornecedor deve preencher o valor unitário do produto.
-   - Exemplo: O fornecedor pode inserir um valor como "R$ 100,00".
-   - Resultado esperado: O sistema calcula e apresenta automaticamente o valor total.
+5. **Campo de Desconto**
+   - Localização: Campo de desconto na cotação
+   - Como fazer: O fornecedor pode optar por preencher um desconto, que é um campo opcional.
+   - Resultado esperado: O desconto, se inserido, é aplicado ao valor total.
 
-6. **Preenchimento do Prazo de Entrega e Desconto**
-   - Localização: Campos de prazo de entrega e desconto
-   - Como fazer: O fornecedor deve inserir o prazo de entrega e, opcionalmente, um desconto.
-   - Observações importantes: O campo de desconto é opcional.
-   - Resultado esperado: O fornecedor pode visualizar os comentários inseridos e sugestões.
+6. **Inserção de Comentários e Sugestões**
+   - Localização: Campo de comentários e sugestões
+   - Como fazer: O fornecedor pode inserir comentários adicionais e sugestões de outros produtos ou marcas.
+   - Resultado esperado: Comentários e sugestões aparecem na cotação para consideração futura.
 
-7. **Adição de Sugestões**
-   - Localização: Campo de sugestões
-   - Como fazer: O fornecedor pode indicar outros valores ou marcas para o mesmo produto.
-   - Resultado esperado: As sugestões são salvas e podem ser visualizadas.
+7. **Proposição de Condições de Pagamento**
+   - Localização: Seção de condições de pagamento
+   - Como fazer: O fornecedor clica em "Adicionar Condição" para propor condições como pagamento à vista ou parcelado.
+   - Observações importantes: O fornecedor pode sugerir condições como "5% de desconto para pagamento à vista" ou "parcelamento em até 10 vezes".
+   - Resultado esperado: As condições propostas são apresentadas para seleção ou criação de novas.
 
-8. **Proposta de Condições de Pagamento**
-   - Localização: Botão "Próximo" e seção de condições de pagamento
-   - Como fazer: O fornecedor clica em "Próximo" e é direcionado para a seção onde pode propor condições de pagamento.
-   - Exemplos de condições: 
-     * Pagamento à vista: "Conseguimos 5% de desconto."
-     * Pagamento a prazo: "Parcelamento em até 10 vezes."
-     * Pagamento antecipado: "Conseguimos até 10% de desconto."
-   - Resultado esperado: O fornecedor pode selecionar uma condição ou criar uma nova.
-
-9. **Informações sobre o Local de Entrega**
+8. **Informações sobre Local de Entrega**
    - Localização: Seção de informações de entrega
-   - Como fazer: O fornecedor deve preencher a validade do orçamento e o tipo de frete.
-   - Resultado esperado: As informações de entrega são salvas.
+   - Como fazer: O fornecedor deve preencher a validade da cotação e o tipo de frete.
+   - Resultado esperado: As informações de entrega são registradas corretamente na cotação.
 
 **Campos e Parâmetros:**
 
-| Campo                     | Tipo         | Obrigatório | Descrição                                           | Exemplo            |
-|---------------------------|--------------|-------------|----------------------------------------------------|--------------------|
-| Nome do Fornecedor        | Texto        | Sim         | Nome da empresa do fornecedor                       | "Fornecedor XYZ"   |
-| Valor Unitário            | Moeda        | Sim         | Valor por unidade do produto                        | "R$ 100,00"        |
-| Quantidade                | Número       | Sim         | Quantidade de produtos solicitados                 | "10"               |
-| Prazo de Entrega          | Texto        | Sim         | Prazo em dias para entrega do produto              | "5 dias"           |
-| Desconto                  | Percentual   | Não         | Percentual de desconto oferecido                    | "10%"              |
-| Sugestões                 | Texto        | Não         | Sugestões de outros valores ou marcas               | "Marca A, Marca B" |
-| Condições de Pagamento    | Texto        | Sim         | Propostas de condições de pagamento                 | "À vista, parcelado"|
-| Validade do Orçamento     | Data         | Sim         | Data de validade da proposta                        | "30/12/2023"       |
-| Tipo de Frete             | Dropdown     | Sim         | Opções de frete disponíveis                         | "Normal, Expresso"  |
+| Campo                  | Tipo        | Obrigatório | Descrição                                           | Exemplo                  |
+|------------------------|-------------|-------------|----------------------------------------------------|--------------------------|
+| `Nome do Fornecedor`   | Texto       | Sim         | Nome da empresa fornecedora                        | "Fornecedor XYZ"         |
+| `Quantidade`           | Numérico    | Sim         | Quantidade de produtos solicitados                 | 10                       |
+| `Valor Unitário`       | Numérico    | Sim         | Preço por unidade do produto                        | 50,00                    |
+| `Desconto`             | Numérico    | Não         | Percentual de desconto oferecido                    | 5                        |
+| `Comentários`          | Texto       | Não         | Observações adicionais sobre a proposta             | "Sugestão de marca A"    |
+| `Condições de Pagamento`| Texto      | Sim         | Propostas de pagamento, como parcelamento          | "10% de desconto à vista" |
+| `Validade da Cotação`  | Data        | Sim         | Data até quando a cotação é válida                 | "2024-12-31"             |
+| `Tipo de Frete`        | Dropdown    | Sim         | Opções de frete disponíveis                         | "Frete Grátis", "Sedex"  |
 
 **Regras de Negócio:**
-- O valor unitário deve ser preenchido para que o sistema calcule o valor total.
-- O desconto é opcional, mas se preenchido, deve ser um valor percentual.
-- O fornecedor pode alterar a quantidade de produtos solicitados.
-- As condições de pagamento devem ser propostas pelo fornecedor e podem ser selecionadas ou criadas novas.
+- O valor total é calculado automaticamente com base na quantidade e no valor unitário.
+- O desconto é opcional e deve ser inserido manualmente.
+- As condições de pagamento podem ser propostas pelo fornecedor e selecionadas pelo comprador.
+- A validade da cotação deve ser preenchida obrigatoriamente.
 
 **Observações Importantes:**
-- O fornecedor deve verificar se todas as informações estão corretas antes de enviar a proposta.
-- Erros comuns incluem não preencher o valor unitário ou a quantidade.
-- O sistema pode ter restrições quanto ao tipo de frete disponível.
+- É importante que o fornecedor revise todas as informações antes de enviar a cotação.
+- Erros comuns incluem não preencher o valor unitário ou a validade da cotação.
+- O fornecedor deve garantir que as sugestões de produtos sejam relevantes e viáveis.
 
 **Conceitos-Chave:**
-- **Cotação**: Proposta de preços e condições para fornecimento de produtos.
+- **Cotação**: Proposta formal de preços e condições de fornecimento de produtos.
 - **Condições de Pagamento**: Termos que definem como e quando o pagamento será realizado.
 
+**🔧 SOLUÇÃO DE PROBLEMAS (Troubleshooting):**
+
+| Problema                          | Causa Provável                   | Solução                                           | Prevenção                                      |
+|-----------------------------------|----------------------------------|--------------------------------------------------|------------------------------------------------|
+| Campo de valor unitário não aceita valores | Formato incorreto (ex: letras) | Verifique se está inserindo apenas números       | Use sempre o formato numérico correto          |
+| Desconto não aplicado             | Campo não preenchido corretamente| Certifique-se de que o campo de desconto foi preenchido | Revise todos os campos antes de enviar         |
+| Link de cotação não funciona      | E-mail expirado ou inválido      | Solicite um novo link ao comprador               | Verifique a validade do link recebido          |
+
+**💡 DICAS E BOAS PRÁTICAS:**
+- Sempre revise os valores inseridos antes de enviar a cotação.
+- Utilize o campo de comentários para esclarecer dúvidas ou fornecer informações adicionais.
+- Considere as condições de pagamento que são mais vantajosas para ambas as partes.
+
+**📚 EXEMPLOS PRÁTICOS:**
+
+**Exemplo 1: Preenchimento de Cotação para Produtos de Escritório**
+```
+Situação: O fornecedor recebe um pedido para fornecer 100 canetas.
+Ação: O fornecedor acessa o link, altera a quantidade para 100, insere o valor unitário de R$ 1,00 e sugere um desconto de 10%.
+  • Campo `Quantidade`: 100
+  • Campo `Valor Unitário`: 1,00
+Resultado: O valor total aparece como R$ 100,00, e o desconto é aplicado corretamente.
+```
+
+**Exemplo 2: Proposição de Condições de Pagamento**
+```
+Situação: O fornecedor deseja oferecer condições de pagamento.
+Ação: O fornecedor clica em "Adicionar Condição" e insere "5% de desconto para pagamento à vista".
+Resultado: A condição é adicionada à cotação e pode ser selecionada pelo comprador.
+```
+
+**🔗 DEPENDÊNCIAS E RELAÇÕES:**
+- **Pré-requisitos:** O fornecedor deve ter recebido o e-mail de convite e ter acesso à internet.
+- **Habilita:** O envio da cotação permite que o comprador avalie propostas e tome decisões de compra.
+- **Relacionado a:** Funcionalidade de gerenciamento de fornecedores e controle de compras.
+
+**🔍 VARIAÇÕES DE BUSCA (Otimização RAG):**
+
+Esta seção responde perguntas formuladas de diferentes formas. Um usuário pode perguntar:
+- **Forma direta:** "Como preencher uma cotação?"
+- **Com problema:** "Não consigo enviar a cotação, o que fazer?"
+- **Informal:** "Como faço para mandar uma proposta?"
+- **Por sintoma:** "O que fazer se o valor total não aparece?"
+- **Com dúvida:** "Quais informações preciso colocar na cotação?"
+
+**Termos alternativos e sinônimos usados para esta funcionalidade:**
+- "preencher proposta", "enviar cotação", "oferta de preços", "sugerir produtos"
+- "condições de pagamento", "termos de pagamento", "opções de pagamento"
+
 **❓ PERGUNTAS QUE ESTA SEÇÃO RESPONDE:**
-- Como o fornecedor deve preencher a cotação?
-- Quais informações são necessárias para enviar uma proposta?
-- O que o fornecedor deve fazer se quiser sugerir outras marcas ou valores?
+- Como faço para acessar o link de cotação?
+- O que devo preencher na cotação?
+- Como posso sugerir condições de pagamento?
+- O que fazer se o valor total não está sendo calculado?
+- O que preciso ter antes de preencher a cotação?
 
 ---
 
@@ -535,86 +788,138 @@ A funcionalidade permite que o fornecedor receba um e-mail com um convite para p
 - **🎬 Link:** [Assistir este trecho](https://youtu.be/qFzqzIoiVE4?si=YoVxiJOkipNVbQWb&t=752)
 - **📦 Módulo:** Compras
 - **🏷️ Categorias:** Orçamentos, Visualização, Comparação, Relatórios
-- **🔑 Palavras-chave:** orçamento, fornecedor, comparação, visualização, cotação, entrega, valor, frete
+- **🔑 Palavras-chave:** orçamentos, comparação, fornecedores, produtos, histórico
 
-> **🔍 RESUMO EXECUTIVO:** Esta seção detalha como visualizar e comparar orçamentos no sistema, permitindo que o usuário analise diferentes fornecedores e suas propostas de forma eficiente, facilitando a tomada de decisão.
+> **🔍 RESUMO EXECUTIVO:** Esta seção detalha como visualizar e comparar orçamentos no sistema, permitindo ao usuário analisar diferentes propostas de fornecedores com base em preço e prazo de entrega, facilitando a tomada de decisão.
 
 **Contexto:**
-Estamos na área de orçamentos do módulo de compras, onde o usuário pode visualizar as cotações recebidas de diferentes fornecedores e compará-las com base em critérios como preço e prazo de entrega.
+Estamos na seção de orçamentos do módulo de compras, onde o usuário pode visualizar as cotações recebidas de diferentes fornecedores. O objetivo é permitir uma análise detalhada das propostas, considerando tanto o valor quanto o prazo de entrega.
 
 **Localização no Sistema:**
 - Caminho de navegação completo: Menu Principal > Compras > Orçamentos
-- Tela/interface específica: Tela de Orçamentos
+- Tela/interface específica: Tela de Visualização de Orçamentos
 
 **Funcionalidade Detalhada:**
-A funcionalidade de visualização e comparação de orçamentos permite que o usuário analise as cotações recebidas de fornecedores. O sistema oferece diferentes formas de visualização, permitindo que o usuário escolha entre visualizar por produto, por fornecedor ou por conjunto de orçamento. Cada visualização apresenta informações detalhadas sobre os orçamentos, como valor unitário, total, prazo de entrega, frete e condições de pagamento.
+A funcionalidade de visualização e comparação de orçamentos permite que o usuário analise as cotações recebidas de diferentes fornecedores. O sistema oferece várias formas de visualização, como por produto, por fornecedor e por conjunto de orçamento. Cada uma dessas opções apresenta informações detalhadas sobre os produtos cotados, incluindo valores, prazos de entrega e condições de pagamento.
 
 ### 🔹 Passo a Passo Detalhado:
 
-1. **Visualizar Orçamentos por Produto**
-   - Localização: Aba de Orçamentos na tela principal do módulo de Compras.
-   - Como fazer: Clique na opção "Por Produto" localizada na parte superior da tela.
+1. **Selecionar Visualização por Produto**
+   - Localização: Parte superior da tela de orçamentos, na aba de visualização.
+   - Como fazer: Clique na opção **"Por Produto"**.
    - Campos/Opções disponíveis:
-     * `Histórico de Cotação`: Mostra o histórico de cotações para cada produto.
-     * `Comparativo`: Exibe a comparação entre o melhor valor e a entrega mais rápida, sinalizando com cores.
-   - Resultado esperado: O sistema separa cada produto, permitindo visualizar o histórico de cotações e comparações de forma clara.
+     * `Produto`: Lista de produtos cotados.
+     * `Histórico de Cotação`: Exibe o histórico de cotações para cada produto.
+   - Resultado esperado: O sistema separa cada produto, mostrando o histórico de cotação e permitindo comparações entre o melhor valor e a entrega mais rápida, sinalizada por cores.
 
-2. **Visualizar Orçamentos por Fornecedor**
-   - Localização: Aba de Orçamentos na tela principal do módulo de Compras.
-   - Como fazer: Clique na opção "Por Fornecedor" na parte superior da tela.
-   - Observações importantes: Esta visualização mostra todos os orçamentos cotados com um parceiro, independentemente de terem sido respondidos ou não.
-   - Resultado esperado: O usuário vê todos os orçamentos relacionados a um fornecedor específico, como "Casas d'Água", e pode acessar os orçamentos 467 e 468, que contêm produtos diferentes.
+2. **Selecionar Visualização por Fornecedor**
+   - Localização: Parte superior da tela de orçamentos, na aba de visualização.
+   - Como fazer: Clique na opção **"Por Fornecedor"**.
+   - Observações importantes: Esta visualização permite ver todos os orçamentos com um fornecedor específico, independentemente de terem sido respondidos ou não.
+   - Resultado esperado: A tela exibirá todos os orçamentos relacionados ao fornecedor selecionado, como **"Casas d'Água"**, mostrando orçamentos como **467** e **468**.
 
-3. **Visualizar Orçamentos por Conjunto de Orçamento**
-   - Localização: Aba de Orçamentos na tela principal do módulo de Compras.
-   - Como fazer: Clique na opção "Por Conjunto de Orçamento" na parte superior da tela.
-   - Resultado esperado: O usuário visualiza todos os orçamentos agrupados, como o orçamento 468, onde são listados os fornecedores A e B, além de informações sobre retornos pendentes.
+3. **Selecionar Visualização por Conjunto de Orçamento**
+   - Localização: Parte superior da tela de orçamentos, na aba de visualização.
+   - Como fazer: Clique na opção **"Por Conjunto de Orçamento"**.
+   - Resultado esperado: O sistema agrupa todos os orçamentos realizados, permitindo visualizar informações como o orçamento **468**, com detalhes sobre fornecedores e status de retorno.
 
 4. **Visualizar Detalhes do Orçamento**
-   - Localização: Dentro da visualização de orçamentos por conjunto.
-   - Como fazer: Clique no orçamento específico (ex: orçamento 468) para expandir e visualizar detalhes.
+   - Localização: Dentro da visualização de orçamentos, ao selecionar um orçamento específico.
+   - Como fazer: Clique no número do orçamento (ex: **468**).
    - Campos/Opções disponíveis:
-     * `Valor Unitário`: O preço por unidade do produto.
-     * `Total`: O valor total do orçamento.
-     * `Prazo de Entrega`: O tempo estimado para a entrega do produto.
-     * `Frete`: Campo onde o fornecedor pode informar o valor do frete (opcional).
+     * `Valor Unitário`: Valor de cada item cotado.
+     * `Total`: Valor total do orçamento.
+     * `Prazo de Entrega`: Tempo estimado para entrega.
+     * `Frete`: Campo que pode ser preenchido pelo fornecedor.
      * `Condições de Pagamento`: Informações sobre como o pagamento deve ser realizado.
-   - Resultado esperado: O usuário obtém uma visão detalhada de cada orçamento, incluindo informações sobre valores, prazos e condições.
+   - Resultado esperado: O usuário visualiza todos os detalhes do orçamento, incluindo informações sobre retorno de fornecedores.
 
-5. **Preenchimento de Orçamento**
-   - Localização: Tela de Orçamentos ao criar ou editar um orçamento.
-   - Como fazer: O usuário pode optar por preencher as informações automaticamente via e-mail ou manualmente.
-   - Observações importantes: O preenchimento automático pode ser útil se o usuário já tiver recebido o retorno do fornecedor.
-   - Resultado esperado: O orçamento é salvo com sucesso, e o usuário pode visualizar as informações na aba de orçamentos.
+5. **Preencher Informações de Frete**
+   - Localização: Na tela de detalhes do orçamento, próximo ao campo de frete.
+   - Como fazer: Preencha o campo de frete se o fornecedor desejar cobrar pelo serviço.
+   - Observações importantes: O preenchimento do campo de frete não é obrigatório.
+   - Resultado esperado: O campo de frete é atualizado com o valor inserido, se aplicável.
 
 **Campos e Parâmetros:**
 
-| Campo                  | Tipo         | Obrigatório | Descrição                                           | Exemplo               |
-|------------------------|--------------|-------------|----------------------------------------------------|-----------------------|
-| `Valor Unitário`       | Numérico     | Sim         | Preço por unidade do produto                        | 10,00                 |
-| `Total`                | Numérico     | Sim         | Valor total do orçamento                            | 100,00                |
-| `Prazo de Entrega`     | Texto        | Sim         | Tempo estimado para a entrega                      | 5 dias                |
-| `Frete`                | Numérico     | Não         | Valor do frete cobrado pelo fornecedor             | 15,00                 |
-| `Condições de Pagamento`| Texto       | Sim         | Informações sobre as condições de pagamento        | À vista, 30 dias      |
+| Campo                  | Tipo       | Obrigatório | Descrição                                      | Exemplo                |
+|------------------------|------------|-------------|------------------------------------------------|------------------------|
+| `Produto`              | Texto      | Sim         | Nome do produto cotado                         | "Argamassa"            |
+| `Histórico de Cotação` | Texto      | Não         | Histórico de cotações para o produto           | "Cotações anteriores"   |
+| `Valor Unitário`       | Numérico   | Sim         | Valor de cada unidade do produto                | "R$ 25,00"             |
+| `Total`                | Numérico   | Sim         | Valor total do orçamento                        | "R$ 250,00"            |
+| `Prazo de Entrega`     | Texto      | Sim         | Tempo estimado para entrega do produto         | "5 dias"               |
+| `Frete`                | Numérico   | Não         | Valor do frete, se aplicável                   | "R$ 15,00"             |
+| `Condições de Pagamento` | Texto    | Sim         | Informações sobre o pagamento                   | "À vista"              |
 
 **Regras de Negócio:**
-- O campo `Frete` é opcional e pode ser preenchido pelo fornecedor se desejar cobrar pelo frete.
+- O campo de frete é opcional e pode ser preenchido pelo fornecedor.
 - As informações exibidas nas visualizações são baseadas nos dados preenchidos pelo usuário ou pelo fornecedor.
-- O sistema permite diferentes formas de visualização, mas as informações permanecem consistentes.
+- O sistema permite comparação entre diferentes fornecedores com base em preço e prazo de entrega.
 
 **Observações Importantes:**
-- O usuário deve sempre verificar se as informações estão corretas antes de salvar o orçamento.
-- Erros comuns incluem não preencher todos os campos obrigatórios, o que pode impedir o salvamento do orçamento.
-- O preenchimento automático via e-mail é uma opção que pode economizar tempo, mas deve ser utilizado com cautela para garantir a precisão dos dados.
+- Sempre verifique se as informações estão atualizadas antes de tomar uma decisão.
+- Evite preencher o campo de frete se não for necessário, para não confundir os dados.
+- O sistema sinaliza visualmente o melhor prazo de entrega e o melhor valor.
 
 **Conceitos-Chave:**
-- **Orçamento**: Proposta de preço e condições de fornecimento de produtos ou serviços.
-- **Fornecedor**: Entidade responsável pela entrega dos produtos e serviços cotados.
+- **Orçamento**: Proposta de preço e condições de um fornecedor para um produto ou serviço.
+- **Comparação**: Análise entre diferentes orçamentos para determinar a melhor opção.
+
+**🔧 SOLUÇÃO DE PROBLEMAS (Troubleshooting):**
+
+| Problema                          | Causa Provável                     | Solução                                      | Prevenção                                   |
+|-----------------------------------|------------------------------------|----------------------------------------------|---------------------------------------------|
+| Não aparece o histórico de cotações | Dados não foram preenchidos corretamente | Verifique se todos os produtos estão cadastrados | Sempre preencher todos os campos obrigatórios |
+| Campo de frete desabilitado       | Fornecedor não configurou o frete  | Confirme com o fornecedor se o frete é aplicável | Comunicar-se com o fornecedor antes         |
+
+**💡 DICAS E BOAS PRÁTICAS:**
+- Utilize a visualização por produto para análises detalhadas.
+- Mantenha um registro dos orçamentos anteriores para referência futura.
+- Sempre compare prazos de entrega e valores antes de decidir.
+
+**📚 EXEMPLOS PRÁTICOS:**
+
+**Exemplo 1: Comparação de Orçamentos por Produto**
+```
+Situação: Você precisa comprar argamassa e recebeu cotações de dois fornecedores.
+Ação: 
+  • Selecione a visualização "Por Produto".
+  • Compare os preços e prazos de entrega.
+Resultado: O fornecedor A oferece o melhor prazo de entrega, enquanto o fornecedor B tem o melhor preço.
+```
+
+**Exemplo 2: Visualização de Orçamentos por Fornecedor**
+```
+Situação: Você deseja verificar todos os orçamentos com o fornecedor "Casas d'Água".
+Ação: 
+  • Selecione a visualização "Por Fornecedor".
+Resultado: Você vê todos os orçamentos (467 e 468) e seus respectivos status de retorno.
+```
+
+**🔗 DEPENDÊNCIAS E RELAÇÕES:**
+- **Pré-requisitos:** O usuário deve ter permissões adequadas para visualizar orçamentos.
+- **Habilita:** A comparação de orçamentos permite decisões informadas sobre compras.
+- **Relacionado a:** Funcionalidades de cadastro de fornecedores e produtos.
+
+**🔍 VARIAÇÕES DE BUSCA (Otimização RAG):**
+
+Esta seção responde perguntas formuladas de diferentes formas. Um usuário pode perguntar:
+- **Forma direta:** "Como comparar orçamentos?"
+- **Com problema:** "Não consigo visualizar os orçamentos, o que fazer?"
+- **Informal:** "Como vejo os preços dos fornecedores?"
+- **Por sintoma:** "Quando não aparece o histórico de cotações, o que fazer?"
+
+**Termos alternativos e sinônimos usados para esta funcionalidade:**
+- "comparar cotações", "visualizar propostas", "analisar orçamentos", "cotação de fornecedores"
+- "orçamento", "proposta", "cotações"
 
 **❓ PERGUNTAS QUE ESTA SEÇÃO RESPONDE:**
-- Como posso visualizar os orçamentos recebidos de diferentes fornecedores?
-- Quais informações estão disponíveis ao comparar orçamentos por produto ou fornecedor?
-- O que devo fazer se não obtive retorno de um fornecedor em um orçamento?
+- Como posso visualizar os orçamentos recebidos?
+- Quais são as opções de visualização de orçamentos?
+- Como comparar preços e prazos de entrega entre fornecedores?
+- O que fazer se o campo de frete não estiver habilitado?
+- O que preciso fazer antes de visualizar os orçamentos?
 
 ---
 
@@ -624,124 +929,168 @@ A funcionalidade de visualização e comparação de orçamentos permite que o u
 
 ---
 
-## 7. Adição e Negociação de Fornecedores
+## 7. Processo de Negociação e Criação de Ordem de Compra
 
 **📋 METADADOS:**
 - **ID:** sec_7
 - **⏱️ Minutagem:** 15:02 → 17:35
 - **⏲️ Duração:** 152s
 - **🎬 Link:** [Assistir este trecho](https://youtu.be/qFzqzIoiVE4?si=YoVxiJOkipNVbQWb&t=902)
-- **📦 Módulo:** Gestão de Fornecedores
-- **🏷️ Categorias:** Operacional, Negociação, Compras
-- **🔑 Palavras-chave:** fornecedor, orçamento, negociar, carrinho, pagamento, desconto, ordem de compra
+- **📦 Módulo:** Negociação de Fornecedores
+- **🏷️ Categorias:** Negociação, Compras, Fornecedores, Ordens de Compra
+- **🔑 Palavras-chave:** negociação, fornecedor, orçamento, ordem de compra, frete, pagamento, desconto
 
-> **🔍 RESUMO EXECUTIVO:** Esta seção detalha o processo de adição de fornecedores e a negociação de orçamentos, permitindo ao usuário selecionar opções de pagamento, revisar informações de entrega e criar uma ordem de compra.
+> **🔍 RESUMO EXECUTIVO:** Esta seção detalha o processo de negociação com fornecedores, incluindo a edição de orçamentos, seleção de produtos, opções de pagamento e criação de ordens de compra. O objetivo é garantir que o usuário compreenda como gerenciar cotações e formalizar compras de forma eficiente.
 
 **Contexto:**
-Estamos na etapa de negociação com fornecedores dentro do sistema de gestão de compras. O objetivo é selecionar um fornecedor, revisar as cotações e formalizar a compra através da criação de uma ordem de compra.
+Estamos na etapa de negociação com fornecedores dentro do módulo de compras do sistema. O objetivo é selecionar o fornecedor adequado, negociar condições e formalizar a ordem de compra.
 
 **Localização no Sistema:**
-- Caminho de navegação completo: Menu Principal > Gestão de Fornecedores > Negociação de Orçamentos
-- Tela/interface específica: Tela de Negociação de Fornecedores
+- Caminho de navegação completo: Menu Principal > Módulo Negociação de Fornecedores > Submenu Criar Ordem de Compra
+- Tela/interface específica: Tela de Negociação com Fornecedor
 
 **Funcionalidade Detalhada:**
-
-A funcionalidade permite ao usuário editar orçamentos de fornecedores, visualizar diferentes cotações e selecionar a melhor opção para prosseguir com a compra. O usuário pode adicionar produtos ao carrinho, negociar condições de entrega e pagamento, e finalmente criar uma ordem de compra.
+Esta funcionalidade permite ao usuário gerenciar o processo de negociação com fornecedores, incluindo a edição de orçamentos, seleção de produtos, definição de condições de entrega e pagamento, e criação da ordem de compra. É utilizada quando o usuário decide formalizar a compra após avaliar as cotações de diferentes fornecedores.
 
 ### 🔹 Passo a Passo Detalhado:
 
-1. **Selecionar Fornecedor**
-   - Localização: Tela de Negociação de Fornecedores
-   - Como fazer: Clique nos três pontinhos ao lado do fornecedor desejado para acessar opções adicionais.
+1. **Selecionar Fornecedor e Editar Orçamento**
+   - Localização: Tela de Negociação com Fornecedor, ícone de três pontinhos (⋮)
+   - Como fazer: Clique nos três pontinhos para acessar as opções de edição do orçamento. Aqui, você pode preencher as informações necessárias sobre o retorno do fornecedor.
    - Campos/Opções disponíveis:
-     * `Editar Orçamento`: Permite ao usuário preencher informações sobre o retorno do orçamento.
-   - Resultado esperado: O orçamento do fornecedor é exibido para edição.
+     * `Orçamento`: Campo para editar as informações do orçamento.
+   - Resultado esperado: O orçamento é atualizado com as informações fornecidas.
 
-2. **Adicionar ao Carrinho**
-   - Localização: Tela de Negociação de Fornecedores
-   - Como fazer: Após decidir com qual fornecedor você irá comprar, clique no botão **Adicionar**.
-   - Resultado esperado: O produto é adicionado ao carrinho de compras.
+2. **Adicionar Produtos ao Carrinho**
+   - Localização: Tela de Negociação com Fornecedor, botão "Adicionar"
+   - Como fazer: Após decidir o fornecedor, clique no botão "Adicionar" para incluir os produtos no carrinho.
+   - Resultado esperado: Os produtos selecionados são adicionados ao carrinho de compras.
 
-3. **Acessar Carrinho**
-   - Localização: Parte superior da tela, clique em **Carrinho**.
-   - Como fazer: Clique na opção **Negociar** dentro do carrinho.
-   - Resultado esperado: A tela de negociação é exibida, mostrando as referências dos produtos definidos.
+3. **Acessar Carrinho e Negociar**
+   - Localização: Parte superior da tela, opção "Carrinho"
+   - Como fazer: Clique na opção "Carrinho" e, em seguida, selecione "Negociar".
+   - Observações importantes: O sistema pode puxar negociações anteriores que estão em aberto.
+   - Resultado esperado: Você visualiza os produtos definidos e pode remover itens indesejados.
 
-4. **Remover Negociações**
-   - Localização: Tela de Negociação
-   - Como fazer: Se houver negociações em aberto, você pode removê-las clicando na opção correspondente.
-   - Resultado esperado: Apenas os produtos que você deseja levar adiante permanecem na negociação.
+4. **Definir Informações de Entrega e Frete**
+   - Localização: Tela de Negociação, seção de entrega
+   - Como fazer: Insira as informações relacionadas à entrega, incluindo o valor do frete.
+   - Resultado esperado: As informações de entrega e frete são salvas e consideradas na negociação.
 
-5. **Visualizar Dados do Fornecedor**
-   - Localização: Tela de Negociação
-   - Como fazer: Visualize os dados do fornecedor, incluindo o histórico de compras.
-   - Resultado esperado: Informações detalhadas sobre o fornecedor são exibidas.
+5. **Selecionar Opções de Pagamento**
+   - Localização: Tela de Negociação, seção de pagamento
+   - Como fazer: O fornecedor pode apresentar até três opções de pagamento. Se nenhuma delas for adequada, clique em "Adicionar nova forma de pagamento".
+   - Campos/Opções disponíveis:
+     * `Forma de Pagamento`: Seletor para escolher entre as opções apresentadas ou adicionar uma nova.
+   - Resultado esperado: A forma de pagamento é definida para a negociação.
 
-6. **Definir Informações de Entrega**
-   - Localização: Tela de Negociação
-   - Como fazer: Insira informações sobre entrega, incluindo o valor do frete.
-   - Resultado esperado: O valor do frete é avaliado e considerado na negociação.
+6. **Inserir Comentários e Resumo do Pedido**
+   - Localização: Tela de Negociação, campo de comentários e seção de resumo do pedido
+   - Como fazer: Insira um comentário relevante no campo designado e revise o resumo do pedido, que inclui subtotais, local de entrega e data.
+   - Campos/Opções disponíveis:
+     * `Comentário`: Campo para inserir observações.
+     * `Resumo do Pedido`: Exibe informações como subtotais e local de entrega.
+   - Resultado esperado: O resumo do pedido é atualizado com as informações inseridas.
 
-7. **Selecionar Opções de Pagamento**
-   - Localização: Tela de Negociação
-   - Como fazer: O fornecedor propõe três opções de pagamento. Se nenhuma delas atender, clique em **Adicionar nova forma de pagamento**.
-   - Resultado esperado: Uma nova opção de pagamento é adicionada à negociação.
+7. **Aplicar Descontos Negociados**
+   - Localização: Tela de Negociação, campos de desconto
+   - Como fazer: Preencha os campos para desconto negociado em relação ao produto e ao frete.
+   - Campos/Opções disponíveis:
+     * `Desconto Produto`: Campo para inserir o valor do desconto aplicado ao produto.
+     * `Desconto Frete`: Campo para inserir o valor do desconto aplicado ao frete.
+   - Resultado esperado: O valor total é reajustado automaticamente com base nos descontos inseridos.
 
-8. **Inserir Comentários**
-   - Localização: Tela de Negociação
-   - Como fazer: Utilize o campo para inserir um comentário sobre a negociação.
-   - Resultado esperado: O comentário é salvo e associado à negociação.
+8. **Criar Ordem de Compra**
+   - Localização: Tela de Negociação, botão "Criar Ordem de Compra"
+   - Como fazer: Após validar todas as informações, clique em "Criar Ordem de Compra".
+   - Resultado esperado: A ordem de compra é criada e registrada no sistema.
 
-9. **Revisar Resumo do Pedido**
-   - Localização: Lateral da tela, opção **Resumo do Pedido**.
-   - Como fazer: Analise os subtotais, local de entrega e data.
-   - Resultado esperado: Informações detalhadas do pedido são apresentadas.
-
-10. **Inserir Descontos**
-    - Localização: Resumo do Pedido
-    - Como fazer: Preencha os campos para desconto negociado em relação ao produto e desconto negociado em relação ao frete.
-    - Resultado esperado: O valor total é reajustado automaticamente.
-
-11. **Criar Ordem de Compra**
-    - Localização: Tela de Negociação
-    - Como fazer: Após validar todas as informações, clique em **Criar Ordem de Compra**.
-    - Resultado esperado: A ordem de compra é criada e um segundo e-mail pode ser enviado ao fornecedor.
-
-12. **Enviar E-mail ao Fornecedor**
-    - Localização: Tela de Negociação
-    - Como fazer: Se desejar, envie um e-mail ao fornecedor com a mensagem "Parabéns, você foi escolhido".
-    - Resultado esperado: O fornecedor recebe um e-mail com um relatório dos dados da compra e a opção de aprovar ou não.
+9. **Enviar E-mail ao Fornecedor**
+   - Localização: Tela de Negociação, opção para enviar e-mail
+   - Como fazer: Se desejar, envie um segundo e-mail ao fornecedor informando que ele foi escolhido. O e-mail pode incluir um relatório com os dados da compra.
+   - Observações importantes: Este e-mail não é obrigatório para lançar a nota e dar sequência no fluxo.
+   - Resultado esperado: O fornecedor recebe o e-mail e pode aprovar ou não a compra.
 
 **Campos e Parâmetros:**
 
-| Campo                          | Tipo       | Obrigatório | Descrição                                                                 | Exemplo                     |
-|--------------------------------|------------|-------------|---------------------------------------------------------------------------|-----------------------------|
-| `Editar Orçamento`            | Botão      | Não         | Permite editar o orçamento do fornecedor.                                | -                           |
-| `Adicionar`                    | Botão      | Sim         | Adiciona o produto selecionado ao carrinho.                             | -                           |
-| `Negociar`                    | Botão      | Sim         | Acessa a tela de negociação para o produto no carrinho.                | -                           |
-| `Forma de Pagamento`          | Dropdown   | Não         | Opções de pagamento propostas pelo fornecedor.                           | Cartão, Boleto, Transferência|
-| `Comentários`                  | Campo de texto | Não      | Campo para inserir comentários sobre a negociação.                       | "Negociar melhor preço"    |
-| `Desconto Produto`            | Campo      | Não         | Campo para inserir desconto negociado em relação ao produto.            | 10%                         |
-| `Desconto Frete`              | Campo      | Não         | Campo para inserir desconto negociado em relação ao frete.              | R$ 15,00                    |
+| Campo                     | Tipo       | Obrigatório | Descrição                                               | Exemplo                  |
+|---------------------------|------------|-------------|---------------------------------------------------------|--------------------------|
+| `Orçamento`               | Texto      | Sim         | Campo para editar informações do orçamento.             | "Orçamento 2024"         |
+| `Forma de Pagamento`      | Dropdown   | Sim         | Opções de pagamento apresentadas pelo fornecedor.       | "Cartão de Crédito"      |
+| `Comentário`              | Texto      | Não         | Campo para inserir observações sobre a negociação.      | "Favor confirmar entrega."|
+| `Desconto Produto`        | Numérico   | Não         | Valor do desconto aplicado ao produto.                  | "10"                     |
+| `Desconto Frete`          | Numérico   | Não         | Valor do desconto aplicado ao frete.                    | "5"                      |
 
 **Regras de Negócio:**
-- O usuário deve selecionar um fornecedor antes de adicionar produtos ao carrinho.
-- O e-mail ao fornecedor é opcional e não é necessário para lançar a nota.
-- Os descontos inseridos devem ser validados para não ultrapassarem o valor total.
+- O orçamento deve ser editado antes de prosseguir com a negociação.
+- O usuário pode adicionar ou remover produtos do carrinho antes de criar a ordem de compra.
+- O envio do e-mail ao fornecedor é opcional, mas recomendado para formalizar a escolha.
 
 **Observações Importantes:**
-- É importante revisar todas as informações antes de criar a ordem de compra.
-- Erros comuns incluem não verificar o valor do frete antes de finalizar a negociação.
-- O sistema permite a edição de orçamentos, mas é necessário ter cuidado para não perder informações importantes.
+- Verifique se todas as informações estão corretas antes de criar a ordem de compra.
+- Evite adicionar produtos desnecessários ao carrinho, pois isso pode complicar a negociação.
+- O sistema pode não permitir a criação da ordem de compra se campos obrigatórios não forem preenchidos.
 
 **Conceitos-Chave:**
-- **Ordem de Compra**: Documento que formaliza a compra de produtos ou serviços, contendo detalhes como preços, quantidades e condições de pagamento.
-- **Negociação**: Processo de discussão entre comprador e fornecedor para chegar a um acordo sobre preços e condições.
+- **Ordem de Compra**: Documento formal que confirma a compra de produtos ou serviços de um fornecedor.
+- **Negociação**: Processo de discutir e acordar termos de compra com um fornecedor.
+
+**🔧 SOLUÇÃO DE PROBLEMAS (Troubleshooting):**
+
+| Problema                          | Causa Provável                      | Solução                                           | Prevenção                                       |
+|-----------------------------------|-------------------------------------|--------------------------------------------------|-------------------------------------------------|
+| Não consigo editar o orçamento     | Permissões insuficientes            | Verifique as permissões do usuário na administração. | Configure permissões adequadas antes.          |
+| Botão "Criar Ordem de Compra" desabilitado | Campos obrigatórios não preenchidos | Preencha todos os campos obrigatórios.          | Revise os campos antes de tentar criar a ordem.|
+| E-mail não enviado ao fornecedor   | Falha na configuração de e-mail     | Verifique as configurações de e-mail do sistema. | Teste a funcionalidade de envio de e-mail.     |
+
+**💡 DICAS E BOAS PRÁTICAS:**
+- Sempre revise as cotações de diferentes fornecedores antes de tomar uma decisão.
+- Utilize o campo de comentários para registrar informações importantes sobre a negociação.
+- Mantenha um histórico de negociações para futuras referências.
+
+**📚 EXEMPLOS PRÁTICOS:**
+
+**Exemplo 1: Negociação com Fornecedor A**
+```
+Situação: O usuário decide negociar com o Fornecedor A após avaliar as cotações.
+Ação: 
+  • Campo Orçamento: "Orçamento 2024"
+  • Forma de Pagamento: "Transferência Bancária"
+Resultado: O orçamento é atualizado e a ordem de compra é criada com sucesso.
+```
+
+**Exemplo 2: Negociação com Fornecedor B**
+```
+Situação: O usuário precisa adicionar um novo desconto ao frete.
+Ação: 
+  • Campo Desconto Frete: "5"
+Resultado: O valor total da compra é reajustado automaticamente.
+```
+
+**🔗 DEPENDÊNCIAS E RELAÇÕES:**
+- **Pré-requisitos:** O usuário deve ter acesso ao módulo de negociação e permissões para editar orçamentos.
+- **Habilita:** A criação de ordens de compra e o envio de e-mails para fornecedores.
+- **Relacionado a:** Módulo de Compras, Histórico de Compras, Gestão de Fornecedores.
+
+**🔍 VARIAÇÕES DE BUSCA (Otimização RAG):**
+
+Esta seção responde perguntas formuladas de diferentes formas. Um usuário pode perguntar:
+- **Forma direta:** "Como negociar com um fornecedor?"
+- **Com problema:** "Não consigo criar uma ordem de compra, o que fazer?"
+- **Informal:** "Como faço pra fechar negócio com o fornecedor?"
+- **Por sintoma:** "Quando o botão de criar ordem não aparece, o que significa?"
+- **Com dúvida:** "Quais informações preciso para negociar com um fornecedor?"
+
+**Termos alternativos e sinônimos usados para esta funcionalidade:**
+- "Fechar compra", "formalizar compra", "negociar preços", "criar pedido", "enviar orçamento"
+- "Cotação", "fornecedor", "negociação de preços", "ordem de compra"
 
 **❓ PERGUNTAS QUE ESTA SEÇÃO RESPONDE:**
-- Como posso adicionar um fornecedor ao meu carrinho de compras?
-- Quais informações posso editar no orçamento do fornecedor?
-- Como envio um e-mail de confirmação ao fornecedor após a negociação?
+- Como editar o orçamento de um fornecedor?
+- O que fazer se o botão de criar ordem de compra estiver desabilitado?
+- Como adicionar um novo desconto na negociação?
+- O que fazer se o e-mail para o fornecedor não for enviado?
+- Quais informações preciso ter antes de criar uma ordem de compra?
 
 ---
 
@@ -751,7 +1100,7 @@ A funcionalidade permite ao usuário editar orçamentos de fornecedores, visuali
 
 ---
 
-## 8. Processo de Criação e Lançamento de Nota Fiscal
+## 8. Criação e Lançamento de Nota Fiscal Associada à Ordem de Compra
 
 **📋 METADADOS:**
 - **ID:** sec_8
@@ -759,116 +1108,165 @@ A funcionalidade permite ao usuário editar orçamentos de fornecedores, visuali
 - **⏲️ Duração:** 153s
 - **🎬 Link:** [Assistir este trecho](https://youtu.be/qFzqzIoiVE4?si=YoVxiJOkipNVbQWb&t=1053)
 - **📦 Módulo:** Compras
-- **🏷️ Categorias:** Operacional, Financeiro, Compras
-- **🔑 Palavras-chave:** ordem de compra, nota fiscal, lançamento, recibo, financeiro
+- **🏷️ Categorias:** Compras, Financeiro, Lançamento, Nota Fiscal
+- **🔑 Palavras-chave:** ordem de compra, nota fiscal, lançamento manual, recibo de produtos, fluxo de caixa
 
-> **🔍 RESUMO EXECUTIVO:** Esta seção detalha o processo de criação de uma ordem de compra e o subsequente lançamento de uma nota fiscal, abordando a necessidade de aprovação interna e os campos obrigatórios para o registro financeiro.
+> **🔍 RESUMO EXECUTIVO:** Esta seção detalha o processo de criação de uma nota fiscal associada a uma ordem de compra, incluindo a escolha entre nota eletrônica e manual, e o preenchimento dos campos necessários para formalizar o pagamento.
 
 **Contexto:**
-Estamos no módulo de Compras do sistema, onde o usuário finaliza a criação de uma ordem de compra e, em seguida, realiza o lançamento de uma nota fiscal para gerar o pagamento. O objetivo é garantir que todas as informações necessárias sejam registradas corretamente para o fluxo financeiro.
+Estamos no módulo de Compras, onde o usuário finaliza a ordem de compra e inicia o processo de lançamento da nota fiscal, que é essencial para a formalização do pagamento ao fornecedor.
 
 **Localização no Sistema:**
 - Caminho de navegação completo: Menu Principal > Módulo Compras > Submenu Ordem de Compra
-- Tela/interface específica: Tela de Criação de Ordem de Compra e Lançamento de Nota Fiscal
+- Tela/interface específica: Tela de Lançamento de Nota Fiscal
 
 **Funcionalidade Detalhada:**
-Esta funcionalidade permite que o usuário crie uma ordem de compra que deve ser aprovada internamente antes de prosseguir. Após a aprovação, o usuário pode lançar uma nota fiscal, que pode ser eletrônica ou manual, para formalizar o pagamento. O sistema já preenche automaticamente as informações da ordem de compra, facilitando o processo.
+Esta funcionalidade permite que o usuário crie uma nota fiscal associada a uma ordem de compra previamente aprovada. O sistema já preenche automaticamente as informações necessárias com base nos produtos, quantidades e valores definidos na ordem de compra. O usuário pode optar por lançar uma nota eletrônica ou uma nota manual, sendo que esta última é utilizada como um demonstrativo.
 
 ### 🔹 Passo a Passo Detalhado:
 
-1. **Criação da Ordem de Compra**
-   - Localização: Tela de Criação de Ordem de Compra
-   - Como fazer: Após definir se deseja enviar um e-mail de confirmação, clique no botão **Salvar**.
-   - Campos/Opções disponíveis:
-     * `E-mail de Confirmação`: Opção para enviar ou não um e-mail.
-   - Resultado esperado: A ordem de compra é criada automaticamente, com todas as informações necessárias preenchidas, como produtos, quantidades e valores.
-
-2. **Complementação da Ordem de Compra**
-   - Localização: Tela de Ordem de Compra
-   - Como fazer: Verifique se há necessidade de complementar informações sobre o estado da ordem, dependendo do retorno do fornecedor.
-   - Observações importantes: O fluxo de compras é interrompido até que a ordem de compra seja formalizada.
-   - Resultado esperado: A ordem de compra permanece no sistema, aguardando a formalização.
-
-3. **Lançamento da Nota Fiscal**
-   - Localização: Módulo Financeiro
-   - Como fazer: Acesse a opção de lançamento de nota e escolha entre **Nota Eletrônica** ou **Nota Manual**. Neste caso, selecione **Nota Manual**.
-   - Campos/Opções disponíveis:
-     * `Tipo de Recibo`: Selecione **Recibo de Produtos**.
-   - Resultado esperado: O sistema solicita a escolha da ordem de compra associada.
-
-4. **Seleção da Ordem de Compra**
+1. **Escolha do Tipo de Nota**
    - Localização: Tela de Lançamento de Nota Fiscal
-   - Como fazer: Escolha a ordem de compra desejada, que já trará algumas informações preenchidas automaticamente.
+   - Como fazer: Após acessar a tela, o usuário deve selecionar o tipo de nota que deseja lançar. Para isso, clique no botão **"Lançar Nota Manual"**.
    - Campos/Opções disponíveis:
-     * `Data de Emissão`: Campo obrigatório para inserir a data.
-   - Resultado esperado: Com a ordem de compra selecionada, o sistema avança para o próximo passo.
+     * `Tipo de Nota`: Opções incluem **Nota Eletrônica** e **Nota Manual**.
+   - Resultado esperado: O sistema prepara a tela para o preenchimento dos dados da nota fiscal.
 
-5. **Complementação de Informações da Nota**
-   - Localização: Tela de Lançamento de Nota Fiscal
-   - Como fazer: Opcionalmente, adicione informações como número de documento, anexe a nota e insira observações.
-   - Observações importantes: Esses campos são opcionais, mas podem ser úteis para registro.
-   - Resultado esperado: As informações complementares são salvas, se inseridas.
+2. **Definição do Tipo de Recibo**
+   - Localização: Campo de seleção na tela de lançamento
+   - Como fazer: No campo **"Tipo de Recibo"**, selecione **"Recibo de Produtos"**.
+   - Observações importantes: Este campo é obrigatório para prosseguir com o lançamento.
+   - Resultado esperado: O sistema registra o tipo de recibo e avança para o próximo campo.
 
-6. **Relação de Produtos e Valores**
-   - Localização: Tela de Lançamento de Nota Fiscal
-   - Como fazer: Verifique a relação de produtos, quantidades e valores que já foram preenchidos a partir da ordem de compra.
-   - Observações importantes: O financeiro validará se as informações correspondem à nota em mãos.
-   - Resultado esperado: A relação de produtos é confirmada e validada.
+3. **Associação à Ordem de Compra**
+   - Localização: Campo de seleção para ordem de compra
+   - Como fazer: No campo **"Ordem de Compra Associada"**, escolha a ordem de compra que você deseja vincular à nota fiscal.
+   - Resultado esperado: O sistema preenche automaticamente algumas informações relevantes da ordem de compra selecionada.
+
+4. **Preenchimento da Data de Emissão**
+   - Localização: Campo de data na tela de lançamento
+   - Como fazer: No campo **"Data de Emissão"**, insira a data atual ou a data em que a nota foi emitida.
+   - Resultado esperado: A data é registrada e permite que o usuário avance para o próximo passo.
+
+5. **Complementação de Informações Opcionais**
+   - Localização: Campos adicionais na tela de lançamento
+   - Como fazer: O usuário pode optar por preencher campos como **"Número de Documento"**, **"Anexar Nota"** e **"Observações"**. Esses campos são opcionais.
+   - Resultado esperado: Informações adicionais podem ser anexadas, mas não são obrigatórias para o lançamento da nota.
+
+6. **Relação de Produtos, Quantidades e Valores**
+   - Localização: Seção de produtos na tela de lançamento
+   - Como fazer: O sistema já traz a relação de produtos, quantidades e valores da ordem de compra. O usuário deve revisar essas informações.
+   - Resultado esperado: O financeiro valida se as informações estão corretas e condizem com a nota que possui.
 
 7. **Definição de Pagamento**
-   - Localização: Tela de Lançamento de Nota Fiscal
-   - Como fazer: Classifique o fluxo de caixa, identificando o custo relacionado. Preencha os campos de desconto e frete, que já podem estar preenchidos automaticamente.
-   - Campos/Opções disponíveis:
-     * `Classificação`: Campo para identificar o custo.
-     * `Desconto`: Campo para inserir valores de desconto.
-     * `Frete`: Campo para inserir valores de frete.
-   - Resultado esperado: O sistema gera o financeiro, permitindo definir parcelas, vencimento e formas de pagamento.
+   - Localização: Campo de pagamento na tela de lançamento
+   - Como fazer: O usuário deve definir uma **classificação para o fluxo de caixa**, identificando o custo que aparecerá no financeiro. Além disso, preencher os campos de **desconto** e **frete**.
+   - Resultado esperado: O sistema registra as informações de pagamento e permite que o usuário avance.
 
 8. **Geração do Financeiro**
-   - Localização: Tela de Lançamento de Nota Fiscal
-   - Como fazer: Clique em **Gerar Financeiro** e defina a quantidade de parcelas, vencimento e formas de pagamento.
+   - Localização: Botão de geração na tela de lançamento
+   - Como fazer: Clique no botão **"Gerar Financeiro"** para finalizar o lançamento da nota fiscal.
    - Campos/Opções disponíveis:
-     * `Quantidade de Parcelas`: Campo para definir quantas parcelas.
-     * `Vencimento`: Campo para definir a data de vencimento.
-     * `Forma de Pagamento`: Dropdown com opções de pagamento.
-   - Resultado esperado: O financeiro é gerado com as informações inseridas.
+     * `Quantidade de Parcelas`: Defina quantas parcelas o pagamento terá.
+     * `Vencimento`: Insira a data de vencimento da primeira parcela.
+     * `Formas de Pagamento`: Selecione entre opções como **Cartão de Crédito**, **Boleto**, etc.
+     * `Anexos`: Adicione documentos relevantes, se necessário.
+   - Resultado esperado: O sistema finaliza o lançamento e registra a nota fiscal no sistema.
 
 **Campos e Parâmetros:**
 
-| Campo                     | Tipo          | Obrigatório | Descrição                                                                 | Exemplo              |
-|---------------------------|---------------|-------------|---------------------------------------------------------------------------|----------------------|
-| E-mail de Confirmação     | Checkbox      | Não         | Opção para enviar um e-mail de confirmação da ordem de compra.           | Sim/Não              |
-| Tipo de Recibo            | Dropdown      | Sim         | Tipo de recibo a ser gerado.                                             | Recibo de Produtos    |
-| Ordem de Compra           | Dropdown      | Sim         | Seleção da ordem de compra associada à nota fiscal.                      | Ordem #123           |
-| Data de Emissão           | Data          | Sim         | Data em que a nota fiscal é emitida.                                    | 01/01/2023           |
-| Número de Documento        | Texto         | Não         | Número do documento da nota fiscal.                                      | 123456               |
-| Observação                | Texto          | Não         | Observações adicionais sobre a nota fiscal.                              | Nota referente ao pedido. |
-| Classificação             | Texto          | Sim         | Classificação do fluxo de caixa referente ao custo.                      | Compra de Materiais  |
-| Desconto                  | Número        | Não         | Valor de desconto aplicado à nota fiscal.                                | 10.00                |
-| Frete                     | Número        | Não         | Valor do frete associado à compra.                                       | 15.00                |
-| Quantidade de Parcelas    | Número        | Sim         | Número de parcelas para pagamento.                                        | 3                    |
-| Vencimento                | Data          | Sim         | Data de vencimento da primeira parcela.                                   | 01/02/2023           |
-| Forma de Pagamento        | Dropdown      | Sim         | Método de pagamento a ser utilizado.                                     | Cartão de Crédito    |
+| Campo                     | Tipo           | Obrigatório | Descrição                                                       | Exemplo               |
+|---------------------------|----------------|-------------|---------------------------------------------------------------|-----------------------|
+| Tipo de Nota              | Dropdown       | Sim         | Seleção entre Nota Eletrônica e Nota Manual                   | Nota Manual           |
+| Tipo de Recibo            | Dropdown       | Sim         | Tipo de recibo a ser gerado                                   | Recibo de Produtos     |
+| Ordem de Compra Associada  | Dropdown       | Sim         | Seleção da ordem de compra vinculada à nota                   | Ordem #12345         |
+| Data de Emissão           | Data           | Sim         | Data em que a nota fiscal foi emitida                         | 01/10/2023            |
+| Número de Documento       | Texto          | Não         | Número do documento da nota fiscal                             | 123456789             |
+| Anexar Nota               | Upload         | Não         | Opção para anexar um arquivo da nota fiscal                   | [Selecionar arquivo]   |
+| Observações               | Texto          | Não         | Campo para adicionar observações sobre a nota                  | Nota referente a pedido|
+| Quantidade de Parcelas    | Número         | Sim         | Número de parcelas para o pagamento                            | 3                     |
+| Vencimento                | Data           | Sim         | Data de vencimento da primeira parcela                         | 01/11/2023            |
+| Formas de Pagamento       | Dropdown       | Sim         | Seleção da forma de pagamento a ser utilizada                 | Boleto                |
+| Desconto                  | Número         | Não         | Valor de desconto a ser aplicado                               | 10,00                 |
+| Frete                     | Número         | Não         | Valor do frete a ser considerado no pagamento                  | 15,00                 |
 
 **Regras de Negócio:**
-- A ordem de compra deve ser aprovada internamente antes de ser formalizada.
-- O lançamento da nota fiscal pode ser feito como eletrônica ou manual, sendo que o exemplo dado é de uma nota manual.
-- O campo **Data de Emissão** é obrigatório para o lançamento da nota fiscal.
-- O financeiro deve validar se as informações da nota correspondem à ordem de compra.
+- A ordem de compra deve ser aprovada antes do lançamento da nota fiscal.
+- O tipo de recibo deve ser selecionado obrigatoriamente para prosseguir.
+- A data de emissão é um campo obrigatório e deve ser preenchido corretamente.
+- O financeiro deve validar se as informações da nota fiscal condizem com a ordem de compra.
 
 **Observações Importantes:**
-- É opcional anexar documentos ou adicionar observações durante o lançamento da nota fiscal.
-- Erros comuns incluem não preencher campos obrigatórios, o que pode impedir a conclusão do processo.
-- A formalização da ordem de compra é crucial para o fluxo de pagamentos.
+- É recomendável revisar todas as informações antes de finalizar o lançamento da nota fiscal.
+- Erros comuns incluem não selecionar a ordem de compra ou não preencher a data de emissão.
+- Certifique-se de que as permissões de usuário estão configuradas para permitir o lançamento de notas fiscais.
 
 **Conceitos-Chave:**
 - **Ordem de Compra**: Documento que formaliza a intenção de compra de produtos ou serviços.
-- **Nota Fiscal**: Documento que registra a transação comercial e é necessário para o processo de pagamento.
+- **Nota Fiscal**: Documento que registra a transação comercial e é necessário para a formalização do pagamento.
+
+**🔧 SOLUÇÃO DE PROBLEMAS (Troubleshooting):**
+
+| Problema                          | Causa Provável                       | Solução                                                   | Prevenção                                               |
+|-----------------------------------|--------------------------------------|-----------------------------------------------------------|--------------------------------------------------------|
+| Não é possível lançar a nota      | Ordem de compra não aprovada        | Verifique se a ordem de compra foi aprovada antes        | Sempre aguarde a aprovação da ordem de compra          |
+| Campo de data não aceita          | Formato de data incorreto           | Insira a data no formato correto (DD/MM/AAAA)            | Utilize um calendário para selecionar a data correta   |
+| Erro ao gerar financeiro           | Campos obrigatórios não preenchidos  | Preencha todos os campos obrigatórios antes de prosseguir | Revise os campos obrigatórios antes de finalizar        |
+
+**💡 DICAS E BOAS PRÁTICAS:**
+- Sempre anexe documentos relevantes para facilitar a validação do financeiro.
+- Utilize a opção de observações para esclarecer detalhes sobre a nota fiscal.
+- Revise as informações da ordem de compra antes de iniciar o lançamento da nota.
+
+**📚 EXEMPLOS PRÁTICOS:**
+
+**Exemplo 1: Lançamento de Nota Manual**
+```
+Situação: Lançamento de uma nota manual para a ordem de compra #12345.
+Ação: 
+  • Campo Tipo de Nota: "Nota Manual"
+  • Campo Tipo de Recibo: "Recibo de Produtos"
+  • Campo Ordem de Compra Associada: "Ordem #12345"
+  • Campo Data de Emissão: "01/10/2023"
+Resultado: A nota fiscal é lançada com sucesso e associada à ordem de compra.
+```
+
+**Exemplo 2: Lançamento de Nota com Desconto**
+```
+Situação: Lançamento de uma nota com desconto aplicado.
+Ação: 
+  • Campo Tipo de Nota: "Nota Manual"
+  • Campo Tipo de Recibo: "Recibo de Produtos"
+  • Campo Ordem de Compra Associada: "Ordem #12346"
+  • Campo Data de Emissão: "02/10/2023"
+  • Campo Desconto: "10,00"
+Resultado: A nota fiscal é lançada com desconto e associada à ordem de compra.
+```
+
+**🔗 DEPENDÊNCIAS E RELAÇÕES:**
+- **Pré-requisitos:** A ordem de compra deve estar aprovada e os produtos devem estar definidos.
+- **Habilita:** O lançamento da nota fiscal permite a formalização do pagamento ao fornecedor.
+- **Relacionado a:** Módulo Financeiro, onde o pagamento será gerado após o lançamento da nota.
+
+**🔍 VARIAÇÕES DE BUSCA (Otimização RAG):**
+
+Esta seção responde perguntas formuladas de diferentes formas. Um usuário pode perguntar:
+- **Forma direta:** "Como lançar uma nota fiscal associada à ordem de compra?"
+- **Com problema:** "Não consigo lançar a nota fiscal, o que fazer?"
+- **Informal:** "Como faço para colocar a nota da compra?"
+- **Por sintoma:** "Quando a ordem de compra está aprovada, como lanço a nota?"
+- **Com dúvida:** "Quais campos são obrigatórios para lançar a nota fiscal?"
+
+**Termos alternativos e sinônimos usados para esta funcionalidade:**
+- "Criar nota fiscal", "Registrar nota", "Emitir nota", "Lançar nota de compra"
+- "Nota eletrônica", "Nota manual", "Recibo de compra", "Recibo de produtos"
 
 **❓ PERGUNTAS QUE ESTA SEÇÃO RESPONDE:**
-- Como criar uma ordem de compra no sistema?
-- Quais são os campos obrigatórios para lançar uma nota fiscal?
-- O que fazer se a ordem de compra não for aprovada?
+- Como lançar uma nota fiscal associada à ordem de compra?
+- Quais campos são obrigatórios para o lançamento da nota fiscal?
+- O que fazer se a ordem de compra não estiver aprovada?
+- O que fazer se o campo de data não aceitar o formato?
+- O que preciso ter feito antes de lançar a nota fiscal?
 
 ---
 
@@ -885,85 +1283,135 @@ Esta funcionalidade permite que o usuário crie uma ordem de compra que deve ser
 - **⏱️ Minutagem:** 20:04 → 22:39
 - **⏲️ Duração:** 154s
 - **🎬 Link:** [Assistir este trecho](https://youtu.be/qFzqzIoiVE4?si=YoVxiJOkipNVbQWb&t=1204)
-- **📦 Módulo:** Suprimentos
-- **🏷️ Categorias:** Operacional, Compras, Estoque
+- **📦 Módulo:** Compras
+- **🏷️ Categorias:** Lançamento, Estoque, Compras, Financeiro
 - **🔑 Palavras-chave:** nota, ordem de compra, estoque, cronograma financeiro, contas a pagar
 
-> **🔍 RESUMO EXECUTIVO:** Esta seção detalha o processo de lançamento de uma nota fiscal e a entrada do produto no estoque, explicando como a quantidade lançada impacta a ordem de compra e o cronograma financeiro.
+> **🔍 RESUMO EXECUTIVO:** Esta seção detalha o processo de lançamento de uma nota fiscal e a entrada do produto no estoque, explicando como a quantidade lançada impacta a ordem de compra e o cronograma financeiro da obra.
 
 **Contexto:**
-Estamos no módulo de Suprimentos, onde o usuário realiza o lançamento de notas fiscais vinculadas a ordens de compra. O objetivo é garantir que a quantidade de produtos recebidos corresponda à quantidade solicitada, permitindo a atualização do estoque e a geração de informações financeiras.
+Estamos no módulo de Compras do sistema, onde o usuário realiza o lançamento de notas fiscais que estão diretamente ligadas a ordens de compra. O objetivo é garantir que a quantidade de produtos recebidos esteja correta e que o fluxo financeiro da obra seja atualizado adequadamente.
 
 **Localização no Sistema:**
-- Caminho de navegação: Menu Principal > Módulo Suprimentos > Submenu Entradas
-- Tela/interface específica: Tela de Lançamento de Nota e Conferência de Entradas
+- Caminho de navegação completo: Menu Principal > Módulo Compras > Lançamento de Notas
+- Tela/interface específica: Tela de Lançamento de Notas
 
 **Funcionalidade Detalhada:**
-A funcionalidade de lançamento de nota permite registrar a entrada de produtos no estoque. Este processo é crucial, pois, ao lançar a nota, a ordem de compra vinculada é automaticamente finalizada se a quantidade recebida corresponder à quantidade solicitada. Caso contrário, a ordem de compra permanece em andamento, permitindo o lançamento de notas adicionais. Além disso, a nota fiscal gera um cronograma financeiro que é utilizado para comparativos no setor de engenharia.
+O lançamento de uma nota fiscal é uma etapa crucial no fluxo de compras, pois determina se a ordem de compra vinculada será finalizada ou permanecerá em andamento. Além disso, este processo gera o cronograma financeiro da obra e atualiza as contas a pagar, refletindo no fluxo de caixa. A funcionalidade permite que o usuário compare a quantidade prevista na nota com a quantidade real recebida, garantindo a precisão no estoque.
 
 ### 🔹 Passo a Passo Detalhado:
 
 1. **Salvar Nota Fiscal**
-   - Localização: Tela de Lançamento de Nota
-   - Como fazer: Após preencher todos os campos necessários da nota, clique no botão **Salvar**.
-   - Resultado esperado: A nota fiscal é registrada no sistema e a ordem de compra vinculada é avaliada.
+   - Localização: Tela de Lançamento de Notas, botão **Salvar**
+   - Como fazer: Após preencher todos os campos necessários da nota, clique no botão **Salvar** para registrar a nota no sistema.
+   - Campos/Opções disponíveis:
+     * `Número da Nota`: Campo numérico que identifica a nota fiscal.
+     * `Data de Emissão`: Campo de data que registra quando a nota foi emitida.
+   - Resultado esperado: A nota fiscal é registrada e, se a quantidade lançada na nota corresponder à quantidade da ordem de compra, a ordem será finalizada automaticamente.
 
-2. **Verificação da Ordem de Compra**
-   - Localização: Tela de Ordens de Compra
-   - Como fazer: Acesse a lista de ordens de compra e verifique o status da ordem vinculada à nota lançada.
-   - Observações importantes: Se a quantidade recebida for igual à quantidade solicitada, a ordem de compra será finalizada automaticamente. Se não, o status permanecerá como "Andamento".
+2. **Verificar Status da Ordem de Compra**
+   - Localização: Tela de Ordens de Compra, seção de status
+   - Como fazer: Após o lançamento da nota, verifique o status da ordem de compra vinculada.
+   - Observações importantes: Se a quantidade não bater, o status da ordem de compra será "Andamento", permitindo o lançamento de outras notas.
    - Resultado esperado: O status da ordem de compra é atualizado conforme a quantidade recebida.
 
-3. **Geração do Cronograma Financeiro**
-   - Localização: Tela de Cronograma Financeiro
-   - Como fazer: Após o lançamento da nota, o sistema automaticamente gera o cronograma financeiro baseado nas informações da nota.
-   - Resultado esperado: O cronograma financeiro é atualizado e disponível para consulta.
+3. **Gerar Cronograma Financeiro**
+   - Localização: Módulo de Acompanhamento da Obra
+   - Como fazer: Após o lançamento da nota, acesse o módulo de acompanhamento para visualizar o cronograma financeiro.
+   - Resultado esperado: O cronograma financeiro é atualizado com as informações da nota lançada, refletindo no planejamento financeiro da obra.
 
-4. **Conferência de Entradas**
-   - Localização: Menu Suprimentos > Submenu Entradas
-   - Como fazer: Acesse a aba **Entradas** para visualizar as pendências de conferência.
+4. **Registrar Entrada de Produto no Estoque**
+   - Localização: Módulo de Suprimentos > Aba de Entradas
+   - Como fazer: Acesse a aba de entradas para registrar a entrada do produto no estoque.
+   - Observações importantes: É necessário fazer um comparativo entre a quantidade prevista e a quantidade real recebida.
+   - Resultado esperado: O produto é registrado no estoque, e uma nova pendência é criada na aba de entradas.
+
+5. **Conferir Quantidade Prevista e Real**
+   - Localização: Tela de Conferência de Entradas
+   - Como fazer: Compare a quantidade prevista na nota com a quantidade que realmente chegou.
    - Campos/Opções disponíveis:
-     * `Quantidade Prevista`: Quantidade que foi solicitada na nota.
-     * `Quantidade Real`: Quantidade que foi recebida.
-   - Resultado esperado: Visualização das quantidades previstas e reais para conferência.
-
-5. **Definir Setor**
-   - Localização: Tela de Conferência de Entradas
-   - Como fazer: Selecione o setor correspondente ao produto recebido no campo **Setor**.
-   - Observações importantes: O setor deve ser previamente cadastrado no sistema.
-   - Resultado esperado: O setor é definido e a conferência pode prosseguir.
-
-6. **Salvar Conferência**
-   - Localização: Tela de Conferência de Entradas
-   - Como fazer: Após verificar que a `Quantidade Prevista` e a `Quantidade Real` estão corretas, clique no botão **Salvar**.
-   - Resultado esperado: A conferência é registrada e o produto é adicionado ao estoque.
+     * `Quantidade Prevista`: Campo que mostra a quantidade que deveria ter chegado.
+     * `Quantidade Real`: Campo que mostra a quantidade que realmente chegou.
+   - Resultado esperado: Se as quantidades coincidirem, a entrada é confirmada e salva.
 
 **Campos e Parâmetros:**
 
-| Campo                | Tipo       | Obrigatório | Descrição                                           | Exemplo         |
-|----------------------|------------|-------------|----------------------------------------------------|------------------|
-| `Quantidade Prevista`| Numérico   | Sim         | Quantidade de produtos solicitados na nota         | 100              |
-| `Quantidade Real`    | Numérico   | Sim         | Quantidade de produtos efetivamente recebidos      | 100              |
-| `Setor`              | Dropdown   | Sim         | Setor responsável pela conferência da entrada      | Suprimentos      |
+| Campo                | Tipo     | Obrigatório | Descrição                                         | Exemplo            |
+|----------------------|----------|-------------|---------------------------------------------------|--------------------|
+| Número da Nota       | Numérico | Sim         | Identificação única da nota fiscal.               | 123456             |
+| Data de Emissão      | Data     | Sim         | Data em que a nota fiscal foi emitida.            | 01/10/2023         |
+| Quantidade Prevista  | Numérico | Sim         | Quantidade de produtos que deveriam ter chegado.  | 100                |
+| Quantidade Real      | Numérico | Sim         | Quantidade de produtos que realmente chegaram.    | 100                |
 
 **Regras de Negócio:**
-- A ordem de compra é finalizada automaticamente se a `Quantidade Real` for igual à `Quantidade Prevista`.
-- Se a `Quantidade Real` for menor que a `Quantidade Prevista`, a ordem de compra permanece com status "Andamento".
+- A ordem de compra é finalizada automaticamente se a quantidade da nota fiscal corresponde à quantidade da ordem.
+- Se a quantidade não coincidir, a ordem de compra permanece com status "Andamento".
 - O cronograma financeiro é gerado automaticamente após o lançamento da nota.
 
 **Observações Importantes:**
-- Certifique-se de que todos os dados da nota estão corretos antes de salvar.
-- Evite lançar notas com quantidades incorretas para evitar complicações no estoque.
-- O setor deve ser previamente cadastrado para que a conferência seja realizada corretamente.
+- É crucial verificar se a quantidade recebida corresponde à quantidade prevista para evitar problemas no estoque.
+- Erros comuns incluem o lançamento de notas com quantidades incorretas, o que pode causar desajustes no estoque e no financeiro.
+- As permissões de usuário devem estar configuradas corretamente para permitir o lançamento de notas.
 
 **Conceitos-Chave:**
-- **Nota Fiscal**: Documento que formaliza a compra de produtos, essencial para o controle de estoque e financeiro.
-- **Ordem de Compra**: Documento que autoriza a aquisição de produtos, vinculando a solicitação à entrega.
+- **Ordem de Compra**: Documento que formaliza a compra de produtos e equipamentos.
+- **Cronograma Financeiro**: Planejamento que detalha as despesas e receitas ao longo da obra.
+
+**🔧 SOLUÇÃO DE PROBLEMAS (Troubleshooting):**
+
+| Problema                          | Causa Provável                   | Solução                                         | Prevenção                                   |
+|-----------------------------------|----------------------------------|------------------------------------------------|---------------------------------------------|
+| Nota não salva                    | Campos obrigatórios não preenchidos | Verifique se todos os campos obrigatórios estão preenchidos. | Sempre revisar os campos antes de salvar.  |
+| Status da ordem não atualiza      | Quantidade da nota não bate com a ordem | Verifique a quantidade lançada e compare com a ordem de compra. | Conferir as quantidades antes do lançamento. |
+| Produto não aparece no estoque     | Entrada não registrada corretamente | Acesse a aba de entradas e registre a entrada do produto. | Confirmar a entrada após o recebimento.    |
+
+**💡 DICAS E BOAS PRÁTICAS:**
+- Sempre salve a nota após cada alteração para evitar perda de dados.
+- Utilize a função de comparação de quantidades para garantir a precisão no estoque.
+- Mantenha um registro das notas lançadas para facilitar auditorias futuras.
+
+**📚 EXEMPLOS PRÁTICOS:**
+
+**Exemplo 1: Lançamento de Nota Fiscal**
+```
+Situação: Recebimento de materiais para a obra.
+Ação: Lançar a nota fiscal no sistema.
+  • Número da Nota: "123456"
+  • Data de Emissão: "01/10/2023"
+Resultado: A nota é salva e a ordem de compra é finalizada, pois a quantidade lançada corresponde à quantidade da ordem.
+```
+
+**Exemplo 2: Conferência de Entrada de Produto**
+```
+Situação: Conferir a entrada de materiais recebidos.
+Ação: Comparar a quantidade prevista com a quantidade real.
+  • Quantidade Prevista: "100"
+  • Quantidade Real: "90"
+Resultado: A ordem de compra permanece em andamento, permitindo o lançamento de uma nova nota para os 10 itens faltantes.
+```
+
+**🔗 DEPENDÊNCIAS E RELAÇÕES:**
+- **Pré-requisitos:** A ordem de compra deve estar criada e vinculada à nota fiscal.
+- **Habilita:** O fluxo de caixa e o cronograma financeiro são atualizados após o lançamento da nota.
+- **Relacionado a:** Módulo de Acompanhamento da Obra e Módulo de Suprimentos.
+
+**🔍 VARIAÇÕES DE BUSCA (Otimização RAG):**
+
+Esta seção responde perguntas formuladas de diferentes formas. Um usuário pode perguntar:
+- **Forma direta:** "Como lançar uma nota fiscal?"
+- **Com problema:** "Não consigo finalizar a ordem de compra, o que fazer?"
+- **Informal:** "Como eu coloco a nota no sistema?"
+- **Por sintoma:** "Quando a quantidade não bate, como resolver?"
+
+**Termos alternativos e sinônimos usados para esta funcionalidade:**
+- "Registrar nota", "Adicionar nota", "Lançar nota fiscal", "Entrada de produto", "Atualizar estoque"
 
 **❓ PERGUNTAS QUE ESTA SEÇÃO RESPONDE:**
-- Como lançar uma nota fiscal no sistema?
-- O que acontece com a ordem de compra após o lançamento da nota?
-- Como verificar se a quantidade recebida corresponde à quantidade solicitada?
+- Como faço para lançar uma nota fiscal no sistema?
+- O que acontece se a quantidade da nota não bater com a ordem de compra?
+- Como verificar o status da ordem de compra após o lançamento da nota?
+- O que fazer se a entrada do produto não aparecer no estoque?
+- Quais campos são obrigatórios ao lançar uma nota fiscal?
 
 ---
 
@@ -981,102 +1429,159 @@ A funcionalidade de lançamento de nota permite registrar a entrada de produtos 
 - **⏲️ Duração:** 155s
 - **🎬 Link:** [Assistir este trecho](https://youtu.be/qFzqzIoiVE4?si=YoVxiJOkipNVbQWb&t=1356)
 - **📦 Módulo:** Gestão de Obras
-- **🏷️ Categorias:** Operacional, Cadastro, Administração
-- **🔑 Palavras-chave:** ordem de serviço, prestador, centro de custo, serviços, pagamento
+- **🏷️ Categorias:** Operacional, Cadastro, Finanças
+- **🔑 Palavras-chave:** Ordem de serviço, prestador, centro de custo, pagamento, serviços cadastrados
 
-> **🔍 RESUMO EXECUTIVO:** Esta seção detalha o processo de criação de uma ordem de serviço no sistema, incluindo a seleção de prestadores, definição de centros de custo e formas de pagamento, permitindo uma gestão eficiente das atividades relacionadas a obras.
+> **🔍 RESUMO EXECUTIVO:** Esta seção detalha o processo de criação de uma ordem de serviço no sistema, incluindo a seleção de prestadores, definição de centros de custo e opções de pagamento, resolvendo a necessidade de formalização de serviços prestados.
 
 **Contexto:**
-Estamos na interface de criação de uma ordem de serviço dentro do módulo de Gestão de Obras. O objetivo desta seção é guiar o usuário através do processo de formalização de uma ordem de serviço e o lançamento da nota no financeiro.
+Estamos na interface de gestão de obras, onde o usuário precisa formalizar a contratação de um prestador de serviços, criando uma ordem de serviço que será posteriormente utilizada para lançamento financeiro.
 
 **Localização no Sistema:**
 - Caminho de navegação completo: Menu Principal > Gestão de Obras > Ordem de Serviço
 - Tela/interface específica: Tela de Criação de Ordem de Serviço
 
 **Funcionalidade Detalhada:**
-A funcionalidade de criação de ordem de serviço permite ao usuário formalizar a contratação de prestadores de serviços para obras específicas. O sistema possibilita a seleção de serviços já cadastrados, a definição de centros de custo e a configuração de formas de pagamento. Essa funcionalidade é essencial para garantir que os serviços sejam registrados corretamente e que os pagamentos sejam processados de acordo com as condições acordadas.
+A funcionalidade de criação de ordem de serviço permite ao usuário formalizar a contratação de um prestador para a execução de serviços relacionados a uma obra específica. O usuário pode selecionar prestadores, definir centros de custo, e especificar detalhes financeiros, como forma de pagamento e valores.
 
 ### 🔹 Passo a Passo Detalhado:
 
 1. **Criar Ordem de Serviço**
-   - Localização: Tela de Criação de Ordem de Serviço
+   - Localização: Botão **"Mais Ordem de Serviço"** na tela de gestão de obras.
    - Como fazer: Clique no botão **"Mais Ordem de Serviço"** para iniciar o processo de criação.
    - Campos/Opções disponíveis:
-     * `Prestador`: Selecionar o prestador de serviços que irá realizar a atividade.
-     * `Centro de Custo`: Selecionar o centro de custo relacionado à obra.
-   - Resultado esperado: Uma nova ordem de serviço é iniciada, permitindo a configuração dos detalhes necessários.
+     * `Prestador`: Seleção do prestador de serviços.
+     * `Centro de Custo`: Seleção do centro de custo relacionado à obra.
+   - Resultado esperado: Uma nova tela de criação de ordem de serviço é exibida.
 
 2. **Definir Prestador e Centro de Custo**
-   - Localização: Seção de seleção de prestador e centro de custo na tela de criação.
-   - Como fazer: Escolha o prestador desejado (ex: **Edivaldo**) e o centro de custo (ex: **Vila Real**) nos respectivos campos.
-   - Observações importantes: O prestador deve estar previamente cadastrado no sistema. O centro de custo deve estar relacionado à obra em questão.
-   - Resultado esperado: O prestador e o centro de custo são definidos, permitindo prosseguir para a próxima etapa.
+   - Localização: Campos na nova tela de criação de ordem de serviço.
+   - Como fazer: 
+     - No campo **"Prestador"**, selecione o prestador desejado (ex: **Edivaldo**).
+     - No campo **"Centro de Custo"**, escolha o centro de custo (ex: **Vila Real**).
+   - Observações importantes: A seleção do prestador deve ser feita a partir da lista de prestadores já cadastrados. Se o prestador não estiver na lista, é possível adicioná-lo.
+   - Resultado esperado: O prestador e o centro de custo são definidos corretamente.
 
 3. **Selecionar Serviço**
-   - Localização: Lateral da tela, onde há uma listagem dos serviços cadastrados.
-   - Como fazer: Escolha o serviço desejado (ex: **Assentamento**) da lista. Se o serviço não estiver disponível, utilize a opção para adicionar um novo serviço.
+   - Localização: Lateral da tela, onde está a listagem de serviços cadastrados.
+   - Como fazer: Escolha o serviço desejado (ex: **Assentamento**) na lista de serviços.
    - Resultado esperado: O serviço selecionado é adicionado à ordem de serviço.
 
 4. **Especificar Acompanhamento de Obra**
-   - Localização: Campo de acompanhamento de obra na tela.
-   - Como fazer: Se necessário, especifique o acompanhamento de obra, que cria um relacionamento com a estrutura de engenharia. Caso não seja necessário, este campo não aparecerá.
-   - Resultado esperado: A ordem de serviço é configurada com ou sem acompanhamento, dependendo da necessidade.
+   - Localização: Campo de acompanhamento de obra na tela de criação de ordem de serviço.
+   - Como fazer: Se necessário, especifique o acompanhamento de obra, que cria um relacionamento com a estrutura de engenharia.
+   - Observações importantes: Este campo só aparecerá se houver acompanhamento de obra.
+   - Resultado esperado: O acompanhamento de obra é definido, se aplicável.
 
 5. **Definir Quantidade e Etapas**
-   - Localização: Campo para definir a quantidade de serviços na etapa correspondente.
-   - Como fazer: Insira a quantidade de serviços a serem realizados na etapa relacionada.
+   - Localização: Campo para definição de quantidade dentro da etapa.
+   - Como fazer: Insira a quantidade de serviços a serem realizados na etapa correspondente.
    - Resultado esperado: A quantidade é registrada na ordem de serviço.
 
 6. **Salvar Informações**
    - Localização: Botão **"Salvar"** na parte inferior da tela.
-   - Como fazer: Após preencher todos os campos necessários, clique em **"Salvar"** para registrar as informações.
+   - Como fazer: Após preencher todos os campos necessários, clique em **"Salvar"**.
    - Resultado esperado: As informações da ordem de serviço são salvas no sistema.
 
-7. **Preencher Campos Complementares**
-   - Localização: Campos de descrição, data inicial e final abaixo da quantidade.
-   - Como fazer: Preencha a descrição do serviço e as datas inicial e final conforme necessário.
-   - Resultado esperado: Informações complementares são adicionadas à ordem de serviço.
-
-8. **Definir Forma de Pagamento**
-   - Localização: Seção de formas de pagamento na tela.
-   - Como fazer: Escolha a forma de pagamento desejada. As opções disponíveis incluem:
-     * **À vista**: Valor pago inicialmente, com a possibilidade de adicionar um desconto.
-     * **Parcelado**: Defina as condições de parcelamento, como número de parcelas (ex: 10 vezes) ou quantidades de dias para boletos.
+7. **Definir Forma de Pagamento**
+   - Localização: Tela de definição de forma de pagamento após salvar.
+   - Como fazer: Escolha a forma de pagamento entre as opções disponíveis:
+     * **À vista**: Insira o valor e, se aplicável, um desconto.
+     * **Parcelado**: Defina o número de parcelas (ex: 10 vezes) e condições de pagamento.
    - Observações importantes: As opções de pagamento são semelhantes às vistas nas ordens de compra.
-   - Resultado esperado: A forma de pagamento é configurada para a ordem de serviço.
+   - Resultado esperado: A forma de pagamento é definida corretamente.
 
 **Campos e Parâmetros:**
 
-| Campo                | Tipo        | Obrigatório | Descrição                                               | Exemplo              |
-|----------------------|-------------|-------------|--------------------------------------------------------|----------------------|
-| Prestador            | Dropdown    | Sim         | Seleciona o prestador de serviços para a ordem.       | Edivaldo             |
-| Centro de Custo      | Dropdown    | Sim         | Seleciona o centro de custo relacionado à obra.       | Vila Real            |
-| Serviço              | Dropdown    | Sim         | Seleciona o serviço a ser realizado.                   | Assentamento         |
-| Quantidade           | Numérico    | Sim         | Define a quantidade de serviços a serem realizados.    | 10                   |
-| Descrição            | Texto       | Não         | Campo para adicionar uma descrição do serviço.         | Assentamento de piso  |
-| Data Inicial         | Data        | Não         | Define a data de início do serviço.                    | 01/01/2024           |
-| Data Final           | Data        | Não         | Define a data de término do serviço.                   | 10/01/2024           |
-| Forma de Pagamento    | Dropdown    | Sim         | Seleciona a forma de pagamento (à vista ou parcelado). | À vista              |
+| Campo                | Tipo         | Obrigatório | Descrição                                           | Exemplo                  |
+|----------------------|--------------|-------------|----------------------------------------------------|--------------------------|
+| Prestador            | Dropdown     | Sim         | Seleção do prestador de serviços                    | Edivaldo                 |
+| Centro de Custo      | Dropdown     | Sim         | Seleção do centro de custo relacionado à obra      | Vila Real                |
+| Serviço              | Dropdown     | Sim         | Seleção do serviço a ser prestado                  | Assentamento             |
+| Quantidade           | Numérico     | Sim         | Quantidade de serviços a serem realizados           | 10                       |
+| Forma de Pagamento    | Dropdown     | Sim         | Seleção da forma de pagamento                        | À vista, Parcelado       |
+| Descrição            | Texto livre  | Não         | Descrição adicional sobre a ordem de serviço        | Execução de assentamento  |
+| Data Inicial         | Data         | Não         | Data de início do serviço                           | 01/11/2023               |
+| Data Final           | Data         | Não         | Data de término do serviço                          | 30/11/2023               |
 
 **Regras de Negócio:**
 - O prestador deve estar cadastrado no sistema para ser selecionado.
-- O centro de custo deve estar vinculado à obra em questão.
-- O serviço deve ser previamente cadastrado para ser selecionado.
-- A forma de pagamento deve ser definida antes de finalizar a ordem de serviço.
+- O centro de custo deve estar vinculado a uma obra existente.
+- A forma de pagamento deve ser definida antes do lançamento financeiro.
+- O valor da ordem de serviço pode ser alterado após a seleção inicial.
 
 **Observações Importantes:**
-- Certifique-se de que todos os campos obrigatórios estejam preenchidos antes de salvar a ordem de serviço.
+- Verifique se todos os campos obrigatórios estão preenchidos antes de salvar.
 - Evite selecionar serviços que não estão relacionados ao prestador escolhido.
-- Verifique as condições de pagamento para evitar erros na configuração.
+- Caso o botão **"Salvar"** esteja desabilitado, revise os campos obrigatórios.
 
 **Conceitos-Chave:**
-- **Ordem de Serviço**: Documento que formaliza a contratação de serviços para uma obra específica.
-- **Centro de Custo**: Categoria que permite o controle financeiro e orçamentário das despesas relacionadas a uma obra.
+- **Ordem de Serviço**: Documento que formaliza a contratação de serviços.
+- **Centro de Custo**: Categoria que agrupa despesas relacionadas a uma obra específica.
+
+**🔧 SOLUÇÃO DE PROBLEMAS (Troubleshooting):**
+
+| Problema                          | Causa Provável                     | Solução                                      | Prevenção                                  |
+|-----------------------------------|------------------------------------|----------------------------------------------|--------------------------------------------|
+| Botão **"Salvar"** desabilitado   | Campos obrigatórios não preenchidos | Preencha todos os campos obrigatórios       | Revise os campos antes de tentar salvar    |
+| Prestador não encontrado           | Prestador não cadastrado           | Adicione o prestador ao sistema             | Verifique a lista de prestadores cadastrados|
+| Valor não atualizado               | Alterações não salvas              | Salve as alterações antes de prosseguir     | Sempre salve após alterações                |
+
+**💡 DICAS E BOAS PRÁTICAS:**
+- Utilize a descrição para detalhar o serviço prestado.
+- Sempre verifique as datas para evitar conflitos de agendamento.
+- Mantenha a lista de prestadores atualizada para facilitar a seleção.
+
+**📚 EXEMPLOS PRÁTICOS:**
+
+**Exemplo 1: Criação de Ordem de Serviço para Assentamento**
+```
+Situação: Contratação de Edivaldo para assentamento na obra Vila Real.
+Ação: 
+  • Campo Prestador: "Edivaldo"
+  • Campo Centro de Custo: "Vila Real"
+  • Campo Serviço: "Assentamento"
+  • Campo Quantidade: "10"
+Resultado: Ordem de serviço criada e salva com sucesso.
+```
+
+**Exemplo 2: Criação de Ordem de Serviço com Pagamento Parcelado**
+```
+Situação: Contratação de prestador para serviços de pintura.
+Ação: 
+  • Campo Prestador: "Maria"
+  • Campo Centro de Custo: "Centro Comercial"
+  • Campo Serviço: "Pintura"
+  • Campo Quantidade: "5"
+  • Forma de Pagamento: "Parcelado em 5 vezes"
+Resultado: Ordem de serviço criada com forma de pagamento definida.
+```
+
+**🔗 DEPENDÊNCIAS E RELAÇÕES:**
+- **Pré-requisitos:** O prestador e o centro de custo devem estar cadastrados no sistema.
+- **Habilita:** O lançamento financeiro da ordem de serviço após a criação.
+- **Relacionado a:** Módulo de Finanças para o lançamento de notas fiscais.
+
+**🔍 VARIAÇÕES DE BUSCA (Otimização RAG):**
+
+Esta seção responde perguntas formuladas de diferentes formas. Um usuário pode perguntar:
+- **Forma direta:** "Como criar uma ordem de serviço?"
+- **Com problema:** "Não consigo criar uma ordem de serviço, o que fazer?"
+- **Informal:** "Como faço para contratar um prestador?"
+- **Por sintoma:** "O que fazer se o botão de salvar não está funcionando?"
+- **Com dúvida:** "Quais campos preciso preencher para criar uma ordem de serviço?"
+
+**Termos alternativos e sinônimos usados para esta funcionalidade:**
+- "Criar ordem de serviço", "Adicionar ordem de serviço", "Cadastrar ordem de serviço", "Formalizar serviço"
+- "Prestador", "Fornecedor", "Contratado"
+- "Centro de custo", "Categoria de despesa", "Grupo de custo"
 
 **❓ PERGUNTAS QUE ESTA SEÇÃO RESPONDE:**
-- Como criar uma ordem de serviço no sistema?
-- Quais informações são necessárias para formalizar uma ordem de serviço?
-- Como definir a forma de pagamento para uma ordem de serviço?
+- Como criar uma ordem de serviço?
+- Quais informações são necessárias para a criação de uma ordem de serviço?
+- O que fazer se o prestador não estiver na lista?
+- O que fazer se o botão de salvar não estiver habilitado?
+- O que preciso ter cadastrado antes de criar uma ordem de serviço?
 
 ---
 
@@ -1086,89 +1591,146 @@ A funcionalidade de criação de ordem de serviço permite ao usuário formaliza
 
 ---
 
-## 11. Cadastro e Gestão de Parceiros
+## 11. Cadastro de Parceiros e Formas de Pagamento Antecipado
 
 **📋 METADADOS:**
 - **ID:** sec_11
 - **⏱️ Minutagem:** 25:07 → 27:39
 - **⏲️ Duração:** 152s
 - **🎬 Link:** [Assistir este trecho](https://youtu.be/qFzqzIoiVE4?si=YoVxiJOkipNVbQWb&t=1507)
-- **📦 Módulo:** Cadastro de Parceiros
-- **🏷️ Categorias:** Cadastro, Operacional, Administração
-- **🔑 Palavras-chave:** cadastro, fornecedor, prestador de serviço, CNPJ, CPF, e-mail, endereço
+- **📦 Módulo:** Financeiro
+- **🏷️ Categorias:** Cadastro, Financeiro, Operacional
+- **🔑 Palavras-chave:** cadastro de parceiros, formas de pagamento, pagamento antecipado, contas a pagar, fornecedores
 
-> **🔍 RESUMO EXECUTIVO:** Esta seção ensina como cadastrar e gerenciar parceiros no sistema, incluindo fornecedores e prestadores de serviço, detalhando os campos obrigatórios e opções disponíveis para garantir um cadastro completo e funcional.
+> **🔍 RESUMO EXECUTIVO:** Esta seção detalha o processo de cadastro de parceiros e a configuração de formas de pagamento antecipado no sistema, abordando como gerar contas a pagar antes do lançamento da nota e evitando duplicações financeiras.
 
 **Contexto:**
-Estamos na aba de parceiros do sistema, onde o objetivo é cadastrar novos fornecedores, prestadores de serviço, imobiliárias e transportadoras. O sistema permite tanto o cadastro manual quanto a importação de dados via planilha.
+Estamos na aba de cadastro de parceiros dentro do módulo financeiro do sistema, onde é possível registrar fornecedores, prestadores de serviço, imobiliárias e transportadoras, além de configurar as formas de pagamento, incluindo o pagamento antecipado.
 
 **Localização no Sistema:**
-- Caminho de navegação completo: Menu Principal > Módulo Cadastro de Parceiros
-- Tela/interface específica: Aba de Parceiros
+- Caminho de navegação completo: Menu Principal > Módulo Financeiro > Aba de Parceiros
+- Tela/interface específica: Tela de Cadastro de Parceiros
 
 **Funcionalidade Detalhada:**
-A funcionalidade de cadastro de parceiros permite que o usuário registre informações essenciais sobre fornecedores e prestadores de serviço. O sistema requer o preenchimento de campos obrigatórios, como CNPJ ou CPF, nome fantasia e razão social, para que o cadastro seja efetivado. Além disso, é possível editar informações de parceiros já cadastrados e importar dados de planilhas.
+
+O sistema permite o cadastro de parceiros, que podem ser fornecedores, prestadores de serviço, imobiliárias ou transportadoras. O cadastro pode ser feito manualmente ou através da importação de uma planilha. Além disso, a funcionalidade de pagamento antecipado gera uma conta a pagar antes mesmo do lançamento da nota, evitando duplicações financeiras.
 
 ### 🔹 Passo a Passo Detalhado:
 
 1. **Iniciar Cadastro de Novo Parceiro**
-   - Localização: Tela da aba de parceiros, botão **"Mais Novo Parceiro"**.
-   - Como fazer: Clique no botão **"Mais Novo Parceiro"** para abrir o formulário de cadastro.
+   - Localização: Tela de Cadastro de Parceiros
+   - Como fazer: Clique no botão **"Mais Novo Parceiro"**.
    - Campos/Opções disponíveis:
-     * `CNPJ ou CPF`: Campo obrigatório onde deve ser inserido o CNPJ (para pessoas jurídicas) ou CPF (para pessoas físicas).
-     * `Nome Fantasia`: Campo obrigatório para o nome pelo qual o parceiro é conhecido.
-     * `Razão Social`: Campo obrigatório que representa o nome legal do parceiro.
-   - Resultado esperado: O parceiro é cadastrado no sistema, desde que os campos obrigatórios sejam preenchidos corretamente.
+     * `CNPJ ou CPF`: Campo obrigatório para identificação do parceiro, dependendo se é pessoa jurídica ou física.
+     * `Nome Fantasia`: Campo obrigatório que identifica o parceiro de forma comercial.
+     * `Razão Social`: Campo obrigatório que identifica legalmente o parceiro.
+   - Resultado esperado: O parceiro é cadastrado com os dados fornecidos.
 
-2. **Selecionar e Editar Parceiro Cadastrado**
-   - Localização: Lista de parceiros já cadastrados, botão **"Editar"** ao lado do parceiro selecionado.
-   - Como fazer: Clique no botão **"Editar"** ao lado do parceiro desejado para modificar suas informações.
-   - Observações importantes: É recomendável preencher o campo de **e-mail** do fornecedor, pois isso é necessário para processos automáticos e comunicação.
-   - Resultado esperado: As informações do parceiro são atualizadas no sistema.
+2. **Preencher Informações Adicionais**
+   - Localização: Após selecionar um parceiro já cadastrado, clique em **"Editar"**.
+   - Como fazer: Preencha os campos adicionais, como **e-mail**, que é importante para processos automáticos.
+   - Observações importantes: O e-mail do fornecedor é crucial para que o sistema possa direcionar comunicações e processos automáticos.
+   - Resultado esperado: As informações do parceiro são atualizadas com sucesso.
 
-3. **Preencher Informações Adicionais**
-   - Localização: Formulário de edição do parceiro, aba **"Informações Gerais"**.
-   - Como fazer: Após selecionar um parceiro, preencha os campos adicionais conforme necessário.
+3. **Configurar Forma de Pagamento Antecipado**
+   - Localização: Na seção de formas de pagamento, selecione a opção de pagamento antecipado.
+   - Como fazer: Preencha os campos de **desconto**, **vencimento** e **forma de pagamento**.
    - Campos/Opções disponíveis:
-     * `E-mail`: Campo onde deve ser inserido o e-mail do parceiro.
-     * `Endereço`: Campo para preenchimento do endereço do parceiro.
-   - Resultado esperado: As informações adicionais são salvas e o cadastro do parceiro fica mais completo.
+     * `Desconto`: Campo que permite inserir um valor ou percentual de desconto.
+     * `Vencimento`: Data em que o pagamento deve ser realizado.
+     * `Forma de Pagamento`: Opções como transferência bancária, cartão de crédito, etc.
+   - Resultado esperado: Uma conta a pagar é gerada antes do lançamento da nota, registrada como um crédito.
 
-4. **Preencher Endereço do Parceiro**
-   - Localização: Formulário de edição, seção **"Endereço"**.
-   - Como fazer: Insira um **CEP** válido no campo correspondente.
-   - Observações importantes: Ao inserir um CEP válido, o sistema automaticamente preencherá os demais campos de endereço, como cidade, estado e bairro.
-   - Resultado esperado: O endereço do parceiro é preenchido automaticamente, facilitando o cadastro.
+4. **Salvar Informações**
+   - Localização: Após preencher todos os campos necessários, clique no botão **"Salvar"**.
+   - Como fazer: Confirme as informações e clique novamente em **"Salvar"** para formalizar a ordem de serviço.
+   - Resultado esperado: A ordem de serviço é formalizada e as informações são salvas no sistema.
 
 **Campos e Parâmetros:**
 
-| Campo             | Tipo       | Obrigatório | Descrição                                             | Exemplo               |
-|-------------------|------------|-------------|------------------------------------------------------|-----------------------|
-| CNPJ ou CPF       | Texto      | Sim         | Número de identificação do parceiro                   | 12.345.678/0001-95    |
-| Nome Fantasia     | Texto      | Sim         | Nome pelo qual o parceiro é conhecido                 | "Fornecedor XYZ"      |
-| Razão Social      | Texto      | Sim         | Nome legal do parceiro                                | "Fornecedor XYZ Ltda." |
-| E-mail            | Texto      | Não         | Endereço de e-mail para comunicação                   | contato@xyz.com.br    |
-| Endereço          | Texto      | Não         | Endereço físico do parceiro                            | "Rua Exemplo, 123"    |
-| CEP               | Texto      | Não         | Código de Endereçamento Postal                        | "12345-678"           |
+| Campo                | Tipo        | Obrigatório | Descrição                                          | Exemplo                |
+|----------------------|-------------|-------------|---------------------------------------------------|------------------------|
+| CNPJ ou CPF          | Texto       | Sim         | Identificação do parceiro, dependendo do tipo.    | "12.345.678/0001-90"   |
+| Nome Fantasia        | Texto       | Sim         | Nome comercial do parceiro.                        | "Fornecedor XYZ"       |
+| Razão Social         | Texto       | Sim         | Nome legal do parceiro.                           | "XYZ Comércio Ltda."   |
+| E-mail               | Texto       | Não         | E-mail para comunicação e processos automáticos.  | "contato@xyz.com"      |
+| Desconto             | Numérico    | Não         | Valor ou percentual de desconto a ser aplicado.   | "10" (ou "10%")        |
+| Vencimento           | Data        | Sim         | Data de vencimento do pagamento.                   | "30/11/2023"           |
+| Forma de Pagamento    | Dropdown    | Sim         | Método de pagamento a ser utilizado.              | "Transferência"        |
 
 **Regras de Negócio:**
-- O cadastro de um parceiro só é efetivado se os campos **CNPJ ou CPF**, **Nome Fantasia** e **Razão Social** forem preenchidos.
-- O e-mail do fornecedor é importante para processos automáticos e comunicação.
-- O preenchimento do **CEP** deve ser válido para que o sistema complete automaticamente os demais campos de endereço.
+- O cadastro de parceiros requer o preenchimento dos campos **CNPJ ou CPF**, **Nome Fantasia** e **Razão Social**.
+- O e-mail do fornecedor é necessário para processos automáticos.
+- O pagamento antecipado gera uma conta a pagar antes do lançamento da nota, evitando duplicações.
 
 **Observações Importantes:**
-- É recomendável sempre verificar se o e-mail do parceiro está correto para evitar problemas de comunicação.
-- Erros comuns incluem a inserção de CNPJ ou CPF inválidos, o que impede o cadastro.
-- O sistema permite a importação de dados de planilhas, facilitando o cadastro em massa.
+- É recomendável preencher o e-mail do fornecedor para facilitar a comunicação.
+- Evite deixar campos obrigatórios em branco, pois isso pode impedir o cadastro.
+- Verifique se o CNPJ ou CPF está correto para evitar erros no cadastro.
 
 **Conceitos-Chave:**
-- **Cadastro de Parceiros**: Processo de registrar informações sobre fornecedores e prestadores de serviço no sistema.
-- **E-mail do Fornecedor**: Informação essencial para comunicação e processos automáticos.
+- **Pagamento Antecipado**: Forma de pagamento onde a conta a pagar é gerada antes do lançamento da nota, registrada como um crédito.
+- **Cadastro de Parceiros**: Processo de registrar fornecedores e prestadores de serviço no sistema.
+
+**🔧 SOLUÇÃO DE PROBLEMAS (Troubleshooting):**
+
+| Problema                          | Causa Provável                       | Solução                                          | Prevenção                                   |
+|-----------------------------------|--------------------------------------|-------------------------------------------------|---------------------------------------------|
+| Erro ao salvar parceiro            | Campos obrigatórios não preenchidos  | Verifique e preencha todos os campos obrigatórios. | Sempre revisar os campos antes de salvar.  |
+| Conta a pagar não gerada           | Forma de pagamento não configurada   | Certifique-se de que a forma de pagamento antecipado está selecionada. | Configurar corretamente as opções de pagamento. |
+| E-mail do fornecedor não enviado   | Campo de e-mail vazio                | Preencha o campo de e-mail antes de salvar.    | Sempre incluir o e-mail ao cadastrar fornecedores. |
+
+**💡 DICAS E BOAS PRÁTICAS:**
+- Sempre verifique a validade do CNPJ ou CPF antes de cadastrar.
+- Utilize a importação de planilhas para cadastrar múltiplos parceiros de uma vez.
+- Mantenha os dados dos parceiros atualizados para evitar problemas futuros.
+
+**📚 EXEMPLOS PRÁTICOS:**
+
+**Exemplo 1: Cadastro de Fornecedor**
+```
+Situação: Cadastrar um novo fornecedor.
+Ação: 
+  • Campo CNPJ: "12.345.678/0001-90"
+  • Campo Nome Fantasia: "Fornecedor XYZ"
+  • Campo Razão Social: "XYZ Comércio Ltda."
+Resultado: O fornecedor é cadastrado com sucesso e pode ser utilizado nas transações financeiras.
+```
+
+**Exemplo 2: Configuração de Pagamento Antecipado**
+```
+Situação: Configurar um pagamento antecipado para um serviço.
+Ação: 
+  • Campo Desconto: "10%"
+  • Campo Vencimento: "30/11/2023"
+  • Campo Forma de Pagamento: "Transferência"
+Resultado: Uma conta a pagar é gerada antes do lançamento da nota, registrada como um crédito.
+```
+
+**🔗 DEPENDÊNCIAS E RELAÇÕES:**
+- **Pré-requisitos:** O módulo financeiro deve estar habilitado e configurado.
+- **Habilita:** A geração de contas a pagar e a formalização de ordens de serviço.
+- **Relacionado a:** Módulo de Contas a Pagar, Módulo de Relatórios Financeiros.
+
+**🔍 VARIAÇÕES DE BUSCA (Otimização RAG):**
+
+Esta seção responde perguntas formuladas de diferentes formas. Um usuário pode perguntar:
+- **Forma direta:** "Como cadastrar um parceiro?"
+- **Com problema:** "Não consigo cadastrar um fornecedor, o que fazer?"
+- **Informal:** "Como coloco um fornecedor no sistema?"
+- **Por sintoma:** "Por que minha conta a pagar não aparece?"
+- **Com variação:** "Como faço para configurar um pagamento antecipado?"
+
+**Termos alternativos e sinônimos usados para esta funcionalidade:**
+- "Cadastrar fornecedor", "Adicionar parceiro", "Novo parceiro", "Registro de fornecedor"
+- "Pagamento antecipado", "Conta a pagar antecipada", "Pagamento prévio"
 
 **❓ PERGUNTAS QUE ESTA SEÇÃO RESPONDE:**
 - Como cadastrar um novo parceiro no sistema?
-- Quais campos são obrigatórios para o cadastro de um fornecedor?
-- Como editar as informações de um parceiro já cadastrado?
+- Quais campos são obrigatórios para o cadastro de fornecedores?
+- Como configurar uma forma de pagamento antecipado?
+- O que fazer se a conta a pagar não for gerada?
+- O que preciso ter antes de cadastrar um parceiro?
 
 ---
 
@@ -1178,103 +1740,172 @@ A funcionalidade de cadastro de parceiros permite que o usuário registre inform
 
 ---
 
-## 12. Cadastro de Parceiros
+## 12. Cadastro de Parceiros no Sistema
 
 **📋 METADADOS:**
 - **ID:** sec_12
 - **⏱️ Minutagem:** 27:37 → 30:10
 - **⏲️ Duração:** 152s
 - **🎬 Link:** [Assistir este trecho](https://youtu.be/qFzqzIoiVE4?si=YoVxiJOkipNVbQWb&t=1657)
-- **📦 Módulo:** Cadastro de Parceiros
-- **🏷️ Categorias:** Configuração, Cadastro, Operacional
-- **🔑 Palavras-chave:** parceiro, contato, fornecedor, categorias de produto, dados bancários, relacionamento
+- **📦 Módulo:** Cadastro de Fornecedores e Parceiros
+- **🏷️ Categorias:** Cadastro, Configuração, Relacionamento, Operacional
+- **🔑 Palavras-chave:** cadastro de parceiros, fornecedor, prestador de serviço, transportadora, imobiliária
 
-> **🔍 RESUMO EXECUTIVO:** Esta seção detalha o processo de cadastro de parceiros no sistema, incluindo a definição de contatos específicos, informações bancárias e categorias de produtos. O objetivo é garantir que os usuários possam registrar e gerenciar eficazmente as informações dos parceiros.
+> **🔍 RESUMO EXECUTIVO:** Esta seção detalha o processo de cadastro de parceiros no sistema, permitindo que usuários definam contatos, informações bancárias e categorias de produtos, facilitando a gestão de fornecedores e prestadores de serviços.
 
 **Contexto:**
-Estamos na interface de cadastro de parceiros do sistema, onde o usuário pode adicionar e gerenciar informações sobre fornecedores, prestadores de serviços, transportadoras e imobiliárias. Esta seção é crucial para organizar as relações comerciais e facilitar a comunicação e transações.
+Estamos na seção de cadastro de parceiros do sistema, onde é possível registrar informações detalhadas sobre fornecedores, prestadores de serviços, transportadoras e imobiliárias. O objetivo é garantir que todos os dados relevantes sejam coletados para facilitar a comunicação e a gestão de compras.
 
 **Localização no Sistema:**
-- Caminho de navegação completo: Menu Principal > Módulo Cadastro de Parceiros > Submenu Cadastro
+- Caminho de navegação completo: Menu Principal > Módulo Cadastro de Fornecedores e Parceiros > Submenu Cadastro de Parceiros
 - Tela/interface específica: Tela de Cadastro de Parceiros
 
 **Funcionalidade Detalhada:**
-A funcionalidade de cadastro de parceiros permite que os usuários registrem informações detalhadas sobre cada parceiro comercial. Isso inclui a definição de contatos específicos, como vendedores, informações bancárias para transações e a categorização dos produtos ou serviços oferecidos. O sistema possibilita que, ao cadastrar um fornecedor, o usuário especifique as categorias de produtos que ele fornece, o que é essencial para a realização de cotações.
+A funcionalidade de cadastro de parceiros permite que o usuário registre informações essenciais sobre cada parceiro comercial. Isso inclui a definição de contatos específicos, informações bancárias e categorias de produtos que o parceiro fornece. O sistema utiliza essas informações para otimizar processos de cotação e compras.
 
 ### 🔹 Passo a Passo Detalhado:
 
 1. **Cadastro de Contato**
    - Localização: Tela de Cadastro de Parceiros, seção "Contato"
-   - Como fazer: Clique na opção "Adicionar Contato" e insira o nome do vendedor, por exemplo, "João".
+   - Como fazer: Clique na opção "Adicionar Contato" e preencha os campos necessários.
    - Campos/Opções disponíveis:
-     * `Nome`: Campo de texto para inserir o nome do contato.
-     * `E-mail`: Campo de texto para inserir o e-mail do contato.
-   - Resultado esperado: O contato "João" é adicionado à lista de contatos do parceiro e será o responsável por receber e-mails de orçamento ou ordens de compra.
+     * `Nome do Contato`: Campo de texto (obrigatório) - Nome do vendedor ou responsável pelo contato.
+     * `Email`: Campo de texto (opcional) - Email do contato para envio de orçamentos.
+   - Resultado esperado: O contato é salvo e associado ao parceiro, permitindo comunicação direta.
 
 2. **Cadastro de Filiais**
    - Localização: Tela de Cadastro de Parceiros, seção "Filiais"
-   - Como fazer: Preencha os campos com as informações da filial, como CNPJ, telefone, endereço e e-mail.
+   - Como fazer: Clique em "Adicionar Filial" e preencha os campos solicitados.
    - Campos/Opções disponíveis:
-     * `CNPJ`: Campo de texto para inserir o CNPJ da filial.
-     * `Telefone`: Campo de texto para inserir o telefone da filial.
-     * `Endereço`: Campo de texto para inserir o endereço da filial.
-     * `E-mail`: Campo de texto para inserir o e-mail da filial.
-   - Resultado esperado: As informações da filial são salvas e associadas ao parceiro.
+     * `CNPJ`: Campo de texto (obrigatório) - Cadastro Nacional da Pessoa Jurídica da filial.
+     * `Telefone`: Campo de texto (opcional) - Número de telefone da filial.
+     * `Endereço`: Campo de texto (obrigatório) - Endereço completo da filial.
+     * `Email`: Campo de texto (opcional) - Email da filial.
+   - Resultado esperado: As informações da filial são registradas e podem ser visualizadas no cadastro do parceiro.
 
 3. **Cadastro de Dados Bancários**
    - Localização: Tela de Cadastro de Parceiros, seção "Dados Bancários"
-   - Como fazer: Clique em "Adicionar Dados Bancários" e preencha os campos com as informações necessárias.
+   - Como fazer: Clique em "Adicionar Dados Bancários" e preencha os campos necessários.
    - Campos/Opções disponíveis:
-     * `Banco`: Dropdown para selecionar o banco.
-     * `Agência`: Campo de texto para inserir o número da agência.
-     * `Conta`: Campo de texto para inserir o número da conta.
-     * `Chave Pix`: Campo de texto para inserir a chave Pix.
-   - Resultado esperado: As informações bancárias são registradas, permitindo que pagamentos via Pix ou depósito sejam processados corretamente.
+     * `Banco`: Campo de seleção (obrigatório) - Selecione o banco onde a conta está registrada.
+     * `Agência`: Campo de texto (obrigatório) - Número da agência bancária.
+     * `Conta`: Campo de texto (obrigatório) - Número da conta bancária.
+     * `Chave Pix`: Campo de texto (opcional) - Chave para transações via Pix.
+   - Resultado esperado: As informações bancárias são salvas e utilizadas para pagamentos futuros.
 
-4. **Definição de Relacionamento**
-   - Localização: Tela de Cadastro de Parceiros, seção "Relacionamento"
-   - Como fazer: Clique em "Selecionar" para definir o tipo de relacionamento do parceiro.
-   - Observações importantes: O tipo de relacionamento pode ser "Fornecedor", "Prestador de Serviço", "Transportadora" ou "Imobiliária". A escolha do tipo influencia as opções de categorias de produtos disponíveis.
-   - Resultado esperado: O tipo de relacionamento é definido, e se "Fornecedor" for selecionado, o sistema abrirá a seção de categorias de produtos.
+4. **Definição do Tipo de Parceiro**
+   - Localização: Tela de Cadastro de Parceiros, seção "Tipo de Parceiro"
+   - Como fazer: Clique em "Selecionar Tipo" e escolha entre as opções disponíveis.
+   - Observações importantes: O tipo de parceiro pode ser "Fornecedor", "Prestador de Serviço", "Transportadora" ou "Imobiliária". A escolha do tipo influencia as categorias de produtos disponíveis.
+   - Resultado esperado: O tipo de parceiro é definido, permitindo que o sistema ajuste as opções de categorias de produtos.
 
-5. **Cadastro de Categorias de Produto**
-   - Localização: Tela de Cadastro de Parceiros, seção "Categorias de Produto" (apenas se "Fornecedor" for selecionado)
-   - Como fazer: Selecione as categorias de produtos que o parceiro fornece, como "Hidráulica" e "Elétrica".
+5. **Cadastro de Categorias de Produtos**
+   - Localização: Tela de Cadastro de Parceiros, seção "Categorias de Produtos"
+   - Como fazer: Após selecionar "Fornecedor", clique em "Adicionar Categoria" e escolha as categorias relevantes.
    - Campos/Opções disponíveis:
-     * `Categorias`: Checkbox para selecionar as categorias relevantes.
-   - Resultado esperado: As categorias de produtos são associadas ao parceiro, permitindo que o sistema filtre fornecedores durante o processo de cotação.
+     * `Categoria`: Campo de seleção (obrigatório) - Selecione as categorias que o fornecedor atende, como "Hidráulica" ou "Elétrica".
+   - Resultado esperado: As categorias são registradas, permitindo que o sistema filtre fornecedores durante o processo de cotação.
 
 **Campos e Parâmetros:**
 
-| Campo               | Tipo      | Obrigatório | Descrição                                               | Exemplo                |
-|---------------------|-----------|-------------|---------------------------------------------------------|------------------------|
-| Nome                | Texto     | Sim         | Nome do contato do parceiro.                            | João                   |
-| E-mail              | Texto     | Não         | E-mail do contato do parceiro.                          | joao@exemplo.com       |
-| CNPJ                | Texto     | Sim         | CNPJ da filial do parceiro.                             | 12.345.678/0001-90     |
-| Telefone            | Texto     | Não         | Telefone da filial do parceiro.                         | (11) 91234-5678        |
-| Endereço            | Texto     | Não         | Endereço da filial do parceiro.                         | Rua Exemplo, 123       |
-| Chave Pix           | Texto     | Não         | Chave Pix para transações.                             | joao@exemplo.com       |
-| Tipo de Relacionamento | Dropdown | Sim         | Tipo de relacionamento do parceiro.                     | Fornecedor             |
-| Categorias          | Checkbox   | Não         | Categorias de produtos fornecidos pelo parceiro.       | Hidráulica, Elétrica   |
+| Campo                | Tipo           | Obrigatório | Descrição                                           | Exemplo                   |
+|----------------------|----------------|-------------|-----------------------------------------------------|---------------------------|
+| Nome do Contato      | Texto          | Sim         | Nome do responsável pelo contato.                   | João Silva                |
+| Email                | Texto          | Não         | Email para comunicação.                              | joao@exemplo.com          |
+| CNPJ                 | Texto          | Sim         | Cadastro Nacional da Pessoa Jurídica.               | 12.345.678/0001-90        |
+| Telefone             | Texto          | Não         | Número de telefone da filial.                        | (11) 91234-5678           |
+| Endereço             | Texto          | Sim         | Endereço completo da filial.                         | Rua Exemplo, 123          |
+| Banco                | Seleção        | Sim         | Banco onde a conta está registrada.                 | Banco do Brasil           |
+| Agência              | Texto          | Sim         | Número da agência bancária.                          | 1234                       |
+| Conta                | Texto          | Sim         | Número da conta bancária.                            | 56789-0                   |
+| Chave Pix            | Texto          | Não         | Chave para transações via Pix.                       | joao@exemplo.com          |
+| Tipo de Parceiro     | Seleção        | Sim         | Tipo de parceiro (Fornecedor, Prestador, etc.).     | Fornecedor                |
+| Categoria            | Seleção        | Sim         | Categoria de produtos fornecidos.                   | Hidráulica                |
 
 **Regras de Negócio:**
-- O campo `Nome` é obrigatório para o cadastro de contatos.
-- O tipo de relacionamento deve ser definido antes de associar categorias de produtos.
-- Se o tipo de relacionamento for "Fornecedor", as categorias de produtos devem ser selecionadas para que o sistema funcione corretamente durante as cotações.
+- O campo `Nome do Contato` é obrigatório para que o parceiro possa ser cadastrado.
+- O tipo de parceiro deve ser definido como "Fornecedor" para que as categorias de produtos sejam exibidas.
+- As informações bancárias são necessárias para processar pagamentos via Pix ou depósito.
 
 **Observações Importantes:**
-- É recomendável cadastrar sempre um contato responsável para facilitar a comunicação.
-- Verifique se o CNPJ está correto para evitar problemas com a documentação fiscal.
-- As informações bancárias devem ser inseridas com atenção, pois são essenciais para pagamentos.
+- Certifique-se de que todos os campos obrigatórios estejam preenchidos antes de salvar o cadastro.
+- Verifique se o CNPJ informado é válido para evitar erros no cadastro.
+- É recomendável manter os dados de contato atualizados para facilitar a comunicação.
 
 **Conceitos-Chave:**
-- **Fornecedor**: Entidade que fornece produtos ou serviços, essencial para o processo de cotação.
-- **Chave Pix**: Identificador único utilizado para realizar transações financeiras via Pix.
+- **Fornecedor**: Entidade que fornece produtos ou serviços para a empresa.
+- **Prestador de Serviço**: Entidade que oferece serviços, mas não produtos físicos.
+
+**🔧 SOLUÇÃO DE PROBLEMAS (Troubleshooting):**
+
+| Problema                          | Causa Provável                       | Solução                                           | Prevenção                                      |
+|-----------------------------------|--------------------------------------|--------------------------------------------------|------------------------------------------------|
+| Cadastro não salva                 | Campos obrigatórios não preenchidos  | Preencha todos os campos obrigatórios e tente novamente. | Verifique os campos antes de salvar.          |
+| CNPJ inválido                     | CNPJ digitado incorretamente         | Confirme o CNPJ e digite novamente.              | Utilize um validador de CNPJ.                 |
+| Dados bancários não aparecem      | Tipo de parceiro não definido como "Fornecedor" | Altere o tipo de parceiro e adicione as categorias. | Defina corretamente o tipo de parceiro.       |
+
+**💡 DICAS E BOAS PRÁTICAS:**
+- Sempre mantenha um registro atualizado dos contatos para facilitar a comunicação.
+- Utilize categorias específicas para otimizar o processo de cotação.
+- Revise os dados bancários periodicamente para evitar problemas em pagamentos.
+
+**📚 EXEMPLOS PRÁTICOS:**
+
+**Exemplo 1: Cadastro de um Fornecedor**
+```
+Situação: Cadastro do fornecedor "Lerói Merlin".
+Ação: 
+  • Nome do Contato: "João Silva"
+  • Email: "joao@leroi.com"
+  • CNPJ: "12.345.678/0001-90"
+  • Telefone: "(11) 91234-5678"
+  • Endereço: "Rua Exemplo, 123"
+  • Banco: "Banco do Brasil"
+  • Agência: "1234"
+  • Conta: "56789-0"
+  • Chave Pix: "joao@leroi.com"
+  • Tipo de Parceiro: "Fornecedor"
+  • Categoria: "Hidráulica"
+Resultado: O fornecedor é cadastrado com sucesso e aparece nas opções de cotação.
+```
+
+**Exemplo 2: Cadastro de um Prestador de Serviço**
+```
+Situação: Cadastro do prestador "Serviços de Limpeza".
+Ação: 
+  • Nome do Contato: "Maria Oliveira"
+  • Email: "maria@limpeza.com"
+  • CNPJ: "98.765.432/0001-01"
+  • Telefone: "(11) 99876-5432"
+  • Endereço: "Avenida Exemplo, 456"
+  • Tipo de Parceiro: "Prestador de Serviço"
+Resultado: O prestador é cadastrado e pode ser selecionado para serviços.
+```
+
+**🔗 DEPENDÊNCIAS E RELAÇÕES:**
+- **Pré-requisitos:** O usuário deve ter permissões adequadas para cadastrar parceiros.
+- **Habilita:** O cadastro de parceiros permite a realização de cotações e pedidos de compra.
+- **Relacionado a:** Funcionalidades de compras e relatórios de fornecedores.
+
+**🔍 VARIAÇÕES DE BUSCA (Otimização RAG):**
+
+Esta seção responde perguntas formuladas de diferentes formas. Um usuário pode perguntar:
+- **Forma direta:** "Como cadastrar um parceiro?"
+- **Com problema:** "Não consigo cadastrar um fornecedor, o que fazer?"
+- **Informal:** "Como eu coloco um fornecedor no sistema?"
+- **Por sintoma:** "O que fazer se o cadastro não está salvando?"
+- **Com variação:** "Como adicionar um prestador de serviço?"
+
+**Termos alternativos e sinônimos usados para esta funcionalidade:**
+- "Adicionar parceiro", "Cadastrar fornecedor", "Registrar prestador", "Inserir transportadora"
+- "Cadastro de fornecedor", "Registro de parceiro", "Cadastro de prestador de serviço"
 
 **❓ PERGUNTAS QUE ESTA SEÇÃO RESPONDE:**
-- Como posso cadastrar um novo parceiro no sistema?
+- Como cadastrar um parceiro no sistema?
 - Quais informações são necessárias para cadastrar um fornecedor?
-- Como definir o contato responsável para um parceiro cadastrado?
+- O que fazer se o CNPJ não for aceito?
+- Como corrigir um erro no cadastro de um parceiro?
+- O que preciso ter antes de cadastrar um prestador de serviço?
 
 ---
 
@@ -1292,76 +1923,128 @@ A funcionalidade de cadastro de parceiros permite que os usuários registrem inf
 - **⏲️ Duração:** 153s
 - **🎬 Link:** [Assistir este trecho](https://youtu.be/qFzqzIoiVE4?si=YoVxiJOkipNVbQWb&t=1808)
 - **📦 Módulo:** Serviços
-- **🏷️ Categorias:** Cadastro, Operacional, Relatório
-- **🔑 Palavras-chave:** cadastro de serviço, categoria, unidade de medida, clima, descrição, grupo de parceiros
+- **🏷️ Categorias:** Cadastro, Relatório, Operacional
+- **🔑 Palavras-chave:** cadastro de serviço, categoria, unidade de medida, ordem de serviço, grupo de parceiros
 
-> **🔍 RESUMO EXECUTIVO:** Esta seção detalha o processo de cadastro de serviços no sistema, incluindo a definição de categorias e unidades de medida, e como essas informações são utilizadas para relatórios e filtragens.
+> **🔍 RESUMO EXECUTIVO:** Esta seção detalha o processo de cadastro de serviços no sistema, incluindo a definição de categorias e unidades de medida, além de como esses serviços podem ser utilizados em relatórios e ordens de serviço.
 
 **Contexto:**
-Estamos na aba de serviços do sistema, onde o objetivo é cadastrar novos serviços que serão utilizados em ordens de serviço. O cadastro correto é essencial para a organização e filtragem de informações relacionadas a serviços prestados.
+Estamos na aba de serviços do sistema, onde o usuário pode cadastrar novos serviços que serão utilizados em ordens de serviço e relatórios financeiros. O objetivo é permitir que o usuário organize e categorize serviços de forma eficiente.
 
 **Localização no Sistema:**
-- Caminho de navegação: Menu Principal > Módulo Serviços > Aba de Cadastro de Serviços
+- Caminho de navegação completo: Menu Principal > Módulo Serviços > Aba Cadastro de Serviços
 - Tela/interface específica: Tela de Cadastro de Serviços
 
 **Funcionalidade Detalhada:**
-
-A funcionalidade de cadastro de serviços permite que o usuário registre novos serviços que serão utilizados em ordens de serviço. É necessário que o serviço esteja cadastrado antes de ser utilizado. O sistema permite o cadastro através da aba de serviços, bem como por meio de importação de planilhas ou pelo módulo de engenharia. O cadastro inclui a definição de nome, unidade de medida e categoria do serviço.
+A funcionalidade de cadastro de serviços permite que o usuário registre novos serviços que serão utilizados em ordens de serviço e relatórios. O cadastro inclui a definição do nome do serviço, unidade de medida, categoria e outras informações relevantes, como descrições e orientações.
 
 ### 🔹 Passo a Passo Detalhado:
 
 1. **Cadastrar Novo Serviço**
-   - Localização: Aba de Cadastro de Serviços, botão **Mais Serviço**.
-   - Como fazer: Clique no botão **Mais Serviço** para iniciar o cadastro de um novo serviço.
+   - Localização: Aba de Cadastro de Serviços, botão **+ Serviço**
+   - Como fazer: Clique no botão **+ Serviço** para iniciar o cadastro de um novo serviço.
    - Campos/Opções disponíveis:
-     * `Nome do Serviço`: Campo de texto onde você deve inserir o nome do serviço a ser cadastrado.
-     * `Unidade de Medida`: Campo de seleção onde você deve escolher a unidade de medida pela qual o serviço será controlado (ex: horas, metros, etc.).
-     * `Categoria`: Campo de seleção onde você deve escolher a categoria do serviço. As categorias são agrupamentos que facilitam a localização de serviços e produtos durante processos de compras e financeiros.
-   - Resultado esperado: O serviço será cadastrado e estará disponível para uso em outras áreas do sistema.
+     * `Nome do Serviço`: Campo de texto onde o usuário deve inserir o nome do serviço a ser cadastrado.
+     * `Unidade de Medida`: Dropdown onde o usuário seleciona a unidade de medida pela qual o serviço será controlado (ex: horas, metros quadrados).
+     * `Categoria`: Dropdown onde o usuário deve escolher uma categoria que agrupe serviços com o mesmo intuito (ex: pintura e revestimento).
+   - Resultado esperado: O serviço é cadastrado e fica disponível para uso em ordens de serviço e relatórios.
 
 2. **Definir Categoria do Serviço**
    - Localização: Durante o cadastro do serviço, no campo **Categoria**.
-   - Como fazer: Selecione a categoria apropriada para o serviço. Por exemplo, você pode vincular o serviço à categoria de **Pintura e Revestimento**.
-   - Observações importantes: A definição das categorias é crucial para a organização e filtragem de serviços. As categorias ajudam a agrupar serviços com o mesmo intuito.
-   - Resultado esperado: O serviço será vinculado à categoria selecionada, facilitando sua localização futura.
+   - Como fazer: Selecione a categoria apropriada para o serviço no dropdown. Se a categoria desejada não estiver disponível, o usuário pode criar uma nova categoria.
+   - Observações importantes: As categorias são utilizadas para facilitar a localização de serviços e produtos durante o processo de compras e financeiro.
+   - Resultado esperado: A categoria é vinculada ao serviço cadastrado, permitindo filtragens futuras.
 
 3. **Adicionar Descrição e Orientações**
-   - Localização: Campo de descrição no formulário de cadastro de serviço.
-   - Como fazer: Insira uma descrição ou orientações adicionais sobre o serviço, se necessário. Também é possível identificar se o clima pode atrapalhar a execução do serviço.
-   - Resultado esperado: A descrição e as orientações serão salvas junto com o serviço cadastrado, proporcionando informações adicionais para usuários futuros.
+   - Localização: Campo **Descrição** na tela de cadastro de serviços.
+   - Como fazer: Insira uma descrição detalhada do serviço e quaisquer orientações que possam ser relevantes para sua execução.
+   - Resultado esperado: A descrição e orientações são salvas junto com o serviço, proporcionando informações adicionais para usuários futuros.
 
-4. **Salvar o Cadastro do Serviço**
-   - Localização: Botão **Salvar** na parte inferior do formulário de cadastro.
-   - Como fazer: Após preencher todos os campos necessários, clique no botão **Salvar** para concluir o cadastro do serviço.
-   - Resultado esperado: O serviço será salvo no sistema e estará disponível para uso em ordens de serviço e relatórios.
+4. **Salvar o Serviço**
+   - Localização: Botão **Salvar** na parte inferior da tela de cadastro.
+   - Como fazer: Após preencher todos os campos necessários, clique no botão **Salvar** para finalizar o cadastro do serviço.
+   - Resultado esperado: O serviço é salvo no sistema e pode ser utilizado em outras áreas, como ordens de serviço e relatórios financeiros.
 
 **Campos e Parâmetros:**
 
-| Campo                | Tipo          | Obrigatório | Descrição                                                                 | Exemplo                  |
-|----------------------|---------------|-------------|---------------------------------------------------------------------------|--------------------------|
-| Nome do Serviço      | Texto         | Sim         | Nome que identifica o serviço cadastrado.                                | Pintura de Parede        |
-| Unidade de Medida    | Seleção       | Sim         | Unidade pela qual o serviço será controlado.                             | Horas, Metros            |
-| Categoria            | Seleção       | Sim         | Agrupamento do serviço para facilitar a localização.                     | Pintura e Revestimento   |
-| Descrição            | Texto         | Não         | Informações adicionais sobre o serviço, incluindo orientações.          | Serviço a ser realizado em clima seco. |
+| Campo               | Tipo        | Obrigatório | Descrição                                               | Exemplo                     |
+|---------------------|-------------|-------------|---------------------------------------------------------|-----------------------------|
+| Nome do Serviço     | Texto       | Sim         | Nome que identifica o serviço cadastrado.               | "Pintura de Parede"        |
+| Unidade de Medida   | Dropdown    | Sim         | Unidade pela qual o serviço será controlado.            | "Horas", "Metros Quadrados"|
+| Categoria           | Dropdown    | Sim         | Agrupamento do serviço para facilitar a localização.    | "Pintura e Revestimento"   |
+| Descrição           | Texto       | Não         | Informações adicionais sobre o serviço.                 | "Serviço de pintura interna."|
 
 **Regras de Negócio:**
-- O serviço deve estar cadastrado antes de ser utilizado em ordens de serviço.
-- As categorias devem ser definidas para facilitar a filtragem e localização de serviços.
-- O clima pode ser registrado como um fator que influencia a execução do serviço.
+- O cadastro de serviços deve incluir obrigatoriamente um nome, uma unidade de medida e uma categoria.
+- As categorias podem ser pré-definidas ou novas, dependendo da necessidade do usuário.
+- O serviço cadastrado deve ser utilizado em relatórios e ordens de serviço.
 
 **Observações Importantes:**
-- É recomendável revisar as categorias pré-definidas antes de criar novas.
-- Erros comuns incluem não selecionar a unidade de medida ou a categoria, o que pode resultar em dificuldades na localização do serviço posteriormente.
-- O cadastro de serviços pode ser realizado também através da importação de planilhas, facilitando a inclusão em massa.
+- É importante verificar se a categoria desejada já existe antes de criar uma nova.
+- Evite usar nomes genéricos para serviços, pois isso pode dificultar a localização futura.
 
 **Conceitos-Chave:**
-- **Unidade de Medida**: Refere-se à forma como o serviço será quantificado (ex: horas, metros).
-- **Categoria**: Agrupamento de serviços com o mesmo intuito, utilizado para facilitar a busca e relatórios.
+- **Unidade de Medida**: Refere-se à medida pela qual o serviço é controlado, como horas ou metros quadrados.
+- **Categoria**: Agrupamento de serviços com o mesmo intuito, facilitando a busca e organização.
+
+**🔧 SOLUÇÃO DE PROBLEMAS (Troubleshooting):**
+
+| Problema                             | Causa Provável                     | Solução                                         | Prevenção                                   |
+|--------------------------------------|------------------------------------|------------------------------------------------|---------------------------------------------|
+| Não consigo salvar o serviço         | Campos obrigatórios não preenchidos| Verifique se todos os campos obrigatórios estão preenchidos. | Sempre revisar os campos antes de salvar.  |
+| Categoria não aparece no dropdown    | Categoria não cadastrada           | Cadastre a nova categoria antes de tentar vincular. | Cadastrar categorias previamente.           |
+| Serviço não aparece em relatórios    | Serviço não foi salvo corretamente | Verifique se o serviço foi salvo e se a categoria está correta. | Confirmar o salvamento após cadastro.      |
+
+**💡 DICAS E BOAS PRÁTICAS:**
+- Sempre utilize nomes descritivos para serviços para facilitar a identificação.
+- Utilize as categorias de forma consistente para melhorar a organização dos serviços.
+- Revise as orientações e descrições para garantir que sejam claras e úteis.
+
+**📚 EXEMPLOS PRÁTICOS:**
+
+**Exemplo 1: Cadastro de Serviço de Pintura**
+```
+Situação: O usuário deseja cadastrar um serviço de pintura.
+Ação: 
+  • Campo Nome do Serviço: "Pintura de Parede"
+  • Campo Unidade de Medida: "Horas"
+  • Campo Categoria: "Pintura e Revestimento"
+Resultado: O serviço "Pintura de Parede" é cadastrado e pode ser utilizado em ordens de serviço.
+```
+
+**Exemplo 2: Cadastro de Serviço de Revestimento**
+```
+Situação: O usuário deseja cadastrar um serviço de revestimento.
+Ação: 
+  • Campo Nome do Serviço: "Revestimento de Piso"
+  • Campo Unidade de Medida: "Metros Quadrados"
+  • Campo Categoria: "Pintura e Revestimento"
+Resultado: O serviço "Revestimento de Piso" é cadastrado e pode ser utilizado em relatórios financeiros.
+```
+
+**🔗 DEPENDÊNCIAS E RELAÇÕES:**
+- **Pré-requisitos:** O usuário deve ter permissões adequadas para cadastrar serviços.
+- **Habilita:** O serviço cadastrado pode ser utilizado em ordens de serviço e relatórios financeiros.
+- **Relacionado a:** Funcionalidade de relatórios financeiros e gerenciamento de ordens de serviço.
+
+**🔍 VARIAÇÕES DE BUSCA (Otimização RAG):**
+
+Esta seção responde perguntas formuladas de diferentes formas. Um usuário pode perguntar:
+- **Forma direta:** "Como cadastrar um serviço?"
+- **Com problema:** "Não consigo cadastrar um serviço, o que fazer?"
+- **Informal:** "Como eu coloco um serviço no sistema?"
+- **Por sintoma:** "O que fazer se o serviço não aparece nos relatórios?"
+
+**Termos alternativos e sinônimos usados para esta funcionalidade:**
+- "Adicionar serviço", "Criar serviço", "Registrar serviço", "Cadastrar novo serviço"
+- "Grupo de serviços", "Categoria de serviços"
 
 **❓ PERGUNTAS QUE ESTA SEÇÃO RESPONDE:**
-- Como cadastrar um novo serviço no sistema?
-- Quais informações são necessárias para o cadastro de um serviço?
-- Como as categorias influenciam o cadastro e a busca de serviços?
+- Como faço para cadastrar um novo serviço?
+- Quais campos são obrigatórios no cadastro de serviços?
+- O que fazer se a categoria desejada não estiver disponível?
+- O que fazer se o serviço não aparecer nos relatórios?
+- O que preciso ter feito antes de cadastrar um serviço?
 
 ---
 
@@ -1371,81 +2054,222 @@ A funcionalidade de cadastro de serviços permite que o usuário registre novos 
 
 ---
 
-## 14. Cadastro e Vínculo de Lojas no Sistema Casas d'Água
+## 14. Cadastro e Vínculo de Lojas no Grupo de Parceiros
 
 **📋 METADADOS:**
 - **ID:** sec_14
 - **⏱️ Minutagem:** 32:39 → 34:28
 - **⏲️ Duração:** 109s
 - **🎬 Link:** [Assistir este trecho](https://youtu.be/qFzqzIoiVE4?si=YoVxiJOkipNVbQWb&t=1959)
-- **📦 Módulo:** Módulo de Compras
-- **🏷️ Categorias:** Cadastro, Configuração, Operacional
-- **🔑 Palavras-chave:** lojas, CNPJ, grupo de parceiros, crédito, ordem de compra
+- **📦 Módulo:** Compras
+- **🏷️ Categorias:** Configuração, Cadastro, Relatório
+- **🔑 Palavras-chave:** cadastro de loja, grupo de parceiros, CNPJ, ordem de compra, crédito financeiro
 
-> **🔍 RESUMO EXECUTIVO:** Esta seção ensina como cadastrar diferentes lojas que fazem parte da rede Casas d'Água e como vincular essas lojas em grupos de parceiros, permitindo a gestão eficiente de compras e créditos financeiros entre elas.
+> **🔍 RESUMO EXECUTIVO:** Esta seção detalha o processo de cadastro de lojas como parceiros em um sistema, abordando a criação de grupos de parceiros e a importância do vínculo entre lojas com CNPJs diferentes, especialmente em situações de compras e entregas.
 
 **Contexto:**
-Estamos no Módulo de Compras do sistema Casas d'Água, onde é necessário gerenciar múltiplas lojas que operam sob diferentes CNPJs, mas que pertencem ao mesmo grupo. O objetivo é garantir que as ordens de compra e os créditos financeiros sejam corretamente atribuídos e gerenciados entre as lojas.
+Estamos no módulo de Compras do sistema, onde o objetivo é cadastrar diferentes lojas que fazem parte da mesma rede, mas possuem CNPJs distintos. Este cadastro é crucial para garantir que as ordens de compra e os créditos financeiros sejam geridos corretamente.
 
 **Localização no Sistema:**
-- Caminho de navegação completo: Menu Principal > Módulo de Compras > Grupo de Parceiros
+- Caminho de navegação completo: Menu Principal > Módulo Compras > Grupo de Parceiros
 - Tela/interface específica: Tela de Cadastro de Grupo de Parceiros
 
 **Funcionalidade Detalhada:**
-A funcionalidade permite o cadastro de cada loja como um parceiro distinto no sistema, considerando que cada loja possui um CNPJ diferente. Isso é crucial para a correta formalização de ordens de compra e a gestão de créditos financeiros. Através do vínculo entre as lojas, é possível evitar divergências nas transações e garantir que os créditos sejam compartilhados entre as lojas do grupo.
+A funcionalidade permite que o usuário cadastre cada loja como um parceiro distinto, mesmo que todas façam parte da mesma rede. Isso é importante para a gestão de ordens de compra e créditos financeiros, pois cada loja pode ter um CNPJ diferente. O sistema permite que, ao cadastrar um grupo de parceiros, o usuário vincule essas lojas, facilitando a gestão de compras e a visualização de créditos.
 
 ### 🔹 Passo a Passo Detalhado:
 
-1. **Cadastro de Lojas como Parceiros**
-   - Localização: Menu Principal > Módulo de Compras > Cadastro de Lojas
-   - Como fazer: Acesse a tela de cadastro de lojas e insira os dados de cada loja individualmente.
+1. **Cadastrar Lojas como Parceiros**
+   - Localização: Menu Principal > Módulo Compras > Cadastro de Lojas
+   - Como fazer: Acesse a tela de cadastro de lojas e insira os dados de cada loja, incluindo nome e CNPJ.
    - Campos/Opções disponíveis:
-     * `Nome da Loja`: Campo de texto onde você insere o nome da loja (ex: "Loja Biguaçu").
-     * `CNPJ`: Campo de texto onde você insere o CNPJ da loja (ex: "12.345.678/0001-90").
-   - Resultado esperado: Cada loja é cadastrada como um parceiro distinto no sistema.
+     * `Nome da Loja`: Campo de texto, obrigatório, onde você insere o nome da loja.
+     * `CNPJ`: Campo numérico, obrigatório, onde você insere o CNPJ da loja.
+   - Resultado esperado: A loja é cadastrada como um parceiro no sistema, permitindo a criação de ordens de compra.
 
-2. **Criação de um Novo Grupo de Parceiros**
-   - Localização: Menu Principal > Módulo de Compras > Grupo de Parceiros
+2. **Criar um Novo Grupo de Parceiros**
+   - Localização: Menu Principal > Módulo Compras > Grupo de Parceiros
    - Como fazer: Clique no botão **"Mais Novo Grupo"** para iniciar o cadastro de um novo grupo.
-   - Campos/Opções disponíveis:
-     * `Nome do Grupo`: Campo de texto onde você define o nome do grupo (ex: "Grupo Casas d'Água").
-   - Resultado esperado: Um novo grupo de parceiros é criado no sistema.
+   - Observações importantes: Certifique-se de que todas as lojas que deseja vincular já estejam cadastradas como parceiros.
+   - Resultado esperado: Um novo grupo de parceiros é criado, permitindo a vinculação de lojas.
 
-3. **Vinculação de Lojas ao Grupo de Parceiros**
+3. **Definir Nome do Grupo**
    - Localização: Tela de Cadastro de Grupo de Parceiros
-   - Como fazer: Após criar o grupo, clique na **mãozinha** (ícone de seleção) ao lado de cada loja que deseja incluir no grupo e, em seguida, clique no botão **"Salvar"**.
-   - Observações importantes: Certifique-se de que todas as lojas que você deseja vincular estão selecionadas antes de salvar.
-   - Resultado esperado: As lojas selecionadas são vinculadas ao grupo de parceiros, permitindo a gestão conjunta de ordens de compra e créditos.
+   - Como fazer: No campo **"Nome do Grupo"**, insira um nome que identifique o grupo de lojas, como "Casas d'Água - Rede".
+   - Resultado esperado: O nome do grupo é salvo e associado às lojas que serão vinculadas.
+
+4. **Vincular Lojas ao Grupo**
+   - Localização: Tela de Cadastro de Grupo de Parceiros
+   - Como fazer: Clique na **mãozinha** (ícone de seleção) ao lado de cada loja que deseja adicionar ao grupo e, em seguida, clique em **"Salvar"**.
+   - Resultado esperado: As lojas selecionadas são vinculadas ao grupo de parceiros, permitindo uma gestão unificada.
 
 **Campos e Parâmetros:**
 
-| Campo               | Tipo        | Obrigatório | Descrição                                           | Exemplo                     |
-|---------------------|-------------|-------------|-----------------------------------------------------|-----------------------------|
-| Nome da Loja        | Texto       | Sim         | Nome da loja a ser cadastrada                       | Loja Biguaçu                |
-| CNPJ                | Texto       | Sim         | Cadastro Nacional da Pessoa Jurídica da loja       | 12.345.678/0001-90         |
-| Nome do Grupo       | Texto       | Sim         | Nome do grupo de parceiros a ser criado             | Grupo Casas d'Água         |
+| Campo               | Tipo       | Obrigatório | Descrição                                      | Exemplo              |
+|---------------------|------------|-------------|------------------------------------------------|----------------------|
+| Nome da Loja        | Texto      | Sim         | Nome da loja a ser cadastrada                  | "Loja Biguaçu"      |
+| CNPJ                | Numérico   | Sim         | CNPJ da loja a ser cadastrada                  | "12.345.678/0001-90" |
+| Nome do Grupo       | Texto      | Sim         | Nome do grupo de parceiros a ser criado        | "Grupo Casas d'Água" |
 
 **Regras de Negócio:**
-- Cada loja deve ser cadastrada com um CNPJ único.
-- As ordens de compra não podem ser formalizadas com uma loja e a nota lançada em outra, a menos que as lojas pertençam ao mesmo grupo de parceiros.
-- Os créditos financeiros criados para uma loja influenciam nas demais lojas do grupo.
+- Cada loja deve ser cadastrada com um CNPJ distinto.
+- Não é permitido criar uma ordem de compra com uma loja e lançar a nota de outra, a menos que as lojas façam parte do mesmo grupo de parceiros.
+- Os créditos financeiros gerados para uma loja influenciam as demais lojas do grupo.
 
 **Observações Importantes:**
-- É importante cadastrar cada loja como um parceiro diferente para evitar divergências nas transações.
-- Erros comuns incluem não selecionar todas as lojas desejadas ao criar um grupo de parceiros.
-- As lojas devem ser cadastradas antes de serem vinculadas a um grupo.
+- Ao cadastrar as lojas, verifique se os CNPJs estão corretos para evitar divergências.
+- Erros comuns incluem tentar vincular lojas que não estão cadastradas como parceiros.
+- É importante entender que o vínculo entre as lojas facilita a gestão de compras e créditos.
 
 **Conceitos-Chave:**
-- **CNPJ**: Cadastro Nacional da Pessoa Jurídica, número que identifica uma empresa no Brasil.
-- **Grupo de Parceiros**: Conjunto de lojas que podem compartilhar informações financeiras e operacionais dentro do sistema.
+- **Grupo de Parceiros**: Conjunto de lojas que podem ser geridas em conjunto, facilitando a gestão de compras e créditos.
+- **CNPJ**: Cadastro Nacional da Pessoa Jurídica, utilizado para identificar as lojas no sistema.
+
+**🔧 SOLUÇÃO DE PROBLEMAS (Troubleshooting):**
+
+| Problema                                    | Causa Provável                       | Solução                                   | Prevenção                               |
+|---------------------------------------------|-------------------------------------|-------------------------------------------|-----------------------------------------|
+| Não é possível salvar o grupo de parceiros  | Lojas não cadastradas como parceiros | Verifique se todas as lojas estão cadastradas | Cadastrar todas as lojas antes de criar o grupo |
+| Divergência na ordem de compra              | Lojas com CNPJs diferentes          | Certifique-se de que as lojas estão no mesmo grupo | Criar grupos de parceiros corretamente  |
+
+**💡 DICAS E BOAS PRÁTICAS:**
+- Sempre verifique os CNPJs antes de cadastrar as lojas.
+- Utilize nomes descritivos para os grupos de parceiros para facilitar a identificação.
+- Evite criar grupos com lojas que não têm relação entre si.
+
+**📚 EXEMPLOS PRÁTICOS:**
+
+**Exemplo 1: Cadastro de Lojas**
+```
+Situação: Você precisa cadastrar a loja "Loja Biguaçu".
+Ação: 
+  • Nome da Loja: "Loja Biguaçu"
+  • CNPJ: "12.345.678/0001-90"
+Resultado: A loja "Loja Biguaçu" é cadastrada com sucesso.
+```
+
+**Exemplo 2: Criação de Grupo de Parceiros**
+```
+Situação: Criar um grupo para as lojas "Loja Biguaçu" e "Loja São José".
+Ação: 
+  • Nome do Grupo: "Grupo Casas d'Água"
+  • Selecionar Lojas: "Loja Biguaçu" e "Loja São José"
+Resultado: O grupo "Grupo Casas d'Água" é criado e as lojas são vinculadas.
+```
+
+**🔗 DEPENDÊNCIAS E RELAÇÕES:**
+- **Pré-requisitos:** As lojas devem estar cadastradas como parceiros antes de criar um grupo.
+- **Habilita:** A gestão unificada de compras e créditos financeiros entre as lojas do grupo.
+- **Relacionado a:** Módulo de Vendas, onde as ordens de compra são geridas.
+
+**🔍 VARIAÇÕES DE BUSCA (Otimização RAG):**
+
+Esta seção responde perguntas formuladas de diferentes formas. Um usuário pode perguntar:
+- **Forma direta:** "Como cadastrar uma loja como parceiro?"
+- **Com problema:** "Não consigo vincular lojas, o que fazer?"
+- **Informal:** "Como faço para juntar as lojas?"
+- **Por sintoma:** "Quando tento criar um grupo, não aparece a loja."
+
+**Termos alternativos e sinônimos usados para esta funcionalidade:**
+- "Adicionar loja", "Criar grupo de lojas", "Vincular lojas", "Cadastro de parceiros"
+- "CNPJ", "Cadastro de loja", "Grupo de parceiros"
 
 **❓ PERGUNTAS QUE ESTA SEÇÃO RESPONDE:**
-- Como cadastrar uma nova loja no sistema?
-- O que fazer se uma ordem de compra precisa ser vinculada a uma loja diferente da que foi cadastrada?
-- Como criar e vincular um grupo de parceiros no sistema?
+- Como cadastrar uma loja como parceiro?
+- O que fazer se não consigo salvar o grupo de parceiros?
+- Como vincular lojas em um grupo?
+- O que fazer se houver divergência na ordem de compra?
+- O que preciso ter cadastrado antes de criar um grupo de parceiros?
 
 ---
 
 
 ---
 
+
+
+
+---
+
+
+## 🎬 DADOS DE TIMESTAMPS (Para Sistema RAG)
+
+
+[VIDEO_TIMESTAMPS_DATA]
+
+{
+  "Passo a passo - Módulo de Compras": [
+    {
+      "start": "00:00",
+      "end": "02:33",
+      "line": "Olá, o objetivo desse vídeo é realizarmos um treinamento completo do módulo de compras. Nosso primei"
+    },
+    {
+      "start": "02:30",
+      "end": "05:04",
+      "line": "Basta ir arrastando pro lado e definindo as especificações. Agora aqui na lateral temos a questão do"
+    },
+    {
+      "start": "05:01",
+      "end": "07:34",
+      "line": "podemos salvar a nossa solicitação. Clicando em salvar, temos a opção de salvar em rascunho, que é o"
+    },
+    {
+      "start": "07:31",
+      "end": "10:04",
+      "line": "transferência. Em contrapartida, se tiver mais produtos, pode realizar uma única aprovação sem preci"
+    },
+    {
+      "start": "10:02",
+      "end": "12:34",
+      "line": "recebem e preenchem essas cotações. Então, lembrando que é um fluxo que o seu parceiro vai fazer. Vo"
+    },
+    {
+      "start": "12:32",
+      "end": "15:04",
+      "line": "eles, destinatário é onde você é responsável por buscar o produto, tanto que ele bloqueia o campo de"
+    },
+    {
+      "start": "15:02",
+      "end": "17:35",
+      "line": "fornecedor por algum outro método, clicando nos três pontinhos, também é possível editar o orçamento"
+    },
+    {
+      "start": "17:33",
+      "end": "20:07",
+      "line": "obrigatório que a sua ordem de compra seja aprovada. vai depender de uma validação interna por parte"
+    },
+    {
+      "start": "20:04",
+      "end": "22:39",
+      "line": "Após essas definições, vamos salvar e a nota estará lançada. A nota é um dos lançamentos mais import"
+    },
+    {
+      "start": "22:36",
+      "end": "25:12",
+      "line": "basicamente você irá criar a ordem para ter a formalização e em seguida lançar a nota no financeiro."
+    },
+    {
+      "start": "25:07",
+      "end": "27:39",
+      "line": "dias, por exemplo, 15 e 30. E por fim, a forma de pagamento antecipado. Essa aqui é um pouco diferen"
+    },
+    {
+      "start": "27:37",
+      "end": "30:10",
+      "line": "informações. Em próximo, a opção de contato. Nesse momento, você pode definir que, por exemplo, dent"
+    },
+    {
+      "start": "30:08",
+      "end": "32:42",
+      "line": "que não há nenhum botão de adicionar diferente das outras a quais vimos anteriormente. Neste momento"
+    },
+    {
+      "start": "32:39",
+      "end": "34:28",
+      "line": "Biguaçu, de Florianópolis e de São José. Neste caso, todas fazem parte da rede casas d'Água, porém c"
+    }
+  ]
+}
+
+[/VIDEO_TIMESTAMPS_DATA]

@@ -1,5 +1,9 @@
 # 📚 Documentação: Passo a passo - Módulo Financeiro
 
+
+[video:https://youtu.be/DMvowd7eCAA?si=qrXiuODXTH9y2zNZ]
+
+
 **🎥 Vídeo Original:** https://youtu.be/DMvowd7eCAA?si=qrXiuODXTH9y2zNZ
 
 **📊 Total de Seções:** 18
@@ -17,114 +21,162 @@
 - **🎬 Link:** [Assistir este trecho](https://youtu.be/DMvowd7eCAA?si=qrXiuODXTH9y2zNZ&t=3)
 - **📦 Módulo:** Financeiro
 - **🏷️ Categorias:** Cadastro, Configuração, Operacional
-- **🔑 Palavras-chave:** conta bancária, saldo inicial, chave Pix, bloqueio, movimentações financeiras, permissões, extrato
+- **🔑 Palavras-chave:** conta bancária, saldo inicial, chave Pix, bloqueio, movimentações financeiras, extrato
 
-> **🔍 RESUMO EXECUTIVO:** Esta seção detalha o processo de cadastro de contas bancárias no módulo financeiro, incluindo campos obrigatórios, configurações de bloqueio e permissões de usuários, permitindo um gerenciamento eficaz das contas.
+> **🔍 RESUMO EXECUTIVO:** Esta seção detalha o processo de cadastro de contas bancárias no módulo financeiro, incluindo campos obrigatórios, configurações de bloqueio e permissões de usuários. O objetivo é garantir que os usuários possam registrar e gerenciar suas contas de forma eficaz.
 
 **Contexto:**
-Estamos no módulo financeiro do sistema, onde o objetivo é cadastrar e gerenciar contas bancárias. Este processo é fundamental para o controle financeiro e a validação de saldos.
+Estamos na interface do módulo financeiro, onde o usuário pode cadastrar novas contas bancárias, configurar suas características e gerenciar movimentações financeiras associadas.
 
 **Localização no Sistema:**
 - Caminho de navegação: Menu Principal > Módulo Financeiro > Cadastro de Contas Bancárias
 - Tela/interface específica: Tela de Cadastro de Contas Bancárias
 
 **Funcionalidade Detalhada:**
-
-O cadastro de contas bancárias permite que os usuários registrem informações essenciais sobre suas contas, como tipo de conta, saldo inicial e configurações de movimentação. É crucial para o acompanhamento do saldo atual e para a validação com o saldo físico.
+O cadastro de contas bancárias permite que os usuários registrem informações essenciais sobre suas contas, como tipo de conta, saldo inicial e chave Pix. Além disso, é possível configurar bloqueios para movimentações financeiras e definir permissões de acesso para usuários.
 
 ### 🔹 Passo a Passo Detalhado:
 
-1. **Selecionar o Tipo de Conta**
+1. **Selecionar Tipo de Conta**
    - Localização: Tela de Cadastro de Contas Bancárias
-   - Como fazer: Clique no campo de seleção para escolher o tipo de conta desejado.
+   - Como fazer: Clique no campo de seleção de tipo de conta e escolha a opção desejada.
    - Campos/Opções disponíveis:
-     * `Tipo de Conta`: Opções incluem "Corrente", "Poupança", "Conta Salário", entre outros.
+     * `Tipo de Conta`: Opções incluem "Corrente", "Poupança", "Investimento", etc.
    - Resultado esperado: O tipo de conta selecionado será exibido no campo.
 
 2. **Preencher Campos Obrigatórios**
    - Localização: Tela de Cadastro de Contas Bancárias
-   - Como fazer: Preencha todos os campos marcados com um asterisco (*), que indica que são obrigatórios.
+   - Como fazer: Preencha todos os campos marcados com um asterisco (*), que são obrigatórios.
    - Campos/Opções disponíveis:
-     * `Nome da Conta`: Campo de texto para nomear a conta.
-     * `Banco`: Campo de seleção para escolher o banco da conta.
-   - Resultado esperado: O sistema aceita o cadastro se todos os campos obrigatórios forem preenchidos corretamente.
+     * `Nome da Conta`: Campo de texto para identificar a conta.
+     * `Banco`: Seleção do banco onde a conta está registrada.
+   - Resultado esperado: Todos os campos obrigatórios preenchidos corretamente.
 
 3. **Inserir Saldo Inicial**
    - Localização: Tela de Cadastro de Contas Bancárias
-   - Como fazer: Insira o valor do saldo inicial no campo correspondente.
-   - Observações importantes: Embora não seja obrigatório, é recomendado preencher este campo para acompanhar o saldo atual.
-   - Resultado esperado: O saldo inicial é salvo e pode ser visualizado posteriormente.
+   - Como fazer: No campo "Saldo Inicial", insira o valor atual da conta.
+   - Observações importantes: Embora não seja obrigatório, é recomendado para acompanhamento.
+   - Resultado esperado: O saldo inicial será salvo junto com as informações da conta.
 
 4. **Adicionar Chave Pix**
    - Localização: Tela de Cadastro de Contas Bancárias
-   - Como fazer: Se a conta possui chave Pix, selecione o tipo da chave (ex: CPF, CNPJ, e-mail) e insira o valor correspondente.
+   - Como fazer: Se a conta possui chave Pix, selecione o tipo de chave (CPF, CNPJ, e-mail, telefone) e insira o valor correspondente.
    - Campos/Opções disponíveis:
      * `Tipo de Chave`: Opções incluem "CPF", "CNPJ", "E-mail", "Telefone".
-   - Resultado esperado: A chave Pix é registrada e associada à conta.
+   - Resultado esperado: A chave Pix será registrada e associada à conta.
 
-5. **Configurar Período de Bloqueio**
+5. **Configurar Bloqueio de Movimentações**
    - Localização: Tela de Cadastro de Contas Bancárias
-   - Como fazer: Defina um período para bloqueio de movimentações financeiras, especificando a data de início e a data de término.
-   - Observações importantes: O bloqueio impede movimentações financeiras para a conta durante o período definido e retroativamente.
+   - Como fazer: Defina um período de bloqueio e as datas retroativas.
+   - Observações importantes: O bloqueio impede movimentações financeiras a partir do mês definido.
    - Resultado esperado: O sistema não permitirá movimentações financeiras dentro do período bloqueado.
 
 6. **Selecionar Tipo de Cheques (se aplicável)**
    - Localização: Tela de Cadastro de Contas Bancárias
-   - Como fazer: Se a conta emite cheques, selecione a opção "Emit Check" e escolha o tipo de cheques.
+   - Como fazer: Se a conta emite cheques, selecione o tipo de cheques no campo correspondente.
    - Campos/Opções disponíveis:
-     * `Tipo de Cheque`: Opções incluem "Cheque Normal", "Cheque Especial".
-   - Resultado esperado: O tipo de cheque é registrado e associado à conta.
+     * `Tipo de Cheques`: Opções incluem "Cheques Padrão", "Cheques Especiais".
+   - Resultado esperado: O tipo de cheques será registrado.
 
 7. **Definir Permissões de Usuários**
    - Localização: Tela de Cadastro de Contas Bancárias
    - Como fazer: Configure as permissões para usuários que terão acesso à conta bancária.
-   - Observações importantes: É possível restringir ou permitir acesso total às informações da conta.
-   - Resultado esperado: As permissões são salvas e aplicadas aos usuários selecionados.
+   - Observações importantes: As permissões podem ser definidas para permitir ou restringir o acesso.
+   - Resultado esperado: As permissões serão salvas e aplicadas aos usuários selecionados.
 
 8. **Visualizar Extrato da Conta**
    - Localização: Tela de Cadastro de Contas Bancárias
-   - Como fazer: Após realizar movimentações financeiras, acesse o extrato da conta para visualizar entradas e saídas.
-   - Resultado esperado: O extrato exibe todas as movimentações realizadas, permitindo um acompanhamento detalhado.
-
-9. **Realizar Movimentações Financeiras**
-   - Localização: Tela de Cadastro de Contas Bancárias
-   - Como fazer: Realize movimentações de entrada ou saída diretamente na conta, sem a necessidade de acessar contas a pagar ou a receber.
-   - Observações importantes: Movimentações feitas diretamente na conta não geram registros em contas a pagar ou a receber, apenas aparecem no extrato e no fluxo de caixa.
-   - Resultado esperado: As movimentações são registradas no extrato da conta.
+   - Como fazer: Após cadastrar a conta, acesse a aba "Extrato" para visualizar movimentações.
+   - Resultado esperado: O extrato exibirá todas as movimentações de entrada e saída associadas à conta.
 
 **Campos e Parâmetros:**
 
-| Campo                | Tipo         | Obrigatório | Descrição                                           | Exemplo            |
-|----------------------|--------------|-------------|----------------------------------------------------|--------------------|
-| `Tipo de Conta`      | Dropdown     | Sim         | Seleciona o tipo de conta bancária.                | Corrente           |
-| `Nome da Conta`      | Texto        | Sim         | Nome que identifica a conta bancária.              | Conta Pessoal      |
-| `Banco`              | Dropdown     | Sim         | Seleciona o banco onde a conta está registrada.    | Banco do Brasil     |
-| `Saldo Inicial`      | Numérico     | Não         | Valor inicial da conta para controle de saldo.     | 1000.00            |
-| `Tipo de Chave`      | Dropdown     | Não         | Tipo de chave Pix associada à conta.               | CPF                |
-| `Data de Início`     | Data         | Não         | Data de início do bloqueio de movimentações.       | 01/08/2023         |
-| `Data de Término`    | Data         | Não         | Data de término do bloqueio de movimentações.      | 31/08/2023         |
-| `Tipo de Cheque`     | Dropdown     | Não         | Tipo de cheque que pode ser emitido pela conta.    | Cheque Normal      |
-| `Permissões de Usuário` | Checkbox   | Não         | Define se o usuário terá acesso à conta.           | [ ] Acesso Total   |
+| Campo               | Tipo         | Obrigatório | Descrição                                           | Exemplo                |
+|---------------------|--------------|-------------|----------------------------------------------------|------------------------|
+| Nome da Conta       | Texto        | Sim         | Nome que identifica a conta bancária.              | "Conta Corrente João"  |
+| Banco               | Seleção      | Sim         | Nome do banco onde a conta está registrada.       | "Banco do Brasil"      |
+| Saldo Inicial       | Numérico     | Não         | Valor inicial da conta, recomendado para controle. | "1500.00"              |
+| Tipo de Chave Pix   | Seleção      | Não         | Tipo de chave Pix associada à conta.               | "CPF"                  |
+| Chave Pix           | Texto        | Não         | Valor da chave Pix.                                 | "123.456.789-00"       |
+| Período de Bloqueio | Data         | Não         | Data a partir da qual a conta estará bloqueada.    | "01/08/2023"           |
+| Tipo de Cheques     | Seleção      | Não         | Tipo de cheques que a conta pode emitir.           | "Cheques Padrão"      |
+| Permissões          | Seleção      | Não         | Permissões de acesso para usuários.                 | "Acesso Total"         |
 
 **Regras de Negócio:**
-- Campos obrigatórios devem ser preenchidos para que o cadastro da conta seja aceito.
-- O saldo inicial, embora não obrigatório, é recomendado para controle financeiro.
-- O bloqueio de movimentações impede qualquer transação durante o período especificado e retroativamente.
-- Movimentações financeiras realizadas diretamente na conta não geram registros em contas a pagar ou a receber.
+- Campos obrigatórios devem ser preenchidos para que o cadastro seja concluído.
+- O saldo inicial, embora não obrigatório, é importante para o controle financeiro.
+- O bloqueio de movimentações impede qualquer operação financeira dentro do período definido.
+- As permissões de usuários devem ser configuradas para garantir a segurança das informações.
 
 **Observações Importantes:**
-- É importante validar se o saldo inicial cadastrado bate com o saldo físico da conta.
-- Evite deixar campos obrigatórios em branco, pois isso impede o cadastro.
-- Lembre-se de revisar as permissões de usuários para garantir a segurança das informações.
+- Sempre verifique se todos os campos obrigatórios estão preenchidos antes de salvar.
+- O saldo inicial deve ser o mesmo que o saldo da conta física para evitar discrepâncias.
+- O bloqueio de movimentações pode ser ajustado a qualquer momento, mas deve ser feito com cautela.
 
 **Conceitos-Chave:**
-- **Chave Pix**: Identificador utilizado para realizar transferências instantâneas via sistema Pix.
-- **Bloqueio de Movimentações**: Configuração que impede transações financeiras em um período específico.
+- **Chave Pix**: Um identificador único que permite transferências instantâneas entre contas.
+- **Bloqueio de Movimentações**: Configuração que impede operações financeiras em um período específico.
+
+**🔧 SOLUÇÃO DE PROBLEMAS (Troubleshooting):**
+
+| Problema                         | Causa Provável                     | Solução                                               | Prevenção                                           |
+|----------------------------------|------------------------------------|------------------------------------------------------|----------------------------------------------------|
+| Não consigo salvar a conta       | Campos obrigatórios não preenchidos| Verifique se todos os campos obrigatórios estão preenchidos. | Sempre preencha todos os campos obrigatórios.      |
+| Movimentação não permitida       | Período de bloqueio ativo          | Ajuste o período de bloqueio ou utilize outra conta. | Revise as configurações de bloqueio antes de cadastrar. |
+| Chave Pix não aceita             | Formato inválido                   | Verifique se a chave Pix está no formato correto.    | Utilize o formato correto ao inserir a chave Pix.  |
+
+**💡 DICAS E BOAS PRÁTICAS:**
+- Sempre mantenha o saldo inicial atualizado para facilitar o controle financeiro.
+- Utilize o bloqueio de movimentações para evitar erros em períodos de inatividade.
+- Revise as permissões de usuários regularmente para garantir a segurança das contas.
+
+**📚 EXEMPLOS PRÁTICOS:**
+
+**Exemplo 1: Cadastro de Conta Corrente**
+```
+Situação: Um usuário deseja cadastrar uma conta corrente.
+Ação: 
+  • Campo Nome da Conta: "Conta Corrente João"
+  • Campo Banco: "Itaú"
+  • Campo Saldo Inicial: "2000.00"
+Resultado: A conta é cadastrada com sucesso e aparece no extrato.
+```
+
+**Exemplo 2: Cadastro de Conta com Chave Pix**
+```
+Situação: Um usuário cadastra uma conta com chave Pix.
+Ação: 
+  • Campo Nome da Conta: "Poupança Maria"
+  • Campo Banco: "Bradesco"
+  • Campo Tipo de Chave Pix: "CPF"
+  • Campo Chave Pix: "987.654.321-00"
+Resultado: A conta é cadastrada e a chave Pix é associada corretamente.
+```
+
+**🔗 DEPENDÊNCIAS E RELAÇÕES:**
+- **Pré-requisitos:** O usuário deve ter permissões adequadas para cadastrar contas bancárias.
+- **Habilita:** O cadastro de contas bancárias permite a realização de movimentações financeiras e a visualização de extratos.
+- **Relacionado a:** Funcionalidades de contas a pagar e contas a receber, que podem ser integradas ao fluxo de caixa.
+
+**🔍 VARIAÇÕES DE BUSCA (Otimização RAG):**
+
+Esta seção responde perguntas formuladas de diferentes formas. Um usuário pode perguntar:
+- **Forma direta:** "Como cadastrar uma conta bancária?"
+- **Com problema:** "Não consigo cadastrar minha conta, o que fazer?"
+- **Informal:** "Como eu coloco uma conta no sistema?"
+- **Por sintoma:** "O que fazer se minha conta não aparece no extrato?"
+- **Com dúvida:** "Quais campos são obrigatórios para cadastrar uma conta?"
+
+**Termos alternativos e sinônimos usados para esta funcionalidade:**
+- "Adicionar conta", "Registrar conta", "Criar conta bancária", "Cadastrar conta"
+- "Saldo inicial", "Chave Pix", "Bloqueio de conta", "Movimentações financeiras"
 
 **❓ PERGUNTAS QUE ESTA SEÇÃO RESPONDE:**
-- Como cadastrar uma nova conta bancária no sistema?
-- Quais campos são obrigatórios no cadastro de contas bancárias?
-- Como configurar um bloqueio de movimentações financeiras para uma conta?
+- Como cadastrar uma conta bancária no sistema?
+- Quais campos são obrigatórios para o cadastro de uma conta?
+- O que fazer se a movimentação não for permitida?
+- Como configurar o bloqueio de movimentações financeiras?
+- O que preciso ter/fazer antes de cadastrar uma conta bancária?
 
 ---
 
@@ -142,81 +194,128 @@ O cadastro de contas bancárias permite que os usuários registrem informações
 - **⏲️ Duração:** 152s
 - **🎬 Link:** [Assistir este trecho](https://youtu.be/DMvowd7eCAA?si=qrXiuODXTH9y2zNZ&t=153)
 - **📦 Módulo:** Conciliação Bancária
-- **🏷️ Categorias:** Relatório, Operacional, Configuração
-- **🔑 Palavras-chave:** conciliação, extrato, OFX, importação, COPER, movimentações, validação
+- **🏷️ Categorias:** Conciliação, Relatório, Operacional
+- **🔑 Palavras-chave:** extrato, conciliação, OFX, importação, movimentações
 
-> **🔍 RESUMO EXECUTIVO:** Esta seção ensina como realizar a conciliação de extratos bancários no sistema, permitindo a validação dos valores do extrato importado com os lançamentos registrados no sistema COPER.
+> **🔍 RESUMO EXECUTIVO:** Esta seção ensina como realizar a conciliação de extratos bancários no sistema, permitindo validar os valores do extrato importado com os lançamentos feitos no COPER. O processo é essencial para garantir a precisão das informações financeiras.
 
 **Contexto:**
-Estamos na funcionalidade de conciliação bancária do sistema, onde o usuário pode importar extratos bancários no formato OFX e validar os valores lançados no sistema com os valores do extrato.
+Estamos na funcionalidade de conciliação bancária do sistema COPER, onde o usuário pode importar extratos bancários no formato OFX e comparar os valores com os lançamentos registrados no sistema. O objetivo é identificar discrepâncias e garantir que todos os valores estejam devidamente lançados.
 
 **Localização no Sistema:**
-- Caminho de navegação completo: Menu Principal > Módulo Conciliação Bancária > Submenu Importar Extrato
-- Tela/interface específica: Tela de Conciliação
+- Caminho de navegação: Menu Principal > Módulo Conciliação Bancária > Submenu Importar Extrato
+- Tela/interface específica: Tela de Conciliação de Extratos
 
 **Funcionalidade Detalhada:**
-A funcionalidade de conciliação permite que os usuários importem extratos bancários no formato OFX e comparem os valores contidos no extrato com os lançamentos registrados no sistema COPER. O objetivo é validar se todos os lançamentos estão corretos e se não há valores faltantes.
+A funcionalidade de conciliação permite que o usuário importe um extrato bancário no formato OFX e compare os valores contidos nesse extrato com os lançamentos que foram feitos no sistema COPER. O sistema não realiza a conciliação automaticamente, o que requer que o usuário valide manualmente os valores.
 
 ### 🔹 Passo a Passo Detalhado:
 
-1. **Exportar Relatório do Extrato**
-   - Localização: Tela de Conciliação
-   - Como fazer: O usuário deve primeiro exportar o extrato da conta bancária desejada no formato OFX. Este arquivo será utilizado para a importação no sistema.
+1. **Exportar Extrato OFX**
+   - Localização: Na conta bancária, acesse a opção de exportação.
+   - Como fazer: Selecione a conta desejada e escolha a opção de exportar o extrato no formato OFX.
    - Campos/Opções disponíveis:
-     * `Formato`: OFX (o sistema aceita apenas este formato para importação)
-   - Resultado esperado: O extrato bancário é salvo no formato OFX no dispositivo do usuário.
+     * `Formato`: OFX
+   - Resultado esperado: Um arquivo OFX será baixado para o seu computador.
 
 2. **Importar Extrato**
-   - Localização: Tela de Conciliação, botão **Importar Extrato**
-   - Como fazer: Após ter o arquivo OFX, o usuário deve clicar no botão **Importar Extrato**. Uma janela de seleção de arquivo será aberta, onde o usuário deve localizar e selecionar o arquivo OFX exportado.
-   - Observações importantes: Certifique-se de que o arquivo está no formato OFX, pois outros formatos não serão aceitos.
-   - Resultado esperado: O sistema processa o arquivo e exibe todos os valores do extrato importado em uma lista à esquerda da tela.
+   - Localização: Tela de Conciliação de Extratos, clique no botão **Importar Extrato**.
+   - Como fazer: Clique no botão **Importar Extrato**, selecione o arquivo OFX que você exportou e confirme a importação.
+   - Observações importantes: O sistema não reconhecerá automaticamente os valores lançados no COPER.
+   - Resultado esperado: Os valores do extrato importado aparecerão de um lado, enquanto os valores correspondentes lançados no COPER aparecerão do outro lado.
 
-3. **Validação dos Valores**
-   - Localização: Tela de Conciliação, área de comparação de valores
-   - Como fazer: Após a importação, o usuário verá os valores do extrato à esquerda e os valores lançados no sistema à direita. O usuário deve comparar ambos os lados para identificar discrepâncias.
-   - Observações importantes: Se o sistema não reconheceu automaticamente os valores, isso pode indicar que os lançamentos não foram feitos corretamente no COPER.
-   - Resultado esperado: O usuário identifica quais valores estão faltando ou não foram lançados.
+3. **Validação de Valores**
+   - Localização: Tela de Conciliação de Extratos, onde os valores importados e lançados são exibidos.
+   - Como fazer: Compare os valores do extrato importado com os lançamentos do COPER. Se um valor não aparecer, isso indica que ele não foi lançado.
+   - Resultado esperado: Identificação de valores que precisam ser lançados ou corrigidos.
 
 4. **Lançar Valores Faltantes**
-   - Localização: Tela de Movimentações
-   - Como fazer: Se um valor não foi reconhecido, o usuário deve navegar até a tela de **Movimentações** e procurar pelo valor correspondente. Caso não encontre, deve lançar o valor manualmente.
-   - Observações importantes: O lançamento deve ser feito antes de tentar conciliar novamente, pois o sistema não atualiza automaticamente os valores após a importação.
-   - Resultado esperado: O valor é lançado no sistema e, ao retornar à tela de conciliação, o usuário pode selecionar o valor recém-lançado para confirmar a conciliação.
+   - Localização: Menu de **Movimentações** no sistema.
+   - Como fazer: Acesse o menu **Movimentações**, busque pelo valor que não foi reconhecido e lance-o.
+   - Observações importantes: Lembre-se de que se o lançamento for feito após a importação do extrato, ele não aparecerá automaticamente na conciliação.
+   - Resultado esperado: O valor agora aparecerá na tela de conciliação após ser lançado.
 
 5. **Selecionar e Confirmar Movimentações**
-   - Localização: Tela de Conciliação, área de seleção de movimentações
-   - Como fazer: O usuário pode selecionar várias movimentações que correspondem ao valor do extrato. Após selecionar, deve clicar no botão **Confirmar**.
-   - Observações importantes: Isso é especialmente útil para pagamentos de faturas de cartão, onde múltiplas movimentações podem ser necessárias para igualar o valor do extrato.
-   - Resultado esperado: As movimentações selecionadas são confirmadas e a conciliação é finalizada.
+   - Localização: Tela de Conciliação de Extratos.
+   - Como fazer: Selecione as movimentações que correspondem aos valores do extrato e clique em **Confirmar**.
+   - Resultado esperado: Os valores serão conciliados e a conciliação será considerada completa.
 
 **Campos e Parâmetros:**
 
-| Campo                     | Tipo   | Obrigatório | Descrição                                           | Exemplo          |
-|---------------------------|--------|-------------|----------------------------------------------------|------------------|
-| `Importar Extrato`       | Botão  | Sim         | Botão para iniciar a importação do extrato OFX    | -                |
-| `Movimentações`          | Lista  | Sim         | Lista de movimentações lançadas no sistema         | R$ 62,50         |
-| `Valor do Extrato`       | Número | Sim         | Valor correspondente no extrato importado          | R$ 52,62         |
-| `Confirmar`              | Botão  | Sim         | Botão para confirmar a seleção de movimentações    | -                |
+| Campo               | Tipo        | Obrigatório | Descrição                                           | Exemplo               |
+|---------------------|-------------|-------------|-----------------------------------------------------|-----------------------|
+| `Importar Extrato`  | Botão       | Sim         | Botão para iniciar a importação do extrato OFX     | -                     |
+| `Movimentações`     | Menu        | Sim         | Menu onde são listadas as movimentações lançadas    | -                     |
+| `Valor`             | Numérico    | Sim         | Valor da movimentação a ser conciliada              | R$ 62,50              |
 
 **Regras de Negócio:**
-- O sistema aceita apenas arquivos no formato OFX para importação.
-- Os valores do extrato devem ser lançados no sistema antes da conciliação.
-- O usuário deve confirmar manualmente as movimentações que não foram reconhecidas automaticamente.
+- O sistema não reconhece automaticamente os valores lançados no COPER após a importação do extrato.
+- É necessário que todos os valores do extrato sejam lançados manualmente se não aparecerem na conciliação.
+- O usuário pode selecionar várias movimentações para confirmar a conciliação.
 
 **Observações Importantes:**
-- É importante realizar a importação do extrato antes de lançar novos valores.
-- Erros comuns incluem não encontrar valores no sistema, que podem indicar lançamentos ausentes.
-- O sistema não atualiza automaticamente os valores após a importação; os lançamentos devem ser feitos manualmente.
+- Sempre verifique se o extrato foi importado corretamente antes de iniciar a conciliação.
+- Um erro comum é não lançar os valores antes de realizar a conciliação, o que pode levar a discrepâncias.
 
 **Conceitos-Chave:**
-- **Conciliação**: Processo de validação dos valores do extrato bancário com os lançamentos no sistema.
-- **OFX**: Formato de arquivo utilizado para a importação de extratos bancários.
+- **Extrato OFX**: Formato de arquivo utilizado para exportar dados bancários.
+- **Conciliação**: Processo de validação entre os valores do extrato bancário e os lançamentos no sistema.
+
+**🔧 SOLUÇÃO DE PROBLEMAS (Troubleshooting):**
+
+| Problema                          | Causa Provável                      | Solução                                      | Prevenção                                   |
+|-----------------------------------|-------------------------------------|----------------------------------------------|---------------------------------------------|
+| Valores não aparecem na conciliação| Lançamentos não foram feitos        | Verifique o menu de movimentações e lance os valores faltantes. | Lançar todos os valores antes da conciliação. |
+| Importação falha                  | Formato do arquivo incorreto       | Certifique-se de que o arquivo está no formato OFX. | Exportar sempre no formato correto.        |
+| Discrepâncias nos valores         | Lançamentos duplicados ou ausentes | Revise os lançamentos e ajuste conforme necessário. | Manter um controle rigoroso dos lançamentos. |
+
+**💡 DICAS E BOAS PRÁTICAS:**
+- Sempre exporte o extrato OFX diretamente do banco para evitar erros de formatação.
+- Utilize a função de busca nas movimentações para localizar rapidamente valores que precisam ser lançados.
+- Realize a conciliação regularmente para evitar acúmulo de discrepâncias.
+
+**📚 EXEMPLOS PRÁTICOS:**
+
+**Exemplo 1: Lançamento de um Valor Faltante**
+```
+Situação: O extrato importado mostra uma saída de R$ 62,50 que não foi lançada.
+Ação: 
+  • Acesse o menu Movimentações.
+  • Busque pelo valor R$ 62,50 e lance-o.
+Resultado: O valor agora aparece na tela de conciliação e pode ser confirmado.
+```
+
+**Exemplo 2: Importação e Conciliação de Extrato**
+```
+Situação: O usuário importou um extrato OFX e precisa conciliar.
+Ação: 
+  • Clique em Importar Extrato e selecione o arquivo OFX.
+  • Compare os valores e lance os que não aparecerem.
+Resultado: Todos os valores estão conciliados e a conta está em ordem.
+```
+
+**🔗 DEPENDÊNCIAS E RELAÇÕES:**
+- **Pré-requisitos:** O extrato bancário deve ser exportado no formato OFX antes da importação.
+- **Habilita:** A conciliação permite que o usuário valide e ajuste os lançamentos financeiros.
+- **Relacionado a:** Funcionalidade de movimentações e relatórios financeiros.
+
+**🔍 VARIAÇÕES DE BUSCA (Otimização RAG):**
+
+Esta seção responde perguntas formuladas de diferentes formas. Um usuário pode perguntar:
+- **Forma direta:** "Como conciliar extratos bancários?"
+- **Com problema:** "Não consigo conciliar meu extrato, o que fazer?"
+- **Informal:** "Como faço para conferir meu extrato?"
+- **Por sintoma:** "Meu extrato não bate com os lançamentos, o que fazer?"
+
+**Termos alternativos e sinônimos usados para esta funcionalidade:**
+- "Conciliação de contas", "validar extrato", "comparar extrato", "importar extrato bancário".
 
 **❓ PERGUNTAS QUE ESTA SEÇÃO RESPONDE:**
-- Como posso importar um extrato bancário no sistema?
-- O que fazer se o sistema não reconhecer os valores do extrato?
-- Como lançar valores que não foram importados automaticamente?
+- Como importar um extrato OFX?
+- O que fazer se um valor não aparecer na conciliação?
+- Como lançar um valor faltante no sistema?
+- O que fazer se a importação do extrato falhar?
+- Quais são os passos para validar os lançamentos no COPER?
 
 ---
 
@@ -233,103 +332,147 @@ A funcionalidade de conciliação permite que os usuários importem extratos ban
 - **⏱️ Minutagem:** 05:04 → 07:37
 - **⏲️ Duração:** 153s
 - **🎬 Link:** [Assistir este trecho](https://youtu.be/DMvowd7eCAA?si=qrXiuODXTH9y2zNZ&t=304)
-- **📦 Módulo:** Conciliação Financeira
-- **🏷️ Categorias:** Conciliação, Movimentação Financeira, Registro, Transferência
-- **🔑 Palavras-chave:** conciliação, movimentações, transferência, tarifas, estorno, cheque, boletos, extratos
+- **📦 Módulo:** Conciliação Bancária
+- **🏷️ Categorias:** Conciliação, Movimentações Financeiras, Registro de Transferências
+- **🔑 Palavras-chave:** conciliação, movimentações, transferência, tarifas, estorno, cheque
 
-> **🔍 RESUMO EXECUTIVO:** Esta seção ensina como conciliar movimentações financeiras no sistema, permitindo registrar transferências, tarifas e estornos, garantindo que os valores sejam compatíveis para a conclusão da conciliação.
+> **🔍 RESUMO EXECUTIVO:** Esta seção ensina como conciliar movimentações financeiras no sistema, permitindo registrar transferências, tarifas e estornos de forma simultânea. O objetivo é garantir que os valores sejam corretamente conciliados e registrados, evitando erros.
 
 **Contexto:**
-Estamos na funcionalidade de conciliação financeira do sistema, onde o usuário pode reconciliar as movimentações bancárias com as faturas correspondentes, registrando transferências e outras operações financeiras.
+Estamos na funcionalidade de conciliação bancária do sistema, onde o usuário pode registrar e conciliar movimentações financeiras, como transferências e tarifas, garantindo que os valores correspondam às faturas.
 
 **Localização no Sistema:**
-- Caminho de navegação completo: Menu Principal > Módulo Conciliação Financeira > Aba de Conciliação
+- Caminho de navegação completo: Menu Principal > Módulo Conciliação Bancária > Submenu Movimentações
 - Tela/interface específica: Tela de Conciliação de Movimentações
 
 **Funcionalidade Detalhada:**
-A funcionalidade de conciliação permite que o usuário selecione várias movimentações financeiras até que o valor total corresponda ao valor da fatura. O sistema possibilita registrar transferências, tarifas e estornos simultaneamente, assegurando que os valores sejam compatíveis para a conclusão da conciliação.
+A funcionalidade de conciliação permite que o usuário selecione várias movimentações financeiras até que o valor total corresponda ao valor da fatura. É possível registrar transferências, tarifas e estornos diretamente durante o processo de conciliação, facilitando a gestão financeira.
 
 ### 🔹 Passo a Passo Detalhado:
 
 1. **Selecionar Movimentações**
-   - Localização: Aba de Conciliação
-   - Como fazer: O usuário deve selecionar as movimentações financeiras que correspondem ao valor total da fatura. Para isso, basta clicar nas caixas de seleção ao lado de cada movimentação.
+   - Localização: Tela de Conciliação de Movimentações
+   - Como fazer: O usuário deve selecionar as movimentações que deseja conciliar até que o valor total corresponda ao valor da fatura.
    - Campos/Opções disponíveis:
-     * `Movimentação`: Lista de movimentações disponíveis para seleção.
+     * `Movimentações`: Lista de movimentações disponíveis para seleção.
    - Resultado esperado: As movimentações selecionadas são somadas e o valor total é exibido.
 
 2. **Registrar Transferência**
-   - Localização: Aba de Conciliação, campo de transferência
-   - Como fazer: O usuário deve selecionar o campo de transferência, indicar a conta para a qual foi realizada a transferência e clicar no botão "Adicionar".
-   - Campos/Opções disponíveis:
-     * `Conta de Destino`: Campo para selecionar a conta para a qual a transferência foi feita.
-   - Resultado esperado: A transferência é registrada e a conciliação é concluída automaticamente.
+   - Localização: Tela de Conciliação de Movimentações
+   - Como fazer: Se o valor a ser conciliado for referente a uma transferência não registrada, o usuário deve selecionar o campo de transferência, indicar a conta para a qual foi feita a transferência e concluir a operação.
+   - Observações importantes: O sistema permite registrar a transferência e conciliar ao mesmo tempo.
+   - Resultado esperado: A transferência é registrada e a conciliação é concluída.
 
 3. **Adicionar Tarifas**
-   - Localização: Aba de Conciliação, seção de tarifas
-   - Como fazer: O usuário deve clicar na parte de tarifas, adicionar uma classificação para a tarifa e clicar em "Adicionar".
-   - Observações importantes: Caso a classificação desejada não esteja disponível, o usuário pode criar uma nova classificação temporária.
-   - Resultado esperado: A tarifa é registrada e a conciliação é atualizada.
+   - Localização: Tela de Conciliação de Movimentações
+   - Como fazer: O usuário deve acessar a parte de tarifas, adicionar uma classificação para a tarifa e, se necessário, criar uma nova classificação.
+   - Observações importantes: O sistema não permitirá a conciliação se os valores não coincidirem.
+   - Resultado esperado: A tarifa é registrada e a conciliação é concluída.
 
 4. **Registrar Estorno**
-   - Localização: Aba de Conciliação, subárea de estorno
-   - Como fazer: O usuário deve selecionar a opção de estorno, indicar a movimentação correspondente e clicar em "Concluir".
+   - Localização: Tela de Conciliação de Movimentações
+   - Como fazer: O usuário deve acessar a aba de estorno, selecionar a movimentação à qual o estorno se refere e concluir a operação.
    - Observações importantes: O sistema não permitirá a conciliação se os valores não coincidirem.
-   - Resultado esperado: O estorno é registrado e a conciliação é atualizada.
+   - Resultado esperado: O estorno é registrado e a conciliação é concluída.
 
 5. **Associar Cheque**
-   - Localização: Aba de Conciliação, campo de cheque
-   - Como fazer: O usuário deve acessar o campo de cheque, selecionar a conta associada ao cheque e clicar em "Adicionar".
-   - Resultado esperado: O cheque é associado à movimentação e a conciliação é atualizada.
+   - Localização: Tela de Conciliação de Movimentações
+   - Como fazer: O usuário deve acessar o campo de cheque e associar a conta que está vinculada ao cheque.
+   - Resultado esperado: O cheque é associado corretamente e a conciliação é concluída.
 
-6. **Finalizar Conciliações**
-   - Localização: Aba de Conciliação
-   - Como fazer: Após registrar todas as movimentações, o usuário deve verificar se todas as conciliações estão corretas e clicar em "Concluir".
-   - Resultado esperado: Todas as conciliações finalizadas são movidas para a aba de finalizadas.
+6. **Visualizar Conciliações Finalizadas**
+   - Localização: Tela de Conciliação de Movimentações
+   - Como fazer: Todas as conciliações finalizadas podem ser visualizadas na aba de finalizadas. O usuário pode excluir uma conciliação se necessário, retornando-a para a aba de movimentações.
+   - Resultado esperado: O histórico de conciliações finalizadas é exibido.
 
 7. **Visualizar Extratos**
-   - Localização: Aba de Extratos
-   - Como fazer: O usuário pode acessar a aba de extratos para visualizar o histórico de todos os extratos importados para a conta bancária.
-   - Resultado esperado: O sistema exibe todos os extratos importados.
+   - Localização: Tela de Conciliação de Movimentações
+   - Como fazer: O sistema mostrará o histórico de todos os extratos importados para a conta bancária selecionada.
+   - Resultado esperado: O usuário visualiza todos os extratos relacionados à conta.
 
 8. **Emitir Boletos**
-   - Localização: Aba de Boletos
-   - Como fazer: Caso a integração bancária esteja contratada, o usuário pode emitir boletos diretamente pelo sistema.
-   - Resultado esperado: O sistema mostra todos os boletos emitidos para a conta bancária no período selecionado.
+   - Localização: Tela de Conciliação de Movimentações
+   - Como fazer: Caso a integração bancária esteja contratada, o usuário pode emitir boletos pelo sistema, visualizando todos os boletos emitidos para a conta bancária no período selecionado.
+   - Resultado esperado: O usuário consegue emitir e visualizar boletos.
 
 9. **Visualizar Cheques Emitidos**
-   - Localização: Aba de Cheques
-   - Como fazer: O usuário deve acessar a aba de cheques para visualizar todos os cheques emitidos para a conta bancária conforme o período selecionado.
-   - Resultado esperado: O sistema exibe todos os cheques emitidos.
+   - Localização: Tela de Conciliação de Movimentações
+   - Como fazer: O sistema mostrará todos os cheques emitidos para a conta bancária conforme o período selecionado.
+   - Resultado esperado: O usuário visualiza todos os cheques emitidos.
 
 **Campos e Parâmetros:**
 
-| Campo                  | Tipo         | Obrigatório | Descrição                                             | Exemplo               |
-|------------------------|--------------|-------------|-----------------------------------------------------|-----------------------|
-| `Movimentação`         | Lista        | Sim         | Lista de movimentações disponíveis para seleção     | Transferência 100,00  |
-| `Conta de Destino`     | Dropdown     | Sim         | Conta para a qual a transferência foi realizada     | Conta Corrente 1234   |
-| `Classificação`        | Texto livre  | Não         | Classificação da tarifa ou estorno                   | Tarifa de Manutenção   |
-| `Movimentação de Estorno` | Lista     | Sim         | Movimentação à qual o estorno se refere             | Transferência 50,00   |
-| `Cheque`               | Dropdown     | Sim         | Conta associada ao cheque                            | Conta Corrente 5678   |
+| Campo                | Tipo         | Obrigatório | Descrição                                          | Exemplo                  |
+|----------------------|--------------|-------------|---------------------------------------------------|--------------------------|
+| `Movimentações`      | Lista        | Sim         | Lista de movimentações disponíveis para seleção.  | [Movimentação 1, 2, 3]   |
+| `Transferência`      | Campo texto  | Sim         | Campo para registrar a conta da transferência.    | "Conta Corrente 12345"   |
+| `Tarifa`             | Campo texto  | Não         | Campo para adicionar uma classificação de tarifa. | "Tarifa de Manutenção"    |
+| `Estorno`            | Campo texto  | Sim         | Campo para registrar o estorno referente à movimentação. | "Estorno de Compra"       |
+| `Cheque`             | Campo texto  | Sim         | Campo para associar a conta vinculada ao cheque.  | "Conta Corrente 67890"   |
 
 **Regras de Negócio:**
-- Os valores das movimentações devem coincidir para que a conciliação seja concluída.
-- O sistema não permitirá a conciliação se os valores não baterem.
-- Todas as conciliações finalizadas serão movidas para a aba de finalizadas.
+- Os valores devem coincidir para que a conciliação seja permitida.
+- O sistema não permitirá a conciliação se houver discrepâncias nos valores.
+- As conciliações finalizadas podem ser excluídas, retornando à aba de movimentações.
 
 **Observações Importantes:**
-- O usuário deve garantir que todas as movimentações estejam corretas antes de finalizar a conciliação.
-- Caso uma classificação não esteja disponível, o usuário pode criar uma nova classificação temporária.
-- Erros comuns incluem não selecionar todas as movimentações necessárias para a conciliação.
+- É importante garantir que todas as movimentações estejam corretamente registradas antes de iniciar a conciliação.
+- Erros comuns incluem a tentativa de conciliar valores que não coincidem, resultando em mensagens de erro.
 
 **Conceitos-Chave:**
 - **Conciliação**: Processo de verificar se os registros financeiros correspondem aos extratos bancários.
-- **Transferência**: Movimento financeiro que envolve a transferência de valores entre contas.
+- **Movimentação**: Qualquer entrada ou saída de valores em uma conta bancária.
+
+**🔧 SOLUÇÃO DE PROBLEMAS (Troubleshooting):**
+
+| Problema                        | Causa Provável                     | Solução                                          | Prevenção                                   |
+|---------------------------------|------------------------------------|-------------------------------------------------|---------------------------------------------|
+| Valores não coincidem           | Movimentações não registradas      | Verifique se todas as movimentações estão registradas antes de conciliar. | Registre todas as movimentações imediatamente. |
+| Botão de conciliação desabilitado| Falta de permissão ou erro de sistema | Verifique as permissões de usuário ou reinicie o sistema. | Mantenha as permissões atualizadas.         |
+
+**💡 DICAS E BOAS PRÁTICAS:**
+- Sempre verifique se todas as movimentações estão registradas antes de iniciar a conciliação.
+- Utilize a aba de finalizadas para revisar conciliações anteriores e evitar erros.
+
+**📚 EXEMPLOS PRÁTICOS:**
+
+**Exemplo 1: Registro de Transferência**
+```
+Situação: O usuário precisa conciliar uma fatura de R$ 500,00 que inclui uma transferência.
+Ação: O usuário seleciona as movimentações até totalizar R$ 500,00 e registra uma transferência de R$ 200,00 para a "Conta Corrente 12345".
+Resultado: A transferência é registrada e a conciliação é concluída com sucesso.
+```
+
+**Exemplo 2: Registro de Estorno**
+```
+Situação: O usuário precisa registrar um estorno de R$ 150,00 referente a uma compra anterior.
+Ação: O usuário acessa a aba de estorno, seleciona a movimentação de compra e registra o estorno.
+Resultado: O estorno é registrado e a conciliação é concluída.
+```
+
+**🔗 DEPENDÊNCIAS E RELAÇÕES:**
+- **Pré-requisitos:** O usuário deve ter as permissões necessárias para registrar movimentações e conciliações.
+- **Habilita:** A possibilidade de emitir boletos e visualizar cheques emitidos.
+- **Relacionado a:** Módulo de Gestão Financeira e Relatórios Financeiros.
+
+**🔍 VARIAÇÕES DE BUSCA (Otimização RAG):**
+
+Esta seção responde perguntas formuladas de diferentes formas. Um usuário pode perguntar:
+- **Forma direta:** "Como conciliar movimentações financeiras?"
+- **Com problema:** "Não consigo conciliar, o que fazer?"
+- **Informal:** "Como eu faço para conciliar as contas?"
+- **Por sintoma:** "Quando os valores não batem, como resolver?"
+- **Com dúvida:** "O que fazer se não consigo registrar uma transferência?"
+
+**Termos alternativos e sinônimos usados para esta funcionalidade:**
+- "Registrar movimentação", "conciliar contas", "adicionar transferência", "estornar valor", "associar cheque".
 
 **❓ PERGUNTAS QUE ESTA SEÇÃO RESPONDE:**
-- Como posso conciliar movimentações financeiras no sistema?
-- O que fazer se não encontrar uma classificação para tarifas?
+- Como faço para conciliar movimentações financeiras?
+- O que fazer se os valores não coincidirem durante a conciliação?
 - Como registrar uma transferência durante a conciliação?
+- O que fazer se o botão de conciliação estiver desabilitado?
+- Quais são os pré-requisitos para realizar a conciliação?
 
 ---
 
@@ -348,88 +491,139 @@ A funcionalidade de conciliação permite que o usuário selecione várias movim
 - **🎬 Link:** [Assistir este trecho](https://youtu.be/DMvowd7eCAA?si=qrXiuODXTH9y2zNZ&t=454)
 - **📦 Módulo:** Configuração de Boletos
 - **🏷️ Categorias:** Configuração, Administração, Financeiro
-- **🔑 Palavras-chave:** comissão, boletos, configuração, automação, Anexera, transferências, etiquetas, contas
+- **🔑 Palavras-chave:** boletos, configuração, automação, transferência, etiquetas
 
-> **🔍 RESUMO EXECUTIVO:** Esta seção detalha o processo de configuração de boletos no sistema COPER, incluindo a habilitação da automação com a Anexera e a gestão de contas. O objetivo é garantir que os usuários possam realizar operações financeiras de forma eficiente e organizada.
+> **🔍 RESUMO EXECUTIVO:** Esta seção detalha o processo de configuração de boletos no sistema COPER, incluindo a habilitação da automação com a Anexera e a gestão de contas. O objetivo é garantir que os usuários possam configurar corretamente os boletos e gerenciar suas contas de forma eficiente.
 
 **Contexto:**
-Estamos na interface de configuração do sistema COPER, onde os usuários podem ajustar as definições necessárias para a emissão e gestão de boletos. Esta seção é crucial para garantir que todas as informações obrigatórias sejam preenchidas corretamente antes de iniciar o uso do sistema.
+Estamos na seção de configuração do módulo de boletos do sistema COPER. O objetivo é preparar o sistema para a emissão e gestão de boletos, garantindo que todas as informações obrigatórias sejam preenchidas e que a automação esteja habilitada.
 
 **Localização no Sistema:**
-- Caminho de navegação completo: Menu Principal > Módulo de Configuração de Boletos
+- Caminho de navegação completo: Menu Principal > Módulo de Boletos > Configuração de Boletos
 - Tela/interface específica: Tela de Configuração de Boletos
 
 **Funcionalidade Detalhada:**
-
-A funcionalidade de configuração de boletos permite que os usuários preencham informações obrigatórias para a emissão de boletos. É necessário que essas informações sejam fornecidas pelo gerente de cada conta. Além disso, a automação com a Anexera deve ser habilitada, pois esta empresa parceira é responsável pelo tráfego dos arquivos referentes aos boletos emitidos e sua comunicação com o banco. Caso uma conta não seja mais utilizada, o sistema não permite a exclusão, mas sim a desativação, permitindo que o histórico de movimentações seja consultado posteriormente.
+A funcionalidade de configuração de boletos permite que os usuários preencham informações obrigatórias para a emissão de boletos. É essencial que essas informações sejam fornecidas pelo gerente de cada conta. Além disso, a automação com a Anexera deve ser habilitada para o tráfego dos arquivos referentes aos boletos emitidos.
 
 ### 🔹 Passo a Passo Detalhado:
 
 1. **Preencher Informações Obrigatórias**
    - Localização: Tela de Configuração de Boletos
-   - Como fazer: Identifique os campos marcados com um asterisco (*) que indicam informações obrigatórias. Preencha cada um deles com os dados fornecidos pelo gerente da conta.
+   - Como fazer: Identifique os campos marcados com um asterisco (*) e preencha as informações necessárias. Essas informações são fornecidas pelo gerente de cada conta.
    - Campos/Opções disponíveis:
-     * `Campo 1`: Nome da Conta (texto)
-     * `Campo 2`: Número da Conta (número)
-   - Resultado esperado: As informações obrigatórias são salvas e a configuração dos boletos pode prosseguir.
+     * `Campo 1`: Nome da Conta (texto, obrigatório)
+     * `Campo 2`: CNPJ/CPF (texto, obrigatório)
+   - Resultado esperado: As informações obrigatórias são salvas e a conta é configurada para a emissão de boletos.
 
 2. **Habilitar Automação com Anexera**
    - Localização: Tela de Configuração de Boletos
-   - Como fazer: Localize a opção de habilitação da automação com a Anexera. Clique no botão correspondente para ativar essa funcionalidade.
-   - Observações importantes: Certifique-se de que todas as informações obrigatórias estejam preenchidas antes de habilitar a automação.
-   - Resultado esperado: A automação com a Anexera é ativada, permitindo o tráfego de arquivos de boletos para o banco.
+   - Como fazer: Localize a opção de habilitação da automação e ative-a. Isso permitirá que os arquivos referentes aos boletos sejam enviados automaticamente para o banco.
+   - Observações importantes: A automação deve ser habilitada para garantir que os boletos sejam processados corretamente.
+   - Resultado esperado: A automação é ativada e os arquivos serão enviados automaticamente.
 
-3. **Desativar Conta**
+3. **Desativar Conta Não Utilizada**
    - Localização: Tela de Gerenciamento de Contas
-   - Como fazer: Se uma conta não for mais utilizada, selecione a conta desejada e clique no botão de desativação.
-   - Observações importantes: Não é possível excluir a conta se houver movimentações associadas. A desativação é suficiente para interromper o uso da conta.
-   - Resultado esperado: A conta é desativada e não aparecerá mais nas contas ativas, mas seu histórico permanece acessível.
+   - Como fazer: Se uma conta não for mais utilizada, selecione a conta desejada e clique na opção de desativar. Não é possível excluir contas com movimentações associadas.
+   - Resultado esperado: A conta é desativada e não aparece mais nas contas ativas, mas seu histórico permanece acessível.
 
 4. **Realizar Transferências**
    - Localização: Tela de Transferências
-   - Como fazer: Para realizar transferências entre contas, selecione a conta de origem e a conta de destino. Insira o valor a ser transferido e clique no botão de "Transferir".
-   - Observações importantes: Se o plano incluir multiempresas, transferências entre empresas também são permitidas.
-   - Resultado esperado: A transferência é processada e um registro é criado no histórico de movimentações.
+   - Como fazer: Para realizar transferências entre contas, selecione a conta de origem e a conta de destino. Insira o valor a ser transferido e confirme a operação.
+   - Observações importantes: Caso tenha o plano multiempresas, transferências entre empresas também são permitidas.
+   - Resultado esperado: A transferência é realizada com sucesso entre as contas selecionadas.
 
 5. **Cadastro de Etiquetas**
    - Localização: Tela de Cadastro de Etiquetas
-   - Como fazer: Clique no botão "Adicionar" para criar uma nova etiqueta. Insira o nome da etiqueta e clique em "Salvar".
-   - Resultado esperado: A nova etiqueta é criada e pode ser associada a parcelas a pagar ou a receber.
+   - Como fazer: Clique no botão **Adicionar** para criar uma nova etiqueta. Insira o nome da etiqueta e clique em **Salvar**.
+   - Resultado esperado: A etiqueta é criada e pode ser associada a parcelas a pagar ou a receber.
 
 6. **Configurações de Pagamento**
-   - Localização: Tela de Configuração de Pagamentos
-   - Como fazer: Habilite ou desabilite a opção que permite o pagamento das parcelas mesmo sem a confirmação do recebimento do material.
-   - Observações importantes: Se a opção estiver desabilitada, o pagamento só poderá ser realizado após a confirmação do recebimento do material no local de entrega.
-   - Resultado esperado: As configurações de pagamento são salvas conforme a escolha do usuário.
+   - Localização: Tela de Configurações de Contas a Pagar
+   - Como fazer: Habilite a opção que permite o pagamento das parcelas mesmo se o material não tiver sido confirmado como recebido.
+   - Observações importantes: Se a opção não for habilitada, o pagamento só poderá ser realizado após a confirmação do recebimento do material.
+   - Resultado esperado: As configurações de pagamento são salvas conforme as preferências definidas.
 
 **Campos e Parâmetros:**
 
-| Campo                       | Tipo   | Obrigatório | Descrição                                               | Exemplo                |
-|-----------------------------|--------|-------------|--------------------------------------------------------|------------------------|
-| Nome da Conta               | Texto  | Sim         | Nome que identifica a conta no sistema.                | "Conta Principal"      |
-| Número da Conta             | Número | Sim         | Número da conta bancária associada.                    | "123456789"            |
-| Habilitar Automação         | Checkbox | Sim       | Permite ativar a automação com a Anexera.             | [X] Habilitar          |
-| Nome da Etiqueta            | Texto  | Sim         | Nome que identifica a etiqueta a ser cadastrada.      | "Urgente"              |
-| Permitir Pagamento Sem Confirmação | Checkbox | Sim | Permite o pagamento de parcelas sem confirmação.       | [ ] Permitir           |
+| Campo                  | Tipo   | Obrigatório | Descrição                                           | Exemplo               |
+|------------------------|--------|-------------|-----------------------------------------------------|-----------------------|
+| Nome da Conta          | Texto  | Sim         | Nome da conta para identificação                     | "Conta Principal"     |
+| CNPJ/CPF               | Texto  | Sim         | Número de identificação da conta                     | "12.345.678/0001-90"  |
+| Nome da Etiqueta       | Texto  | Sim         | Nome da etiqueta a ser cadastrada                   | "Urgente"             |
+| Permitir Pagamento     | Checkbox | Sim       | Permite pagamento sem confirmação de recebimento     | [X]                   |
 
 **Regras de Negócio:**
-- As informações obrigatórias devem ser preenchidas antes de habilitar a automação.
-- Não é possível excluir uma conta que possui movimentações associadas; apenas desativá-la.
-- O pagamento das parcelas pode ser configurado para exigir ou não a confirmação do recebimento do material.
+- As informações obrigatórias devem ser preenchidas para que a conta seja configurada.
+- A automação com a Anexera deve ser habilitada para o tráfego de arquivos.
+- Contas com movimentações não podem ser excluídas, apenas desativadas.
+- O pagamento das parcelas pode ser condicionado à confirmação do recebimento do material.
 
 **Observações Importantes:**
-- Sempre verifique se todas as informações obrigatórias estão preenchidas antes de prosseguir com a configuração.
-- Evite desativar contas que ainda possuem movimentações ativas, pois isso pode gerar confusão no histórico financeiro.
-- Utilize etiquetas para organizar melhor as parcelas a pagar e a receber.
+- Não exclua contas que possuem movimentações; desative-as.
+- Sempre verifique se a automação está habilitada antes de emitir boletos.
+- As etiquetas são úteis para categorizar parcelas e facilitar a identificação.
 
 **Conceitos-Chave:**
-- **Anexera**: Empresa parceira responsável pelo tráfego de arquivos de boletos emitidos para o banco.
-- **Desativação de Conta**: Processo de interromper o uso de uma conta sem excluí-la, mantendo o histórico acessível.
+- **Anexera**: Empresa parceira responsável pelo tráfego de arquivos de boletos emitidos.
+- **Multiempresas**: Funcionalidade que permite gerenciar várias empresas dentro do mesmo sistema.
+
+**🔧 SOLUÇÃO DE PROBLEMAS (Troubleshooting):**
+
+| Problema                          | Causa Provável                     | Solução                                          | Prevenção                                      |
+|-----------------------------------|------------------------------------|--------------------------------------------------|------------------------------------------------|
+| Não é possível habilitar automação | Falta de permissões administrativas | Verifique as permissões do usuário               | Configure permissões antes de tentar habilitar |
+| Conta não aparece na lista        | Conta desativada                   | Ative a conta novamente                          | Monitore o status das contas                   |
+| Erro ao realizar transferência     | Conta de origem ou destino inválida | Verifique se as contas estão ativas e corretas  | Confirme as contas antes de transferir        |
+
+**💡 DICAS E BOAS PRÁTICAS:**
+- Sempre preencha todos os campos obrigatórios antes de salvar.
+- Utilize etiquetas para facilitar a organização das parcelas.
+- Revise as configurações de pagamento para evitar erros.
+
+**📚 EXEMPLOS PRÁTICOS:**
+
+**Exemplo 1: Configuração de Conta**
+```
+Situação: Um novo fornecedor foi cadastrado.
+Ação: 
+  • Campo Nome da Conta: "Fornecedor A"
+  • Campo CNPJ: "12.345.678/0001-90"
+Resultado: A conta "Fornecedor A" é criada e está pronta para emissão de boletos.
+```
+
+**Exemplo 2: Desativação de Conta**
+```
+Situação: A conta "Fornecedor B" não será mais utilizada.
+Ação: 
+  • Selecionar "Fornecedor B" na lista de contas.
+  • Clicar em "Desativar".
+Resultado: A conta "Fornecedor B" é desativada e seu histórico permanece acessível.
+```
+
+**🔗 DEPENDÊNCIAS E RELAÇÕES:**
+- **Pré-requisitos:** As informações obrigatórias devem ser fornecidas pelo gerente da conta.
+- **Habilita:** A automação com a Anexera permite o envio automático de arquivos para o banco.
+- **Relacionado a:** Funcionalidades de transferências e gestão de contas.
+
+**🔍 VARIAÇÕES DE BUSCA (Otimização RAG):**
+
+Esta seção responde perguntas formuladas de diferentes formas. Um usuário pode perguntar:
+- **Forma direta:** "Como configurar boletos no COPER?"
+- **Com problema:** "Não consigo habilitar a automação, o que fazer?"
+- **Informal:** "Como eu faço para colocar os boletos pra funcionar?"
+- **Por sintoma:** "O que fazer se a conta não aparece na lista?"
+- **Variações:** "Configurar conta de boleto", "Habilitar Anexera", "Desativar conta no sistema".
+
+**Termos alternativos e sinônimos usados para esta funcionalidade:**
+- "Configuração de boletos", "Cadastro de boletos", "Gerenciamento de contas", "Habilitar automação".
+- "Etiquetas de parcelas", "Transferência entre contas".
 
 **❓ PERGUNTAS QUE ESTA SEÇÃO RESPONDE:**
-- Como configurar os boletos no sistema COPER?
-- O que fazer se uma conta não for mais utilizada?
+- Como preencher as informações obrigatórias para boletos?
+- O que fazer se a conta não pode ser excluída?
 - Como habilitar a automação com a Anexera?
+- O que fazer se não consigo realizar transferências?
+- Quais são os passos para cadastrar uma etiqueta?
 
 ---
 
@@ -439,106 +633,154 @@ A funcionalidade de configuração de boletos permite que os usuários preencham
 
 ---
 
-## 5. Cadastro de Categorias e Tributos
+## 5. Cadastro de Classificações e Tributos
 
 **📋 METADADOS:**
 - **ID:** sec_5
 - **⏱️ Minutagem:** 10:07 → 12:44
 - **⏲️ Duração:** 156s
 - **🎬 Link:** [Assistir este trecho](https://youtu.be/DMvowd7eCAA?si=qrXiuODXTH9y2zNZ&t=607)
-- **📦 Módulo:** Cadastro de Tributos
-- **🏷️ Categorias:** Configuração, Cadastro, Administração
-- **🔑 Palavras-chave:** categorias, tributos, cadastro, parcelas, periodicidade, indexadores
+- **📦 Módulo:** Financeiro
+- **🏷️ Categorias:** Cadastro, Classificação, Tributos, Indexadores
+- **🔑 Palavras-chave:** classificação, tributo, cadastro, periodicidade, indexador
 
-> **🔍 RESUMO EXECUTIVO:** Esta seção ensina como cadastrar categorias e tributos no sistema, permitindo a classificação de parcelas a pagar ou a receber. O processo inclui a definição de periodicidade e a associação de guias específicas para cada tributo.
+> **🔍 RESUMO EXECUTIVO:** Esta seção detalha como cadastrar classificações de parcelas e tributos no sistema, permitindo a organização e a gestão eficiente de contas a pagar e a receber.
 
 **Contexto:**
-Estamos na seção de cadastro do sistema, onde o usuário pode adicionar categorias e tributos que serão utilizados na geração de parcelas a pagar ou a receber. O objetivo é permitir uma melhor organização e classificação das transações financeiras.
+Estamos na interface do módulo financeiro do sistema, onde o usuário pode cadastrar classificações para parcelas e tributos. Esta funcionalidade é crucial para a correta categorização e gestão financeira.
 
 **Localização no Sistema:**
-- Caminho de navegação completo: Menu Principal > Módulo Cadastro de Tributos > Submenu Cadastro de Categorias e Tributos
-- Tela/interface específica: Tela de Cadastro de Categorias e Tributos
+- Caminho de navegação: Menu Principal > Módulo Financeiro > Cadastro de Classificações e Tributos
+- Tela/interface específica: Tela de Cadastro de Classificações e Tributos
 
 **Funcionalidade Detalhada:**
-A funcionalidade de cadastro de categorias e tributos permite que os usuários classifiquem as parcelas geradas no sistema. As categorias podem incluir classificações como "comissão", "pagamento de terceiros", "empréstimos" e "material de consumo". O sistema já possui algumas categorias pré-cadastradas, mas os usuários têm a opção de adicionar novas. Além disso, é possível cadastrar tributos, definindo seu nome, sigla, periodicidade e associando guias específicas.
+A funcionalidade permite ao usuário cadastrar classificações para parcelas a pagar e a receber, além de tributos que serão utilizados nas transações financeiras. O sistema já oferece algumas classificações pré-cadastradas, mas o usuário pode adicionar novas conforme necessário. A parte de cadastro de tributos inclui a definição de nome, sigla, periodicidade e modelos de guias associados.
 
 ### 🔹 Passo a Passo Detalhado:
 
-1. **Cadastro de Categorias**
-   - Localização: Tela de Cadastro de Categorias e Tributos
-   - Como fazer: Para adicionar uma nova categoria, o usuário deve clicar no botão **Adicionar Categoria**.
+1. **Cadastro de Classificações**
+   - Localização: Tela de Cadastro de Classificações e Tributos
+   - Como fazer: Para adicionar uma nova classificação, o usuário deve clicar no botão **Adicionar Classificação**.
    - Campos/Opções disponíveis:
-     * `Nome da Categoria`: Campo de texto onde o usuário insere o nome da nova categoria.
-   - Resultado esperado: A nova categoria é adicionada à lista de categorias disponíveis para classificação de parcelas.
+     * `Nome da Classificação`: Campo de texto onde o usuário insere o nome da nova classificação.
+     * `Tipo de Classificação`: Dropdown com opções como "Comissão", "Pagamento de Terceiros", "Empréstimos", "Material de Consumo".
+   - Resultado esperado: A nova classificação é adicionada à lista de classificações disponíveis para uso nas parcelas.
 
 2. **Cadastro de Tributos**
-   - Localização: Tela de Cadastro de Categorias e Tributos
-   - Como fazer: O usuário deve clicar no botão **Adicionar Tributo**.
+   - Localização: Tela de Cadastro de Classificações e Tributos
+   - Como fazer: Clique no botão **Adicionar Tributo** para iniciar o cadastro de um novo tributo.
    - Campos/Opções disponíveis:
-     * `Nome do Tributo`: Campo de texto onde o usuário insere o nome do tributo.
-     * `Sigla`: Campo de texto para a sigla do tributo.
-     * `Periodicidade`: Dropdown onde o usuário seleciona a periodicidade do tributo (ex: mensal, trimestral, anual).
-     * `Utilizado em Notas de Serviços`: Checkbox que deve ser marcado se o tributo será utilizado em notas de serviços.
-   - Observações importantes: Campos obrigatórios são indicados com um asterisco (*). O usuário deve preencher todos os campos obrigatórios antes de salvar.
-   - Resultado esperado: O tributo é cadastrado e fica disponível para uso nas notas de serviço e lançamentos financeiros.
+     * `Nome do Tributo`: Campo de texto obrigatório para o nome do tributo.
+     * `Sigla`: Campo de texto obrigatório para a sigla do tributo.
+     * `Periodicidade`: Dropdown com opções como "Mensal", "Trimestral", "Anual", e "Avulsa".
+     * `Utilizado em Notas de Serviços`: Checkbox para indicar se o tributo será usado em notas de serviços.
+   - Observações importantes: Campos obrigatórios são indicados com um asterisco (*). A periodicidade deve ser selecionada corretamente, pois isso afetará a geração de recorrências.
+   - Resultado esperado: O tributo é cadastrado e fica disponível para uso em lançamentos futuros.
 
-3. **Cadastro de Modelos de Guias**
-   - Localização: Tela de Cadastro de Tributos
-   - Como fazer: Após cadastrar o tributo, o usuário deve associar um modelo de guia clicando no botão **Adicionar Modelo de Guia**.
+3. **Cadastro de Indexadores**
+   - Localização: Tela de Cadastro de Classificações e Tributos
+   - Como fazer: Clique no botão **Adicionar Indexador**.
    - Campos/Opções disponíveis:
-     * `Modelo de Guia`: Seleção de um dos quatro modelos de guia disponíveis (não é possível adicionar novos modelos).
-   - Resultado esperado: O modelo de guia é associado ao tributo cadastrado.
-
-4. **Cadastro de Indexadores**
-   - Localização: Tela de Cadastro de Indexadores
-   - Como fazer: O usuário deve clicar no botão **Adicionar Indexador**.
-   - Campos/Opções disponíveis:
-     * `Nome do Indexador`: Campo de texto para o nome do indexador.
-     * `Gatilho de Cobrança`: Dropdown com quatro opções de gatilho de cobrança.
-     * `Categoria de Lançamento`: Dropdown onde o usuário seleciona a categoria de lançamento do valor do indexador.
+     * `Nome do Indexador`: Campo de texto onde o usuário insere o nome do indexador.
+     * `Gatilho de Cobrança`: Dropdown com opções de gatilho, como "Vencimento", "Faturamento", etc.
+     * `Categoria de Lançamento`: Dropdown para selecionar a categoria à qual o valor do indexador deve ser registrado.
    - Resultado esperado: O indexador é cadastrado e pode ser utilizado nas parcelas de venda.
 
-5. **Adicionar Índices ao Indexador**
+4. **Adicionar Valores aos Indexadores**
    - Localização: Tela de Cadastro de Indexadores
-   - Como fazer: Após cadastrar o indexador, o usuário deve clicar no botão **Adicionar Valor**.
+   - Como fazer: Após cadastrar um indexador, clique no botão **Adicionar Valor**.
    - Campos/Opções disponíveis:
-     * `Mês`: Campo de texto onde o usuário insere o mês referente ao índice.
-     * `Valor`: Campo de texto onde o usuário insere o valor do índice.
-   - Resultado esperado: O índice é adicionado ao indexador cadastrado.
+     * `Mês`: Campo de texto para inserir o mês referente ao valor do indexador.
+     * `Valor`: Campo de texto para inserir o valor correspondente ao indexador.
+   - Resultado esperado: O valor é associado ao indexador e fica disponível para cálculos futuros.
 
 **Campos e Parâmetros:**
 
-| Campo                      | Tipo         | Obrigatório | Descrição                                                                 | Exemplo                |
-|----------------------------|--------------|-------------|---------------------------------------------------------------------------|------------------------|
-| Nome da Categoria           | Texto        | Sim         | Nome da nova categoria a ser cadastrada.                                 | "Comissão"             |
-| Nome do Tributo            | Texto        | Sim         | Nome do tributo a ser cadastrado.                                        | "ICMS"                 |
-| Sigla                      | Texto        | Sim         | Sigla que representa o tributo.                                          | "ICMS"                 |
-| Periodicidade              | Dropdown     | Sim         | Frequência com que o tributo será aplicado.                             | "Mensal"               |
-| Utilizado em Notas de Serviços | Checkbox | Não         | Indica se o tributo será utilizado em notas de serviços.                | [ ] (marcado ou não)   |
-| Nome do Indexador          | Texto        | Sim         | Nome do indexador a ser cadastrado.                                      | "IGPM"                 |
-| Gatilho de Cobrança        | Dropdown     | Sim         | Opção que define o gatilho de cobrança do indexador.                    | "Anual"                |
-| Categoria de Lançamento    | Dropdown     | Sim         | Categoria onde o valor do indexador deve ser registrado.                | "Venda"                |
-| Mês                        | Texto        | Sim         | Mês referente ao índice a ser cadastrado.                                | "Janeiro"              |
-| Valor                      | Texto        | Sim         | Valor do índice a ser cadastrado.                                        | "5.00"                 |
+| Campo                       | Tipo           | Obrigatório | Descrição                                           | Exemplo                |
+|-----------------------------|----------------|-------------|-----------------------------------------------------|------------------------|
+| Nome da Classificação       | Texto          | Sim         | Nome da nova classificação a ser cadastrada        | "Comissão de Vendas"   |
+| Tipo de Classificação       | Dropdown       | Sim         | Tipo da classificação a ser cadastrada              | "Pagamento de Terceiros" |
+| Nome do Tributo             | Texto          | Sim         | Nome do tributo a ser cadastrado                    | "ISS"                  |
+| Sigla                       | Texto          | Sim         | Sigla do tributo a ser cadastrada                   | "ISS"                  |
+| Periodicidade               | Dropdown       | Sim         | Frequência de lançamento do tributo                 | "Mensal"               |
+| Utilizado em Notas de Serviços | Checkbox    | Não         | Indica se o tributo será usado em notas de serviços | [ ] Sim                |
+| Nome do Indexador           | Texto          | Sim         | Nome do indexador a ser cadastrado                  | "IGPM"                 |
+| Gatilho de Cobrança         | Dropdown       | Sim         | Gatilho que inicia a cobrança do indexador          | "Vencimento"           |
+| Categoria de Lançamento     | Dropdown       | Sim         | Categoria para registro do valor do indexador       | "Venda"                |
+| Mês                         | Texto          | Sim         | Mês referente ao valor do indexador                  | "Janeiro"              |
+| Valor                       | Texto          | Sim         | Valor a ser associado ao indexador                   | "5.00"                 |
 
 **Regras de Negócio:**
-- Todos os campos obrigatórios devem ser preenchidos antes de salvar o cadastro.
-- O sistema possui apenas quatro modelos de guias que podem ser associados aos tributos; não é possível adicionar novos modelos.
-- A periodicidade deve ser selecionada corretamente para que o sistema gere a recorrência do tributo.
+- Todos os campos obrigatórios devem ser preenchidos para que o cadastro seja realizado.
+- O sistema não permite a adição de novos modelos de guias; apenas os quatro modelos pré-definidos estão disponíveis.
+- A periodicidade deve ser escolhida corretamente, pois impacta a geração de lançamentos futuros.
 
 **Observações Importantes:**
-- É importante verificar se todos os campos obrigatórios estão preenchidos para evitar erros ao salvar.
-- O usuário deve estar ciente de que a opção "Utilizado em Notas de Serviços" permite que o tributo seja automaticamente lançado ao gerar uma nota de serviço.
-- Erros comuns incluem não preencher campos obrigatórios e não selecionar a periodicidade correta.
+- Sempre verifique se todos os campos obrigatórios estão preenchidos antes de salvar.
+- Evite cadastrar tributos com nomes semelhantes para evitar confusões.
+- O sistema não permite a edição de classificações ou tributos após o cadastro; se necessário, será preciso excluir e cadastrar novamente.
 
 **Conceitos-Chave:**
-- **Periodicidade**: Refere-se à frequência com que um tributo ou indexador será aplicado, podendo ser mensal, trimestral, anual, etc.
-- **Indexador**: Um índice de correção que pode ser aplicado a parcelas de venda, ajustando seu valor ao longo do tempo.
+- **Classificação**: Categoria atribuída a parcelas para facilitar a gestão financeira.
+- **Tributo**: Imposto ou taxa que deve ser registrado e gerido no sistema.
+
+**🔧 SOLUÇÃO DE PROBLEMAS (Troubleshooting):**
+
+| Problema                          | Causa Provável                     | Solução                                           | Prevenção                                   |
+|-----------------------------------|------------------------------------|--------------------------------------------------|---------------------------------------------|
+| Não consigo adicionar uma classificação | Campo obrigatório não preenchido | Verifique se todos os campos obrigatórios estão preenchidos | Sempre revisar os campos antes de salvar    |
+| O tributo não aparece nas notas de serviço | Checkbox não marcado             | Marque a opção "Utilizado em Notas de Serviços" | Verifique as opções antes de cadastrar      |
+| Erro ao salvar indexador          | Nome do indexador já existe       | Utilize um nome diferente para o indexador      | Crie nomes únicos para cada indexador       |
+
+**💡 DICAS E BOAS PRÁTICAS:**
+- Utilize nomes descritivos para classificações e tributos para facilitar a identificação.
+- Revise as periodicidades e gatilhos de cobrança para garantir que os lançamentos sejam gerados corretamente.
+- Mantenha um registro de alterações para evitar confusões futuras.
+
+**📚 EXEMPLOS PRÁTICOS:**
+
+**Exemplo 1: Cadastro de Classificação**
+```
+Situação: O usuário deseja cadastrar uma nova classificação para pagamentos.
+Ação: 
+  • Campo Nome da Classificação: "Pagamento de Fornecedor"
+  • Campo Tipo de Classificação: "Pagamento de Terceiros"
+Resultado: A nova classificação "Pagamento de Fornecedor" é adicionada à lista de classificações.
+```
+
+**Exemplo 2: Cadastro de Tributo**
+```
+Situação: O usuário precisa cadastrar um novo tributo.
+Ação: 
+  • Campo Nome do Tributo: "ICMS"
+  • Campo Sigla: "ICMS"
+  • Campo Periodicidade: "Mensal"
+Resultado: O tributo "ICMS" é cadastrado e pode ser utilizado em lançamentos futuros.
+```
+
+**🔗 DEPENDÊNCIAS E RELAÇÕES:**
+- **Pré-requisitos:** O usuário deve ter permissões adequadas para acessar o módulo financeiro.
+- **Habilita:** O cadastro de tributos e classificações permite a geração de contas a pagar e a receber.
+- **Relacionado a:** Funcionalidades de geração de relatórios financeiros e lançamentos contábeis.
+
+**🔍 VARIAÇÕES DE BUSCA (Otimização RAG):**
+
+Esta seção responde perguntas formuladas de diferentes formas. Um usuário pode perguntar:
+- **Forma direta:** "Como cadastrar um tributo?"
+- **Com problema:** "Não consigo adicionar uma nova classificação, o que fazer?"
+- **Informal:** "Como eu coloco um imposto no sistema?"
+- **Por sintoma:** "O que fazer se o tributo não aparecer nas notas de serviço?"
+
+**Termos alternativos e sinônimos usados para esta funcionalidade:**
+- "Adicionar classificação", "Cadastrar tributo", "Criar indexador", "Inserir imposto"
+- "Imposto", "Taxa", "Classificação de despesas", "Categoria de pagamento"
 
 **❓ PERGUNTAS QUE ESTA SEÇÃO RESPONDE:**
-- Como posso cadastrar uma nova categoria no sistema?
-- Quais informações são necessárias para cadastrar um tributo?
-- O que devo fazer para adicionar um indexador e seus valores?
+- Como cadastrar uma nova classificação de parcela?
+- Quais campos são obrigatórios para cadastrar um tributo?
+- Como adicionar um indexador ao sistema?
+- O que fazer se o sistema não permitir salvar um tributo?
+- O que preciso ter configurado antes de cadastrar tributos e classificações?
 
 ---
 
@@ -555,75 +797,139 @@ A funcionalidade de cadastro de categorias e tributos permite que os usuários c
 - **⏱️ Minutagem:** 12:40 → 15:16
 - **⏲️ Duração:** 155s
 - **🎬 Link:** [Assistir este trecho](https://youtu.be/DMvowd7eCAA?si=qrXiuODXTH9y2zNZ&t=760)
-- **📦 Módulo:** Contas a Pagar e Receber
-- **🏷️ Categorias:** Operacional, Financeiro, Gestão de Créditos, Gestão de Débitos
-- **🔑 Palavras-chave:** créditos, débitos, contas a pagar, contas a receber, amortização, indexador
+- **📦 Módulo:** Financeiro
+- **🏷️ Categorias:** Gestão Financeira, Contas a Pagar, Contas a Receber
+- **🔑 Palavras-chave:** créditos, débitos, amortização, contas a pagar, contas a receber
 
-> **🔍 RESUMO EXECUTIVO:** Esta seção detalha o processo de gestão de créditos e débitos dentro do sistema, explicando como criar, associar e acompanhar esses valores, além de como realizar a amortização de parcelas.
+> **🔍 RESUMO EXECUTIVO:** Esta seção detalha o processo de gestão de créditos e débitos no sistema, explicando como criar, associar e utilizar esses valores nas contas a pagar e a receber, além de abordar a amortização e o histórico de transações.
 
 **Contexto:**
-Estamos na funcionalidade de gestão financeira do sistema, onde os usuários podem registrar e acompanhar créditos e débitos associados a parceiros e clientes. O objetivo é garantir que as parcelas sejam corrigidas automaticamente e que os registros financeiros sejam mantidos de forma organizada.
+Estamos na interface do módulo financeiro do sistema, focando na gestão de créditos e débitos. O objetivo é entender como registrar e utilizar esses valores para otimizar a administração financeira da empresa.
 
 **Localização no Sistema:**
-- Caminho de navegação completo: Menu Principal > Módulo Financeiro > Gestão de Créditos e Débitos
+- Caminho de navegação: Menu Principal > Módulo Financeiro > Gestão de Créditos e Débitos
 - Tela/interface específica: Tela de Gestão de Créditos e Débitos
 
 **Funcionalidade Detalhada:**
-A funcionalidade de gestão de créditos e débitos permite que os usuários registrem e acompanhem valores que devem ser pagos ou recebidos. Os créditos são utilizados para amortizar parcelas no contas a pagar, enquanto os débitos são utilizados para amortizar parcelas no contas a receber. Os créditos podem ser gerados automaticamente ou manualmente, enquanto os débitos devem ser criados manualmente.
+
+A funcionalidade de gestão de créditos e débitos permite que os usuários registrem e acompanhem valores que podem ser utilizados para amortizar parcelas em contas a pagar e a receber. Os créditos são geralmente associados a fornecedores e podem ser gerados automaticamente ou manualmente, enquanto os débitos são relacionados a clientes e devem ser criados diretamente na interface.
 
 ### 🔹 Passo a Passo Detalhado:
 
-1. **Registro de Créditos**
+1. **Criação de Créditos**
    - Localização: Tela de Gestão de Créditos e Débitos
-   - Como fazer: Para registrar um crédito, o usuário deve clicar no botão **"Adicionar Crédito"**.
+   - Como fazer: Clique no botão **"Adicionar Crédito"** para iniciar o processo de criação.
    - Campos/Opções disponíveis:
-     * `Parceiro`: Selecionar o parceiro associado ao crédito (dropdown com lista de parceiros).
-     * `Tipo de Crédito`: Selecionar o tipo de crédito (opções: **Crédito Avulso**, **Pagamento Duplicado**, **Permuta**).
-   - Resultado esperado: O crédito é salvo e aparece na lista de créditos disponíveis.
+     * `Parceiro`: Selecione o parceiro (fornecedor) ao qual o crédito será associado.
+     * `Tipo de Crédito`: Escolha entre as opções disponíveis:
+       - **Crédito Avulso**
+       - **Pagamento Duplicado**
+       - **Permuta**
+   - Resultado esperado: O crédito é salvo e aparece na lista de créditos disponíveis, pronto para ser utilizado nas contas a pagar.
 
-2. **Visualização do Histórico de Créditos**
+2. **Utilização de Créditos**
    - Localização: Tela de Gestão de Créditos e Débitos
-   - Como fazer: Após registrar um crédito, o usuário pode visualizar o histórico clicando na aba **"Histórico de Créditos"**.
+   - Como fazer: Após criar um crédito, você pode utilizá-lo nas contas a pagar. Selecione o crédito desejado e clique em **"Utilizar Crédito"**.
+   - Observações importantes: Certifique-se de que o crédito está associado ao parceiro correto e que o tipo de crédito é apropriado para a transação.
+   - Resultado esperado: O valor do crédito é aplicado na conta a pagar, reduzindo o saldo devedor.
+
+3. **Criação de Débitos**
+   - Localização: Tela de Gestão de Créditos e Débitos
+   - Como fazer: Clique no botão **"Adicionar Débito"** para registrar um novo débito.
+   - Campos/Opções disponíveis:
+     * `Valor`: Insira o valor do débito.
+     * `Data de Recebimento`: Informe a data em que o pagamento duplicado foi recebido.
+     * `Conta Bancária`: Selecione a conta bancária onde o valor foi creditado.
+   - Resultado esperado: O débito é registrado e aparece na lista de débitos, podendo ser utilizado nas contas a receber.
+
+4. **Histórico de Créditos e Débitos**
+   - Localização: Tela de Gestão de Créditos e Débitos
+   - Como fazer: Acesse a seção de histórico para visualizar todos os créditos e débitos registrados.
    - Observações importantes: O histórico mostra o valor inicial do crédito, quanto já foi utilizado e o saldo restante.
-   - Resultado esperado: O usuário consegue acompanhar a utilização dos créditos.
-
-3. **Registro de Débitos**
-   - Localização: Tela de Gestão de Créditos e Débitos
-   - Como fazer: Para registrar um débito, o usuário deve clicar no botão **"Adicionar Débito"**.
-   - Campos/Opções disponíveis:
-     * `Valor`: Inserir o valor do débito.
-     * `Data do Recebimento Duplicado`: Inserir a data em que o pagamento duplicado foi recebido.
-     * `Conta Bancária`: Selecionar a conta bancária onde o valor foi creditado (dropdown com lista de contas).
-   - Resultado esperado: O débito é salvo e aparece na lista de débitos disponíveis.
+   - Resultado esperado: Você terá uma visão clara do status de cada crédito e débito, facilitando o acompanhamento financeiro.
 
 **Campos e Parâmetros:**
 
-| Campo                       | Tipo       | Obrigatório | Descrição                                               | Exemplo           |
-|-----------------------------|------------|-------------|--------------------------------------------------------|-------------------|
-| `Parceiro`                  | Dropdown   | Sim         | Seleciona o parceiro associado ao crédito.             | "Fornecedor A"    |
-| `Tipo de Crédito`           | Dropdown   | Sim         | Define o tipo de crédito a ser registrado.             | "Pagamento Duplicado" |
-| `Valor`                     | Numérico   | Sim         | Valor do débito a ser registrado.                      | 1000.00           |
-| `Data do Recebimento Duplicado` | Data   | Sim         | Data em que o pagamento duplicado foi recebido.        | "2023-10-01"      |
-| `Conta Bancária`            | Dropdown   | Sim         | Conta onde o valor do débito foi creditado.           | "Conta Corrente"  |
+| Campo                | Tipo         | Obrigatório | Descrição                                             | Exemplo                |
+|----------------------|--------------|-------------|-----------------------------------------------------|------------------------|
+| `Parceiro`           | Dropdown     | Sim         | Seleciona o parceiro associado ao crédito.          | "Fornecedor A"         |
+| `Tipo de Crédito`    | Dropdown     | Sim         | Define o tipo de crédito a ser registrado.          | "Pagamento Duplicado"  |
+| `Valor`              | Numérico     | Sim         | Valor do débito a ser registrado.                    | 1500.00                |
+| `Data de Recebimento`| Data         | Sim         | Data em que o pagamento foi recebido.                | "2023-10-01"           |
+| `Conta Bancária`     | Dropdown     | Sim         | Conta onde o valor do débito foi creditado.         | "Conta Corrente 001"   |
 
 **Regras de Negócio:**
-- Os créditos devem ser utilizados no contas a pagar.
-- Os débitos devem ser utilizados no contas a receber.
-- Créditos podem ser gerados automaticamente a partir da antecipação de ordens de compra ou de serviço.
-- Débitos só podem ser criados manualmente.
+- Créditos devem ser utilizados apenas nas contas a pagar.
+- Débitos devem ser criados diretamente na interface de gestão de créditos e débitos.
+- O tipo de crédito deve ser selecionado corretamente para evitar erros na contabilização.
 
 **Observações Importantes:**
-- Sempre que houver uma atualização do indexador referente a um determinado mês, o processo de correção das parcelas deve ser realizado.
-- É importante acompanhar o histórico de créditos para evitar confusões sobre valores utilizados e saldos.
+- Sempre verifique se o crédito está associado ao parceiro correto antes de utilizá-lo.
+- Evite criar débitos duplicados para o mesmo cliente, pois isso pode causar confusão nas contas a receber.
+- Mantenha um registro atualizado para facilitar a gestão financeira.
 
 **Conceitos-Chave:**
-- **Crédito**: Valor que pode ser utilizado para amortizar parcelas no contas a pagar.
-- **Débito**: Valor que deve ser registrado e amortizado no contas a receber, geralmente relacionado a pagamentos duplicados.
+- **Crédito**: Valor que pode ser utilizado para amortizar contas a pagar, podendo ser gerado automaticamente ou manualmente.
+- **Débito**: Valor que representa uma cobrança a ser recebida de clientes, registrado diretamente na interface.
+
+**🔧 SOLUÇÃO DE PROBLEMAS (Troubleshooting):**
+
+| Problema                          | Causa Provável                      | Solução                                         | Prevenção                                    |
+|-----------------------------------|-------------------------------------|------------------------------------------------|----------------------------------------------|
+| Crédito não aparece na lista      | Não foi salvo corretamente          | Verifique se todos os campos obrigatórios foram preenchidos e salve novamente. | Sempre revisar os campos antes de salvar.   |
+| Débito não é reconhecido          | Débito não foi criado corretamente  | Certifique-se de que o valor e a data estão corretos e crie o débito novamente. | Manter registros claros e atualizados.      |
+| Erro ao utilizar crédito          | Crédito não associado ao parceiro   | Verifique a associação do crédito e tente novamente. | Confirmar a associação antes de utilizar.   |
+
+**💡 DICAS E BOAS PRÁTICAS:**
+- Utilize a funcionalidade de histórico para acompanhar o uso de créditos e débitos.
+- Crie um padrão para nomear créditos e débitos para facilitar a identificação.
+- Revise periodicamente os créditos e débitos registrados para evitar inconsistências.
+
+**📚 EXEMPLOS PRÁTICOS:**
+
+**Exemplo 1: Registro de Crédito**
+```
+Situação: Um fornecedor fez um pagamento duplicado de R$ 1.000,00.
+Ação: 
+  • Campo `Parceiro`: "Fornecedor A"
+  • Campo `Tipo de Crédito`: "Pagamento Duplicado"
+Resultado: O crédito de R$ 1.000,00 é registrado e pode ser utilizado nas contas a pagar.
+```
+
+**Exemplo 2: Registro de Débito**
+```
+Situação: Um cliente pagou R$ 500,00 em duplicidade.
+Ação: 
+  • Campo `Valor`: 500.00
+  • Campo `Data de Recebimento`: "2023-10-05"
+  • Campo `Conta Bancária`: "Conta Corrente 002"
+Resultado: O débito é registrado e aparece na lista de débitos a receber.
+```
+
+**🔗 DEPENDÊNCIAS E RELAÇÕES:**
+- **Pré-requisitos:** É necessário ter parceiros cadastrados para associar créditos e débitos.
+- **Habilita:** A utilização de créditos nas contas a pagar e a geração de relatórios financeiros.
+- **Relacionado a:** Módulo de Suprimentos, onde podem ser gerados créditos automaticamente a partir de ordens de compra.
+
+**🔍 VARIAÇÕES DE BUSCA (Otimização RAG):**
+
+Esta seção responde perguntas formuladas de diferentes formas. Um usuário pode perguntar:
+- **Forma direta:** "Como registrar um crédito?"
+- **Com problema:** "Não consigo usar um crédito, o que fazer?"
+- **Informal:** "Como faço pra adicionar um crédito?"
+- **Por sintoma:** "Quando meu crédito não aparece, o que pode ser?"
+- **Com variação:** "Como criar um débito no sistema?"
+
+**Termos alternativos e sinônimos usados para esta funcionalidade:**
+- "Adicionar crédito", "Registrar crédito", "Criar débito", "Inserir débito"
+- "Crédito avulso", "Pagamento duplicado", "Recebimento duplicado"
 
 **❓ PERGUNTAS QUE ESTA SEÇÃO RESPONDE:**
-- Como registro um crédito no sistema?
-- Quais tipos de crédito posso selecionar ao registrar um?
-- Como visualizo o histórico de créditos e débitos registrados?
+- Como criar um crédito no sistema?
+- O que fazer se o crédito não aparece na lista?
+- Como registrar um débito de pagamento duplicado?
+- O que fazer se não consigo utilizar um crédito?
+- O que preciso fazer antes de registrar um débito?
 
 ---
 
@@ -641,84 +947,142 @@ A funcionalidade de gestão de créditos e débitos permite que os usuários reg
 - **⏲️ Duração:** 153s
 - **🎬 Link:** [Assistir este trecho](https://youtu.be/DMvowd7eCAA?si=qrXiuODXTH9y2zNZ&t=913)
 - **📦 Módulo:** Financeiro
-- **🏷️ Categorias:** Pagamentos, Cheques, Contas a Receber
-- **🔑 Palavras-chave:** pagamento, parcela, débito avulso, cheque, compensação, boleto
+- **🏷️ Categorias:** Pagamentos, Contas a Receber, Cheques, Boletos
+- **🔑 Palavras-chave:** pagamento, parcela, débito avulso, cheque, contas a receber, emissão de boletos
 
-> **🔍 RESUMO EXECUTIVO:** Esta seção detalha como registrar pagamentos de parcelas, incluindo a criação de débitos avulsos e a emissão de cheques. O objetivo é garantir que os usuários compreendam como registrar corretamente os pagamentos e gerenciar cheques no sistema.
+> **🔍 RESUMO EXECUTIVO:** Esta seção detalha como registrar pagamentos de parcelas, incluindo a criação de débitos avulsos e a emissão de cheques, além de explicar como esses processos se relacionam com o fluxo financeiro do sistema.
 
 **Contexto:**
-Estamos na seção do módulo financeiro do sistema, onde o usuário pode registrar pagamentos recebidos e gerenciar cheques. Esta funcionalidade é essencial para manter o controle financeiro e garantir que os pagamentos sejam corretamente associados às parcelas devidas.
+Estamos na interface do módulo financeiro do sistema, onde o usuário pode gerenciar pagamentos de clientes e a emissão de cheques. O objetivo é registrar corretamente os pagamentos recebidos e associá-los às parcelas devidas.
 
 **Localização no Sistema:**
-- Caminho de navegação completo: Menu Principal > Módulo Financeiro > Submenu Pagamentos
+- Caminho de navegação: Menu Principal > Módulo Financeiro > Pagamentos
 - Tela/interface específica: Tela de Registro de Pagamentos
 
 **Funcionalidade Detalhada:**
 
-A funcionalidade de registro de pagamentos permite que o usuário associe um valor pago a uma parcela específica. Caso o pagamento seja referente a um débito avulso, o sistema gera automaticamente uma conta a receber, permitindo que o valor seja amortizado nas próximas parcelas do cliente. Além disso, o sistema oferece suporte para a gestão de cheques, incluindo a emissão e compensação.
+Esta funcionalidade permite ao usuário registrar pagamentos de parcelas, criar débitos avulsos para valores recebidos que não estão associados a uma parcela específica e gerenciar a emissão e compensação de cheques. É utilizada quando um cliente realiza um pagamento antecipado ou quando um cheque é utilizado para quitar uma dívida.
 
 ### 🔹 Passo a Passo Detalhado:
 
 1. **Registrar Pagamento de Parcela**
    - Localização: Tela de Registro de Pagamentos
-   - Como fazer: O usuário deve inserir o valor recebido e associá-lo à parcela correspondente.
+   - Como fazer: Selecione a parcela correspondente ao pagamento recebido. Insira o valor pago no campo designado.
    - Campos/Opções disponíveis:
-     * `Valor`: Campo numérico onde o usuário insere o valor pago.
-     * `Parcela`: Dropdown onde o usuário seleciona a parcela correspondente ao pagamento.
-   - Resultado esperado: O pagamento é registrado e associado à parcela selecionada.
+     * `Valor Pago`: Campo numérico onde o usuário insere o valor recebido.
+     * `Parcela`: Dropdown para selecionar a parcela específica que está sendo paga.
+   - Resultado esperado: O sistema registra o pagamento e atualiza o status da parcela como "paga".
 
 2. **Criar Débito Avulso**
    - Localização: Tela de Registro de Pagamentos
-   - Como fazer: Se o pagamento for um débito avulso, o usuário deve selecionar a opção de "Débito Avulso" e inserir o valor recebido.
-   - Observações importantes: O sistema gera automaticamente uma conta a receber e permite que o usuário indique que o valor será amortizado nas próximas parcelas.
-   - Resultado esperado: Um débito avulso é criado e o valor é registrado para amortização futura.
+   - Como fazer: Após registrar um pagamento que não está vinculado a uma parcela, clique em "Criar Débito Avulso".
+   - Observações importantes: É necessário indicar que o valor recebido será amortizado nas próximas parcelas do cliente.
+   - Resultado esperado: O sistema gera um registro de contas a receber, indicando que o valor foi recebido e que será utilizado para amortizar futuras parcelas.
 
 3. **Emitir Cheque**
    - Localização: Tela de Registro de Pagamentos
-   - Como fazer: O usuário deve selecionar a opção de "Emitir Cheque", associar o cheque às parcelas que devem ser pagas e inserir os detalhes do cheque.
+   - Como fazer: Após associar o pagamento a uma parcela, selecione a opção "Emitir Cheque".
    - Campos/Opções disponíveis:
+     * `Conta Bancária`: Dropdown para selecionar a conta que emitirá o cheque.
      * `Número Inicial`: Campo numérico para inserir o número inicial do talão de cheques.
      * `Número Final`: Campo numérico para inserir o número final do talão de cheques.
-   - Resultado esperado: O cheque é emitido e associado às parcelas selecionadas.
+   - Resultado esperado: O sistema libera as folhas de cheque para uso e permite a emissão do cheque.
 
 4. **Compensar Cheque**
    - Localização: Tela de Registro de Pagamentos
-   - Como fazer: Após a emissão do cheque, o usuário deve selecionar a opção de "Compensar Cheque" quando o cheque for efetivamente compensado.
-   - Observações importantes: O sistema reconhece que o pagamento da parcela foi realizado e atualiza o extrato da conta bancária associada ao cheque.
-   - Resultado esperado: O pagamento da parcela é registrado como compensado e os valores aparecem no extrato da conta bancária.
+   - Como fazer: Após a emissão do cheque, o usuário deve aguardar a compensação. Quando isso ocorrer, o sistema automaticamente atualiza o status do pagamento.
+   - Observações importantes: O cheque deve estar associado à parcela que está sendo paga.
+   - Resultado esperado: O pagamento da parcela é efetivado e os valores aparecem no extrato da conta bancária associada.
 
 5. **Retirar Compensação do Cheque**
    - Localização: Tela de Registro de Pagamentos
-   - Como fazer: O usuário deve selecionar a opção de "Retirar Compensação" para um cheque específico.
-   - Resultado esperado: A compensação do cheque é removida, e o status do pagamento é atualizado no sistema.
+   - Como fazer: Se necessário, selecione a opção "Retirar Compensação" para desassociar o cheque do pagamento.
+   - Resultado esperado: O sistema atualiza o status do pagamento, permitindo que o cheque seja utilizado novamente ou que o pagamento seja registrado de outra forma.
 
 **Campos e Parâmetros:**
 
-| Campo               | Tipo       | Obrigatório | Descrição                                           | Exemplo         |
-|---------------------|------------|-------------|-----------------------------------------------------|------------------|
-| `Valor`             | Numérico   | Sim         | Valor pago pelo cliente.                            | 150,00           |
-| `Parcela`           | Dropdown   | Sim         | Seleção da parcela à qual o pagamento se refere.   | Parcela X        |
-| `Número Inicial`    | Numérico   | Sim         | Número inicial do talão de cheques.                | 001              |
-| `Número Final`      | Numérico   | Sim         | Número final do talão de cheques.                  | 100              |
+| Campo                | Tipo       | Obrigatório | Descrição                                         | Exemplo               |
+|----------------------|------------|-------------|---------------------------------------------------|-----------------------|
+| `Valor Pago`         | Numérico   | Sim         | Valor recebido do cliente.                        | 1500,00               |
+| `Parcela`            | Dropdown   | Sim         | Seleção da parcela correspondente ao pagamento.   | Parcela 1             |
+| `Conta Bancária`     | Dropdown   | Sim         | Conta de onde o cheque será emitido.             | Conta Corrente 1234   |
+| `Número Inicial`     | Numérico   | Sim         | Número inicial do talão de cheques.              | 1000                  |
+| `Número Final`       | Numérico   | Sim         | Número final do talão de cheques.                | 1020                  |
 
 **Regras de Negócio:**
-- O sistema deve gerar uma conta a receber automaticamente ao registrar um débito avulso.
-- O pagamento de parcelas só é considerado efetivo após a compensação do cheque.
-- O usuário deve associar corretamente os cheques às parcelas para garantir a correta contabilização.
+- O pagamento deve ser associado a uma parcela existente no sistema.
+- Débitos avulsos só podem ser criados se houver um valor recebido que não esteja vinculado a uma parcela.
+- A emissão de cheques requer que a conta bancária esteja previamente cadastrada e habilitada para emissão de cheques.
+- A compensação do cheque só é considerada efetiva após a confirmação do banco.
 
 **Observações Importantes:**
-- É importante verificar se o cheque foi compensado antes de considerar o pagamento como efetivo.
-- Evitar registrar pagamentos duplicados para a mesma parcela.
-- O sistema pode permitir a edição de cheques emitidos, mas a compensação deve ser feita corretamente.
+- Sempre verifique se o valor pago corresponde ao valor da parcela antes de registrar o pagamento.
+- Evite criar débitos avulsos desnecessários, pois isso pode complicar o controle financeiro.
+- Caso o cheque não seja compensado, é importante retirar a compensação para evitar confusões no registro de pagamentos.
 
 **Conceitos-Chave:**
-- **Débito Avulso**: Um pagamento que não está associado a uma parcela específica, mas que deve ser registrado para controle financeiro.
-- **Compensação de Cheque**: O processo pelo qual um cheque é processado pelo banco, confirmando que o pagamento foi realizado.
+- **Débito Avulso**: Registro de um pagamento que não está vinculado a uma parcela específica, utilizado para amortização futura.
+- **Compensação de Cheque**: Processo pelo qual o banco confirma que o cheque foi pago e o valor é creditado na conta do recebedor.
+
+**🔧 SOLUÇÃO DE PROBLEMAS (Troubleshooting):**
+
+| Problema                          | Causa Provável                     | Solução                                         | Prevenção                                   |
+|-----------------------------------|------------------------------------|------------------------------------------------|---------------------------------------------|
+| Pagamento não registrado           | Parcela não selecionada corretamente | Verifique se a parcela correta foi escolhida. | Sempre confirme a seleção da parcela.      |
+| Cheque não compensado              | Erro na emissão do cheque          | Verifique os dados do cheque e reemita se necessário. | Revise os dados antes da emissão.          |
+| Débito avulso não criado          | Valor não registrado corretamente   | Certifique-se de que o valor foi inserido.   | Insira sempre o valor antes de criar o débito. |
+| Extrato bancário não atualizado   | Falta de compensação do cheque     | Acompanhe a compensação junto ao banco.       | Monitore os cheques emitidos regularmente. |
+
+**💡 DICAS E BOAS PRÁTICAS:**
+- Sempre mantenha um registro claro dos pagamentos e débitos avulsos para facilitar a auditoria.
+- Utilize a funcionalidade de relatórios do sistema para acompanhar os pagamentos e cheques emitidos.
+- Considere a utilização de notificações para lembrar sobre cheques que ainda não foram compensados.
+
+**📚 EXEMPLOS PRÁTICOS:**
+
+**Exemplo 1: Registro de Pagamento de Parcela**
+```
+Situação: O cliente João Silva pagou a parcela 1 de um contrato.
+Ação: 
+  • Campo `Valor Pago`: "1500,00"
+  • Campo `Parcela`: "Parcela 1"
+Resultado: O pagamento é registrado e a parcela é marcada como "paga".
+```
+
+**Exemplo 2: Emissão de Cheque**
+```
+Situação: O cliente deseja pagar a parcela 2 com um cheque.
+Ação: 
+  • Campo `Conta Bancária`: "Conta Corrente 1234"
+  • Campo `Número Inicial`: "1000"
+  • Campo `Número Final`: "1020"
+Resultado: O cheque é emitido e associado à parcela 2.
+```
+
+**🔗 DEPENDÊNCIAS E RELAÇÕES:**
+- **Pré-requisitos:** A conta bancária deve estar cadastrada e habilitada para emissão de cheques.
+- **Habilita:** A criação de relatórios financeiros detalhados sobre pagamentos e recebimentos.
+- **Relacionado a:** Funcionalidades de contas a receber e relatórios financeiros.
+
+**🔍 VARIAÇÕES DE BUSCA (Otimização RAG):**
+
+Esta seção responde perguntas formuladas de diferentes formas. Um usuário pode perguntar:
+- **Forma direta:** "Como registrar um pagamento de parcela?"
+- **Com problema:** "O que fazer se o pagamento não está sendo registrado?"
+- **Informal:** "Como eu pago uma parcela no sistema?"
+- **Por sintoma:** "Quando o cheque não é compensado, como resolver?"
+- **Com dúvida:** "Como criar um débito avulso no sistema?"
+
+**Termos alternativos e sinônimos usados para esta funcionalidade:**
+- "Registrar pagamento", "Adicionar pagamento", "Criar débito avulso", "Emitir cheque", "Compensar cheque"
+- "Pagamento de parcela", "Receber pagamento", "Gerar cheque"
 
 **❓ PERGUNTAS QUE ESTA SEÇÃO RESPONDE:**
-- Como registrar um pagamento de uma parcela específica no sistema?
-- O que é um débito avulso e como ele é registrado?
-- Como emitir e compensar um cheque no sistema?
+- Como registrar um pagamento de parcela?
+- O que fazer se o pagamento não está sendo registrado?
+- Como criar um débito avulso no sistema?
+- O que fazer se o cheque não é compensado?
+- O que preciso ter feito antes de emitir um cheque?
 
 ---
 
@@ -728,7 +1092,7 @@ A funcionalidade de registro de pagamentos permite que o usuário associe um val
 
 ---
 
-## 8. Emissão e Gerenciamento de Boletos e Tributos
+## 8. Emissão e Gestão de Boletos e Tributos
 
 **📋 METADADOS:**
 - **ID:** sec_8
@@ -737,98 +1101,138 @@ A funcionalidade de registro de pagamentos permite que o usuário associe um val
 - **🎬 Link:** [Assistir este trecho](https://youtu.be/DMvowd7eCAA?si=qrXiuODXTH9y2zNZ&t=1064)
 - **📦 Módulo:** Financeiro
 - **🏷️ Categorias:** Emissão de Boletos, Gestão de Tributos, Integração Bancária
-- **🔑 Palavras-chave:** boletos, remessa, retorno, tributos, contas a pagar, integração, Nexera, COPER
+- **🔑 Palavras-chave:** boletos, remessa, retorno, tributos, contas a pagar
 
-> **🔍 RESUMO EXECUTIVO:** Esta seção detalha o processo de emissão de boletos e o gerenciamento de tributos dentro do sistema, incluindo a integração bancária que automatiza a remessa e o retorno dos pagamentos, facilitando a gestão financeira.
+> **🔍 RESUMO EXECUTIVO:** Esta seção detalha o processo de emissão de boletos e a gestão de tributos dentro do sistema, incluindo a integração bancária que automatiza a remessa e o retorno dos pagamentos. O objetivo é facilitar a gestão financeira e garantir que os pagamentos sejam registrados automaticamente.
 
 **Contexto:**
-Estamos na interface do módulo financeiro do sistema, onde os usuários podem emitir boletos para seus clientes e registrar tributos relacionados a notas fiscais. O objetivo é simplificar o processo de cobrança e garantir que os pagamentos sejam registrados automaticamente.
+Estamos na interface do módulo financeiro do sistema, onde o usuário pode emitir boletos para clientes e registrar tributos relacionados a notas fiscais. A funcionalidade é essencial para a automação de processos financeiros e para a correta gestão de contas a pagar.
 
 **Localização no Sistema:**
 - Caminho de navegação completo: Menu Principal > Módulo Financeiro > Emissão de Boletos e Gestão de Tributos
 - Tela/interface específica: Tela de Emissão de Boletos e Registro de Tributos
 
 **Funcionalidade Detalhada:**
-
-A funcionalidade permite que os usuários emitam boletos para seus clientes e gerenciem tributos relacionados a notas fiscais. Quando a integração bancária está ativa, o sistema gera automaticamente a remessa dos boletos e importa os retornos, registrando pagamentos de forma automática. Os usuários podem também lançar tributos, associando-os a centros de custo e gerando contas a pagar.
+A funcionalidade permite que o usuário emita boletos para clientes e registre tributos relacionados a notas fiscais. Quando a integração bancária está ativa, o sistema gera automaticamente a remessa dos boletos e importa os retornos, facilitando a gestão de pagamentos. O registro de tributos é feito de forma simples, permitindo a adição de novos tributos sem sair da tela atual.
 
 ### 🔹 Passo a Passo Detalhado:
 
 1. **Emissão de Boletos**
    - Localização: Tela de Emissão de Boletos
-   - Como fazer: O usuário deve preencher os dados do cliente e selecionar as parcelas a serem cobradas. Após isso, clicar no botão **Emitir Boleto**.
+   - Como fazer: O usuário deve preencher os campos necessários para a emissão do boleto, como dados do cliente e valor.
    - Campos/Opções disponíveis:
-     * `Cliente`: Selecionar o cliente da lista de clientes cadastrados.
-     * `Parcelas`: Selecionar as parcelas que serão incluídas no boleto.
-   - Resultado esperado: O sistema gera os boletos e cria uma remessa automaticamente.
+     * `Cliente`: Selecionar o cliente para quem o boleto será emitido.
+     * `Valor`: Inserir o valor do boleto a ser pago.
+   - Resultado esperado: O boleto é gerado e a remessa é automaticamente criada para envio à Nexera.
 
-2. **Integração com a Nexera**
-   - Localização: Após a emissão dos boletos
-   - Como fazer: O sistema automaticamente envia a remessa para a Nexera, que é a empresa parceira responsável pelo envio ao banco.
-   - Observações importantes: Certifique-se de que a integração com a Nexera está configurada corretamente no sistema.
-   - Resultado esperado: A remessa é enviada para o banco através da Nexera.
+2. **Integração Bancária**
+   - Localização: Configurações do Módulo Financeiro
+   - Como fazer: Certifique-se de que a integração com a Nexera está habilitada nas configurações do sistema.
+   - Observações importantes: Sem a integração, a remessa e o retorno dos boletos não serão processados automaticamente.
+   - Resultado esperado: O sistema envia a remessa dos boletos para a Nexera, que por sua vez os encaminha ao banco.
 
-3. **Importação de Retornos**
+3. **Registro de Retorno de Boletos**
    - Localização: Tela de Importação de Retornos
-   - Como fazer: O sistema aguarda o arquivo de retorno do banco, que é enviado pela Nexera. O COPER, que é o sistema de gestão, importa automaticamente esse arquivo.
-   - Resultado esperado: Se o arquivo de retorno indicar que o boleto foi pago, o sistema registra automaticamente a parcela como recebida.
+   - Como fazer: O sistema automaticamente importa os arquivos de retorno enviados pela Nexera.
+   - Resultado esperado: Se um boleto foi pago, a parcela associada é marcada como recebida automaticamente.
 
-4. **Registro de Tributos**
-   - Localização: Tela de Registro de Tributos
-   - Como fazer: Clique no botão **Mais Tributo** para adicionar um novo tributo. Se o tributo não estiver cadastrado, clique em **Mais Adicionar** para cadastrá-lo instantaneamente.
+4. **Lançamento de Tributos**
+   - Localização: Tela de Lançamento de Tributos
+   - Como fazer: Clique em **Mais Tributo** para adicionar um novo tributo.
    - Campos/Opções disponíveis:
      * `Centro de Custo`: Selecionar o centro de custo relacionado ao tributo.
-     * `Valor do Imposto`: Inserir o valor do tributo.
+     * `Valor do Imposto`: Inserir o valor do tributo a ser registrado.
      * `Data de Vencimento`: Definir a data de vencimento do tributo.
-     * `Acréscimos`: Preencher se houver.
-     * `Multas`: Preencher se houver.
-     * `Juros`: Preencher se houver.
-     * `Per de Apuração`: Inserir o período de apuração.
-     * `Descrição`: Adicionar uma descrição do tributo.
-     * `Classificação Financeira`: Associar uma classificação financeira para controle no fluxo de caixa.
    - Resultado esperado: O tributo é registrado e um contas a pagar é gerado automaticamente.
 
-5. **Anexar Guia de Tributo**
-   - Localização: Após o registro do tributo
-   - Como fazer: Clique no botão **Anexar Guia** para adicionar a guia do tributo.
-   - Resultado esperado: A guia é anexada ao registro do tributo e o contas a pagar é atualizado.
+5. **Adição de Novo Tributo**
+   - Localização: Tela de Lançamento de Tributos
+   - Como fazer: Caso o tributo não esteja cadastrado, clique em **Mais Adicionar** e preencha os dados necessários.
+   - Observações importantes: Não é necessário sair da tela atual para cadastrar um novo tributo.
+   - Resultado esperado: O tributo é cadastrado e pode ser utilizado imediatamente.
 
 **Campos e Parâmetros:**
 
-| Campo                     | Tipo         | Obrigatório | Descrição                                               | Exemplo               |
-|---------------------------|--------------|-------------|---------------------------------------------------------|-----------------------|
-| `Cliente`                 | Dropdown     | Sim         | Seleciona o cliente para emissão do boleto.            | João da Silva         |
-| `Parcelas`                | Checkbox     | Sim         | Seleciona as parcelas a serem cobradas.                | Parcela 1, Parcela 2  |
-| `Centro de Custo`         | Dropdown     | Sim         | Seleciona o centro de custo relacionado ao tributo.    | Vendas, Serviços      |
-| `Valor do Imposto`        | Numérico     | Sim         | Valor a ser pago referente ao tributo.                 | 150,00                |
-| `Data de Vencimento`      | Data         | Sim         | Data em que o tributo deve ser pago.                   | 30/11/2023            |
-| `Acréscimos`              | Numérico     | Não         | Valor adicional a ser incluído.                         | 10,00                 |
-| `Multas`                  | Numérico     | Não         | Valor de multa a ser aplicado.                          | 5,00                  |
-| `Juros`                   | Numérico     | Não         | Valor de juros a ser aplicado.                          | 2,00                  |
-| `Per de Apuração`         | Texto        | Não         | Período de apuração do tributo.                         | Novembro/2023         |
-| `Descrição`               | Texto        | Não         | Descrição do tributo.                                  | ICMS sobre vendas     |
-| `Classificação Financeira` | Dropdown     | Não         | Classificação para controle financeiro.                 | Tributos a Pagar     |
+| Campo                  | Tipo        | Obrigatório | Descrição                                               | Exemplo               |
+|------------------------|-------------|-------------|---------------------------------------------------------|-----------------------|
+| `Cliente`              | Dropdown    | Sim         | Seleciona o cliente para emissão do boleto              | "João Silva"          |
+| `Valor`                | Numérico    | Sim         | Valor a ser pago no boleto                              | "150,00"              |
+| `Centro de Custo`      | Dropdown    | Sim         | Centro de custo relacionado ao tributo                  | "Departamento Financeiro" |
+| `Valor do Imposto`     | Numérico    | Sim         | Valor do tributo a ser registrado                       | "30,00"               |
+| `Data de Vencimento`   | Data        | Sim         | Data em que o tributo deve ser pago                     | "2024-05-15"          |
 
 **Regras de Negócio:**
-- A remessa dos boletos é gerada automaticamente após a emissão.
-- O sistema deve estar integrado com a Nexera para o envio e recebimento de arquivos.
-- O retorno do banco deve ser importado automaticamente pelo COPER.
-- Se um boleto é marcado como pago no retorno, a parcela correspondente é automaticamente registrada como recebida.
-- Os tributos devem ser associados a um centro de custo e geram contas a pagar automaticamente.
+- A remessa dos boletos só é gerada se a integração com a Nexera estiver ativa.
+- O registro de tributos deve incluir um centro de custo e um valor.
+- O sistema deve importar automaticamente os retornos dos boletos para atualizar o status de pagamento.
 
 **Observações Importantes:**
-- Utilize os atalhos disponíveis para cadastros rápidos.
-- Verifique se todos os tributos estão cadastrados antes de registrar um novo.
-- Evite erros comuns como não associar tributos a centros de custo.
+- Utilize a opção de adicionar tributos diretamente na tela de lançamento para agilizar o processo.
+- Verifique se todos os dados estão corretos antes de emitir os boletos para evitar erros de pagamento.
+- Caso um boleto não seja pago, o sistema não marcará automaticamente a parcela como recebida.
 
 **Conceitos-Chave:**
 - **Remessa**: Arquivo gerado pelo sistema que contém informações sobre os boletos a serem enviados ao banco.
-- **Retorno**: Arquivo enviado pelo banco que informa sobre o status dos boletos (pagos ou não).
+- **Retorno**: Arquivo enviado pelo banco que informa o status dos boletos, como pagamento ou não pagamento.
+
+**🔧 SOLUÇÃO DE PROBLEMAS (Troubleshooting):**
+
+| Problema                          | Causa Provável                     | Solução                                           | Prevenção                                     |
+|-----------------------------------|------------------------------------|--------------------------------------------------|-----------------------------------------------|
+| Boleto não é gerado               | Integração bancária desativada     | Ativar a integração nas configurações do sistema | Verificar configurações antes de emitir      |
+| Retorno não é importado           | Arquivo de retorno não recebido     | Confirmar com a Nexera se o arquivo foi enviado  | Manter comunicação com a Nexera              |
+| Erro ao cadastrar tributo         | Campo obrigatório não preenchido    | Preencher todos os campos obrigatórios            | Revisar campos antes de salvar                |
+
+**💡 DICAS E BOAS PRÁTICAS:**
+- Sempre verifique a data de vencimento dos tributos para evitar multas.
+- Utilize a funcionalidade de adicionar tributos na tela atual para economizar tempo.
+- Mantenha um controle regular sobre os pagamentos de boletos para evitar surpresas.
+
+**📚 EXEMPLOS PRÁTICOS:**
+
+**Exemplo 1: Emissão de Boleto**
+```
+Situação: Um cliente, João Silva, precisa pagar um serviço.
+Ação: Emitir um boleto no valor de R$ 150,00.
+  • Cliente: "João Silva"
+  • Valor: "150,00"
+Resultado: Boleto gerado e remessa enviada para a Nexera.
+```
+
+**Exemplo 2: Lançamento de Tributo**
+```
+Situação: É necessário registrar um imposto de R$ 30,00.
+Ação: Lançar o tributo com vencimento em 15 de maio de 2024.
+  • Centro de Custo: "Departamento Financeiro"
+  • Valor do Imposto: "30,00"
+  • Data de Vencimento: "2024-05-15"
+Resultado: Tributo registrado e contas a pagar gerado.
+```
+
+**🔗 DEPENDÊNCIAS E RELAÇÕES:**
+- **Pré-requisitos:** A integração com a Nexera deve estar configurada e ativa.
+- **Habilita:** A geração automática de remessas e importação de retornos.
+- **Relacionado a:** Módulo de Contas a Pagar e Gestão Financeira.
+
+**🔍 VARIAÇÕES DE BUSCA (Otimização RAG):**
+
+Esta seção responde perguntas formuladas de diferentes formas. Um usuário pode perguntar:
+- **Forma direta:** "Como emitir um boleto?"
+- **Com problema:** "O que fazer se o boleto não for gerado?"
+- **Informal:** "Como faço para criar um boleto?"
+- **Por sintoma:** "Quando não recebo o retorno do banco, o que acontece?"
+- **Com foco em tributos:** "Como registro um tributo no sistema?"
+
+**Termos alternativos e sinônimos usados para esta funcionalidade:**
+- "Emitir boleto", "Gerar boleto", "Criar boleto"
+- "Registrar tributo", "Lançar imposto", "Adicionar tributo"
 
 **❓ PERGUNTAS QUE ESTA SEÇÃO RESPONDE:**
-- Como emitir boletos para meus clientes?
-- O que acontece após a emissão dos boletos?
-- Como registrar e gerenciar tributos no sistema?
+- Como emitir um boleto para um cliente?
+- O que fazer se o boleto não for gerado?
+- Como registrar um tributo no sistema?
+- O que fazer se o retorno do banco não for importado?
+- O que preciso ter configurado antes de emitir boletos?
 
 ---
 
@@ -846,98 +1250,137 @@ A funcionalidade permite que os usuários emitam boletos para seus clientes e ge
 - **⏲️ Duração:** 154s
 - **🎬 Link:** [Assistir este trecho](https://youtu.be/DMvowd7eCAA?si=qrXiuODXTH9y2zNZ&t=1221)
 - **📦 Módulo:** Contas a Pagar
-- **🏷️ Categorias:** Operacional, Relatório, Configuração
+- **🏷️ Categorias:** Relatório, Operacional, Gestão Financeira
 - **🔑 Palavras-chave:** contas a pagar, etiquetas, filtros, pagamento, parcelas
 
-> **🔍 RESUMO EXECUTIVO:** Esta seção detalha a funcionalidade de gerenciamento de contas a pagar, incluindo a visualização de parcelas, uso de etiquetas para identificação, aplicação de filtros e a possibilidade de realizar pagamentos, dependendo da configuração de recebimento de produtos.
+> **🔍 RESUMO EXECUTIVO:** Esta seção detalha a funcionalidade de gerenciamento de contas a pagar, incluindo a visualização de parcelas, uso de etiquetas para identificação e opções de filtro. Ela resolve a necessidade de organizar e monitorar pagamentos de forma eficiente.
 
 **Contexto:**
-Estamos na página inicial do módulo de **Contas a Pagar**, onde o usuário pode visualizar e gerenciar as contas que precisam ser pagas. O objetivo desta seção é explicar como utilizar as funcionalidades disponíveis para facilitar o controle financeiro.
+Estamos na página inicial do módulo de Contas a Pagar, onde o usuário pode visualizar e gerenciar as contas a pagar, incluindo a possibilidade de aplicar filtros e realizar pagamentos.
 
 **Localização no Sistema:**
-- Caminho de navegação completo: Menu Principal > Módulo Contas a Pagar
+- Caminho de navegação completo: Menu Principal > Módulo Contas a Pagar > Página Inicial
 - Tela/interface específica: Página Inicial do Contas a Pagar
 
 **Funcionalidade Detalhada:**
-
-A funcionalidade de **Contas a Pagar** permite ao usuário visualizar as contas que precisam ser pagas, agrupá-las, aplicar filtros para facilitar a busca e realizar pagamentos. As contas são apresentadas com informações relevantes, como status de pagamento e etiquetas que ajudam na identificação de cada parcela.
+A funcionalidade de Contas a Pagar permite ao usuário visualizar todas as contas pendentes, agrupá-las para pagamento e aplicar filtros para facilitar a gestão. As contas são apresentadas com informações relevantes, como status (paga, não paga, vencida) e etiquetas que ajudam na identificação rápida das parcelas.
 
 ### 🔹 Passo a Passo Detalhado:
 
 1. **Visualização das Contas**
-   - Localização: Página Inicial do módulo **Contas a Pagar**
-   - Como fazer: Ao acessar a página, o usuário verá uma lista de contas a pagar. As contas que estão em vermelho indicam que foram agrupadas para pagamento.
+   - Localização: Página Inicial do Contas a Pagar
+   - Como fazer: Ao acessar a página, o usuário visualiza uma lista de contas a pagar, com as contas agrupadas em vermelho.
    - Campos/Opções disponíveis:
-     * **Coluna de Etiquetas**: Exibe as etiquetas associadas a cada parcela, como "empréstimo".
+     * `Coluna de Etiquetas`: Mostra as etiquetas associadas a cada parcela, como "empréstimo".
    - Resultado esperado: O usuário consegue identificar rapidamente a que se refere cada parcela sem precisar clicar em cada uma.
 
 2. **Aplicação de Filtros**
-   - Localização: Área de filtros na página inicial do **Contas a Pagar**
-   - Como fazer: O usuário pode aplicar filtros por:
-     * **Obra**: Selecionar uma obra específica.
-     * **Empresa**: Filtrar por empresa.
-     * **Tipo de Contas**: Escolher entre contas pagas, não pagas, vencidas ou recorrentes.
-     * **Periodicidade**: Definir a periodicidade desejada.
-     * **Etiquetas**: Filtrar por etiquetas específicas.
-     * **Conta Bancária**: Selecionar a conta bancária relacionada.
-   - Resultado esperado: O sistema apresenta apenas as contas que atendem aos critérios de filtro selecionados.
+   - Localização: Parte superior da página, onde estão os filtros disponíveis.
+   - Como fazer: O usuário pode selecionar diferentes critérios de filtro, como obra, empresa, tipo de contas (pagas, não pagas, vencidas, recorrentes), periodicidade e etiquetas.
+   - Observações importantes: Os filtros ajudam a refinar a busca e a visualizar apenas as contas relevantes.
+   - Resultado esperado: A lista de contas a pagar é atualizada conforme os filtros aplicados, mostrando apenas as contas que atendem aos critérios selecionados.
 
 3. **Visualização de Totalizadores**
-   - Localização: Parte inferior da página inicial do **Contas a Pagar**
-   - Como fazer: Após aplicar filtros, o sistema automaticamente atualiza e exibe os totalizadores.
-   - Campos/Opções disponíveis:
-     * **Valor Total do Contas a Pagar**: Total de todas as contas a pagar.
-     * **Valor Pago**: Total das contas já pagas.
-     * **Valor Não Pago**: Total das contas pendentes.
-     * **Valor de Desconto**: Total de descontos aplicados.
-     * **Valor Total de Juros e Multas**: Total de juros e multas acumulados.
-   - Resultado esperado: O usuário visualiza um resumo financeiro claro e conciso.
+   - Localização: Parte inferior da lista de contas.
+   - Como fazer: O sistema automaticamente exibe totalizadores com informações como valor total das contas a pagar, valor pago, valor não pago, valor de desconto, valor total de juros e multas.
+   - Resultado esperado: O usuário tem uma visão clara da situação financeira relacionada às contas a pagar.
 
 4. **Exportação de Relatório**
-   - Localização: Botão de exportação na página inicial do **Contas a Pagar**
-   - Como fazer: O usuário pode clicar no botão de exportação para gerar um relatório em PDF com as informações filtradas.
-   - Resultado esperado: Um relatório em PDF é gerado contendo todas as informações visíveis na tela, de acordo com os filtros aplicados.
+   - Localização: Botão de exportação na parte superior ou inferior da lista de contas.
+   - Como fazer: O usuário clica no botão de exportar e seleciona o formato PDF.
+   - Resultado esperado: Um relatório em PDF é gerado com as informações filtradas, permitindo que o usuário salve ou imprima.
 
 5. **Acesso a uma Parcela**
-   - Localização: Clique em uma parcela específica na lista de contas a pagar.
+   - Localização: Clique em uma das parcelas listadas.
    - Como fazer: O usuário clica na parcela desejada para visualizar detalhes.
-   - Observações importantes: Se a configuração de pagamento estiver habilitada, o botão de pagamento aparecerá. Caso contrário, o pagamento não poderá ser realizado.
-   - Resultado esperado: O usuário visualiza os detalhes da parcela e, dependendo da configuração, pode ou não realizar o pagamento.
+   - Observações importantes: Se a parcela não puder ser paga, o sistema não habilitará a opção de pagamento.
+   - Resultado esperado: O usuário visualiza os detalhes da parcela, incluindo a razão pela qual o pagamento não pode ser realizado (ex: produtos não entregues).
 
-6. **Realização do Pagamento**
-   - Localização: Tela de detalhes da parcela
-   - Como fazer: Se a configuração permitir, o usuário verá o botão **Pagar**. Ao clicar, o pagamento será processado.
-   - Resultado esperado: O pagamento da parcela é realizado com sucesso.
+6. **Habilitação do Botão de Pagamento**
+   - Localização: Após a confirmação da entrega dos produtos.
+   - Como fazer: O usuário deve confirmar que os materiais chegaram no local de entrega.
+   - Resultado esperado: O botão de pagamento se torna habilitado, permitindo que o usuário realize o pagamento da parcela.
 
 **Campos e Parâmetros:**
 
-| Campo                      | Tipo   | Obrigatório | Descrição                                              | Exemplo               |
-|----------------------------|--------|-------------|-------------------------------------------------------|-----------------------|
-| **Etiqueta**               | Texto  | Não         | Identificação da parcela, como "empréstimo".         | "empréstimo"          |
-| **Valor Total do Contas a Pagar** | Moeda | Não         | Total de todas as contas a pagar.                     | R$ 10.000,00          |
-| **Valor Pago**             | Moeda  | Não         | Total das contas que já foram pagas.                  | R$ 5.000,00           |
-| **Valor Não Pago**         | Moeda  | Não         | Total das contas que ainda estão pendentes.           | R$ 5.000,00           |
-| **Valor de Desconto**      | Moeda  | Não         | Total de descontos aplicados nas contas.              | R$ 500,00             |
-| **Valor Total de Juros e Multas** | Moeda | Não         | Total de juros e multas acumulados.                   | R$ 200,00             |
+| Campo               | Tipo   | Obrigatório | Descrição                                               | Exemplo                  |
+|---------------------|--------|-------------|---------------------------------------------------------|--------------------------|
+| `Etiqueta`          | Texto  | Não         | Identificação da parcela, como "empréstimo".           | "Empréstimo"             |
+| `Tipo de Conta`     | Dropdown | Não         | Opções para filtrar contas: pagas, não pagas, vencidas. | "Não Pagas"              |
+| `Valor Total`       | Moeda  | Sim         | Total de contas a pagar.                                | R$ 10.000,00             |
+| `Valor Pago`        | Moeda  | Sim         | Total de contas já pagas.                               | R$ 5.000,00              |
+| `Valor Não Pago`    | Moeda  | Sim         | Total de contas pendentes.                              | R$ 5.000,00              |
+| `Valor de Desconto` | Moeda  | Não         | Total de descontos aplicados.                           | R$ 500,00                |
+| `Valor de Juros`    | Moeda  | Não         | Total de juros e multas aplicados.                      | R$ 200,00                |
 
 **Regras de Negócio:**
-- As contas que estão em vermelho são agrupadas para pagamento.
-- As etiquetas servem para identificar cada parcela, facilitando a visualização.
-- O pagamento de parcelas só pode ser realizado se os produtos relacionados já tiverem chegado ao local de entrega, conforme configuração.
-- O botão de pagamento só aparece se a configuração permitir.
+- As contas podem ser agrupadas para pagamento.
+- As etiquetas são usadas para identificar parcelas específicas.
+- O pagamento de parcelas só é permitido se os produtos relacionados foram entregues.
+- O sistema deve permitir a exportação de relatórios em PDF com as informações filtradas.
 
 **Observações Importantes:**
-- É importante verificar se a configuração de recebimento de produtos está habilitada para evitar problemas ao tentar realizar pagamentos.
-- Erros comuns incluem não visualizar o botão de pagamento devido à falta de recebimento dos produtos.
+- É importante verificar se a configuração de entrega de produtos está habilitada para evitar bloqueios no pagamento.
+- Erros comuns incluem não conseguir visualizar o botão de pagamento devido à falta de confirmação de entrega.
 
 **Conceitos-Chave:**
-- **Etiquetas**: Identificadores que ajudam a categorizar e localizar parcelas de forma mais eficiente.
-- **Totalizadores**: Resumo financeiro que apresenta a situação das contas a pagar, facilitando a gestão financeira.
+- **Etiquetas**: Identificadores que ajudam a categorizar e organizar as parcelas.
+- **Totalizadores**: Resumo financeiro que apresenta o estado das contas a pagar.
+
+**🔧 SOLUÇÃO DE PROBLEMAS (Troubleshooting):**
+
+| Problema                          | Causa Provável                    | Solução                                         | Prevenção                                   |
+|-----------------------------------|-----------------------------------|------------------------------------------------|---------------------------------------------|
+| Botão de pagamento desabilitado    | Produtos não entregues            | Confirmar entrega dos produtos no sistema.     | Configurar corretamente a entrega de produtos. |
+| Filtros não aplicam corretamente   | Filtros conflitantes              | Verificar se os filtros estão corretos e não se excluem. | Testar filtros individualmente.             |
+| Relatório não é gerado             | Falta de permissões               | Verificar permissões do usuário para exportação. | Configurar permissões adequadas.            |
+
+**💡 DICAS E BOAS PRÁTICAS:**
+- Utilize etiquetas de forma consistente para facilitar a identificação das parcelas.
+- Sempre confirme a entrega dos produtos antes de tentar realizar o pagamento.
+- Revise os filtros aplicados para garantir que você está visualizando as informações corretas.
+
+**📚 EXEMPLOS PRÁTICOS:**
+
+**Exemplo 1: Pagamento de Conta**
+```
+Situação: O usuário deseja pagar uma conta referente a um empréstimo.
+Ação: O usuário acessa a página de Contas a Pagar, aplica o filtro "Não Pagas" e localiza a parcela com a etiqueta "Empréstimo".
+  • Campo Tipo de Conta: "Não Pagas"
+Resultado: O botão de pagamento é habilitado, permitindo que o usuário realize o pagamento.
+```
+
+**Exemplo 2: Exportação de Relatório**
+```
+Situação: O usuário precisa de um relatório das contas a pagar para apresentação.
+Ação: O usuário aplica o filtro por "Obra" e clica no botão de exportar.
+Resultado: Um relatório em PDF é gerado com as informações filtradas, pronto para ser impresso.
+```
+
+**🔗 DEPENDÊNCIAS E RELAÇÕES:**
+- **Pré-requisitos:** O usuário deve ter permissões adequadas para acessar o módulo de Contas a Pagar.
+- **Habilita:** A confirmação de entrega de produtos habilita o pagamento das parcelas.
+- **Relacionado a:** Módulo de Suprimentos, onde a entrega dos produtos é registrada.
+
+**🔍 VARIAÇÕES DE BUSCA (Otimização RAG):**
+
+Esta seção responde perguntas formuladas de diferentes formas. Um usuário pode perguntar:
+- **Forma direta:** "Como visualizar contas a pagar?"
+- **Com problema:** "Não consigo pagar uma conta, o que fazer?"
+- **Informal:** "Como eu vejo as contas que tenho que pagar?"
+- **Por sintoma:** "Quando o botão de pagamento não aparece, o que significa?"
+- **Com dúvida:** "Como exportar um relatório das contas a pagar?"
+
+**Termos alternativos e sinônimos usados para esta funcionalidade:**
+- "Gerenciar contas a pagar", "visualizar contas pendentes", "pagar parcelas", "exportar relatório de pagamentos"
+- "Contas a pagar", "parcelas", "pagamentos"
 
 **❓ PERGUNTAS QUE ESTA SEÇÃO RESPONDE:**
-- Como posso visualizar as contas a pagar no sistema?
-- Quais filtros posso aplicar para encontrar uma conta específica?
-- O que fazer se não consigo realizar o pagamento de uma parcela?
+- Como visualizar as contas a pagar?
+- Como aplicar filtros nas contas a pagar?
+- O que fazer se o botão de pagamento não estiver habilitado?
+- Como exportar um relatório das contas a pagar?
+- O que preciso fazer antes de pagar uma conta?
 
 ---
 
@@ -947,112 +1390,157 @@ A funcionalidade de **Contas a Pagar** permite ao usuário visualizar as contas 
 
 ---
 
-## 10. Parcelamento de Contas
+## 10. Gerenciamento de Parcelas de Contas
 
 **📋 METADADOS:**
 - **ID:** sec_10
 - **⏱️ Minutagem:** 22:52 → 25:26
 - **⏲️ Duração:** 154s
 - **🎬 Link:** [Assistir este trecho](https://youtu.be/DMvowd7eCAA?si=qrXiuODXTH9y2zNZ&t=1372)
-- **📦 Módulo:** Financeiro
-- **🏷️ Categorias:** Operacional, Gestão de Contas, Pagamentos
-- **🔑 Palavras-chave:** parcelar, contas, vencimento, pagamento, comprovante, histórico
+- **📦 Módulo:** Gestão Financeira
+- **🏷️ Categorias:** Parcelamento, Pagamento, Histórico, Anexos
+- **🔑 Palavras-chave:** parcelar, contas, vencimento, comprovante, histórico
 
-> **🔍 RESUMO EXECUTIVO:** Esta seção detalha como parcelar contas no sistema, incluindo a alteração de parcelas, datas de vencimento e formas de pagamento. O objetivo é facilitar a gestão de pagamentos e garantir que os usuários possam ajustar informações conforme necessário.
+> **🔍 RESUMO EXECUTIVO:** Esta seção detalha como gerenciar o parcelamento de contas, incluindo a alteração de parcelas, datas de vencimento e anexação de comprovantes de pagamento. O objetivo é facilitar o controle financeiro e a negociação com fornecedores.
 
 **Contexto:**
-Estamos na interface do módulo financeiro do sistema, onde o usuário pode gerenciar contas a pagar. Esta seção foca na funcionalidade de parcelamento de contas, permitindo que o usuário ajuste detalhes das parcelas e registre pagamentos.
+Estamos na interface de gerenciamento de contas do sistema, onde é possível realizar o parcelamento de contas, alterar informações relacionadas a parcelas e acompanhar o histórico de ações realizadas.
 
 **Localização no Sistema:**
-- Caminho de navegação completo: Menu Principal > Módulo Financeiro > Gestão de Contas
+- Caminho de navegação completo: Menu Principal > Gestão Financeira > Contas
 - Tela/interface específica: Tela de Detalhes da Conta
 
 **Funcionalidade Detalhada:**
-A funcionalidade de parcelamento de contas permite que o usuário divida o valor total de uma conta em várias parcelas. O usuário pode definir a quantidade de parcelas, o valor de cada uma, a data de vencimento e a forma de pagamento. Além disso, é possível alterar a data de vencimento de uma parcela já criada e anexar comprovantes de pagamento.
+
+A funcionalidade de gerenciamento de parcelas de contas permite que o usuário:
+- **Parcelar contas**: O usuário pode definir a quantidade de parcelas e o valor de cada uma.
+- **Alterar datas de vencimento**: É possível modificar a data de vencimento de cada parcela conforme acordos com fornecedores.
+- **Anexar documentos**: O sistema permite anexar comprovantes de pagamento e boletos, com nomenclaturas que variam conforme a forma de pagamento.
+- **Visualizar histórico**: O usuário pode acessar todo o histórico de ações realizadas na conta, incluindo data, horário e usuário responsável.
 
 ### 🔹 Passo a Passo Detalhado:
 
-1. **Definir Parcelas**
-   - Localização: Tela de Detalhes da Conta, seção de Parcelamento
-   - Como fazer: O usuário deve inserir a quantidade de parcelas desejadas no campo `Quantidade de Parcelas`.
+1. **Parcelar Conta**
+   - Localização: Tela de Detalhes da Conta
+   - Como fazer: Clique no campo de **Quantidade de Parcelas** e insira o número desejado. Em seguida, ajuste o **Valor de Cada Parcela** conforme necessário.
    - Campos/Opções disponíveis:
-     * `Quantidade de Parcelas`: Número inteiro que representa quantas parcelas a conta será dividida.
-     * `Valor de Cada Parcela`: Campo que permite a edição do valor de cada parcela.
-   - Resultado esperado: O sistema calcula e exibe o valor total das parcelas e atualiza a interface.
+     * `Quantidade de Parcelas`: Número inteiro que representa quantas vezes a conta será paga.
+     * `Valor de Cada Parcela`: Valor monetário que será pago em cada parcela.
+   - Resultado esperado: O sistema atualiza automaticamente o total a ser pago e exibe as parcelas configuradas.
 
 2. **Alterar Data de Vencimento**
-   - Localização: Tela de Detalhes da Conta, seção de Parcelamento
-   - Como fazer: O usuário deve clicar no campo `Data de Vencimento` da parcela que deseja alterar e inserir a nova data.
-   - Observações importantes: O sistema exibe a data de vencimento original e a nova data após a alteração.
-   - Resultado esperado: A data de vencimento da parcela é atualizada e salva no sistema.
+   - Localização: Tela de Detalhes da Conta, seção de parcelas.
+   - Como fazer: Clique no campo de **Data de Vencimento** da parcela que deseja alterar e insira a nova data.
+   - Observações importantes: O sistema mostrará a **Data de Vencimento Original** e a **Data de Vencimento Atual** para comparação.
+   - Resultado esperado: A data de vencimento da parcela é atualizada e refletida na interface.
 
 3. **Alterar Forma de Pagamento**
-   - Localização: Tela de Detalhes da Conta, seção de Pagamento
-   - Como fazer: O usuário deve selecionar a nova forma de pagamento no dropdown `Forma de Pagamento`.
-   - Observações importantes: A nomenclatura do comprovante de pagamento muda conforme a forma de pagamento selecionada (ex: de "boleto" para "recibo").
-   - Resultado esperado: O sistema atualiza a nomenclatura do comprovante de pagamento de acordo com a forma selecionada.
+   - Localização: Tela de Detalhes da Conta, seção de pagamento.
+   - Como fazer: Selecione a nova forma de pagamento no dropdown de **Forma de Pagamento**. Por exemplo, altere para "Em Mãos".
+   - Observações importantes: A nomenclatura do comprovante mudará para "Recibo" se a forma de pagamento for alterada.
+   - Resultado esperado: O sistema atualiza o tipo de comprovante gerado.
 
 4. **Anexar Comprovante de Pagamento**
-   - Localização: Tela de Detalhes da Conta, seção de Anexos
-   - Como fazer: O usuário deve clicar no botão `Anexar Comprovante` e selecionar o arquivo desejado.
+   - Localização: Tela de Detalhes da Conta, seção de anexos.
+   - Como fazer: Clique no botão **Anexar Comprovante** e selecione o arquivo desejado do seu dispositivo.
    - Resultado esperado: O comprovante é anexado à conta e fica disponível para consulta.
 
 5. **Visualizar Histórico da Conta**
-   - Localização: Tela de Detalhes da Conta, seção de Histórico
-   - Como fazer: O usuário pode visualizar todas as ações realizadas na conta, incluindo data, horário e usuário responsável.
-   - Resultado esperado: O histórico é exibido com todas as informações relevantes.
+   - Localização: Tela de Detalhes da Conta, seção de histórico.
+   - Como fazer: Navegue até a seção de **Histórico** para visualizar todas as ações realizadas.
+   - Resultado esperado: O sistema exibe uma lista com data, horário e usuário responsável por cada ação.
 
-6. **Realizar Pagamento**
-   - Localização: Tela de Detalhes da Conta, botão `Pagar`
-   - Como fazer: O usuário deve clicar no botão `Pagar`, associar a conta bancária e inserir o valor pago.
-   - Resultado esperado: O pagamento é efetivado e registrado no sistema.
+6. **Pagar Conta**
+   - Localização: Tela de Detalhes da Conta, botão **Pagar**.
+   - Como fazer: Clique em **Pagar**, selecione a conta bancária e insira o valor pago. Clique em **Salvar**.
+   - Resultado esperado: O pagamento é efetivado e registrado no histórico.
 
 7. **Excluir Pagamento**
-   - Localização: Tela de Detalhes da Conta, seção de Pagamentos
-   - Como fazer: O usuário deve localizar o pagamento que deseja excluir e clicar no botão `Excluir`.
-   - Observações importantes: O usuário pode refazer o pagamento após a exclusão, corrigindo informações como data ou valores de juros/multa/desconto.
-   - Resultado esperado: O pagamento é removido do sistema, permitindo uma nova tentativa.
-
-8. **Agrupar Contas**
-   - Localização: Tela de Detalhes da Conta, seção de Agrupamento
-   - Como fazer: O usuário pode selecionar várias contas e clicar no botão `Agrupar`.
-   - Resultado esperado: As contas selecionadas são agrupadas, permitindo um único pagamento.
-
-9. **Adicionar Observações**
-   - Localização: Tela de Detalhes da Conta, campo `Observações`
-   - Como fazer: O usuário deve clicar no campo `Observações` e inserir o texto desejado.
-   - Resultado esperado: As observações são salvas e ficam disponíveis para consulta futura.
+   - Localização: Tela de Detalhes da Conta, seção de pagamentos.
+   - Como fazer: Clique no botão **Excluir** ao lado do pagamento que deseja remover.
+   - Resultado esperado: O pagamento é excluído, permitindo que o usuário refaça a operação com os dados corretos.
 
 **Campos e Parâmetros:**
 
-| Campo                     | Tipo        | Obrigatório | Descrição                                           | Exemplo            |
-|---------------------------|-------------|-------------|----------------------------------------------------|--------------------|
-| `Quantidade de Parcelas`  | Numérico    | Sim         | Número de parcelas em que a conta será dividida    | 3                  |
-| `Valor de Cada Parcela`   | Monetário   | Sim         | Valor individual de cada parcela                     | R$ 43,33           |
-| `Data de Vencimento`      | Data        | Sim         | Data em que a parcela deve ser paga                 | 30/11/2023         |
-| `Forma de Pagamento`      | Dropdown     | Sim         | Método de pagamento utilizado                        | Boleto, Pix, Em mãos|
-| `Comprovante de Pagamento` | Anexo       | Não         | Arquivo que comprova o pagamento realizado          | comprovante.pdf     |
-| `Observações`             | Texto       | Não         | Notas adicionais sobre a conta                       | Pagamento em atraso |
+| Campo                     | Tipo      | Obrigatório | Descrição                                               | Exemplo               |
+|---------------------------|-----------|-------------|---------------------------------------------------------|-----------------------|
+| `Quantidade de Parcelas`   | Inteiro   | Sim         | Número de parcelas em que a conta será dividida.       | 3                     |
+| `Valor de Cada Parcela`    | Decimal   | Sim         | Valor monetário de cada parcela.                        | R$ 100,00             |
+| `Data de Vencimento`       | Data      | Sim         | Data em que a parcela deve ser paga.                   | 30/11/2023            |
+| `Forma de Pagamento`       | Dropdown  | Sim         | Método utilizado para o pagamento (Ex: Pix, Em Mãos).  | Em Mãos               |
+| `Comprovante`              | Arquivo   | Não         | Documento que comprova o pagamento realizado.           | comprovante.pdf       |
 
 **Regras de Negócio:**
-- O usuário pode parcelar uma conta em até 12 vezes.
+- O número de parcelas não pode ser menor que 1.
+- O valor de cada parcela deve ser um número positivo.
 - A data de vencimento não pode ser anterior à data atual.
-- O sistema deve gerar recibos automaticamente para pagamentos realizados via depósito em conta, em mãos ou Pix.
-- O histórico deve registrar todas as ações realizadas, incluindo alterações e pagamentos.
+- O sistema deve permitir a exclusão de pagamentos apenas se o pagamento não tiver sido confirmado.
 
 **Observações Importantes:**
-- É recomendável revisar as informações antes de efetuar o pagamento para evitar erros.
-- O usuário deve garantir que a forma de pagamento selecionada corresponda ao método utilizado.
-- Caso ocorra um erro no pagamento, o usuário pode excluir e refazer o pagamento sem complicações.
+- Sempre verifique a data de vencimento antes de confirmar o pagamento.
+- É recomendável anexar comprovantes para facilitar a auditoria futura.
+- Caso um pagamento seja excluído, todos os dados relacionados devem ser revisados para evitar inconsistências.
 
 **Conceitos-Chave:**
-- **Parcelamento**: Divisão do valor total de uma conta em várias parcelas a serem pagas em datas específicas.
-- **Forma de Pagamento**: Método utilizado para efetuar o pagamento, que pode influenciar na nomenclatura do comprovante.
+- **Parcelamento**: Divisão de um valor total em várias parcelas a serem pagas em datas específicas.
+- **Comprovante de Pagamento**: Documento que valida que um pagamento foi realizado.
+
+**🔧 SOLUÇÃO DE PROBLEMAS (Troubleshooting):**
+
+| Problema                               | Causa Provável                     | Solução                                       | Prevenção                                   |
+|----------------------------------------|------------------------------------|-----------------------------------------------|---------------------------------------------|
+| Não consigo alterar a data de vencimento | Data inválida ou já vencida       | Verifique se a nova data é válida e futura. | Sempre planeje as datas com antecedência.  |
+| Forma de pagamento não aparece         | Falta de configuração no sistema   | Verifique as configurações de pagamento.     | Mantenha as opções de pagamento atualizadas.|
+| Comprovante não anexa                  | Formato de arquivo não suportado   | Utilize formatos aceitos (PDF, JPG).        | Consulte a lista de formatos suportados.   |
+
+**💡 DICAS E BOAS PRÁTICAS:**
+- Utilize sempre a opção de anexar comprovantes para manter um registro claro.
+- Revise as parcelas antes de finalizar o pagamento para evitar erros.
+- Agrupe contas sempre que possível para simplificar o processo de pagamento.
+
+**📚 EXEMPLOS PRÁTICOS:**
+
+**Exemplo 1: Parcelamento de Conta de Fornecedor**
+```
+Situação: Você precisa pagar uma conta de R$ 300,00 a um fornecedor.
+Ação: 
+  • Campo `Quantidade de Parcelas`: 3
+  • Campo `Valor de Cada Parcela`: R$ 100,00
+Resultado: O sistema cria três parcelas de R$ 100,00 cada, com a data de vencimento definida para um mês.
+```
+
+**Exemplo 2: Alteração de Data de Vencimento**
+```
+Situação: Você negociou uma nova data de vencimento com o fornecedor.
+Ação: 
+  • Campo `Data de Vencimento`: Alterar de 30/11/2023 para 15/12/2023
+Resultado: O sistema atualiza a data de vencimento e exibe a data original para referência.
+```
+
+**🔗 DEPENDÊNCIAS E RELAÇÕES:**
+- **Pré-requisitos:** O usuário deve ter permissão para gerenciar contas e pagamentos.
+- **Habilita:** A funcionalidade de relatórios financeiros, permitindo uma visão consolidada das contas pagas e pendentes.
+- **Relacionado a:** Funcionalidades de gestão de fornecedores e relatórios financeiros.
+
+**🔍 VARIAÇÕES DE BUSCA (Otimização RAG):**
+
+Esta seção responde perguntas formuladas de diferentes formas. Um usuário pode perguntar:
+- **Forma direta:** "Como parcelar uma conta?"
+- **Com problema:** "Não consigo alterar a data de vencimento, o que fazer?"
+- **Informal:** "Como eu faço para dividir uma conta em parcelas?"
+- **Por sintoma:** "Quando a data de vencimento está errada, como corrigir?"
+- **Com dúvida:** "Qual o processo para anexar um comprovante de pagamento?"
+
+**Termos alternativos e sinônimos usados para esta funcionalidade:**
+- "Dividir conta", "parcelar pagamento", "ajustar vencimento", "anexar recibo"
+- "Forma de pagamento", "método de quitação", "documento de pagamento"
 
 **❓ PERGUNTAS QUE ESTA SEÇÃO RESPONDE:**
-- Como posso parcelar uma conta no sistema?
-- É possível alterar a data de vencimento de uma parcela já criada?
-- O que devo fazer se cometi um erro ao registrar um pagamento?
+- Como posso parcelar uma conta?
+- O que fazer se eu precisar alterar a data de vencimento de uma parcela?
+- Como anexo um comprovante de pagamento?
+- O que fazer se o pagamento foi registrado incorretamente?
+- Quais são os requisitos para gerenciar parcelas de contas?
 
 ---
 
@@ -1062,99 +1550,151 @@ A funcionalidade de parcelamento de contas permite que o usuário divida o valor
 
 ---
 
-## 11. Agrupamento de Contas a Pagar
+## 11. Agrupamento de Contas no Sistema de Gestão Financeira
 
 **📋 METADADOS:**
 - **ID:** sec_11
 - **⏱️ Minutagem:** 25:22 → 27:57
 - **⏲️ Duração:** 155s
 - **🎬 Link:** [Assistir este trecho](https://youtu.be/DMvowd7eCAA?si=qrXiuODXTH9y2zNZ&t=1522)
-- **📦 Módulo:** Financeiro
-- **🏷️ Categorias:** Contas a Pagar, Agrupamento, Gestão Financeira
-- **🔑 Palavras-chave:** agrupamento, parcelas, contas a pagar, parceiro, desagrupar, editar
+- **📦 Módulo:** Gestão Financeira
+- **🏷️ Categorias:** Agrupamento, Contas a Pagar, Contas a Receber, Análise Financeira
+- **🔑 Palavras-chave:** agrupamento, parcelas, contas a pagar, contas a receber, pagamento, desagrupar, emitir boleto
 
-> **🔍 RESUMO EXECUTIVO:** Esta seção ensina como agrupar contas a pagar no sistema, permitindo que o usuário organize parcelas relacionadas a um parceiro ou outro critério, facilitando a gestão financeira e o fluxo de caixa.
+> **🔍 RESUMO EXECUTIVO:** Esta seção detalha o processo de agrupamento de contas no sistema de gestão financeira, permitindo que o usuário organize parcelas de diferentes centros de custo em uma única conta, facilitando a análise financeira e o fluxo de caixa.
 
 **Contexto:**
-Estamos na interface do módulo financeiro do sistema, onde o usuário pode gerenciar contas a pagar. O objetivo desta seção é detalhar o processo de agrupamento de contas, que permite consolidar várias parcelas em uma única conta a pagar, simplificando o controle financeiro.
+Estamos na interface do módulo de Gestão Financeira, onde o usuário pode gerenciar contas a pagar e a receber. O objetivo desta seção é ensinar como agrupar contas de diferentes centros de custo e como gerenciar essas contas de forma eficiente.
 
 **Localização no Sistema:**
-- Caminho de navegação completo: Menu Principal > Módulo Financeiro > Contas a Pagar
-- Tela/interface específica: Tela de Listagem de Contas a Pagar
+- Caminho de navegação completo: Menu Principal > Gestão Financeira > Contas a Pagar
+- Tela/interface específica: Tela de Contas a Pagar
 
 **Funcionalidade Detalhada:**
-A funcionalidade de agrupamento de contas a pagar permite que o usuário selecione várias parcelas e as consolide em uma única conta a pagar. Isso é útil para gerenciar pagamentos relacionados a um mesmo parceiro, comissão, folha de pagamento ou tributo. O sistema gera uma nova conta a pagar com o valor total das parcelas selecionadas, enquanto as parcelas agrupadas são destacadas em vermelho.
+O agrupamento de contas permite que o usuário selecione várias parcelas de contas a pagar e as combine em uma única conta. Isso é útil para simplificar o gerenciamento financeiro, especialmente quando se trabalha com diferentes centros de custo. As parcelas agrupadas são exibidas em vermelho, e o sistema gera uma nova conta a pagar com o valor total das parcelas selecionadas.
 
 ### 🔹 Passo a Passo Detalhado:
 
-1. **Agrupar Contas a Pagar**
-   - Localização: Tela de Listagem de Contas a Pagar, botão **Agrupar**
+1. **Agrupar Contas**
+   - Localização: Tela de Contas a Pagar, botão **Agrupar**
    - Como fazer: Clique no botão **Agrupar** para iniciar o processo de agrupamento de contas.
    - Campos/Opções disponíveis:
-     * `Tipo de Agrupamento`: Selecione o tipo de agrupamento desejado (ex: parceiro, comissão, folha de pagamento, tributo).
-   - Resultado esperado: O sistema exibirá opções para selecionar o parceiro e as parcelas a serem agrupadas.
+     * **Tipo de Agrupamento**: Selecione o tipo de agrupamento desejado (ex: parceiro, comissão, folha de pagamento, tributo).
+   - Resultado esperado: O sistema permitirá que você selecione as parcelas a serem agrupadas.
 
-2. **Selecionar Tipo de Agrupamento**
-   - Localização: Menu suspenso que aparece após clicar em **Agrupar**.
-   - Como fazer: Escolha a opção **Parceiro** para agrupar as parcelas relacionadas a um parceiro específico.
-   - Resultado esperado: O sistema permite que você selecione o parceiro desejado para o agrupamento.
+2. **Selecionar Parcelas para Agrupamento**
+   - Localização: Após clicar em **Agrupar**, uma lista de parcelas disponíveis será exibida.
+   - Como fazer: Selecione as parcelas que deseja agrupar. Você pode clicar nas caixas de seleção ao lado de cada parcela.
+   - Resultado esperado: As parcelas selecionadas serão incluídas no agrupamento.
 
-3. **Selecionar Parcelas para Agrupamento**
-   - Localização: Lista de parcelas disponíveis na tela.
-   - Como fazer: Marque as parcelas que deseja agrupar. Você pode selecionar várias parcelas ao mesmo tempo.
-   - Resultado esperado: As parcelas selecionadas são preparadas para serem agrupadas em uma nova conta a pagar.
+3. **Adicionar Nova Data de Vencimento**
+   - Localização: Após selecionar as parcelas, um campo para **Nova Data de Vencimento** aparecerá.
+   - Como fazer: Insira a nova data de vencimento para a conta agrupada.
+   - Observações importantes: A nova data de vencimento deve ser válida e não pode ser anterior à data atual.
+   - Resultado esperado: O sistema gera uma nova conta a pagar com o valor total das parcelas selecionadas.
 
-4. **Adicionar Nova Data de Vencimento**
-   - Localização: Campo de data que aparece após selecionar as parcelas.
-   - Como fazer: Insira uma nova data de vencimento para a conta a pagar que será gerada.
-   - Resultado esperado: O sistema cria uma nova conta a pagar com o valor total das parcelas selecionadas e a nova data de vencimento.
+4. **Visualizar Contas Agrupadas**
+   - Localização: Tela de Contas a Pagar, onde as parcelas agrupadas aparecem em vermelho.
+   - Como fazer: Após o agrupamento, verifique a lista de contas a pagar para visualizar as parcelas agrupadas.
+   - Resultado esperado: As parcelas agrupadas aparecem destacadas em vermelho, indicando que foram combinadas em uma nova conta.
 
-5. **Visualizar Contas Agrupadas**
-   - Localização: Tela de Listagem de Contas a Pagar.
-   - Como fazer: Após o agrupamento, as parcelas agrupadas aparecerão em vermelho.
-   - Resultado esperado: Você verá as parcelas agrupadas destacadas, indicando que foram consolidadas em uma nova conta a pagar.
+5. **Realizar Pagamento da Conta Agrupada**
+   - Localização: Na lista de contas a pagar, localize a conta agrupada.
+   - Como fazer: Clique na conta agrupada e selecione a opção **Realizar Pagamento**.
+   - Resultado esperado: O sistema permitirá que você processe o pagamento da conta agrupada.
 
-6. **Realizar Pagamento da Conta Agrupada**
-   - Localização: Tela de Listagem de Contas a Pagar, na nova conta gerada.
-   - Como fazer: Clique na conta a pagar gerada para realizar o pagamento.
-   - Resultado esperado: O sistema permitirá que você prossiga com o pagamento da conta agrupada.
-
-7. **Desagrupar Contas**
-   - Localização: Tela de Listagem de Contas a Pagar, opção **Desagrupar** ao lado da conta agrupada.
+6. **Desagrupar Contas**
+   - Localização: Na conta agrupada, haverá uma opção para **Desagrupar**.
    - Como fazer: Clique em **Desagrupar** para separar as parcelas que foram agrupadas.
    - Resultado esperado: As parcelas voltarão a ser exibidas individualmente na lista de contas a pagar.
 
-8. **Editar Agrupamento**
-   - Localização: Tela de Listagem de Contas a Pagar, opção **Editar** ao lado da conta agrupada.
-   - Como fazer: Clique em **Editar** para modificar o agrupamento, permitindo adicionar ou excluir parcelas.
-   - Resultado esperado: O sistema permitirá que você ajuste as parcelas que estão agrupadas.
+7. **Editar Agrupamento**
+   - Localização: Na conta agrupada, clique na opção **Editar**.
+   - Como fazer: Você pode adicionar ou excluir parcelas do agrupamento.
+   - Observações importantes: Certifique-se de que as parcelas que deseja adicionar estão disponíveis e que as que deseja excluir estão realmente selecionadas.
+   - Resultado esperado: O agrupamento será atualizado conforme as alterações feitas.
 
 **Campos e Parâmetros:**
 
-| Campo                     | Tipo         | Obrigatório | Descrição                                               | Exemplo               |
-|---------------------------|--------------|-------------|---------------------------------------------------------|-----------------------|
-| `Tipo de Agrupamento`     | Dropdown     | Sim         | Seleciona o critério para o agrupamento das parcelas.  | Parceiro              |
-| `Parcelas`                | Lista        | Sim         | Lista de parcelas disponíveis para agrupamento.        | Parcela 1, Parcela 2  |
-| `Nova Data de Vencimento` | Data         | Sim         | Data de vencimento da nova conta a pagar gerada.       | 30/11/2023            |
+| Campo                   | Tipo         | Obrigatório | Descrição                                            | Exemplo               |
+|-------------------------|--------------|-------------|-----------------------------------------------------|-----------------------|
+| Tipo de Agrupamento     | Dropdown     | Sim         | Tipo de agrupamento a ser realizado                 | Parceiro              |
+| Nova Data de Vencimento | Data         | Sim         | Data de vencimento da nova conta agrupada           | 30/12/2023            |
 
 **Regras de Negócio:**
-- O sistema permite agrupar contas a pagar de diferentes centros de custo, mas na análise financeira, as contas serão separadas por obra.
-- As parcelas agrupadas são destacadas em vermelho na tela de listagem.
-- É possível desagrupar contas a qualquer momento, permitindo ajustes no agrupamento.
+- O sistema permite agrupar contas de diferentes centros de custo em uma única conta.
+- As parcelas agrupadas são exibidas em vermelho na lista de contas a pagar.
+- É possível desagrupar contas e editar o agrupamento a qualquer momento.
 
 **Observações Importantes:**
-- Ao agrupar contas, certifique-se de selecionar corretamente as parcelas, pois é possível que uma parcela errada seja incluída.
-- O sistema não permite o agrupamento de contas a receber, apenas de contas a pagar.
-- Para emitir boletos, o usuário deve acessar a parcela individualmente.
+- Ao agrupar contas, verifique se as parcelas selecionadas estão corretas para evitar erros.
+- As parcelas agrupadas não podem ser pagas individualmente até que sejam desagrupadas.
+- O agrupamento deve ser feito antes da data de vencimento das parcelas.
 
 **Conceitos-Chave:**
-- **Agrupamento**: Processo de consolidar várias parcelas em uma única conta a pagar.
+- **Agrupamento de Contas**: Processo de combinar várias parcelas em uma única conta para simplificar o gerenciamento financeiro.
 - **Desagrupar**: Ação de separar parcelas que foram agrupadas anteriormente.
+
+**🔧 SOLUÇÃO DE PROBLEMAS (Troubleshooting):**
+
+| Problema                          | Causa Provável                   | Solução                                               | Prevenção                                           |
+|-----------------------------------|----------------------------------|------------------------------------------------------|----------------------------------------------------|
+| Não consigo agrupar parcelas       | Parcela já está agrupada        | Verifique se a parcela já foi agrupada e desagrupe-a antes de tentar novamente. | Sempre verifique o status das parcelas antes de agrupar. |
+| Botão de agrupar desabilitado      | Nenhuma parcela selecionada      | Selecione pelo menos uma parcela antes de clicar em **Agrupar**. | Certifique-se de que as parcelas estão disponíveis para seleção. |
+| Erro ao emitir boleto              | Falta de informações necessárias | Verifique se todos os campos obrigatórios estão preenchidos. | Sempre preencha todos os campos obrigatórios antes de emitir. |
+
+**💡 DICAS E BOAS PRÁTICAS:**
+- Sempre revise as parcelas selecionadas antes de confirmar o agrupamento.
+- Utilize o recurso de desagrupar para corrigir agrupamentos feitos incorretamente.
+- Mantenha um registro das datas de vencimento para evitar atrasos nos pagamentos.
+
+**📚 EXEMPLOS PRÁTICOS:**
+
+**Exemplo 1: Agrupamento de Parcelas de um Parceiro**
+```
+Situação: Você precisa agrupar parcelas de um fornecedor específico.
+Ação: 
+  • Acesse a tela de Contas a Pagar.
+  • Clique em **Agrupar**.
+  • Selecione o tipo de agrupamento como "Parceiro".
+  • Escolha as parcelas de "Fornecedor XYZ".
+  • Defina a nova data de vencimento como "15/11/2023".
+Resultado: Uma nova conta a pagar é criada com o valor total das parcelas selecionadas.
+```
+
+**Exemplo 2: Desagrupamento de Contas**
+```
+Situação: Você agrupou uma parcela errada e precisa corrigi-la.
+Ação: 
+  • Acesse a conta agrupada na tela de Contas a Pagar.
+  • Clique em **Desagrupar**.
+Resultado: As parcelas voltam a ser exibidas individualmente, permitindo que você faça novas seleções.
+```
+
+**🔗 DEPENDÊNCIAS E RELAÇÕES:**
+- **Pré-requisitos:** As parcelas devem estar registradas no sistema antes de serem agrupadas.
+- **Habilita:** O agrupamento de contas permite uma análise financeira mais eficiente e um melhor controle do fluxo de caixa.
+- **Relacionado a:** Funcionalidades de contas a receber, onde o processo é semelhante, mas não permite agrupamento.
+
+**🔍 VARIAÇÕES DE BUSCA (Otimização RAG):**
+
+Esta seção responde perguntas formuladas de diferentes formas. Um usuário pode perguntar:
+- **Forma direta:** "Como agrupar contas no sistema?"
+- **Com problema:** "Não consigo agrupar minhas parcelas, o que fazer?"
+- **Informal:** "Como eu junto as contas?"
+- **Por sintoma:** "Minhas parcelas estão desorganizadas, como arrumar isso?"
+- **Alternativa:** "Qual o processo para agrupar contas a pagar?"
+
+**Termos alternativos e sinônimos usados para esta funcionalidade:**
+- Agrupar contas, combinar parcelas, juntar contas, consolidar pagamentos.
+- Agrupamento de contas a pagar, agrupamento financeiro, gestão de parcelas.
 
 **❓ PERGUNTAS QUE ESTA SEÇÃO RESPONDE:**
 - Como agrupar contas a pagar no sistema?
-- O que acontece com as parcelas após o agrupamento?
-- É possível desagrupar contas a pagar? Como?
+- O que fazer se não consigo agrupar minhas parcelas?
+- Como desagrupar contas que foram agrupadas?
+- O que fazer se o botão de agrupar estiver desabilitado?
+- Quais informações preciso ter antes de agrupar contas?
 
 ---
 
@@ -1173,48 +1713,48 @@ A funcionalidade de agrupamento de contas a pagar permite que o usuário selecio
 - **🎬 Link:** [Assistir este trecho](https://youtu.be/DMvowd7eCAA?si=qrXiuODXTH9y2zNZ&t=1675)
 - **📦 Módulo:** Contas a Receber
 - **🏷️ Categorias:** Emissão de Boletos, Gerenciamento Financeiro, Relatórios
-- **🔑 Palavras-chave:** boleto, emissão, cancelamento, extrato, parcelas, pagamento, integração bancária
+- **🔑 Palavras-chave:** boleto, emissão, cancelamento, extrato, parcelas, pagamento
 
-> **🔍 RESUMO EXECUTIVO:** Esta seção detalha o processo de emissão e gerenciamento de boletos dentro do sistema, incluindo a alteração de dados, envio para clientes e cancelamento de boletos. O objetivo é fornecer um guia completo para usuários que precisam gerenciar suas contas a receber de forma eficiente.
+> **🔍 RESUMO EXECUTIVO:** Esta seção detalha o processo de emissão e gerenciamento de boletos no sistema, incluindo como associar contas bancárias, alterar dados do boleto, enviar para clientes e gerar extratos. O objetivo é facilitar o controle financeiro e a comunicação com os clientes.
 
 **Contexto:**
-Estamos na interface do módulo de **Contas a Receber**, onde o usuário pode emitir boletos, gerenciar pagamentos e acessar informações financeiras relacionadas aos clientes.
+Estamos na funcionalidade de **Contas a Receber**, onde o usuário pode emitir boletos para pagamentos de clientes, gerenciar suas informações e acompanhar o status das parcelas.
 
 **Localização no Sistema:**
-- Caminho de navegação completo: Menu Principal > Contas a Receber > Emissão de Boletos
+- Caminho de navegação: Menu Principal > Módulo Contas a Receber > Submenu Emissão de Boletos
 - Tela/interface específica: Tela de Emissão de Boletos
 
 **Funcionalidade Detalhada:**
-A funcionalidade de emissão e gerenciamento de boletos permite ao usuário associar uma conta bancária ao boleto, alterar informações como data de vencimento e juros, e enviar o boleto ao cliente. Além disso, o sistema possibilita o cancelamento de boletos e a geração de extratos financeiros dos clientes.
+A funcionalidade permite ao usuário emitir boletos associados a uma conta bancária específica, alterar informações relevantes do boleto, como data de vencimento e juros, e enviar o boleto para o cliente via e-mail ou WhatsApp. Além disso, o sistema possibilita o cancelamento de boletos e a geração de extratos financeiros dos clientes.
 
 ### 🔹 Passo a Passo Detalhado:
 
-1. **Associar Conta Bancária ao Boleto**
+1. **Associar e Selecionar Conta Bancária**
    - Localização: Tela de Emissão de Boletos
-   - Como fazer: Selecione a conta bancária desejada no campo de seleção de contas.
+   - Como fazer: Selecione a conta bancária desejada no dropdown de contas disponíveis.
    - Campos/Opções disponíveis:
-     * `Conta Bancária`: Lista de contas disponíveis para seleção.
-   - Resultado esperado: A conta bancária é associada ao boleto a ser emitido.
+     * `Conta Bancária`: Lista de contas cadastradas no sistema.
+   - Resultado esperado: A conta bancária é associada ao boleto que será emitido.
 
 2. **Alterar Campos do Boleto**
    - Localização: Tela de Emissão de Boletos
-   - Como fazer: Preencha ou altere os campos de data de vencimento, juros e instruções.
+   - Como fazer: Preencha ou altere os campos como data de vencimento, juros e instruções.
    - Campos/Opções disponíveis:
-     * `Data de Vencimento`: Campo para inserir a nova data de vencimento.
-     * `Juros`: Campo para adicionar juros ao boleto.
-     * `Instrução`: Campo para adicionar instruções ou recados ao cliente.
-   - Resultado esperado: Os campos são atualizados conforme as informações inseridas.
+     * `Data de Vencimento`: Campo de data (formato DD/MM/AAAA).
+     * `Juros`: Campo numérico para definir a taxa de juros.
+     * `Instrução`: Campo de texto livre para adicionar instruções específicas.
+   - Resultado esperado: As informações do boleto são atualizadas conforme as alterações realizadas.
 
 3. **Emitir o Boleto**
    - Localização: Tela de Emissão de Boletos
-   - Como fazer: Clique no botão **Concluir** para emitir o boleto.
-   - Resultado esperado: O boleto é emitido e seu status muda para "Emitido".
+   - Como fazer: Clique no botão **Emitir Boleto**.
+   - Resultado esperado: O boleto é gerado e recebe o status de "Emitido".
 
-4. **Enviar Boleto ao Cliente**
+4. **Enviar Boleto para o Cliente**
    - Localização: Tela de Emissão de Boletos
-   - Como fazer: Utilize as opções de envio por e-mail ou WhatsApp.
-   - Observações importantes: O envio pode ser feito diretamente pelo sistema, utilizando o botão correspondente.
-   - Resultado esperado: O boleto é enviado ao cliente pelo meio selecionado.
+   - Como fazer: Utilize o botão **Enviar por E-mail** ou **Enviar por WhatsApp**.
+   - Observações importantes: Certifique-se de que o e-mail ou número de WhatsApp do cliente esteja correto.
+   - Resultado esperado: O boleto é enviado para o cliente pelo meio selecionado.
 
 5. **Cancelar Boleto**
    - Localização: Tela de Emissão de Boletos
@@ -1224,53 +1764,109 @@ A funcionalidade de emissão e gerenciamento de boletos permite ao usuário asso
 
 6. **Gerar Extrato do Cliente**
    - Localização: Tela de Emissão de Boletos
-   - Como fazer: Clique na opção para gerar o extrato.
-   - Resultado esperado: Um extrato em PDF é gerado, contendo todas as parcelas pagas e pendentes do cliente, além do saldo devedor.
+   - Como fazer: Clique no botão **Gerar Extrato**.
+   - Resultado esperado: Um extrato em PDF é gerado, contendo todas as parcelas pagas e pendentes do cliente.
 
 7. **Parcelar Conta a Receber**
    - Localização: Tela de Emissão de Boletos
-   - Como fazer: Acesse a opção de parcelamento e altere a data de vencimento e o valor de cada parcela.
+   - Como fazer: Clique no botão **Parcelar** e preencha os campos necessários.
    - Campos/Opções disponíveis:
-     * `Data de Vencimento`: Campo para inserir a nova data de vencimento da parcela.
-     * `Valor`: Campo para definir o valor de cada parcela.
-     * `Forma de Pagamento`: Campo para selecionar a forma de pagamento.
-   - Resultado esperado: As parcelas são configuradas conforme as informações inseridas.
+     * `Data de Vencimento`: Campo de data para cada parcela.
+     * `Valor`: Campo numérico para definir o valor de cada parcela.
+     * `Forma de Pagamento`: Dropdown para selecionar a forma de pagamento.
+   - Resultado esperado: As parcelas são criadas e associadas à conta a receber.
 
 8. **Receber Pagamento**
    - Localização: Tela de Emissão de Boletos
-   - Como fazer: Clique no botão **Receber** para registrar o pagamento.
-   - Observações importantes: Para usuários sem integração bancária, o registro é manual. Para usuários com integração, o sistema registra automaticamente ao importar o retorno.
-   - Resultado esperado: A parcela é marcada como recebida.
+   - Como fazer: Clique no botão **Receber**.
+   - Observações importantes: Para usuários sem integração bancária, o recebimento deve ser feito manualmente.
+   - Resultado esperado: O sistema registra o pagamento e atualiza o status da parcela.
 
 **Campos e Parâmetros:**
 
-| Campo                 | Tipo         | Obrigatório | Descrição                                              | Exemplo               |
-|-----------------------|--------------|-------------|--------------------------------------------------------|-----------------------|
-| Conta Bancária        | Dropdown     | Sim         | Seleção da conta bancária para emissão do boleto.     | Conta Corrente 1234   |
-| Data de Vencimento    | Data         | Sim         | Data limite para pagamento do boleto.                  | 30/12/2023            |
-| Juros                 | Numérico     | Não         | Taxa de juros a ser aplicada ao boleto.                | 2%                    |
-| Instrução             | Texto livre  | Não         | Mensagem ou instrução adicional para o cliente.        | "Favor pagar até a data." |
-| Valor                 | Numérico     | Sim         | Valor total do boleto a ser pago.                      | R$ 150,00             |
-| Forma de Pagamento     | Dropdown     | Sim         | Método de pagamento selecionado.                        | Cartão, Boleto, etc.  |
+| Campo                | Tipo         | Obrigatório | Descrição                                      | Exemplo               |
+|----------------------|--------------|-------------|------------------------------------------------|-----------------------|
+| Conta Bancária       | Dropdown     | Sim         | Seleção da conta bancária para emissão do boleto | Conta Corrente 1234   |
+| Data de Vencimento   | Data         | Sim         | Data limite para pagamento do boleto           | 30/11/2023            |
+| Juros                | Numérico     | Não         | Taxa de juros a ser aplicada ao boleto        | 2.5                   |
+| Instrução            | Texto livre  | Não         | Mensagem ou instrução adicional para o cliente | "Favor pagar até a data" |
+| Valor                | Numérico     | Sim         | Valor a ser pago pelo cliente                  | 150.00                |
+| Forma de Pagamento    | Dropdown     | Sim         | Método de pagamento a ser utilizado            | Cartão, Boleto, etc.  |
 
 **Regras de Negócio:**
-- O boleto só pode ser cancelado antes do pagamento.
-- O sistema deve registrar automaticamente o pagamento se a integração bancária estiver ativa.
-- O extrato deve incluir todas as parcelas, tanto pagas quanto pendentes.
+- O boleto deve ser associado a uma conta bancária válida.
+- A data de vencimento não pode ser anterior à data atual.
+- O cancelamento do boleto impede qualquer pagamento futuro.
+- O sistema deve registrar automaticamente o pagamento se a integração bancária estiver habilitada.
 
 **Observações Importantes:**
-- Sempre verifique a data de vencimento antes de emitir o boleto.
-- Evite cancelar boletos após o envio ao cliente para não gerar confusão.
-- O extrato pode ser útil para acompanhar a situação financeira do cliente.
+- Sempre verifique os dados do cliente antes de enviar o boleto.
+- Evite cancelar boletos sem confirmação do cliente.
+- O extrato gerado pode ser utilizado para acompanhamento financeiro.
 
 **Conceitos-Chave:**
-- **Emissão de Boleto**: Processo de criação de um documento de cobrança que pode ser enviado ao cliente.
-- **Integração Bancária**: Conexão do sistema com o banco para automatizar o registro de pagamentos.
+- **Boleto**: Documento utilizado para cobrança de valores, que pode ser pago em bancos ou via internet.
+- **Extrato**: Relatório que mostra as transações financeiras de um cliente, incluindo pagamentos e pendências.
+
+**🔧 SOLUÇÃO DE PROBLEMAS (Troubleshooting):**
+
+| Problema                        | Causa Provável                     | Solução                                     | Prevenção                                |
+|---------------------------------|------------------------------------|---------------------------------------------|------------------------------------------|
+| Boleto não é enviado            | E-mail ou WhatsApp incorretos      | Verifique e corrija os dados do cliente    | Sempre confirme os dados antes de enviar |
+| Cancelamento não funciona       | Boleto já foi pago                 | Verifique o status do boleto                | Não cancele boletos pagos                |
+| Extrato não gera                | Falta de permissões                | Verifique as permissões do usuário          | Configure permissões adequadas            |
+| Pagamento não registrado        | Falta de integração bancária       | Registre manualmente o pagamento            | Habilite a integração bancária            |
+
+**💡 DICAS E BOAS PRÁTICAS:**
+- Utilize sempre instruções claras ao emitir boletos.
+- Mantenha os dados dos clientes atualizados para evitar problemas de envio.
+- Faça uso do extrato para manter um controle financeiro eficaz.
+
+**📚 EXEMPLOS PRÁTICOS:**
+
+**Exemplo 1: Emissão de Boleto para Cliente**
+```
+Situação: João Silva precisa pagar uma fatura.
+Ação: 
+  • Selecionar a conta bancária: "Conta Corrente 1234"
+  • Alterar a data de vencimento para "30/11/2023"
+  • Inserir juros de "2.5"
+  • Adicionar instrução: "Favor pagar até a data"
+Resultado: Boleto emitido e enviado para João Silva.
+```
+
+**Exemplo 2: Cancelamento de Boleto**
+```
+Situação: O boleto de Maria Oliveira precisa ser cancelado.
+Ação: 
+  • Localizar o boleto emitido
+  • Clicar no botão "Excluir Boletos"
+Resultado: O boleto é cancelado e Maria não poderá mais pagá-lo.
+```
+
+**🔗 DEPENDÊNCIAS E RELAÇÕES:**
+- **Pré-requisitos:** O cliente deve estar cadastrado no sistema.
+- **Habilita:** A geração de relatórios financeiros e acompanhamento de pagamentos.
+- **Relacionado a:** Funcionalidade de Vendas, onde as parcelas a receber são geradas.
+
+**🔍 VARIAÇÕES DE BUSCA (Otimização RAG):**
+
+Esta seção responde perguntas formuladas de diferentes formas. Um usuário pode perguntar:
+- **Forma direta:** "Como emitir um boleto?"
+- **Com problema:** "Não consigo enviar o boleto, o que fazer?"
+- **Informal:** "Como faço pra mandar um boleto pro cliente?"
+- **Por sintoma:** "O boleto não aparece na lista, como resolver?"
+
+**Termos alternativos e sinônimos usados para esta funcionalidade:**
+- "Emitir boleto", "gerar boleto", "criar boleto", "mandar boleto", "enviar cobrança"
+- "Extrato financeiro", "relatório de pagamentos", "contas a receber"
 
 **❓ PERGUNTAS QUE ESTA SEÇÃO RESPONDE:**
-- Como posso emitir um boleto para um cliente?
-- O que acontece se eu cancelar um boleto já emitido?
-- Como posso gerar um extrato das contas a receber do meu cliente?
+- Como emitir um boleto para um cliente?
+- O que fazer se o boleto não for enviado?
+- Como cancelar um boleto já emitido?
+- O que fazer se o pagamento não for registrado?
+- O que preciso fazer antes de emitir um boleto?
 
 ---
 
@@ -1280,7 +1876,7 @@ A funcionalidade de emissão e gerenciamento de boletos permite ao usuário asso
 
 ---
 
-## 13. Lançamento de Notas Fiscais no Sistema
+## 13. Lançamento de Notas Fiscais no Sistema de Contas a Pagar
 
 **📋 METADADOS:**
 - **ID:** sec_13
@@ -1288,100 +1884,149 @@ A funcionalidade de emissão e gerenciamento de boletos permite ao usuário asso
 - **⏲️ Duração:** 156s
 - **🎬 Link:** [Assistir este trecho](https://youtu.be/DMvowd7eCAA?si=qrXiuODXTH9y2zNZ&t=1825)
 - **📦 Módulo:** Contas a Pagar
-- **🏷️ Categorias:** Operacional, Cadastro, Relatório
-- **🔑 Palavras-chave:** notas fiscais, XML, recibo de produto, ordem de compra, integração CFI
+- **🏷️ Categorias:** Lançamento, Notas Fiscais, Integração, Relatórios
+- **🔑 Palavras-chave:** contas a pagar, notas fiscais, XML, ordem de compra, recibo de produto, serviço
 
-> **🔍 RESUMO EXECUTIVO:** Esta seção detalha o processo de lançamento de notas fiscais no sistema, abordando tanto notas eletrônicas no formato XML quanto notas manuais. O objetivo é garantir que os usuários compreendam como registrar corretamente as notas e associá-las a ordens de compra.
+> **🔍 RESUMO EXECUTIVO:** Esta seção detalha o processo de lançamento de notas fiscais no sistema de contas a pagar, abordando tanto notas eletrônicas quanto manuais, e como associá-las a ordens de compra. O objetivo é garantir que os usuários compreendam como registrar corretamente as notas e suas implicações no controle de estoque.
 
 **Contexto:**
-Estamos na funcionalidade de lançamento de notas fiscais dentro do módulo de Contas a Pagar. O objetivo é registrar notas fiscais, seja manualmente ou através de importação de notas eletrônicas, e associá-las a ordens de compra existentes.
+Estamos na funcionalidade de lançamento de notas fiscais dentro do módulo de contas a pagar. O objetivo é registrar notas fiscais, sejam elas eletrônicas ou manuais, e associá-las a ordens de compra, facilitando o controle financeiro e de estoque da empresa.
 
 **Localização no Sistema:**
-- Caminho de navegação completo: Menu Principal > Contas a Pagar > Lançamento de Notas
+- Caminho de navegação: Menu Principal > Módulo Contas a Pagar > Lançamento de Notas
 - Tela/interface específica: Tela de Lançamento de Notas Fiscais
 
 **Funcionalidade Detalhada:**
-A funcionalidade de lançamento de notas fiscais permite que os usuários registrem notas fiscais eletrônicas no formato XML ou notas manuais. As notas eletrônicas são importadas automaticamente do CNPJ da empresa, enquanto as notas manuais podem ser inseridas diretamente no sistema. O sistema também permite a associação de notas a ordens de compra, facilitando o controle de estoque e a gestão financeira.
+Esta funcionalidade permite que os usuários lancem notas fiscais no sistema, tanto no formato eletrônico (XML) quanto manualmente. As notas podem ser de produtos, serviços ou transporte, e o sistema oferece a opção de associar notas a ordens de compra existentes, facilitando a gestão de recebimentos e estoque.
 
 ### 🔹 Passo a Passo Detalhado:
 
-1. **Selecionar o Tipo de Nota**
+1. **Selecionar Tipo de Nota**
    - Localização: Tela de Lançamento de Notas Fiscais
    - Como fazer: No campo de seleção de tipo de nota, escolha entre "Nota Eletrônica" ou "Nota Manual".
    - Campos/Opções disponíveis:
-     * `Tipo de Nota`: Opções incluem "Nota Eletrônica" (somente formato XML) e "Nota Manual".
-   - Resultado esperado: O sistema ajusta os campos disponíveis com base na seleção do tipo de nota.
+     * `Tipo de Nota`: Nota Eletrônica, Nota Manual
+   - Resultado esperado: O sistema ajusta os campos disponíveis de acordo com o tipo de nota selecionado.
 
-2. **Associar a Nota a um Parceiro**
-   - Localização: Campo de seleção de parceiro na tela de lançamento
-   - Como fazer: Clique no campo de seleção e escolha o parceiro relacionado à nota. O sistema exibirá uma lista de parceiros cadastrados.
-   - Observações importantes: Se houver uma ordem de compra em aberto para o parceiro selecionado, essa informação será utilizada para associar a nota.
-   - Resultado esperado: O parceiro é associado à nota e a ordem de compra correspondente é identificada.
+2. **Associar Nota a Ordem de Compra**
+   - Localização: Campo de associação na tela de lançamento
+   - Como fazer: Clique no campo de associação e selecione o parceiro correspondente. O sistema mostrará as ordens de compra em aberto para esse parceiro.
+   - Observações importantes: Apenas ordens de compra que ainda não foram totalmente recebidas aparecerão.
+   - Resultado esperado: A nota fiscal será associada à ordem de compra selecionada, permitindo o controle de estoque.
 
-3. **Preencher a Data de Emissão**
-   - Localização: Campo "Data de Emissão"
-   - Como fazer: Clique no campo e insira a data em que a nota foi emitida.
+3. **Preencher Dados da Nota**
+   - Localização: Campos de entrada na tela de lançamento
+   - Como fazer: Preencha a data de emissão da nota, número da nota e adicione observações se necessário.
    - Campos/Opções disponíveis:
-     * `Data de Emissão`: Formato de data (DD/MM/AAAA).
-   - Resultado esperado: A data é registrada e utilizada para relatórios e controle financeiro.
+     * `Data de Emissão`: Campo de data
+     * `Número da Nota`: Campo de texto
+     * `Observações`: Campo de texto opcional
+   - Resultado esperado: Os dados da nota são salvos e podem ser visualizados posteriormente.
 
-4. **Adicionar Observações (Opcional)**
-   - Localização: Campo "Observações"
-   - Como fazer: Clique no campo e insira qualquer observação relevante sobre a nota.
-   - Resultado esperado: As observações são salvas junto com os dados da nota.
+4. **Adicionar Arquivo da Nota**
+   - Localização: Botão "Adicionar Arquivo" na tela de lançamento
+   - Como fazer: Clique no botão e selecione o arquivo PDF da nota fiscal no seu computador.
+   - Resultado esperado: O arquivo é anexado à nota fiscal registrada no sistema.
 
-5. **Inserir o Número da Nota**
-   - Localização: Campo "Número da Nota"
-   - Como fazer: Clique no campo e insira o número da nota fiscal.
-   - Resultado esperado: O número da nota é registrado para referência futura.
-
-6. **Anexar Arquivo da Nota (PDF)**
-   - Localização: Botão "Adicionar Arquivo"
-   - Como fazer: Clique no botão e selecione o arquivo PDF da nota fiscal em seu dispositivo.
-   - Resultado esperado: O arquivo PDF é anexado à nota fiscal no sistema.
-
-7. **Visualizar Produtos da Ordem de Compra**
+5. **Visualizar Produtos da Ordem de Compra**
    - Localização: Seção de produtos na tela de lançamento
-   - Como fazer: Após associar a nota a uma ordem de compra, os produtos dessa ordem aparecerão automaticamente.
-   - Resultado esperado: Os produtos são listados com suas respectivas quantidades e valores unitários.
+   - Como fazer: Após associar a ordem de compra, os produtos relacionados aparecerão automaticamente.
+   - Observações importantes: Os campos de quantidade e valor unitário já estarão preenchidos com os dados da ordem de compra.
+   - Resultado esperado: Os produtos são listados, permitindo ajustes na quantidade recebida.
 
-8. **Ajustar Quantidade Recebida**
-   - Localização: Campo "Quantidade"
-   - Como fazer: No campo correspondente ao produto, insira a quantidade recebida. Por exemplo, se a ordem de compra tinha 12 unidades, mas foram recebidas apenas 5, insira "5".
-   - Observações importantes: A ordem de compra permanecerá com status "Em Andamento" até que a quantidade total seja recebida.
-   - Resultado esperado: A quantidade recebida é registrada e a ordem de compra é atualizada.
+6. **Ajustar Quantidade Recebida**
+   - Localização: Campo de quantidade na seção de produtos
+   - Como fazer: Modifique a quantidade recebida conforme necessário. Por exemplo, se a ordem de compra tinha 12 unidades e você recebeu apenas 5, insira "5".
+   - Resultado esperado: O status da ordem de compra será atualizado para "Em Andamento" até que a quantidade total seja recebida.
 
 **Campos e Parâmetros:**
 
-| Campo                     | Tipo       | Obrigatório | Descrição                                             | Exemplo            |
-|---------------------------|------------|-------------|-----------------------------------------------------|--------------------|
-| Tipo de Nota              | Dropdown   | Sim         | Seleção entre Nota Eletrônica ou Nota Manual        | Nota Eletrônica     |
-| Parceiro                  | Dropdown   | Sim         | Seleção do parceiro associado à nota                 | Fornecedor XYZ      |
-| Data de Emissão           | Data       | Sim         | Data em que a nota foi emitida                       | 15/10/2023          |
-| Observações               | Texto      | Não         | Observações adicionais sobre a nota                   | Nota referente a... |
-| Número da Nota            | Texto      | Sim         | Número da nota fiscal emitida                        | 123456              |
-| Arquivo da Nota (PDF)     | Upload     | Não         | Anexo do arquivo PDF da nota fiscal                  | nota_fiscal.pdf     |
-| Quantidade                | Numérico   | Sim         | Quantidade de produtos recebidos                     | 5                  |
+| Campo                   | Tipo         | Obrigatório | Descrição                                         | Exemplo             |
+|-------------------------|--------------|-------------|---------------------------------------------------|---------------------|
+| `Tipo de Nota`         | Dropdown     | Sim         | Seleciona o tipo de nota (eletrônica ou manual)   | Nota Eletrônica     |
+| `Data de Emissão`      | Data         | Sim         | Data em que a nota foi emitida                    | 01/10/2023          |
+| `Número da Nota`       | Texto        | Sim         | Número identificador da nota fiscal                | 123456              |
+| `Observações`          | Texto        | Não         | Campo para adicionar informações adicionais         | Nota referente ao serviço prestado |
+| `Arquivo da Nota`      | Upload       | Não         | Anexo do arquivo PDF da nota fiscal                | Nota_Fiscal.pdf     |
+| `Quantidade Recebida`  | Número       | Sim         | Quantidade de produtos recebidos                   | 5                   |
 
 **Regras de Negócio:**
 - Notas eletrônicas devem estar no formato XML.
-- Notas de serviço ainda não são suportadas.
-- A associação de notas a ordens de compra é obrigatória se houver uma ordem em aberto.
-- A quantidade recebida deve ser menor ou igual à quantidade total da ordem de compra.
+- Apenas notas de produtos e transporte podem ser importadas automaticamente.
+- A associação a ordens de compra é obrigatória para controle de estoque.
+- O status da ordem de compra muda para "Em Andamento" após o lançamento da nota.
 
 **Observações Importantes:**
-- É recomendável verificar se a ordem de compra está correta antes de associar a nota.
-- Evite inserir manualmente produtos se eles já estiverem listados na ordem de compra.
-- O sistema não permitirá o lançamento de notas sem um parceiro associado.
+- Certifique-se de que a nota fiscal esteja no formato correto antes de tentar anexá-la.
+- Evite lançar notas de serviço, pois o sistema não suporta esse tipo de nota atualmente.
+- Verifique se a quantidade recebida não ultrapassa a quantidade da ordem de compra.
 
 **Conceitos-Chave:**
-- **Nota Eletrônica**: Documento fiscal digital que substitui a nota fiscal em papel, emitida em formato XML.
-- **Ordem de Compra**: Documento que formaliza a compra de produtos ou serviços, que pode ser associado a notas fiscais.
+- **Nota Eletrônica**: Documento fiscal digital que substitui a nota fiscal em papel.
+- **Ordem de Compra**: Documento que formaliza a compra de produtos ou serviços.
+
+**🔧 SOLUÇÃO DE PROBLEMAS (Troubleshooting):**
+
+| Problema                          | Causa Provável                | Solução                                           | Prevenção                                      |
+|-----------------------------------|-------------------------------|--------------------------------------------------|------------------------------------------------|
+| Nota não aparece na lista         | Nota não foi emitida corretamente | Verifique se a nota foi emitida e está no formato XML | Conferir a emissão da nota antes do lançamento |
+| Erro ao anexar arquivo            | Formato de arquivo inválido   | Certifique-se de que o arquivo é um PDF         | Usar sempre o formato PDF para anexos         |
+| Quantidade recebida não aceita    | Excede a quantidade da ordem  | Ajustar a quantidade para não ultrapassar a ordem| Conferir a ordem de compra antes do lançamento |
+
+**💡 DICAS E BOAS PRÁTICAS:**
+- Sempre verifique a data de emissão antes de finalizar o lançamento.
+- Utilize o campo de observações para registrar informações relevantes sobre a nota.
+- Mantenha os arquivos organizados em pastas específicas para facilitar o acesso.
+
+**📚 EXEMPLOS PRÁTICOS:**
+
+**Exemplo 1: Lançamento de Nota Eletrônica**
+```
+Situação: Recebimento de 5 unidades de um produto.
+Ação: 
+  • Tipo de Nota: "Nota Eletrônica"
+  • Data de Emissão: "01/10/2023"
+  • Número da Nota: "123456"
+  • Observações: "Recebimento parcial"
+  • Arquivo: "Nota_Fiscal.pdf"
+Resultado: Nota lançada e associada à ordem de compra, status "Em Andamento".
+```
+
+**Exemplo 2: Lançamento de Nota Manual**
+```
+Situação: Recebimento de 3 serviços prestados.
+Ação: 
+  • Tipo de Nota: "Nota Manual"
+  • Data de Emissão: "02/10/2023"
+  • Número da Nota: "654321"
+  • Observações: "Serviço de manutenção"
+Resultado: Nota lançada, mas não associada a ordem de compra, pois é um serviço.
+```
+
+**🔗 DEPENDÊNCIAS E RELAÇÕES:**
+- **Pré-requisitos:** O CNPJ da empresa deve estar cadastrado e ativo no sistema.
+- **Habilita:** A geração de relatórios de notas fiscais e controle de estoque.
+- **Relacionado a:** Módulo de Compras e Relatórios de Notas Fiscais.
+
+**🔍 VARIAÇÕES DE BUSCA (Otimização RAG):**
+
+Esta seção responde perguntas formuladas de diferentes formas. Um usuário pode perguntar:
+- **Forma direta:** "Como lançar uma nota fiscal?"
+- **Com problema:** "Não consigo anexar a nota, o que fazer?"
+- **Informal:** "Como eu coloco a nota no sistema?"
+- **Por sintoma:** "Quando a nota não aparece na lista, o que fazer?"
+- **Sobre pré-requisitos:** "O que preciso ter antes de lançar uma nota?"
+
+**Termos alternativos e sinônimos usados para esta funcionalidade:**
+- "Registrar nota", "Adicionar nota", "Inserir nota fiscal", "Lançar nota"
+- "Nota de produto", "Nota de serviço", "Recibo de serviço"
 
 **❓ PERGUNTAS QUE ESTA SEÇÃO RESPONDE:**
-- Como lançar uma nota fiscal eletrônica no sistema?
-- Quais são os tipos de notas que posso registrar?
-- Como associar uma nota fiscal a uma ordem de compra existente?
+- Como lançar uma nota fiscal eletrônica?
+- O que fazer se a nota não aparece na lista de ordens de compra?
+- Como associar uma nota a uma ordem de compra?
+- O que fazer se não consigo anexar o arquivo da nota?
+- O que preciso fazer antes de lançar uma nota fiscal?
 
 ---
 
@@ -1399,85 +2044,134 @@ A funcionalidade de lançamento de notas fiscais permite que os usuários regist
 - **⏲️ Duração:** 154s
 - **🎬 Link:** [Assistir este trecho](https://youtu.be/DMvowd7eCAA?si=qrXiuODXTH9y2zNZ&t=1978)
 - **📦 Módulo:** Gestão de Notas Fiscais
-- **🏷️ Categorias:** Operacional, Financeiro, Rateio
-- **🔑 Palavras-chave:** rateio, nota fiscal, despesas, parcelas, contas a pagar
+- **🏷️ Categorias:** Rateio, Notas Fiscais, Contas a Pagar, Despesas
+- **🔑 Palavras-chave:** rateio, notas fiscais, despesas, contas a pagar, classificação
 
-> **🔍 RESUMO EXECUTIVO:** Esta seção ensina como realizar o rateio de produtos em notas fiscais, permitindo a distribuição de despesas entre diferentes obras ou projetos, facilitando a gestão financeira da empresa.
+> **🔍 RESUMO EXECUTIVO:** Esta seção detalha como realizar o rateio de produtos em notas fiscais, permitindo que empresas distribuam despesas entre diferentes obras. O processo inclui a associação de classificações e o gerenciamento de parcelas.
 
 **Contexto:**
-Estamos na funcionalidade de rateio de produtos dentro do módulo de Gestão de Notas Fiscais. O objetivo é permitir que empresas que realizam compras únicas possam distribuir os custos entre diferentes obras ou projetos, garantindo um controle financeiro mais eficaz.
+Estamos na funcionalidade de rateio de produtos dentro do módulo de Gestão de Notas Fiscais. O objetivo é permitir que usuários realizem a distribuição de despesas de uma única nota fiscal entre várias obras ou departamentos.
 
 **Localização no Sistema:**
 - Caminho de navegação completo: Menu Principal > Gestão de Notas Fiscais > Rateio de Produtos
 - Tela/interface específica: Tela de Rateio de Notas Fiscais
 
 **Funcionalidade Detalhada:**
-A funcionalidade de rateio permite que o usuário distribua os produtos de uma nota fiscal entre diferentes obras. Ao clicar no ícone de rateio, o usuário pode especificar quantas unidades de um produto vão para cada obra e associar uma classificação a essa despesa. É importante notar que, ao realizar o rateio, não é possível adicionar parcelas adicionais à nota, sendo necessário lançar a nota com o valor integral primeiro.
+A funcionalidade de rateio permite que usuários realizem a distribuição de produtos adquiridos em uma única nota fiscal entre diferentes obras. Isso é especialmente útil para empresas que fazem compras centralizadas e precisam alocar os custos de forma precisa. O sistema possibilita a associação de classificações às despesas rateadas e a inclusão de campos adicionais, como desconto e frete.
 
 ### 🔹 Passo a Passo Detalhado:
 
-1. **Acessar a Tela de Rateio**
-   - Localização: Menu Principal > Gestão de Notas Fiscais > Rateio de Produtos
-   - Como fazer: Clique no ícone de rateio ao lado da nota fiscal que deseja ratear.
+1. **Iniciar o Rateio**
+   - Localização: Tela de Rateio de Notas Fiscais, ícone de rateio.
+   - Como fazer: Clique no ícone de rateio para iniciar o processo de distribuição dos produtos da nota fiscal.
    - Campos/Opções disponíveis:
-     * `Unidades`: Campo onde você insere a quantidade de produtos a serem rateados.
-     * `Obra`: Dropdown para selecionar a obra para a qual as unidades estão sendo rateadas.
-   - Resultado esperado: O sistema permitirá que você insira a quantidade de unidades e a obra correspondente.
+     * `Unidades`: Número de unidades a serem rateadas.
+     * `Obra`: Selecionar a obra para a qual as unidades estão sendo alocadas.
+   - Resultado esperado: O sistema permitirá a seleção de quantas unidades vão para cada obra e o restante será alocado para outros destinatários.
 
-2. **Distribuir as Unidades**
-   - Localização: Tela de Rateio de Produtos
-   - Como fazer: Após selecionar a obra, insira a quantidade de unidades que serão alocadas para essa obra e clique em "Adicionar".
-   - Observações importantes: Você pode repetir esse processo para cada obra que deseja ratear. O restante das unidades deve ser alocado a outra obra ou ao responsável indicado, como "Adriano Mouras".
-   - Resultado esperado: As unidades serão distribuídas conforme especificado, e a tela mostrará um resumo da distribuição.
+2. **Associar Classificação à Despesa**
+   - Localização: Após definir as unidades e obras, na seção de classificação.
+   - Como fazer: Selecione uma classificação apropriada para a despesa rateada.
+   - Observações importantes: A classificação deve refletir a natureza da despesa (ex: materiais, serviços).
+   - Resultado esperado: A despesa será registrada com a classificação correta, facilitando relatórios futuros.
 
-3. **Associar Classificação à Despesa**
-   - Localização: Após a distribuição das unidades
-   - Como fazer: Selecione uma classificação para a despesa no campo correspondente.
+3. **Preencher Campos de Desconto e Frete**
+   - Localização: Na mesma tela de rateio, abaixo das opções de alocação.
+   - Como fazer: Insira os valores de desconto e frete, se aplicável.
    - Campos/Opções disponíveis:
-     * `Classificação`: Dropdown com opções de classificação de despesas.
-   - Resultado esperado: A despesa será classificada corretamente, facilitando a gestão financeira.
+     * `Desconto`: Valor a ser descontado da nota.
+     * `Frete`: Valor do frete a ser considerado.
+   - Resultado esperado: Os valores de desconto e frete serão aplicados ao total da nota, refletindo no rateio.
 
-4. **Preencher Campos de Desconto ou Frete**
-   - Localização: Tela de Rateio de Produtos
-   - Como fazer: Insira valores nos campos de desconto ou frete, se aplicável.
-   - Campos/Opções disponíveis:
-     * `Desconto`: Campo numérico para inserir o valor do desconto.
-     * `Frete`: Campo numérico para inserir o valor do frete.
-   - Resultado esperado: Os valores de desconto e frete serão registrados na nota fiscal.
+4. **Finalizar o Rateio**
+   - Localização: Botão "Salvar" na parte inferior da tela.
+   - Como fazer: Clique em "Salvar" para concluir o rateio.
+   - Observações importantes: Após salvar, não será possível adicionar parcelas à nota rateada.
+   - Resultado esperado: O sistema gerará automaticamente uma conta a pagar referente à nota fiscal, agrupando as parcelas de acordo com as obras alocadas.
 
-5. **Finalizar o Rateio**
-   - Localização: Tela de Rateio de Produtos
-   - Como fazer: Clique no botão "Salvar" para concluir o rateio.
-   - Resultado esperado: O sistema gera automaticamente uma conta a pagar referente à nota fiscal, agrupando as parcelas de acordo com as obras rateadas.
+5. **Gerar Contas a Pagar**
+   - Localização: Tela de Contas a Pagar, após o rateio.
+   - Como fazer: Verifique as contas a pagar geradas automaticamente.
+   - Resultado esperado: As contas a pagar aparecerão agrupadas, permitindo um único pagamento que será distribuído entre as obras.
 
 **Campos e Parâmetros:**
 
-| Campo          | Tipo      | Obrigatório | Descrição                                               | Exemplo         |
-|----------------|-----------|-------------|---------------------------------------------------------|------------------|
-| `Unidades`     | Numérico  | Sim         | Quantidade de produtos a serem rateados                | 3                |
-| `Obra`         | Dropdown  | Sim         | Seleção da obra para a qual as unidades estão sendo rateadas | Terceira Obra    |
-| `Classificação`| Dropdown  | Sim         | Classificação da despesa relacionada à nota            | Despesa de Material |
-| `Desconto`     | Numérico  | Não         | Valor do desconto aplicado à nota                       | 50,00            |
-| `Frete`        | Numérico  | Não         | Valor do frete aplicado à nota                          | 20,00            |
+| Campo         | Tipo     | Obrigatório | Descrição                                      | Exemplo          |
+|---------------|----------|-------------|------------------------------------------------|------------------|
+| `Unidades`    | Numérico | Sim         | Número de unidades a serem rateadas           | 3                |
+| `Obra`        | Dropdown | Sim         | Seleção da obra para alocação das unidades    | Obra 3           |
+| `Classificação`| Dropdown | Sim         | Classificação da despesa                       | Materiais        |
+| `Desconto`    | Numérico | Não         | Valor a ser descontado da nota                 | 50,00            |
+| `Frete`       | Numérico | Não         | Valor do frete a ser considerado               | 20,00            |
 
 **Regras de Negócio:**
-- Não é possível adicionar parcelas a uma nota que já foi rateada; a nota deve ser lançada com valor integral.
-- O sistema gera automaticamente uma conta a pagar para cada obra rateada.
-- O pagamento é realizado de forma agrupada, mas as parcelas são registradas individualmente para cada obra.
+- Não é possível adicionar parcelas a uma nota já rateada.
+- A nota deve ser lançada com valor integral para que o rateio funcione corretamente.
+- O sistema gera automaticamente uma conta a pagar após o rateio.
 
 **Observações Importantes:**
-- Ao realizar o rateio, certifique-se de que todas as unidades foram alocadas corretamente.
-- Evite deixar campos obrigatórios em branco, pois isso pode causar erros no registro da nota.
-- O pagamento deve ser feito de forma agrupada, mas as despesas devem ser acompanhadas individualmente.
+- O rateio deve ser feito com cuidado para garantir que as despesas sejam alocadas corretamente.
+- Erros comuns incluem a seleção incorreta de obras ou a não inclusão de classificações.
 
 **Conceitos-Chave:**
-- **Rateio**: Processo de distribuição de custos entre diferentes obras ou projetos.
-- **Conta a Pagar**: Registro financeiro que representa uma obrigação de pagamento da empresa.
+- **Rateio**: Processo de distribuição de custos entre diferentes obras ou departamentos.
+- **Classificação**: Categoria atribuída a uma despesa para fins de relatórios e controle financeiro.
+
+**🔧 SOLUÇÃO DE PROBLEMAS (Troubleshooting):**
+
+| Problema                          | Causa Provável                     | Solução                                         | Prevenção                                   |
+|-----------------------------------|------------------------------------|------------------------------------------------|---------------------------------------------|
+| Não é possível adicionar parcelas  | Nota já foi rateada                | Verifique se a nota foi lançada integralmente. | Sempre lançar notas com valor total antes. |
+| Valores de rateio incorretos      | Seleção errada de unidades/obras   | Revise as alocações feitas antes de salvar.   | Conferir as seleções antes de finalizar.   |
+
+**💡 DICAS E BOAS PRÁTICAS:**
+- Sempre verifique as classificações antes de salvar o rateio.
+- Utilize o campo de desconto e frete para refletir o valor real da nota.
+- Mantenha um registro das notas rateadas para facilitar auditorias futuras.
+
+**📚 EXEMPLOS PRÁTICOS:**
+
+**Exemplo 1: Rateio de Materiais para Obras**
+```
+Situação: A empresa comprou 10 unidades de cimento para duas obras.
+Ação: 
+  • Campo Unidades: "10"
+  • Campo Obra: "Obra 1" (5 unidades), "Obra 2" (5 unidades)
+Resultado: O sistema registra 5 unidades para cada obra e gera contas a pagar correspondentes.
+```
+
+**Exemplo 2: Rateio de Despesas de Serviços**
+```
+Situação: A empresa recebeu uma nota de serviço de internet no valor de R$ 200,00.
+Ação: 
+  • Campo Unidades: "1"
+  • Campo Obra: "Obra 3" (100% do valor)
+Resultado: O sistema gera uma conta a pagar de R$ 200,00 para a Obra 3.
+```
+
+**🔗 DEPENDÊNCIAS E RELAÇÕES:**
+- **Pré-requisitos:** A nota fiscal deve estar lançada no sistema.
+- **Habilita:** Geração de relatórios de despesas por obra.
+- **Relacionado a:** Funcionalidade de contas a pagar e relatórios financeiros.
+
+**🔍 VARIAÇÕES DE BUSCA (Otimização RAG):**
+
+Esta seção responde perguntas formuladas de diferentes formas. Um usuário pode perguntar:
+- **Forma direta:** "Como fazer rateio de produtos em notas fiscais?"
+- **Com problema:** "Não consigo ratear uma nota fiscal, o que fazer?"
+- **Informal:** "Como eu distribuo os custos de uma nota entre as obras?"
+- **Por sintoma:** "Quando a nota já está rateada, como corrigir?"
+- **Alternativa:** "Qual o processo para ratear despesas de uma nota?"
+
+**Termos alternativos e sinônimos usados para esta funcionalidade:**
+- "Dividir nota fiscal", "distribuir despesas", "rateio de custos", "alocar despesas".
 
 **❓ PERGUNTAS QUE ESTA SEÇÃO RESPONDE:**
-- Como posso ratear produtos de uma nota fiscal entre diferentes obras?
-- É possível adicionar parcelas a uma nota já rateada?
-- O que acontece com as despesas após o rateio ser concluído?
+- Como realizar o rateio de produtos em notas fiscais?
+- O que fazer se não consigo adicionar parcelas a uma nota rateada?
+- Quais campos são obrigatórios ao fazer o rateio?
+- O que acontece se eu não classificar uma despesa rateada?
+- Quais são os pré-requisitos para realizar o rateio de uma nota fiscal?
 
 ---
 
@@ -1487,7 +2181,7 @@ A funcionalidade de rateio permite que o usuário distribua os produtos de uma n
 
 ---
 
-## 15. Geração de Notas Fiscais com Recorrência
+## 15. Lançamento de Notas Fiscais com Recorrência
 
 **📋 METADADOS:**
 - **ID:** sec_15
@@ -1495,104 +2189,152 @@ A funcionalidade de rateio permite que o usuário distribua os produtos de uma n
 - **⏲️ Duração:** 155s
 - **🎬 Link:** [Assistir este trecho](https://youtu.be/DMvowd7eCAA?si=qrXiuODXTH9y2zNZ&t=2129)
 - **📦 Módulo:** Financeiro
-- **🏷️ Categorias:** Configuração, Cadastro, Operacional
-- **🔑 Palavras-chave:** recorrência, nota fiscal, serviços, pagamento, consolidação
+- **🏷️ Categorias:** Lançamento, Recorrência, Notas Fiscais
+- **🔑 Palavras-chave:** lançamento, nota fiscal, recorrência, pagamento, serviços
 
-> **🔍 RESUMO EXECUTIVO:** Esta seção ensina como gerar notas fiscais com recorrência mensal, associar serviços a essas notas e realizar o pagamento diretamente no sistema, evitando etapas adicionais.
+> **🔍 RESUMO EXECUTIVO:** Esta seção ensina como lançar notas fiscais com recorrência no sistema, permitindo a gestão eficiente de despesas e receitas mensais. O processo inclui a adição de serviços e a consolidação de valores para pagamentos futuros.
 
 **Contexto:**
-Estamos na interface do módulo financeiro do sistema, onde o usuário pode lançar notas fiscais com a opção de recorrência. O objetivo é facilitar a gestão de despesas e receitas que ocorrem em intervalos regulares.
+Estamos na interface do módulo financeiro do sistema, onde o usuário pode registrar notas fiscais que possuem um padrão de recorrência, como mensal. O objetivo é facilitar o lançamento e o controle de pagamentos que ocorrem em intervalos regulares.
 
 **Localização no Sistema:**
 - Caminho de navegação completo: Menu Principal > Módulo Financeiro > Lançamento de Notas Fiscais
 - Tela/interface específica: Tela de Lançamento de Notas Fiscais
 
 **Funcionalidade Detalhada:**
-A funcionalidade permite ao usuário gerar notas fiscais com a opção de recorrência, facilitando o lançamento de despesas ou receitas que se repetem mensalmente. O usuário pode associar serviços a essas notas e, caso necessário, adicionar novos serviços. Além disso, é possível realizar o pagamento diretamente na tela de lançamento, sem a necessidade de acessar outra área do sistema.
+A funcionalidade permite ao usuário registrar notas fiscais que se repetem em um intervalo definido, como mensalmente. O usuário pode associar serviços a essas notas, adicionar novos serviços, e registrar pagamentos diretamente na tela de lançamento. É importante que o valor da nota seja consolidado antes de realizar o pagamento.
 
 ### 🔹 Passo a Passo Detalhado:
 
 1. **Selecionar Tipo de Recorrência**
-   - Localização: Campo de seleção de tipo de recorrência na tela de lançamento de notas fiscais.
-   - Como fazer: Clique na lista suspensa e selecione a opção "Recorrência Mensal".
+   - Localização: Campo de seleção de tipo de recorrência na tela de lançamento.
+   - Como fazer: Clique no campo de seleção e escolha a opção "Mensal" para definir a frequência da nota.
    - Campos/Opções disponíveis:
      * `Tipo de Recorrência`: Opções incluem "Mensal", "Semanal", "Anual".
-   - Resultado esperado: O sistema configura a nota fiscal para ser gerada mensalmente.
+   - Resultado esperado: O sistema configura a nota para ser lançada mensalmente.
 
-2. **Associar Ordem de Serviço (se aplicável)**
-   - Localização: Campo de associação de ordem de serviço na tela de lançamento.
-   - Como fazer: Se houver uma ordem de serviço em aberto, selecione-a. Caso contrário, prossiga para adicionar serviços.
-   - Observações importantes: A associação é opcional e depende da existência de ordens de serviço abertas.
-   - Resultado esperado: A nota fiscal é associada à ordem de serviço selecionada, se aplicável.
+2. **Adicionar Serviços à Nota**
+   - Localização: Seção de serviços na tela de lançamento.
+   - Como fazer: Clique no botão **"Adicionar Serviço"** (ou **"Mais Serviço"**) para incluir serviços que compõem a nota.
+   - Observações importantes: Se não houver serviços cadastrados, é necessário adicioná-los antes de prosseguir.
+   - Resultado esperado: Os serviços selecionados são listados na nota fiscal.
 
-3. **Adicionar Serviços**
-   - Localização: Botão "Mais Serviço" na tela de lançamento.
-   - Como fazer: Clique em "Mais Serviço" para abrir a tela de cadastro de novos serviços.
-   - Resultado esperado: O usuário pode adicionar um novo serviço que será incluído na nota fiscal.
-
-4. **Lançar Valor Consolidado**
+3. **Lançar Valor Consolidado**
    - Localização: Campo de valor na tela de lançamento.
-   - Como fazer: Insira o valor real da nota fiscal que está sendo lançada.
-   - Resultado esperado: O valor é registrado como o valor consolidado da nota fiscal.
+   - Como fazer: Insira o valor total da nota fiscal no campo designado.
+   - Resultado esperado: O valor é salvo como o valor consolidado da nota.
 
-5. **Classificação da Nota**
+4. **Classificação da Nota**
    - Localização: Campo de classificação na tela de lançamento.
-   - Como fazer: Preencha a classificação, se desejado. Este campo não é obrigatório.
-   - Observações importantes: A classificação ajuda a evitar que despesas ou receitas apareçam como não identificadas no fluxo de caixa.
-   - Resultado esperado: A nota fiscal é classificada corretamente, se a informação for fornecida.
+   - Como fazer: Opcionalmente, selecione uma classificação para a nota. Isso ajuda na identificação futura no fluxo de caixa.
+   - Observações importantes: Se não for preenchido, a nota aparecerá como "despesas ou receitas não identificadas".
+   - Resultado esperado: A classificação é salva, se preenchida.
 
-6. **Consolidação de Parcelas**
-   - Localização: Campo de parcelas na tela de lançamento.
-   - Como fazer: Para notas não recorrentes, insira a quantidade de parcelas, data de vencimento e valor de cada parcela.
-   - Observações importantes: Notas com recorrência não podem ser parceladas.
-   - Resultado esperado: As informações de parcelamento são registradas, se aplicável.
+5. **Consolidação de Parcelas**
+   - Localização: Seção de parcelas na tela de lançamento.
+   - Como fazer: Para notas não recorrentes, insira a quantidade de parcelas, data de vencimento, valor de cada parcela e forma de pagamento.
+   - Observações importantes: Para notas com recorrência, não é possível parcelar.
+   - Resultado esperado: As informações de parcelamento são salvas, se aplicável.
 
-7. **Realizar Pagamento**
+6. **Realizar Pagamento**
    - Localização: Botão de pagamento na tela de lançamento.
-   - Como fazer: Se a conta já foi paga, clique no botão para realizar o pagamento diretamente.
-   - Resultado esperado: O pagamento é registrado sem a necessidade de acessar a área de contas a pagar.
+   - Como fazer: Se a conta já foi paga, clique no botão **"Realizar Pagamento"**.
+   - Resultado esperado: O pagamento é registrado sem necessidade de acessar outra tela.
 
-8. **Consolidação Mensal**
-   - Localização: Campo de consolidação na tela de lançamento.
-   - Como fazer: Para as parcelas que aparecem em amarelo, acesse a nota e insira a data de vencimento e o valor referente ao mês.
-   - Observações importantes: É necessário consolidar a nota antes de realizar o pagamento.
-   - Resultado esperado: A nota fica habilitada para pagamento após a consolidação.
+7. **Consolidação Mensal**
+   - Localização: Notas em amarelo na tela de lançamento.
+   - Como fazer: Para cada mês subsequente, acesse a nota, insira a data de vencimento e o valor referente ao mês atual.
+   - Observações importantes: O valor deve ser consolidado antes do pagamento.
+   - Resultado esperado: A nota é atualizada e habilitada para pagamento.
 
-9. **Adicionar PDF da Nota**
-   - Localização: Opção para anexar PDF na tela de lançamento.
-   - Como fazer: Clique na opção para adicionar o PDF da nota fiscal.
-   - Resultado esperado: O PDF da nota fiscal é anexado à nota lançada.
+8. **Adicionar PDF da Nota**
+   - Localização: Seção de anexos na tela de lançamento.
+   - Como fazer: Clique no botão **"Adicionar PDF"** e selecione o arquivo da nota fiscal.
+   - Resultado esperado: O PDF é anexado à nota e fica disponível para consulta.
 
 **Campos e Parâmetros:**
 
-| Campo                     | Tipo         | Obrigatório | Descrição                                                                 | Exemplo            |
-|---------------------------|--------------|-------------|---------------------------------------------------------------------------|--------------------|
-| Tipo de Recorrência       | Dropdown     | Sim         | Seleção do tipo de recorrência da nota fiscal.                           | Mensal             |
-| Ordem de Serviço          | Dropdown     | Não         | Associação com uma ordem de serviço em aberto, se existir.               | Ordem #123         |
-| Valor                     | Numérico     | Sim         | Valor total da nota fiscal a ser lançada.                               | 110,00             |
-| Classificação             | Texto        | Não         | Classificação da nota fiscal para identificação no fluxo de caixa.       | Despesa de Água     |
-| Parcelas                  | Numérico     | Não         | Quantidade de parcelas, se aplicável.                                    | 3                  |
-| Data de Vencimento        | Data         | Não         | Data de vencimento de cada parcela, se aplicável.                        | 30/11/2023         |
-| PDF da Nota               | Anexo        | Não         | Anexo do PDF da nota fiscal.                                            | nota_fiscal.pdf    |
+| Campo                   | Tipo         | Obrigatório | Descrição                                         | Exemplo            |
+|-------------------------|--------------|-------------|---------------------------------------------------|--------------------|
+| Tipo de Recorrência     | Dropdown     | Sim         | Define a frequência da nota (Mensal, Semanal, etc.) | Mensal             |
+| Valor                   | Numérico     | Sim         | Valor total da nota fiscal                         | 110,00             |
+| Classificação           | Texto        | Não         | Classificação da nota para identificação           | Despesa Fixa       |
+| Data de Vencimento      | Data         | Sim         | Data em que a nota deve ser paga                  | 30/11/2023         |
+| Forma de Pagamento      | Dropdown     | Sim         | Método de pagamento (Cartão, Boleto, etc.)        | Cartão de Crédito   |
 
 **Regras de Negócio:**
-- Notas fiscais com recorrência não podem ser parceladas.
-- A classificação da nota é opcional, mas recomendada para melhor organização.
-- As parcelas que não foram consolidadas aparecem em amarelo e não podem ser pagas até que sejam consolidadas.
+- A classificação da nota é opcional, mas recomendada para evitar despesas não identificadas.
+- Notas com recorrência não podem ser parceladas.
+- Para realizar o pagamento, a nota deve estar consolidada com o valor do mês atual.
 
 **Observações Importantes:**
-- É recomendável sempre consolidar o valor da nota antes de realizar o pagamento.
-- Evite deixar parcelas não consolidadas, pois isso pode gerar confusão no fluxo de caixa.
-- O sistema permite o pagamento direto na tela de lançamento, facilitando a gestão financeira.
+- Sempre verifique se o valor da nota está correto antes de consolidar.
+- Evite deixar notas em amarelo, pois isso indica que precisam ser consolidadas.
+- O sistema permite o pagamento direto na tela de lançamento, evitando navegações desnecessárias.
 
 **Conceitos-Chave:**
-- **Recorrência**: Refere-se à repetição de uma transação financeira em intervalos regulares, como mensalmente.
-- **Consolidação**: Processo de registrar o valor real de uma nota fiscal, permitindo que ela seja paga.
+- **Recorrência**: Refere-se à repetição de um lançamento financeiro em intervalos regulares.
+- **Consolidação**: Processo de atualizar o valor da nota para refletir o montante real a ser pago.
+
+**🔧 SOLUÇÃO DE PROBLEMAS (Troubleshooting):**
+
+| Problema                          | Causa Provável                     | Solução                                         | Prevenção                                       |
+|-----------------------------------|------------------------------------|------------------------------------------------|-------------------------------------------------|
+| Nota não aparece para pagamento    | Nota não consolidada                | Acesse a nota e consolide o valor do mês atual | Sempre consolide a nota antes de tentar pagar   |
+| Erro ao adicionar serviço          | Serviço não cadastrado              | Cadastre o serviço antes de adicioná-lo        | Verifique se todos os serviços necessários estão cadastrados |
+| Campo de valor desabilitado        | Recorrência não configurada corretamente | Ajuste a configuração de recorrência            | Certifique-se de que a recorrência está definida corretamente |
+
+**💡 DICAS E BOAS PRÁTICAS:**
+- Sempre anexe o PDF da nota para facilitar a consulta futura.
+- Utilize a classificação para organizar melhor suas despesas e receitas.
+- Revise mensalmente as notas em amarelo para evitar atrasos nos pagamentos.
+
+**📚 EXEMPLOS PRÁTICOS:**
+
+**Exemplo 1: Lançamento de Nota Mensal**
+```
+Situação: Lançamento da conta de energia elétrica.
+Ação: 
+  • Tipo de Recorrência: "Mensal"
+  • Valor: "110,00"
+  • Classificação: "Despesa Fixa"
+Resultado: Nota fiscal lançada e habilitada para pagamento no próximo mês.
+```
+
+**Exemplo 2: Lançamento de Nota com Serviço Novo**
+```
+Situação: Lançamento de serviço de internet.
+Ação: 
+  • Tipo de Recorrência: "Mensal"
+  • Adicionar Serviço: "Internet"
+  • Valor: "150,00"
+Resultado: Nota fiscal lançada com serviço adicionado e pronta para consolidação.
+```
+
+**🔗 DEPENDÊNCIAS E RELAÇÕES:**
+- **Pré-requisitos:** O serviço deve estar cadastrado no sistema antes de ser adicionado à nota.
+- **Habilita:** O pagamento direto na tela de lançamento, evitando navegações adicionais.
+- **Relacionado a:** Módulo de Contas a Pagar, onde as notas consolidadas aparecem para pagamento.
+
+**🔍 VARIAÇÕES DE BUSCA (Otimização RAG):**
+
+Esta seção responde perguntas formuladas de diferentes formas. Um usuário pode perguntar:
+- **Forma direta:** "Como lançar uma nota fiscal com recorrência?"
+- **Com problema:** "Não consigo pagar uma nota recorrente, o que fazer?"
+- **Informal:** "Como faço pra colocar uma conta que se repete todo mês?"
+- **Por sintoma:** "Quando a nota está em amarelo, o que significa?"
+- **Com variação:** "Como adicionar um serviço a uma nota fiscal?"
+
+**Termos alternativos e sinônimos usados para esta funcionalidade:**
+- "Criar nota fiscal", "Registrar nota", "Adicionar nota recorrente", "Lançar conta mensal"
+- "Consolidar nota", "Pagar nota fiscal"
 
 **❓ PERGUNTAS QUE ESTA SEÇÃO RESPONDE:**
-- Como posso gerar uma nota fiscal com recorrência mensal?
-- O que fazer se eu não tiver um serviço cadastrado?
-- Como realizar o pagamento de uma nota fiscal diretamente na tela de lançamento?
+- Como faço para lançar uma nota fiscal com recorrência?
+- O que significa a nota estar em amarelo?
+- Como adicionar um serviço a uma nota fiscal?
+- O que fazer se não consigo pagar uma nota recorrente?
+- O que preciso ter cadastrado antes de lançar uma nota fiscal?
 
 ---
 
@@ -1609,81 +2351,127 @@ A funcionalidade permite ao usuário gerar notas fiscais com a opção de recorr
 - **⏱️ Minutagem:** 38:03 → 40:37
 - **⏲️ Duração:** 154s
 - **🎬 Link:** [Assistir este trecho](https://youtu.be/DMvowd7eCAA?si=qrXiuODXTH9y2zNZ&t=2283)
-- **📦 Módulo:** Gestão Financeira
-- **🏷️ Categorias:** Exclusão, Relatório, Fluxo de Caixa
-- **🔑 Palavras-chave:** nota, exclusão, recorrência, fluxo de caixa, gráficos
+- **📦 Módulo:** Financeiro
+- **🏷️ Categorias:** Exclusão, Relatório, Fluxo de Caixa, Estatísticas
+- **🔑 Palavras-chave:** exclusão de notas, fluxo de caixa, recorrências, gráficos, centro de custo
 
-> **🔍 RESUMO EXECUTIVO:** Esta seção ensina como excluir notas não consolidadas no sistema e como utilizar a funcionalidade de fluxo de caixa para gerar gráficos e estatísticas financeiras. O objetivo é permitir que o usuário gerencie suas notas e visualize informações financeiras de maneira eficaz.
+> **🔍 RESUMO EXECUTIVO:** Esta seção detalha como excluir notas não consolidadas no sistema, incluindo a remoção de suas recorrências, e como utilizar a funcionalidade de fluxo de caixa para gerar gráficos estatísticos.
 
 **Contexto:**
-Estamos na interface do módulo de Gestão Financeira, onde o usuário pode gerenciar suas notas fiscais e visualizar o fluxo de caixa. Esta seção aborda a exclusão de notas não consolidadas e a criação de gráficos para análise financeira.
+Estamos na interface do módulo financeiro do sistema, onde o usuário pode gerenciar suas notas e visualizar informações financeiras através de gráficos.
 
 **Localização no Sistema:**
-- Caminho de navegação completo: Menu Principal > Gestão Financeira > Notas Fiscais
-- Tela/interface específica: Tela de Notas Fiscais
+- Caminho de navegação completo: Menu Principal > Módulo Financeiro > Notas Não Consolidadas
+- Tela/interface específica: Tela de Notas Não Consolidadas
 
 **Funcionalidade Detalhada:**
-
-A funcionalidade permite que o usuário exclua notas não consolidadas, removendo também as recorrências associadas a essas notas. É importante notar que as notas já pagas não serão afetadas pela exclusão. Além disso, o sistema gera automaticamente uma nova parcela sempre que uma nota é consolidada, renovando a recorrência até que o usuário decida excluí-la.
+A funcionalidade permite ao usuário excluir notas que não foram consolidadas. Ao realizar essa exclusão, todas as recorrências associadas a essas notas também são removidas. É importante notar que as notas já pagas não são afetadas por essa ação. Além disso, ao consolidar uma nota, o sistema automaticamente gera uma nova parcela, renovando a recorrência.
 
 ### 🔹 Passo a Passo Detalhado:
 
 1. **Acessar Notas Não Consolidadas**
-   - Localização: Tela de Notas Fiscais
-   - Como fazer: Navegue até a seção de notas não consolidadas na tela de Notas Fiscais.
-   - Resultado esperado: O sistema exibirá uma lista de notas não consolidadas.
+   - Localização: Menu Principal > Módulo Financeiro > Notas Não Consolidadas
+   - Como fazer: Clique no submenu "Notas Não Consolidadas" para visualizar a lista de notas pendentes.
+   - Resultado esperado: A tela exibirá uma lista de todas as notas não consolidadas.
 
 2. **Excluir Nota Não Consolidada**
-   - Localização: Ao lado da nota não consolidada desejada, haverá um botão **Excluir**.
-   - Como fazer: Clique no botão **Excluir** correspondente à nota que deseja remover.
-   - Observações importantes: A exclusão não afetará notas já pagas; apenas notas em aberto serão removidas, incluindo suas recorrências.
-   - Resultado esperado: A nota não consolidada e suas recorrências serão excluídas do sistema.
+   - Localização: Na lista de notas não consolidadas, identifique a nota que deseja excluir.
+   - Como fazer: Clique no botão **Excluir** ao lado da nota desejada.
+   - Observações importantes: A exclusão não afetará notas já pagas. A exclusão da nota também removerá todas as suas recorrências.
+   - Resultado esperado: A nota selecionada e suas recorrências serão removidas da lista.
 
 3. **Visualizar Fluxo de Caixa**
-   - Localização: Menu Principal > Gestão Financeira > Fluxo de Caixa
-   - Como fazer: Acesse a seção de Fluxo de Caixa para visualizar as informações financeiras.
-   - Resultado esperado: O sistema mostrará um resumo do fluxo de caixa, incluindo saldos anteriores.
+   - Localização: Menu Principal > Módulo Financeiro > Fluxo de Caixa
+   - Como fazer: Clique em "Fluxo de Caixa" para acessar a funcionalidade de visualização de dados financeiros.
+   - Resultado esperado: A tela exibirá informações financeiras, incluindo saldo anterior e opções para gerar gráficos.
 
-4. **Criar Gráficos de Estatísticas**
-   - Localização: Dentro da seção de Fluxo de Caixa, procure pela funcionalidade **Estatísticas**.
-   - Como fazer: Clique em **Estatísticas** para abrir a interface de criação de gráficos.
+4. **Criar Gráficos Estatísticos**
+   - Localização: Dentro da tela de Fluxo de Caixa, localize a seção de **Estatísticas**.
+   - Como fazer: Selecione até três itens por categoria para incluir no gráfico. Se mais de três itens forem selecionados, o sistema retirará itens de outra categoria.
    - Campos/Opções disponíveis:
-     * `Nome do Gráfico`: Campo para inserir o nome do gráfico que deseja criar.
-     * `Tipo`: Selecione entre quatro opções disponíveis para o tipo de gráfico.
-     * `Período`: Defina o período para o gráfico, podendo ser diário, semanal, mensal ou uma data específica.
-   - Resultado esperado: O sistema permitirá que você visualize gráficos baseados nas informações financeiras selecionadas.
-
-5. **Selecionar Itens para Gráficos**
-   - Localização: Na interface de criação de gráficos.
-   - Como fazer: Selecione até três itens por categoria para incluir no gráfico.
-   - Observações importantes: Se você tentar adicionar mais de três itens em uma categoria, o sistema retirará itens de outra categoria automaticamente.
-   - Resultado esperado: O gráfico será gerado com base nas seleções feitas.
+     * `Centro de Custo`: Selecione o centro de custo desejado (ex: Matriz).
+     * `Tipo de Gráfico`: Escolha entre as quatro opções disponíveis.
+     * `Período`: Defina o período desejado (diário, semanal, mensal ou uma data específica).
+   - Resultado esperado: O sistema gerará um gráfico com as informações selecionadas.
 
 **Campos e Parâmetros:**
 
-| Campo               | Tipo         | Obrigatório | Descrição                                               | Exemplo              |
-|---------------------|--------------|-------------|---------------------------------------------------------|----------------------|
-| Nome do Gráfico     | Texto        | Sim         | Nome que identifica o gráfico criado.                  | "Despesas Mensais"   |
-| Tipo                 | Dropdown     | Sim         | Tipo de gráfico a ser gerado (ex: Barra, Linha, Pizza).| "Barra"              |
-| Período             | Dropdown     | Sim         | Período de análise (Diário, Semanal, Mensal, Específico).| "Mensal"             |
+| Campo               | Tipo         | Obrigatório | Descrição                                           | Exemplo               |
+|---------------------|--------------|-------------|-----------------------------------------------------|-----------------------|
+| Centro de Custo     | Dropdown     | Sim         | Seleciona o centro de custo para análise            | Matriz                |
+| Tipo de Gráfico     | Dropdown     | Sim         | Escolhe o tipo de gráfico a ser gerado              | Barras, Linhas, etc.  |
+| Período             | Dropdown     | Sim         | Define o intervalo de tempo para os dados exibidos  | Diário, Semanal       |
 
 **Regras de Negócio:**
-- A exclusão de notas não consolidadas remove também suas recorrências.
-- Notas já pagas permanecem no sistema e não são afetadas pela exclusão.
-- O sistema gera uma nova parcela sempre que uma nota é consolidada, mantendo a recorrência ativa até que o usuário a exclua.
+- Notas não consolidadas podem ser excluídas a qualquer momento.
+- A exclusão de uma nota não afeta notas já pagas.
+- O sistema gera uma nova parcela sempre que uma nota é consolidada.
 
 **Observações Importantes:**
-- Sempre verifique se a nota a ser excluída não possui pagamentos associados.
-- Evite adicionar mais de três itens em uma única categoria ao criar gráficos para evitar a remoção de itens de outras categorias.
+- Sempre verifique se a nota a ser excluída não contém pagamentos realizados.
+- Evite selecionar mais de três itens por categoria ao criar gráficos, pois o sistema fará ajustes automáticos.
 
 **Conceitos-Chave:**
-- **Nota Não Consolidada**: Nota fiscal que ainda não foi consolidada no sistema, podendo ser excluída.
-- **Fluxo de Caixa**: Relatório que mostra a movimentação financeira, incluindo entradas e saídas.
+- **Nota Não Consolidada**: Nota que ainda não foi finalizada no sistema e pode ser excluída.
+- **Fluxo de Caixa**: Representação das entradas e saídas financeiras em um determinado período.
+
+**🔧 SOLUÇÃO DE PROBLEMAS (Troubleshooting):**
+
+| Problema                          | Causa Provável                     | Solução                                            | Prevenção                                      |
+|-----------------------------------|------------------------------------|---------------------------------------------------|------------------------------------------------|
+| Não consigo excluir a nota        | Nota já consolidada                | Verifique se a nota está consolidada e, se sim, não poderá ser excluída. | Sempre confirme o status da nota antes da exclusão. |
+| Gráfico não gera dados            | Itens selecionados excedem o limite| Reduza a seleção para até três itens por categoria. | Limite a seleção ao criar gráficos.           |
+
+**💡 DICAS E BOAS PRÁTICAS:**
+- Sempre revise as notas antes de excluí-las para evitar perda de informações importantes.
+- Utilize gráficos para visualizar melhor suas finanças e facilitar a tomada de decisões.
+
+**📚 EXEMPLOS PRÁTICOS:**
+
+**Exemplo 1: Exclusão de Nota Não Consolidada**
+```
+Situação: O usuário deseja excluir uma nota não consolidada referente a um pagamento de fornecedor.
+Ação: 
+  • Acesse o menu "Notas Não Consolidadas".
+  • Localize a nota "Pagamento Fornecedor XYZ".
+  • Clique no botão **Excluir** ao lado da nota.
+Resultado: A nota "Pagamento Fornecedor XYZ" e suas recorrências são removidas do sistema.
+```
+
+**Exemplo 2: Criação de Gráfico de Fluxo de Caixa**
+```
+Situação: O usuário quer visualizar as contas pagas e não pagas do centro de custo "Matriz".
+Ação: 
+  • Acesse o menu "Fluxo de Caixa".
+  • Selecione "Estatísticas".
+  • Escolha 3 contas na categoria "Contas" e 2 na categoria "Receitas".
+  • Defina o tipo de gráfico como "Barras" e o período como "Mensal".
+Resultado: Um gráfico de barras é gerado mostrando as contas pagas e não pagas para o centro de custo "Matriz".
+```
+
+**🔗 DEPENDÊNCIAS E RELAÇÕES:**
+- **Pré-requisitos:** O usuário deve ter permissões adequadas para excluir notas e acessar o módulo financeiro.
+- **Habilita:** A exclusão de notas não consolidadas permite uma melhor organização das finanças.
+- **Relacionado a:** Funcionalidades de relatórios financeiros e gestão de contas.
+
+**🔍 VARIAÇÕES DE BUSCA (Otimização RAG):**
+
+Esta seção responde perguntas formuladas de diferentes formas. Um usuário pode perguntar:
+- **Forma direta:** "Como excluir uma nota não consolidada?"
+- **Com problema:** "Não consigo excluir uma nota, o que fazer?"
+- **Informal:** "Como tirar uma nota que não finalizei?"
+- **Por sintoma:** "Quando a nota não sai do sistema, o que fazer?"
+
+**Termos alternativos e sinônimos usados para esta funcionalidade:**
+- "remover nota", "deletar nota", "cancelar nota", "excluir registro"
+- "fluxo de caixa", "análise financeira", "gráficos de despesas"
 
 **❓ PERGUNTAS QUE ESTA SEÇÃO RESPONDE:**
-- Como posso excluir uma nota não consolidada no sistema?
+- Como faço para excluir uma nota não consolidada?
 - O que acontece com as recorrências ao excluir uma nota?
-- Como posso criar gráficos para visualizar meu fluxo de caixa?
+- Como posso visualizar meu fluxo de caixa?
+- O que fazer se o gráfico não gerar dados?
+- O que preciso fazer antes de excluir uma nota?
 
 ---
 
@@ -1700,87 +2488,134 @@ A funcionalidade permite que o usuário exclua notas não consolidadas, removend
 - **⏱️ Minutagem:** 40:34 → 43:08
 - **⏲️ Duração:** 154s
 - **🎬 Link:** [Assistir este trecho](https://youtu.be/DMvowd7eCAA?si=qrXiuODXTH9y2zNZ&t=2434)
-- **📦 Módulo:** Análise Financeira
-- **🏷️ Categorias:** Relatório, Operacional, Finanças
-- **🔑 Palavras-chave:** saldo atual, contas bancárias, receitas, despesas, classificação, movimentações
+- **📦 Módulo:** Financeiro
+- **🏷️ Categorias:** Análise Financeira, Fluxo de Caixa, Relatórios
+- **🔑 Palavras-chave:** saldo atual, contas bancárias, receitas, despesas, classificação
 
-> **🔍 RESUMO EXECUTIVO:** Esta seção detalha como visualizar e analisar o saldo atual e as movimentações financeiras em um sistema de fluxo de caixa, permitindo ao usuário filtrar informações específicas sobre receitas e despesas, além de classificar e corrigir movimentações financeiras.
+> **🔍 RESUMO EXECUTIVO:** Esta seção detalha como visualizar e analisar o saldo atual e as movimentações financeiras em um sistema de fluxo de caixa, permitindo ao usuário filtrar informações por tipo de receita ou despesa, além de classificar e corrigir movimentações financeiras.
 
 **Contexto:**
-Estamos na interface do módulo de Análise Financeira, onde o usuário pode monitorar as entradas e saídas efetivadas, bem como o saldo atual e previsto das contas bancárias cadastradas no sistema.
+Estamos na interface do módulo financeiro do sistema, onde o usuário pode gerenciar suas contas bancárias, visualizar saldos e analisar receitas e despesas. O objetivo é fornecer uma visão clara das finanças, permitindo a tomada de decisões informadas.
 
 **Localização no Sistema:**
-- Caminho de navegação completo: Menu Principal > Análise Financeira > Fluxo de Caixa
-- Tela/interface específica: Tela de Análise de Fluxo de Caixa
+- Caminho de navegação completo: Menu Principal > Módulo Financeiro > Análise Financeira
+- Tela/interface específica: Tela de Análise Financeira
 
 **Funcionalidade Detalhada:**
-A funcionalidade permite ao usuário visualizar o saldo atual, que é o somatório de todas as contas bancárias cadastradas, além de exibir as entradas e saídas previstas. O sistema apresenta um gráfico padrão que ilustra as receitas, despesas e saldos das contas bancárias. O usuário pode filtrar as informações exibidas, focando apenas nas receitas e despesas, e obter uma análise detalhada das movimentações financeiras.
+A funcionalidade de Análise Financeira permite ao usuário visualizar o saldo atual, as entradas e saídas efetivadas, bem como o saldo final previsto. O sistema apresenta um gráfico padrão que ilustra as receitas, despesas e saldos das contas bancárias. O usuário pode filtrar as informações exibidas e acessar análises detalhadas relacionadas a obras específicas.
 
 ### 🔹 Passo a Passo Detalhado:
 
 1. **Visualizar Saldo Atual**
-   - Localização: Tela de Análise de Fluxo de Caixa, seção superior.
-   - Como fazer: O saldo atual é exibido automaticamente na tela, calculado a partir do somatório de todas as contas bancárias cadastradas.
-   - Resultado esperado: O usuário visualiza o saldo atual de todas as contas bancárias.
+   - Localização: Tela de Análise Financeira
+   - Como fazer: O saldo atual é automaticamente calculado e exibido na parte superior da tela, mostrando o somatório de todas as contas bancárias cadastradas.
+   - Resultado esperado: O usuário vê o saldo atual refletindo as entradas e saídas efetivadas.
 
 2. **Visualizar Saldo Final Previsto**
-   - Localização: Abaixo do saldo atual na mesma tela.
-   - Como fazer: O saldo final previsto é exibido automaticamente, representando o somatório das contas bancárias cadastradas.
-   - Resultado esperado: O usuário vê o saldo final previsto.
+   - Localização: Abaixo do saldo atual
+   - Como fazer: O saldo final previsto é apresentado como o somatório de todas as contas bancárias cadastradas, permitindo que o usuário veja as previsões financeiras.
+   - Resultado esperado: O usuário visualiza o saldo final previsto, que ajuda na gestão financeira futura.
 
 3. **Analisar Gráfico de Movimentações**
-   - Localização: Abaixo dos saldos, na seção de gráficos.
-   - Como fazer: O gráfico padrão apresenta informações sobre receitas, despesas e saldos. O usuário pode passar o mouse sobre o gráfico para verificar valores específicos de entradas e saídas em cada dia.
+   - Localização: Seção de gráficos na tela
+   - Como fazer: O gráfico padrão exibe receitas, despesas e saldos. O usuário pode passar o mouse sobre o gráfico para visualizar detalhes de cada dia.
    - Resultado esperado: O usuário obtém uma visualização gráfica das movimentações financeiras.
 
 4. **Filtrar Informações**
-   - Localização: Área de filtro na parte superior do gráfico.
-   - Como fazer: O usuário pode selecionar opções de filtro para visualizar apenas receitas e despesas. Para isso, deve clicar na opção desejada.
-   - Resultado esperado: O gráfico e as informações exibidas são atualizados para mostrar apenas as receitas e despesas selecionadas.
+   - Localização: Opção de filtro na parte superior do gráfico
+   - Como fazer: O usuário pode selecionar quais informações deseja visualizar, como "Receitas" e "Despesas". Clique na opção desejada.
+   - Resultado esperado: O gráfico e as informações exibidas são atualizados para mostrar apenas os dados filtrados.
 
 5. **Análise Financeira por Obra**
-   - Localização: Seção de análise financeira abaixo do gráfico.
-   - Como fazer: O usuário pode filtrar por obra, tipo (atrasado, previsto, realizado) e período. Para isso, deve selecionar as opções desejadas nos dropdowns.
-   - Resultado esperado: O sistema exibe informações sobre quanto já foi recebido e quanto falta receber, além de quanto já foi pago e quanto falta pagar referente à obra selecionada.
+   - Localização: Seção de análise financeira abaixo do gráfico
+   - Como fazer: O usuário pode filtrar por obra, tipo (atrasado, previsto, realizado) e período. Selecione as opções desejadas nos menus suspensos.
+   - Resultado esperado: O sistema exibe informações detalhadas sobre quanto foi recebido e quanto falta receber, além de quanto foi pago e quanto falta pagar.
 
 6. **Classificação de Movimentações**
-   - Localização: Seção de classificações na tela de fluxo de caixa.
-   - Como fazer: O usuário pode selecionar uma classificação para as receitas e despesas. Se não preencher, as movimentações aparecerão como "despesas ou receitas não identificadas".
-   - Resultado esperado: O sistema atualiza as movimentações com a classificação selecionada.
+   - Localização: Seção de classificações na tela
+   - Como fazer: Ao gerar uma receita ou despesa, o usuário pode selecionar uma classificação. Se não for preenchido, aparecerá como "despesas ou receitas não identificadas".
+   - Resultado esperado: O usuário pode visualizar e corrigir classificações de movimentações financeiras.
 
-7. **Alterar Classificação de Movimentação**
-   - Localização: Ao lado de cada movimentação listada.
-   - Como fazer: O usuário deve clicar em "Alterar Classificação" e selecionar a classificação correta desejada.
-   - Resultado esperado: A movimentação é atualizada com a nova classificação.
+7. **Alterar Classificação**
+   - Localização: Ao lado da movimentação específica
+   - Como fazer: Clique em "Alterar Classificação" e selecione a classificação correta desejada.
+   - Resultado esperado: A movimentação é atualizada para a nova classificação selecionada.
 
 **Campos e Parâmetros:**
 
-| Campo                       | Tipo        | Obrigatório | Descrição                                                                 | Exemplo                |
-|-----------------------------|-------------|-------------|---------------------------------------------------------------------------|------------------------|
-| Saldo Atual                 | Numérico    | Não         | Somatório de todas as contas bancárias cadastradas.                       | R$ 10.000,00           |
-| Saldo Final Previsto        | Numérico    | Não         | Somatório previsto das contas bancárias cadastradas.                      | R$ 15.000,00           |
-| Classificação               | Dropdown    | Não         | Classificação das receitas e despesas.                                    | "Receita de Vendas"    |
-| Tipo de Análise             | Dropdown    | Não         | Tipo de análise a ser realizada (atrasado, previsto, realizado).         | "Previsto"             |
-| Período                     | Dropdown    | Não         | Período para o qual a análise será realizada.                            | "Últimos 30 dias"      |
+| Campo                   | Tipo        | Obrigatório | Descrição                                           | Exemplo               |
+|-------------------------|-------------|-------------|----------------------------------------------------|-----------------------|
+| Saldo Atual             | Numérico    | Não         | Somatório de todas as contas bancárias cadastradas  | R$ 10.000,00          |
+| Saldo Final Previsto    | Numérico    | Não         | Somatório previsto de todas as contas bancárias     | R$ 15.000,00          |
+| Tipo de Movimentação     | Dropdown    | Não         | Classificação da movimentação (Receita/Despesa)    | Receita                |
+| Classificação           | Dropdown    | Não         | Classificação da receita ou despesa                 | Despesas Gerais       |
 
 **Regras de Negócio:**
-- O saldo atual é calculado automaticamente com base nas contas bancárias cadastradas.
-- As movimentações sem classificação aparecem como "despesas ou receitas não identificadas".
-- O usuário pode alterar a classificação de uma movimentação a qualquer momento.
+- O saldo atual é calculado automaticamente com base nas entradas e saídas efetivadas.
+- O saldo final previsto é uma projeção que considera as contas bancárias cadastradas.
+- Classificações não preenchidas resultam em movimentações como "não identificadas".
 
 **Observações Importantes:**
-- É recomendável preencher a classificação para evitar confusões nas análises.
-- O usuário deve verificar se as movimentações estão corretamente classificadas para evitar erros na análise financeira.
-- O sistema permite a visualização de dados históricos, facilitando o acompanhamento financeiro.
+- É recomendável preencher as classificações para evitar confusões nas análises financeiras.
+- Verifique se as datas de movimentações estão corretas para uma análise precisa.
 
 **Conceitos-Chave:**
-- **Saldo Atual**: O total disponível em todas as contas bancárias cadastradas no sistema.
-- **Classificação**: Categoria atribuída a uma receita ou despesa, que ajuda na organização e análise financeira.
+- **Saldo Atual**: Total das entradas e saídas efetivadas nas contas bancárias.
+- **Classificação**: Categoria atribuída a receitas e despesas para facilitar a análise.
+
+**🔧 SOLUÇÃO DE PROBLEMAS (Troubleshooting):**
+
+| Problema                          | Causa Provável                  | Solução                                         | Prevenção                                   |
+|-----------------------------------|----------------------------------|------------------------------------------------|---------------------------------------------|
+| Saldo não aparece                 | Contas bancárias não cadastradas | Verifique se todas as contas estão cadastradas | Cadastrar todas as contas antes de analisar |
+| Gráfico não carrega               | Falha de conexão ou dados faltando | Atualize a página ou verifique a conexão      | Garantir conexão estável ao usar o sistema  |
+| Classificação não salva           | Campo obrigatório não preenchido | Preencha todos os campos obrigatórios          | Revisar campos antes de salvar              |
+
+**💡 DICAS E BOAS PRÁTICAS:**
+- Sempre classifique suas receitas e despesas para facilitar a análise futura.
+- Utilize os filtros para focar em informações específicas e evitar sobrecarga de dados.
+
+**📚 EXEMPLOS PRÁTICOS:**
+
+**Exemplo 1: Análise de Receitas**
+```
+Situação: O usuário deseja analisar as receitas de um projeto específico.
+Ação: O usuário filtra por obra "Projeto A", seleciona "Receitas" e define o período de janeiro a março.
+  • Campo Tipo: "Receitas"
+  • Campo Período: "Janeiro a Março"
+Resultado: O sistema exibe todas as receitas recebidas no período para o Projeto A.
+```
+
+**Exemplo 2: Correção de Classificação**
+```
+Situação: O usuário percebe que uma despesa foi classificada incorretamente.
+Ação: O usuário clica em "Alterar Classificação" ao lado da movimentação e seleciona "Despesas de Marketing".
+Resultado: A movimentação é atualizada e a classificação correta é aplicada.
+```
+
+**🔗 DEPENDÊNCIAS E RELAÇÕES:**
+- **Pré-requisitos:** As contas bancárias devem estar cadastradas para que os saldos sejam calculados.
+- **Habilita:** A análise financeira permite ao usuário tomar decisões informadas sobre o fluxo de caixa.
+- **Relacionado a:** Funcionalidades de relatórios financeiros e gestão de obras.
+
+**🔍 VARIAÇÕES DE BUSCA (Otimização RAG):**
+
+Esta seção responde perguntas formuladas de diferentes formas. Um usuário pode perguntar:
+- **Forma direta:** "Como visualizar o saldo atual?"
+- **Com problema:** "O saldo não está aparecendo, o que fazer?"
+- **Informal:** "Como vejo quanto eu tenho agora?"
+- **Por sintoma:** "Por que meu gráfico não está carregando?"
+
+**Termos alternativos e sinônimos usados para esta funcionalidade:**
+- "análise de saldo", "ver saldo", "fluxo de caixa", "classificar despesas"
+- "receitas não identificadas", "análise de receitas e despesas"
 
 **❓ PERGUNTAS QUE ESTA SEÇÃO RESPONDE:**
-- Como posso visualizar o saldo atual das minhas contas bancárias?
-- O que fazer se uma movimentação financeira estiver classificada incorretamente?
-- Como posso filtrar as informações para ver apenas receitas e despesas específicas?
+- Como posso visualizar o saldo atual das minhas contas?
+- O que fazer se o saldo final previsto não estiver correto?
+- Como filtrar informações por tipo de movimentação?
+- O que fazer se a classificação de uma movimentação estiver errada?
+- O que preciso fazer antes de analisar o fluxo de caixa?
 
 ---
 
@@ -1797,79 +2632,222 @@ A funcionalidade permite ao usuário visualizar o saldo atual, que é o somatór
 - **⏱️ Minutagem:** 43:04 → 44:01
 - **⏲️ Duração:** 57s
 - **🎬 Link:** [Assistir este trecho](https://youtu.be/DMvowd7eCAA?si=qrXiuODXTH9y2zNZ&t=2584)
-- **📦 Módulo:** Módulo Financeiro
+- **📦 Módulo:** Financeiro
 - **🏷️ Categorias:** Relatório, Financeiro, Exportação
-- **🔑 Palavras-chave:** fluxo de caixa, relatório, totalizadores, movimentações, cliente, CPF, CNPJ, conciliação
+- **🔑 Palavras-chave:** relatório, fluxo de caixa, totalizadores, movimentações, cliente, CPF, CNPJ, conciliação
 
-> **🔍 RESUMO EXECUTIVO:** Esta seção ensina como exportar relatórios de fluxo de caixa, detalhando as opções disponíveis e as informações que podem ser obtidas a partir desses relatórios, como totalizadores e movimentações associadas.
+> **🔍 RESUMO EXECUTIVO:** Esta seção ensina como exportar relatórios de fluxo de caixa, detalhando as opções disponíveis e as informações que cada relatório contém, além de como utilizá-los para análise financeira.
 
 **Contexto:**
-Estamos no Módulo Financeiro do sistema, onde o usuário pode acessar funcionalidades relacionadas à gestão financeira, incluindo a exportação de relatórios que ajudam a visualizar e analisar o fluxo de caixa.
+Estamos no módulo financeiro do sistema, onde é possível visualizar e gerenciar informações financeiras. Esta seção foca na funcionalidade de exportação de relatórios de fluxo de caixa, que permite ao usuário obter dados resumidos ou completos sobre as movimentações financeiras.
 
 **Localização no Sistema:**
-- Caminho de navegação completo: Menu Principal > Módulo Financeiro > Relatórios > Exportação de Relatórios
-- Tela/interface específica: Tela de Exportação de Relatórios
+- Caminho de navegação: Menu Principal > Módulo Financeiro > Relatórios > Exportação de Relatórios
+- Tela/interface específica: Tela de Exportação de Relatórios de Fluxo de Caixa
 
 **Funcionalidade Detalhada:**
-
-A funcionalidade de exportação de relatórios de fluxo de caixa permite que os usuários obtenham informações financeiras de forma resumida ou detalhada. Existem duas opções principais para a exportação: **Fluxo de Caixa Resumido** e **Fluxo de Caixa Completo**. O fluxo de caixa resumido traz totalizadores referentes a cada classificação, enquanto o fluxo de caixa completo inclui todas as movimentações associadas a essas classificações, como o nome do cliente, CPF ou CNPJ, e o status de conciliação da conta.
+A funcionalidade de exportação de relatórios de fluxo de caixa permite que os usuários obtenham informações financeiras de forma organizada. Existem duas opções de relatórios disponíveis:
+1. **Fluxo de Caixa Resumido**: Apresenta totalizadores referentes a cada classificação de movimentação financeira.
+2. **Fluxo de Caixa Completo**: Inclui todos os totalizadores de cada classificação, além de todas as movimentações associadas, como nome do cliente, CPF ou CNPJ, e status de conciliação da conta.
 
 ### 🔹 Passo a Passo Detalhado:
 
 1. **Selecionar Tipo de Relatório**
-   - Localização: Tela de Exportação de Relatórios
-   - Como fazer: Na tela, o usuário deve escolher entre as opções disponíveis para exportação. As opções são:
-     * **Fluxo de Caixa Resumido**: Traz totalizadores de cada classificação.
-     * **Fluxo de Caixa Completo**: Inclui totalizadores e todas as movimentações associadas.
-   - Resultado esperado: O sistema ajusta a visualização de acordo com a opção selecionada.
+   - Localização: Tela de Exportação de Relatórios de Fluxo de Caixa
+   - Como fazer: Na tela, localize a seção de seleção de tipo de relatório. Você verá duas opções: "Fluxo de Caixa Resumido" e "Fluxo de Caixa Completo". Clique na opção desejada.
+   - Campos/Opções disponíveis:
+     * `Fluxo de Caixa Resumido`: Relatório que traz totalizadores por classificação.
+     * `Fluxo de Caixa Completo`: Relatório que traz totalizadores e movimentações detalhadas.
+   - Resultado esperado: O sistema irá preparar o relatório selecionado para exportação.
 
-2. **Visualizar Informações do Relatório**
-   - Localização: Após selecionar o tipo de relatório
-   - Como fazer: O usuário pode visualizar as informações na tela, que incluem:
-     * Totalizadores de cada classificação.
-     * Movimentações associadas, que incluem:
-       - Nome do cliente
-       - CPF ou CNPJ
-       - Status de conciliação (se a conta já foi conciliada ou não)
-   - Observações importantes: O usuário deve verificar se as informações estão corretas antes de prosseguir com a exportação.
-   - Resultado esperado: O usuário tem uma visão clara das informações que serão exportadas.
-
-3. **Exportar Relatório**
-   - Localização: Botão de exportação na tela
-   - Como fazer: Após revisar as informações, o usuário deve clicar no botão **Exportar** para gerar o relatório no formato desejado (ex: PDF, Excel).
-   - Resultado esperado: O sistema gera o relatório e inicia o download do arquivo.
+2. **Exportar Relatório**
+   - Localização: Após selecionar o tipo de relatório, localize o botão **Exportar** na parte inferior da tela.
+   - Como fazer: Clique no botão **Exportar**. O sistema irá gerar o relatório no formato escolhido (geralmente em PDF ou Excel).
+   - Observações importantes: Certifique-se de que as informações estão corretas antes de exportar. Caso a conta não esteja conciliada, isso será indicado no relatório.
+   - Resultado esperado: O relatório será baixado para o seu dispositivo, pronto para ser visualizado ou impresso.
 
 **Campos e Parâmetros:**
 
-| Campo                     | Tipo         | Obrigatório | Descrição                                           | Exemplo                |
-|---------------------------|--------------|-------------|-----------------------------------------------------|------------------------|
-| Tipo de Relatório         | Dropdown     | Sim         | Seleciona o tipo de relatório a ser exportado.     | Fluxo de Caixa Completo|
-| Nome do Cliente           | Texto        | Não         | Nome do cliente associado à movimentação.           | João da Silva          |
-| CPF                       | Texto        | Não         | CPF do cliente associado à movimentação.            | 123.456.789-00         |
-| CNPJ                      | Texto        | Não         | CNPJ do cliente associado à movimentação.           | 12.345.678/0001-95     |
-| Status de Conciliação     | Checkbox      | Não         | Indica se a conta foi conciliada ou não.           | [ ] Conciliada         |
+| Campo                      | Tipo   | Obrigatório | Descrição                                               | Exemplo               |
+|----------------------------|--------|-------------|--------------------------------------------------------|-----------------------|
+| Tipo de Relatório          | Opção  | Sim         | Seleciona entre "Fluxo de Caixa Resumido" ou "Completo"| Fluxo de Caixa Completo|
+| Botão de Exportação        | Botão  | Sim         | Inicia o processo de exportação do relatório           | **Exportar**          |
 
 **Regras de Negócio:**
-- O relatório de fluxo de caixa resumido deve sempre apresentar totalizadores por classificação.
-- O relatório de fluxo de caixa completo deve incluir todas as movimentações, com informações detalhadas sobre cada uma.
-- O status de conciliação deve ser atualizado no sistema antes da exportação do relatório.
+- O relatório "Fluxo de Caixa Resumido" deve apresentar apenas totalizadores, sem detalhes das movimentações.
+- O relatório "Fluxo de Caixa Completo" deve incluir todas as movimentações, com informações como nome do cliente, CPF ou CNPJ, e status de conciliação.
+- Se a conta não estiver conciliada, isso deve ser claramente indicado no relatório.
 
 **Observações Importantes:**
-- É recomendado revisar as informações exibidas na tela antes de realizar a exportação.
-- Erros comuns incluem a seleção do tipo de relatório incorreto, o que pode levar a uma visualização inadequada das informações.
-- Certifique-se de que todas as movimentações estejam corretamente registradas no sistema antes de gerar o relatório.
+- Verifique se todas as informações estão atualizadas antes de realizar a exportação.
+- Um erro comum é não selecionar o tipo de relatório, resultando em falha na exportação.
+- É recomendado revisar o relatório após a exportação para garantir que todos os dados estão corretos.
 
 **Conceitos-Chave:**
-- **Fluxo de Caixa Resumido**: Relatório que apresenta apenas os totalizadores de cada classificação financeira.
-- **Fluxo de Caixa Completo**: Relatório que inclui totalizadores e todas as movimentações financeiras detalhadas.
+- **Fluxo de Caixa Resumido**: Relatório que apresenta apenas os totalizadores das movimentações financeiras.
+- **Fluxo de Caixa Completo**: Relatório que inclui tanto os totalizadores quanto as movimentações detalhadas, como dados do cliente e status de conciliação.
+
+**🔧 SOLUÇÃO DE PROBLEMAS (Troubleshooting):**
+
+| Problema                          | Causa Provável                  | Solução                                               | Prevenção                                         |
+|-----------------------------------|---------------------------------|------------------------------------------------------|--------------------------------------------------|
+| Relatório não é gerado            | Tipo de relatório não selecionado| Certifique-se de selecionar "Fluxo de Caixa Resumido" ou "Completo" antes de exportar. | Sempre verificar a seleção antes de exportar.    |
+| Dados incompletos no relatório    | Informações não atualizadas     | Atualize as informações financeiras no sistema antes de exportar. | Manter os dados sempre atualizados.               |
+| Erro ao baixar o relatório        | Problemas de conexão            | Verifique sua conexão com a internet e tente novamente. | Usar uma conexão estável ao exportar relatórios.  |
+
+**💡 DICAS E BOAS PRÁTICAS:**
+- Sempre revise os totalizadores antes de exportar o relatório.
+- Utilize o formato Excel para análises mais detalhadas.
+- Evite exportar relatórios em horários de pico para evitar lentidão no sistema.
+
+**📚 EXEMPLOS PRÁTICOS:**
+
+**Exemplo 1: Exportação de Relatório Resumido**
+```
+Situação: O usuário deseja obter um resumo das movimentações financeiras do mês.
+Ação: Seleciona "Fluxo de Caixa Resumido" e clica em **Exportar**.
+Resultado: Um relatório resumido é baixado, mostrando totalizadores por classificação.
+```
+
+**Exemplo 2: Exportação de Relatório Completo**
+```
+Situação: O usuário precisa de um relatório detalhado para análise.
+Ação: Seleciona "Fluxo de Caixa Completo" e clica em **Exportar**.
+Resultado: Um relatório completo é baixado, incluindo todas as movimentações, nomes de clientes, CPF e status de conciliação.
+```
+
+**🔗 DEPENDÊNCIAS E RELAÇÕES:**
+- **Pré-requisitos:** O usuário deve ter acesso ao módulo financeiro e permissões para exportar relatórios.
+- **Habilita:** A análise detalhada das movimentações financeiras e a tomada de decisões baseadas em dados.
+- **Relacionado a:** Funcionalidades de gestão financeira, como conciliação bancária e controle de contas a pagar e receber.
+
+**🔍 VARIAÇÕES DE BUSCA (Otimização RAG):**
+
+Esta seção responde perguntas formuladas de diferentes formas. Um usuário pode perguntar:
+- **Forma direta:** "Como exportar um relatório de fluxo de caixa?"
+- **Com problema:** "Não consigo exportar o relatório de fluxo de caixa, o que fazer?"
+- **Informal:** "Como eu faço pra baixar o relatório de fluxo de caixa?"
+- **Por sintoma:** "Quando tento exportar, não aparece nada, como resolver?"
+
+**Termos alternativos e sinônimos usados para esta funcionalidade:**
+- "baixar relatório", "gerar relatório", "exportar dados financeiros", "relatório de movimentações"
 
 **❓ PERGUNTAS QUE ESTA SEÇÃO RESPONDE:**
-- Como posso exportar um relatório de fluxo de caixa?
+- Como faço para exportar um relatório de fluxo de caixa?
 - Quais informações estão disponíveis no relatório de fluxo de caixa completo?
-- O que significa o status de conciliação no relatório de fluxo de caixa?
+- O que fazer se o relatório não for gerado?
+- O que preciso ter configurado antes de exportar um relatório?
+- Como verificar se as informações estão corretas antes da exportação?
 
 ---
 
 
 ---
 
+
+
+
+---
+
+
+## 🎬 DADOS DE TIMESTAMPS (Para Sistema RAG)
+
+
+[VIDEO_TIMESTAMPS_DATA]
+
+{
+  "Passo a passo - Módulo Financeiro": [
+    {
+      "start": "00:03",
+      "end": "02:35",
+      "line": "Nesse vídeo eu vou explicar todas as funcionalidades do módulo financeiro. O financeiro se inicia no"
+    },
+    {
+      "start": "02:33",
+      "end": "05:06",
+      "line": "receber. Se vocês quiserem, vocês conseguem exportar um relatório do extrato dessa conta bancária. E"
+    },
+    {
+      "start": "05:04",
+      "end": "07:37",
+      "line": "corresponde à aquela fatura? Aí eu posso selecionar várias movimentações até bater o valor total aqu"
+    },
+    {
+      "start": "07:34",
+      "end": "10:10",
+      "line": "Lembrando que para quem vai trabalhar com as comissão de boletos pelo COPER, primeiro é necessário f"
+    },
+    {
+      "start": "10:07",
+      "end": "12:44",
+      "line": "essas categorias chamadas também como classificações, elas serão adicionadas quando vocês forem gera"
+    },
+    {
+      "start": "12:40",
+      "end": "15:16",
+      "line": "a porcentagem de frente àquele mês, o ano e salva. E assim vocês vão fazendo. Então, sempre que sair"
+    },
+    {
+      "start": "15:13",
+      "end": "17:46",
+      "line": "valor e eu associo aqui a uma parcela. Então, esse valor que ele pagou duas vezes, que ele pagou de "
+    },
+    {
+      "start": "17:44",
+      "end": "20:18",
+      "line": "emitir dentro das parcelas respectivas ali dos seus clientes, que eu vou mostrar posteriormente tamb"
+    },
+    {
+      "start": "20:21",
+      "end": "22:55",
+      "line": "Já que estamos aqui no contas a pagar, essa é a página inicial, OK? Essas contas que estão em vermel"
+    },
+    {
+      "start": "22:52",
+      "end": "25:26",
+      "line": "conta, eu consigo parcelar também, tá? Quando eu parcelar, eu coloco aqui a quantidade de parcelas, "
+    },
+    {
+      "start": "25:22",
+      "end": "27:57",
+      "line": "da parcela, tá? É bem tranquilo. Lembrando que não possui centro de custo aqui porque é uma conta ag"
+    },
+    {
+      "start": "27:55",
+      "end": "30:27",
+      "line": "associar e selecionar a conta bancária, qual esse boleto deve ser emitido. Aí eu posso alterar aqui "
+    },
+    {
+      "start": "30:25",
+      "end": "33:01",
+      "line": "que vocês vão fazer o geral contas a pagar? vai ser através das notas, notas manuais ou notas eletrô"
+    },
+    {
+      "start": "32:58",
+      "end": "35:32",
+      "line": "Ah, eu consigo fazer o rateio dos produtos dessa nota porque o que que acontece muito a empresa, mui"
+    },
+    {
+      "start": "35:29",
+      "end": "38:04",
+      "line": "gerar com recorrência. Então, seleciona aqui o tipo de recorrência. Por exemplo, eu vou colocar reco"
+    },
+    {
+      "start": "38:03",
+      "end": "40:37",
+      "line": "dessa, dessa nota e chegou na sétima, não irei mais pagar, cancelei a parceria, não tem problema, tá"
+    },
+    {
+      "start": "40:34",
+      "end": "43:08",
+      "line": "entradas e saídas efetivadas, o saldo atual é o somatório de todas as contas bancárias que vocês pos"
+    },
+    {
+      "start": "43:04",
+      "end": "44:01",
+      "line": "e vai entrar na outra, OK? Se vocês quiserem, vocês conseguem exportar um relatório também. Tem duas"
+    }
+  ]
+}
+
+[/VIDEO_TIMESTAMPS_DATA]

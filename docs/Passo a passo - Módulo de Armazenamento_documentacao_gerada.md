@@ -1,5 +1,9 @@
 # 📚 Documentação: Passo a passo - Módulo de Armazenamento
 
+
+[video:https://youtu.be/VC6EkQJoLEY?si=k9wjmlsuMeBR7kmV]
+
+
 **🎥 Vídeo Original:** https://youtu.be/VC6EkQJoLEY?si=k9wjmlsuMeBR7kmV
 
 **📊 Total de Seções:** 2
@@ -16,87 +20,130 @@
 - **⏲️ Duração:** 156s
 - **🎬 Link:** [Assistir este trecho](https://youtu.be/VC6EkQJoLEY?si=k9wjmlsuMeBR7kmV&t=1)
 - **📦 Módulo:** Armazenamento
-- **🏷️ Categorias:** Administração, Configuração, Operacional
-- **🔑 Palavras-chave:** módulo armazenamento, permissões, usuários, pastas, edição
+- **🏷️ Categorias:** Configuração, Administração, Operacional
+- **🔑 Palavras-chave:** armazenamento, usuário, permissões, pasta, editar
 
-> **🔍 RESUMO EXECUTIVO:** Esta seção ensina como gerenciar as permissões de acesso ao módulo de armazenamento, incluindo como editar usuários e configurar suas permissões, além de descrever as funcionalidades básicas do módulo.
+> **🔍 RESUMO EXECUTIVO:** Esta seção ensina como configurar o acesso ao módulo de armazenamento para diferentes usuários, incluindo a criação e gerenciamento de pastas, além de definir permissões de acesso.
 
 **Contexto:**
-Estamos no módulo de armazenamento de um sistema, onde o objetivo é entender como gerenciar as permissões de acesso dos usuários e as funcionalidades disponíveis para manipulação de pastas.
+Estamos no módulo de armazenamento de um sistema, onde o objetivo é gerenciar o acesso e as permissões dos usuários, além de organizar os dados em pastas.
 
 **Localização no Sistema:**
 - Caminho de navegação completo: Menu Principal > Módulo Administração > Aba Usuários
-- Tela/interface específica: Tela de Edição de Usuários e Tela Inicial do Módulo Armazenamento
+- Tela/interface específica: Módulo Armazenamento
 
 **Funcionalidade Detalhada:**
-
-O módulo de armazenamento permite que os usuários gerenciem arquivos e pastas dentro do sistema. Inicialmente, apenas o usuário admin possui acesso total. Os administradores podem conceder permissões a outros usuários, definindo se eles terão acesso sem autorização, apenas visualização ou autorização total. Além disso, o módulo permite a criação, edição e exclusão de pastas, bem como a configuração de permissões específicas para cada pasta.
+O módulo de armazenamento permite que os usuários organizem e gerenciem arquivos em pastas. A funcionalidade principal inclui a configuração de permissões de acesso para diferentes usuários, a criação de novas pastas, e a edição e exclusão de pastas existentes.
 
 ### 🔹 Passo a Passo Detalhado:
 
-1. **Acessar o Módulo Administração**
-   - Localização: Menu Principal > Módulo Administração
-   - Como fazer: Clique no módulo "Administração" para abrir as opções disponíveis.
-   - Resultado esperado: A tela de administração é exibida, permitindo acesso à aba de usuários.
+1. **Configurar Permissões de Usuário**
+   - Localização: Menu Principal > Módulo Administração > Aba Usuários
+   - Como fazer: Acesse o módulo de administração e clique na aba de usuários. Selecione o usuário que deseja alterar e clique em **Editar**.
+   - Campos/Opções disponíveis:
+     * `Módulo de Armazenamento`: Aqui você verá três opções:
+       - **Sem autorização**: O usuário não terá acesso ao módulo.
+       - **Apenas visualização**: O usuário poderá visualizar, mas não editar.
+       - **Autorização total**: O usuário terá acesso completo ao módulo.
+   - Resultado esperado: As permissões do usuário selecionado são atualizadas conforme a escolha feita.
 
-2. **Editar Usuário**
-   - Localização: Aba Usuários dentro do Módulo Administração
-   - Como fazer: Selecione o usuário que deseja editar e clique no botão "Editar".
-   - Resultado esperado: A tela de edição do usuário é exibida, permitindo modificar suas permissões.
-
-3. **Configurar Permissões do Módulo de Armazenamento**
-   - Localização: Tela de Edição de Usuário, seção de permissões do módulo de armazenamento
-   - Como fazer: Role para baixo até encontrar o módulo de armazenamento. Aqui, você verá três opções:
-     * **Sem autorização**: O usuário não terá acesso ao módulo.
-     * **Apenas visualização**: O usuário poderá visualizar as pastas, mas não editar.
-     * **Autorização total**: O usuário terá acesso completo, podendo editar e excluir pastas.
-   - Resultado esperado: Após selecionar a opção desejada, clique em "Concluir Edição" para salvar as alterações.
-
-4. **Acessar o Módulo de Armazenamento**
+2. **Acessar o Módulo de Armazenamento**
    - Localização: Menu Principal > Módulo Armazenamento
-   - Como fazer: Clique no módulo "Armazenamento" para visualizar a tela inicial do módulo.
-   - Resultado esperado: A tela inicial do módulo de armazenamento é exibida, mostrando o espaço total, espaço utilizado e pastas criadas.
+   - Como fazer: Clique no módulo de armazenamento para visualizar a tela inicial.
+   - Resultado esperado: A tela inicial exibe o espaço total de armazenamento, o espaço já utilizado e as pastas criadas.
 
-5. **Gerenciar Pastas**
-   - Localização: Tela Inicial do Módulo Armazenamento
-   - Como fazer: Para gerenciar pastas, clique nos três pontinhos ao lado da pasta desejada. As opções disponíveis são:
-     * **Abrir**: Visualizar as informações da pasta.
-     * **Renomear**: Alterar o nome da pasta. Digite o novo nome e clique em "Salvar".
-     * **Permissões**: Visualizar e alterar as permissões dos usuários para essa pasta. Clique para ver os usuários e ajuste suas permissões conforme necessário, clicando em "Salvar" após as alterações.
-     * **Excluir**: Remover a pasta do sistema.
-   - Resultado esperado: As ações realizadas nas pastas são aplicadas conforme selecionado.
+3. **Gerenciar Pastas Existentes**
+   - Localização: Tela inicial do módulo de armazenamento
+   - Como fazer: Clique nos três pontinhos ao lado da pasta desejada para abrir o menu de opções.
+   - Observações importantes: As opções disponíveis incluem:
+     - **Abrir**: Para visualizar as informações da pasta.
+     - **Renomear**: Clique na opção, altere o nome da pasta e clique em **Salvar** para aplicar a mudança.
+     - **Permissões**: Visualize e altere as permissões dos usuários que têm acesso à pasta.
+     - **Excluir**: Para remover a pasta, selecione esta opção.
+   - Resultado esperado: As ações realizadas nas pastas são aplicadas conforme as escolhas feitas.
 
-6. **Criar Nova Pasta**
-   - Localização: Tela Inicial do Módulo Armazenamento
-   - Como fazer: Clique no botão "Nova Pasta", defina o nome da nova pasta e clique em "Criar".
-   - Resultado esperado: A nova pasta é criada e aparece na tela inicial do módulo de armazenamento.
+4. **Criar Nova Pasta**
+   - Localização: Tela inicial do módulo de armazenamento
+   - Como fazer: Clique no botão **Nova Pasta**, insira o nome desejado e clique em **Criar**.
+   - Resultado esperado: A nova pasta é criada e aparece na tela inicial.
+
+5. **Visualizar Opções Dentro da Pasta**
+   - Localização: Dentro da nova pasta criada
+   - Como fazer: Clique nos três pontinhos ao lado da pasta para acessar mais opções.
+   - Resultado esperado: Um menu com opções adicionais para gerenciar a pasta.
 
 **Campos e Parâmetros:**
 
-| Campo                       | Tipo       | Obrigatório | Descrição                                                        | Exemplo               |
-|-----------------------------|------------|-------------|------------------------------------------------------------------|-----------------------|
-| Nome do Usuário             | Texto      | Sim         | Nome do usuário que está sendo editado                          | João da Silva         |
-| Permissão de Acesso         | Dropdown   | Sim         | Nível de acesso ao módulo de armazenamento                       | Sem autorização        |
-| Nome da Pasta               | Texto      | Sim         | Nome da nova pasta a ser criada                                  | Documentos            |
+| Campo                     | Tipo    | Obrigatório | Descrição                                       | Exemplo               |
+|---------------------------|---------|-------------|-------------------------------------------------|-----------------------|
+| Módulo de Armazenamento   | Dropdown| Sim         | Define o nível de acesso do usuário ao módulo. | Autorização total     |
+| Nome da Pasta             | Texto   | Sim         | Nome que será atribuído à nova pasta.          | Contratos_2024        |
 
 **Regras de Negócio:**
 - Apenas o usuário admin tem acesso total ao módulo de armazenamento por padrão.
-- As permissões podem ser alteradas a qualquer momento por um usuário admin.
-- A exclusão de pastas é irreversível e deve ser feita com cautela.
+- As permissões podem ser alteradas a qualquer momento por um usuário com acesso ao módulo de administração.
+- A exclusão de pastas é permanente e não pode ser desfeita.
 
 **Observações Importantes:**
-- Sempre salve as alterações após modificar permissões ou renomear pastas.
-- Verifique se os usuários têm as permissões corretas antes de compartilhar informações sensíveis.
-- Evite renomear pastas frequentemente para não confundir os usuários.
+- Sempre verifique as permissões antes de criar ou editar pastas.
+- Evite renomear pastas com nomes já existentes para prevenir confusões.
+- As alterações nas permissões são salvas imediatamente após clicar em **Salvar**.
 
 **Conceitos-Chave:**
-- **Permissão de Acesso**: Nível de acesso que um usuário tem a um módulo ou funcionalidade do sistema.
-- **Pasta**: Estrutura de armazenamento que organiza arquivos dentro do módulo de armazenamento.
+- **Permissões**: Controle de acesso que determina o que um usuário pode fazer dentro do módulo.
+- **Pasta**: Estrutura de organização que permite armazenar arquivos de forma hierárquica.
+
+**🔧 SOLUÇÃO DE PROBLEMAS (Troubleshooting):**
+
+| Problema                          | Causa Provável                     | Solução                                      | Prevenção                               |
+|-----------------------------------|------------------------------------|----------------------------------------------|-----------------------------------------|
+| Usuário não consegue acessar o módulo | Permissões não configuradas corretamente | Acesse o módulo de administração e ajuste as permissões do usuário. | Verifique as permissões antes de salvar. |
+| Pasta não aparece após criação    | Falha na criação da pasta          | Tente criar a pasta novamente e verifique se o nome é único. | Use nomes distintos para cada pasta.   |
+
+**💡 DICAS E BOAS PRÁTICAS:**
+- Sempre mantenha um registro das permissões concedidas a cada usuário.
+- Utilize nomes descritivos para pastas para facilitar a localização.
+- Revise as permissões periodicamente para garantir que estão atualizadas.
+
+**📚 EXEMPLOS PRÁTICOS:**
+
+**Exemplo 1: Configuração de Permissões**
+```
+Situação: Um novo funcionário precisa acessar o módulo de armazenamento.
+Ação: Acesse o módulo de administração, selecione o usuário "Maria Oliveira", clique em Editar, e mude a permissão para "Autorização total".
+Resultado: Maria agora pode acessar e gerenciar o módulo de armazenamento.
+```
+
+**Exemplo 2: Criação de Nova Pasta**
+```
+Situação: Você precisa organizar documentos financeiros.
+Ação: No módulo de armazenamento, clique em "Nova Pasta", insira "Financeiros_2024" e clique em "Criar".
+Resultado: A pasta "Financeiros_2024" aparece na tela inicial do módulo.
+```
+
+**🔗 DEPENDÊNCIAS E RELAÇÕES:**
+- **Pré-requisitos:** O usuário deve ter permissões de administrador para alterar configurações de outros usuários.
+- **Habilita:** A criação de pastas permite uma melhor organização dos arquivos armazenados.
+- **Relacionado a:** Módulo de Administração, onde as permissões são configuradas.
+
+**🔍 VARIAÇÕES DE BUSCA (Otimização RAG):**
+
+Esta seção responde perguntas formuladas de diferentes formas. Um usuário pode perguntar:
+- **Forma direta:** "Como configurar permissões no módulo de armazenamento?"
+- **Com problema:** "Não consigo acessar o módulo de armazenamento, o que fazer?"
+- **Informal:** "Como eu libero o acesso para a galera no armazenamento?"
+- **Por sintoma:** "Quando um usuário não pode ver as pastas, o que está errado?"
+
+**Termos alternativos e sinônimos usados para esta funcionalidade:**
+- "Criar pasta", "Adicionar pasta", "Nova pasta", "Cadastrar pasta"
+- "Gerenciar permissões", "Alterar acesso", "Configurar usuários"
 
 **❓ PERGUNTAS QUE ESTA SEÇÃO RESPONDE:**
-- Como posso editar as permissões de um usuário no módulo de armazenamento?
-- Quais são as opções de permissão disponíveis para os usuários?
-- Como criar uma nova pasta dentro do módulo de armazenamento?
+- Como eu configuro as permissões de um usuário no módulo de armazenamento?
+- O que fazer se um usuário não consegue acessar o módulo de armazenamento?
+- Como posso criar uma nova pasta no módulo de armazenamento?
+- O que fazer se a pasta que criei não aparece?
+- O que preciso fazer antes de alterar as permissões de um usuário?
 
 ---
 
@@ -106,103 +153,174 @@ O módulo de armazenamento permite que os usuários gerenciem arquivos e pastas 
 
 ---
 
-## 2. Criação e Gerenciamento de Pastas e Subpastas
+## 2. Gerenciamento de Pastas e Subpastas
 
 **📋 METADADOS:**
 - **ID:** sec_2
 - **⏱️ Minutagem:** 02:35 → 04:56
 - **⏲️ Duração:** 140s
 - **🎬 Link:** [Assistir este trecho](https://youtu.be/VC6EkQJoLEY?si=k9wjmlsuMeBR7kmV&t=155)
-- **📦 Módulo:** Gerenciamento de Arquivos
-- **🏷️ Categorias:** Organização, Arquivos, Pastas, Upload
-- **🔑 Palavras-chave:** criar pasta, subpasta, renomear, excluir, carregar arquivo, carregar pasta, download, arquivos
+- **📦 Módulo:** Gerenciamento de Documentos
+- **🏷️ Categorias:** Organização, Armazenamento, Documentação
+- **🔑 Palavras-chave:** pasta, subpasta, criar, renomear, excluir, carregar, download
 
-> **🔍 RESUMO EXECUTIVO:** Esta seção ensina como criar e gerenciar pastas e subpastas dentro do sistema, permitindo ao usuário organizar seus documentos de forma eficiente. O objetivo é facilitar a localização e o controle dos arquivos armazenados.
+> **🔍 RESUMO EXECUTIVO:** Esta seção ensina como criar e gerenciar pastas e subpastas dentro do sistema, permitindo uma melhor organização dos documentos. Ela resolve o problema de armazenamento desorganizado, facilitando o acesso e a manipulação de arquivos.
 
 **Contexto:**
-Estamos na interface de gerenciamento de arquivos do sistema, onde o usuário pode criar pastas e subpastas para organizar documentos. Esta seção detalha as funcionalidades disponíveis para a criação e manipulação dessas estruturas de pastas.
+Estamos na interface do módulo de gerenciamento de documentos, onde o usuário pode organizar seus arquivos em pastas e subpastas, facilitando a localização e o controle dos documentos armazenados.
 
 **Localização no Sistema:**
-- Caminho de navegação completo: Menu Principal > Gerenciamento de Arquivos > Pastas
+- Caminho de navegação completo: Menu Principal > Gerenciamento de Documentos > Pastas
 - Tela/interface específica: Tela de Gerenciamento de Pastas
 
 **Funcionalidade Detalhada:**
-A funcionalidade permite ao usuário criar uma subpasta dentro de uma pasta principal, renomear, excluir e fazer o download de arquivos. O usuário pode também carregar arquivos ou pastas inteiras para o sistema, facilitando a organização e o acesso aos documentos.
+A funcionalidade de gerenciamento de pastas e subpastas permite ao usuário criar uma estrutura hierárquica para armazenar documentos de forma organizada. O usuário pode criar novas pastas, subdividi-las em subpastas, e gerenciar arquivos através de opções como abrir, renomear, excluir e baixar.
 
 ### 🔹 Passo a Passo Detalhado:
 
 1. **Criar Subpasta**
-   - Localização: Dentro da pasta principal, na interface de gerenciamento de arquivos.
-   - Como fazer: Clique na opção de **Criar Pasta**. Um campo de texto aparecerá para que você identifique o nome da nova subpasta.
+   - Localização: Tela de Gerenciamento de Pastas
+   - Como fazer: Clique na opção de **Criar Pasta**. Um campo de texto será exibido para que você insira o nome da nova subpasta.
    - Campos/Opções disponíveis:
-     * `Nome da Subpasta`: Campo de texto onde você insere o nome desejado para a subpasta.
-   - Resultado esperado: Após clicar em **Criar**, a subpasta será apresentada na tela, visível dentro da pasta principal.
+     * `Nome da Subpasta`: Campo de texto onde você deve inserir o nome desejado.
+   - Resultado esperado: Após clicar em **Criar**, a nova subpasta será apresentada na tela.
 
-2. **Abrir Arquivo**
-   - Localização: Dentro da pasta ou subpasta onde o arquivo está armazenado.
-   - Como fazer: Clique no nome do arquivo que deseja abrir.
-   - Resultado esperado: O arquivo será aberto na interface do sistema, permitindo visualização ou edição.
+2. **Gerenciar Arquivos na Pasta Principal**
+   - Localização: Tela de Gerenciamento de Pastas
+   - Como fazer: Selecione um arquivo e utilize as opções disponíveis para **Abrir**, **Renomear** ou **Excluir**.
+   - Observações importantes: Para excluir um arquivo, certifique-se de que ele não está em uso por outro usuário.
+   - Resultado esperado: O arquivo será aberto, renomeado ou excluído conforme a opção escolhida.
 
-3. **Renomear Arquivo**
-   - Localização: Na lista de arquivos dentro da pasta ou subpasta.
-   - Como fazer: Clique nos três pontinhos (menu de opções) ao lado do arquivo e selecione **Renomear**. Um campo de texto aparecerá para você inserir o novo nome.
-   - Observações importantes: O novo nome deve ser único dentro da mesma pasta.
-   - Resultado esperado: O arquivo será renomeado conforme o novo nome inserido.
-
-4. **Excluir Arquivo**
-   - Localização: Na lista de arquivos dentro da pasta ou subpasta.
-   - Como fazer: Clique nos três pontinhos ao lado do arquivo e selecione **Excluir**. Confirme a exclusão quando solicitado.
-   - Resultado esperado: O arquivo será removido da pasta ou subpasta.
-
-5. **Baixar Arquivo**
-   - Localização: Na lista de arquivos dentro da pasta ou subpasta.
-   - Como fazer: Clique nos três pontinhos ao lado do arquivo e selecione **Baixar**.
+3. **Baixar Arquivo**
+   - Localização: Tela de Gerenciamento de Pastas
+   - Como fazer: Selecione um arquivo já importado e clique na opção **Baixar**.
    - Resultado esperado: O arquivo será baixado para o dispositivo do usuário.
 
-6. **Carregar Arquivo**
-   - Localização: Na tela inicial da pasta principal, acessível através do botão **Carregar Arquivo**.
-   - Como fazer: Clique em **Carregar Arquivo** e selecione os documentos que deseja importar do seu dispositivo. Você pode selecionar mais de um arquivo.
-   - Resultado esperado: Os arquivos selecionados serão carregados e aparecerão na lista de arquivos da pasta.
+4. **Gerenciar Arquivos na Subpasta**
+   - Localização: Dentro da subpasta criada
+   - Como fazer: Clique na subpasta e utilize as opções de **Abrir**, **Renomear** ou **Excluir**.
+   - Resultado esperado: O arquivo será manipulado conforme a opção escolhida.
 
-7. **Carregar Pasta**
-   - Localização: Na tela inicial da pasta principal, acessível através do botão **Carregar Pasta**.
-   - Como fazer: Clique em **Carregar Pasta** e selecione a pasta desejada do seu dispositivo.
+5. **Carregar Arquivo**
+   - Localização: Tela de Gerenciamento de Pastas
+   - Como fazer: Clique nos três pontinhos (menu de opções) e selecione **Carregar Arquivo**. Uma janela será aberta para que você selecione os documentos que deseja importar.
+   - Observações importantes: Você pode selecionar múltiplos arquivos para upload.
+   - Resultado esperado: Os arquivos selecionados serão carregados para o sistema e aparecerão na tela.
+
+6. **Carregar Pasta**
+   - Localização: Tela de Gerenciamento de Pastas
+   - Como fazer: Clique nos três pontinhos e selecione **Carregar Pasta**. Uma janela será aberta para que você selecione a pasta desejada no seu dispositivo.
    - Resultado esperado: A pasta inteira será carregada para o sistema, incluindo todos os arquivos contidos nela.
-
-8. **Gerenciar Subpasta**
-   - Localização: Dentro da subpasta criada.
-   - Como fazer: Clique nos três pontinhos ao lado da subpasta para acessar opções como **Abrir**, **Renomear**, **Excluir**.
-   - Resultado esperado: Você poderá gerenciar a subpasta da mesma forma que faz com a pasta principal.
 
 **Campos e Parâmetros:**
 
-| Campo                | Tipo        | Obrigatório | Descrição                                           | Exemplo             |
-|----------------------|-------------|-------------|-----------------------------------------------------|---------------------|
-| Nome da Subpasta     | Texto       | Sim         | Nome a ser atribuído à nova subpasta.              | "Documentos 2023"   |
-| Arquivo              | Arquivo     | Não         | Arquivo a ser carregado ou baixado.                | "relatório.pdf"     |
-| Pasta                | Pasta       | Não         | Pasta a ser carregada, contendo arquivos.          | "Projetos"          |
+| Campo                   | Tipo         | Obrigatório | Descrição                                           | Exemplo                  |
+|-------------------------|--------------|-------------|----------------------------------------------------|--------------------------|
+| Nome da Subpasta       | Texto        | Sim         | Nome que será atribuído à nova subpasta.          | "Contratos_2024"        |
+| Arquivo Selecionado     | Arquivo      | Sim         | Arquivo que será baixado ou manipulado.           | "Relatório_Mensal.pdf"  |
+| Pasta Selecionada      | Pasta        | Sim         | Pasta que será carregada para o sistema.          | "Documentos Importantes" |
 
 **Regras de Negócio:**
 - O nome da subpasta deve ser único dentro da pasta principal.
-- Arquivos e pastas podem ser excluídos, mas a exclusão é irreversível.
-- O usuário pode carregar múltiplos arquivos simultaneamente.
+- Arquivos não podem ser excluídos se estiverem em uso por outro usuário.
+- O sistema permite o upload de múltiplos arquivos simultaneamente.
 
 **Observações Importantes:**
-- Ao criar uma subpasta, assegure-se de que o nome não contenha caracteres especiais que possam causar erros.
-- Evite renomear arquivos para nomes muito semelhantes, pois isso pode causar confusão na organização.
-- Verifique a conexão de internet antes de carregar arquivos ou pastas grandes para evitar falhas no upload.
+- Ao criar uma subpasta, escolha um nome descritivo para facilitar a identificação.
+- Evite nomes de arquivos ou pastas com caracteres especiais, pois podem causar erros no upload.
+- Verifique as permissões de usuário se não conseguir acessar ou manipular arquivos.
 
 **Conceitos-Chave:**
-- **Subpasta**: Uma pasta criada dentro de outra pasta, utilizada para melhor organização de arquivos.
+- **Subpasta**: Uma pasta criada dentro de outra pasta, permitindo uma organização mais granular dos documentos.
 - **Upload**: O processo de transferir arquivos do dispositivo local para o sistema.
 
+**🔧 SOLUÇÃO DE PROBLEMAS (Troubleshooting):**
+
+| Problema                          | Causa Provável                | Solução                                               | Prevenção                                          |
+|-----------------------------------|-------------------------------|-------------------------------------------------------|---------------------------------------------------|
+| Não consigo criar uma subpasta    | Nome da subpasta já existe    | Tente um nome diferente para a subpasta.             | Verifique se o nome desejado já está em uso.      |
+| Arquivo não baixa                 | Problemas de conexão          | Verifique sua conexão com a internet e tente novamente.| Mantenha uma conexão estável ao baixar arquivos.   |
+| Erro ao carregar arquivos          | Formato de arquivo não suportado | Verifique se o formato do arquivo é compatível.      | Use formatos comuns como PDF, DOCX, JPG.          |
+
+**💡 DICAS E BOAS PRÁTICAS:**
+- Utilize nomes descritivos para pastas e arquivos para facilitar a busca.
+- Organize seus documentos em subpastas temáticas para uma melhor gestão.
+- Revise as permissões de acesso antes de compartilhar pastas com outros usuários.
+
+**📚 EXEMPLOS PRÁTICOS:**
+
+**Exemplo 1: Criando uma Subpasta para Contratos**
+```
+Situação: Você precisa organizar contratos de 2024.
+Ação: 
+  • Clique em **Criar Pasta**.
+  • Campo: "Nome da Subpasta": "Contratos_2024".
+Resultado: A subpasta "Contratos_2024" é criada e aparece na tela.
+```
+
+**Exemplo 2: Carregando uma Pasta de Documentos**
+```
+Situação: Você deseja carregar uma pasta inteira de documentos.
+Ação: 
+  • Clique nos três pontinhos e selecione **Carregar Pasta**.
+  • Selecione a pasta "Documentos Importantes" no seu dispositivo.
+Resultado: A pasta "Documentos Importantes" e todos os seus arquivos são carregados para o sistema.
+```
+
+**🔗 DEPENDÊNCIAS E RELAÇÕES:**
+- **Pré-requisitos:** O usuário deve ter permissões adequadas para criar pastas e carregar arquivos.
+- **Habilita:** A criação de subpastas permite uma organização mais eficiente dos documentos, facilitando a busca e o acesso.
+- **Relacionado a:** Funcionalidades de compartilhamento de pastas e gerenciamento de permissões.
+
+**🔍 VARIAÇÕES DE BUSCA (Otimização RAG):**
+
+Esta seção responde perguntas formuladas de diferentes formas. Um usuário pode perguntar:
+- **Forma direta:** "Como criar uma subpasta?"
+- **Com problema:** "Não consigo criar uma subpasta, o que fazer?"
+- **Informal:** "Como faço pra adicionar uma pasta nova?"
+- **Por sintoma:** "Quando tento carregar uma pasta, dá erro, como resolver?"
+
+**Termos alternativos e sinônimos usados para esta funcionalidade:**
+- "Criar pasta", "Adicionar pasta", "Nova pasta", "Cadastrar pasta"
+- "Subpasta", "Pasta secundária", "Divisão de pasta"
+- "Upload de arquivos", "Carregar documentos"
+
 **❓ PERGUNTAS QUE ESTA SEÇÃO RESPONDE:**
-- Como posso criar uma subpasta dentro da minha pasta principal?
-- Quais opções estão disponíveis para gerenciar arquivos e pastas?
-- Como faço para carregar múltiplos arquivos ou uma pasta inteira no sistema?
+- Como criar uma subpasta no sistema?
+- O que fazer se não consigo baixar um arquivo?
+- Como carregar múltiplos arquivos de uma vez?
+- O que fazer se a opção de excluir não está disponível?
+- O que preciso fazer antes de carregar uma pasta? 
 
 ---
 
 
 ---
 
+
+
+
+---
+
+
+## 🎬 DADOS DE TIMESTAMPS (Para Sistema RAG)
+
+
+[VIDEO_TIMESTAMPS_DATA]
+
+{
+  "Passo a passo - Módulo de Armazenamento": [
+    {
+      "start": "00:01",
+      "end": "02:37",
+      "line": "Olá, neste vídeo irei apresentar o funcionamento do módulo armazenamento. O nosso primeiro ponto de "
+    },
+    {
+      "start": "02:35",
+      "end": "04:56",
+      "line": "Aqui dentro temos a opção de criar uma subpasta. Então, atualmente há a pasta principal e há a possi"
+    }
+  ]
+}
+
+[/VIDEO_TIMESTAMPS_DATA]
