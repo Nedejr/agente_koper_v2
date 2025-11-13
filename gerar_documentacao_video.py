@@ -16,15 +16,18 @@ from langchain_core.output_parsers import StrOutputParser
 # === CONFIGURAÇÃO ===
 load_dotenv()  # carrega OPENAI_API_KEY do .env
 
+# Processar todos os vídeos com as melhorias implementadas
 YOUTUBE_URLS = [
-    "https://youtu.be/VC6EkQJoLEY?si=k9wjmlsuMeBR7kmV",
-    "https://youtu.be/lefybyzpmgY?si=YfjXcK_ZY3ZoekrC",
-    "https://youtu.be/0SpGZ3et0qs?si=o_T6kuqnOGErZtoO",
-    "https://youtu.be/DMvowd7eCAA?si=qrXiuODXTH9y2zNZ",
-    "https://youtu.be/6vX7wYe8cIw?si=5Xf_VmLvM7bj6M73",
-    "https://youtu.be/qFzqzIoiVE4?si=YoVxiJOkipNVbQWb",
-    # Adicione mais URLs aqui
+    "https://youtu.be/VC6EkQJoLEY?si=k9wjmlsuMeBR7kmV",  # Módulo de Armazenamento
+    "https://youtu.be/lefybyzpmgY?si=YfjXcK_ZY3ZoekrC",  # Módulo de Qualidade
+    "https://youtu.be/0SpGZ3et0qs?si=o_T6kuqnOGErZtoO",  # Módulo de RH
+    "https://youtu.be/DMvowd7eCAA?si=qrXiuODXTH9y2zNZ",  # Módulo Financeiro
+    "https://youtu.be/6vX7wYe8cIw?si=5Xf_VmLvM7bj6M73",  # Módulo de Suprimentos
+    "https://youtu.be/qFzqzIoiVE4?si=YoVxiJOkipNVbQWb",  # Módulo de Compras
+    "https://youtu.be/BdLq4eBgfxQ?si=Sxmnm__Ai1ReGR0_",  # Módulo de Engenharia
+    
 ]
+
 MODEL_NAME = "gpt-4o-mini"  # pode usar gpt-4o ou gpt-3.5-turbo
 TEMPERATURE = 0.2
 MAX_TOKENS = 16000  # Tokens máximos para respostas detalhadas (aumentado para documentação completa)
@@ -56,73 +59,156 @@ def obter_titulo_video(url: str) -> str:
         return extrair_video_id(url)
 
 
-def carregar_transcricao(url: str) -> str:
+def formatar_tempo(segundos: float) -> str:
+    """Converte segundos (float) para string HH:MM:SS ou MM:SS."""
+    total = int(round(segundos))
+    h = total // 3600
+    m = (total % 3600) // 60
+    s = total % 60
+    if h > 0:
+        return f"{h:02d}:{m:02d}:{s:02d}"
+    return f"{m:02d}:{s:02d}"
+
+
+def segmentar_transcricao(transcript_entries, segmento_segundos: int = 150):
+    """
+    Agrupa entradas da transcrição em segmentos contínuos de ~segmento_segundos.
+    Retorna lista de dicts: {'start': float, 'end': float, 'texto': str}
+    """
+    if not transcript_entries:
+        return []
+
+    segmentos = []
+    current_start = transcript_entries[0]["start"]
+    current_texts = []
+    current_end = current_start
+
+    for entry in transcript_entries:
+        start = entry.get("start", 0.0)
+        duration = entry.get("duration", 0.0)
+        end = start + duration
+        
+        # Se ultrapassar o limite do segmento, fechar segmento atual e iniciar novo
+        if (start - current_start) >= segmento_segundos and current_texts:
+            segmentos.append({
+                "start": current_start,
+                "end": current_end,
+                "texto": " ".join(current_texts).strip()
+            })
+            current_start = start
+            current_texts = []
+        
+        current_texts.append(entry.get("text", ""))
+        current_end = end
+
+    # Adicionar último segmento
+    if current_texts:
+        segmentos.append({
+            "start": current_start,
+            "end": current_end,
+            "texto": " ".join(current_texts).strip()
+        })
+
+    return segmentos
+
+
+def build_timestamped_url(original_url: str, start_seconds: float) -> str:
+    """Retorna a URL do YouTube que inicia no tempo fornecido (em segundos)."""
+    t = int(round(start_seconds))
+    if "youtu.be/" in original_url:
+        # youtu.be/ID?param... -> adicionar ?t= ou &t=
+        sep = "&" if "?" in original_url else "?"
+        return f"{original_url}{sep}t={t}"
+    # Para URLs longas (www.youtube.com/watch?v=ID)
+    sep = "&" if "?" in original_url else "?"
+    return f"{original_url}{sep}t={t}"
+
+
+def carregar_transcricao(url: str) -> list:
+    """
+    Carrega a transcrição do YouTube preservando timestamps.
+    Retorna lista de dicts com 'text', 'start', 'duration'.
+    """
     print("🎥 Carregando e transcrevendo vídeo do YouTube...")
 
     # Extrai o ID do vídeo
     video_id = extrair_video_id(url)
 
-    # Busca a transcrição em português
+    # Busca a transcrição usando a API correta
     try:
+        # Tenta buscar em português primeiro usando o método fetch
         api = YouTubeTranscriptApi()
-        transcript = api.fetch(video_id, languages=["pt", "pt-BR"])
+        transcript_data = api.fetch(video_id, languages=['pt', 'pt-BR'])
+        # Converte para lista de dicts
+        return [{"text": entry.text, "start": entry.start, "duration": entry.duration} 
+                for entry in transcript_data]
     except Exception as e:
         print(f"Erro ao buscar transcrição em português: {e}")
         print("Tentando buscar em qualquer idioma disponível...")
-        api = YouTubeTranscriptApi()
-        transcript = api.fetch(video_id)
-
-    # Concatena o texto da transcrição
-    texto_completo = " ".join([entry.text for entry in transcript])
-
-    return texto_completo
+        try:
+            # Tenta qualquer idioma disponível
+            api = YouTubeTranscriptApi()
+            transcript_data = api.fetch(video_id)
+            # Converte para lista de dicts
+            return [{"text": entry.text, "start": entry.start, "duration": entry.duration} 
+                    for entry in transcript_data]
+        except Exception as e_final:
+            print(f"❌ Erro fatal ao buscar transcrição: {e_final}")
+            raise
 
 
 # === 2. Gerar documentação Markdown ===
-def gerar_documentacao(transcricao: str) -> str:
-    print("🧠 Gerando documentação estruturada e detalhada...")
+def gerar_documentacao(segmentos: list, video_url: str, titulo_video: str) -> str:
+    """
+    Gera documentação estruturada por segmentos temporais.
+    Cada segmento vira uma seção detalhada com minutagem e link timestamped.
+    """
+    print(f"🧠 Gerando documentação estruturada e detalhada por seção (total: {len(segmentos)} segmentos)...")
 
     llm = ChatOpenAI(
         model=MODEL_NAME,
         temperature=TEMPERATURE,
-        max_tokens=MAX_TOKENS,  # Permite respostas mais longas e detalhadas
+        max_tokens=MAX_TOKENS,
     )
     parser = StrOutputParser()
 
+    # Prompt por seção individual (OTIMIZADO PARA RAG)
     prompt = PromptTemplate(
-        input_variables=["transcricao"],
+        input_variables=["transcricao_segmento", "minutagem", "jump_url", "section_index", "total_sections", "duracao_segundos"],
         template="""
 Você é um analista técnico especializado em criar documentação EXTREMAMENTE DETALHADA de sistemas a partir de vídeos tutoriais.
 
 Esta documentação será usada em um sistema RAG (Retrieval-Augmented Generation), portanto precisa ser:
 - MUITO DETALHADA e GRANULAR
-- Dividida em PEQUENAS SEÇÕES (representando 2-3 minutos de vídeo cada)
 - Cada seção deve ser AUTOCONTIDA e COMPLETA
 - Rico em detalhes específicos, nomes de campos, botões, menus, etc.
+- Otimizada para busca semântica e recuperação de informações
 
-Abaixo está a **transcrição completa de um vídeo**:
+**Transcrição deste segmento:**
 ---
-{transcricao}
+{transcricao_segmento}
 ---
 
 **INSTRUÇÕES CRÍTICAS:**
 
-1. **DIVIDA o conteúdo em MUITAS seções pequenas** (cada uma representando 2-3 minutos do vídeo)
-2. **NÃO RESUMA** - Inclua TODOS os detalhes mencionados na transcrição
-3. **Para cada ação**, descreva:
-   - O que fazer exatamente
-   - Onde clicar (nome exato do botão/menu)
-   - O que acontece após a ação
-   - Campos a preencher e seus valores
-   - Validações e regras de negócio mencionadas
+Gere UMA seção seguindo a estrutura exata abaixo. NÃO RESUMA - Inclua TODOS os detalhes mencionados na transcrição deste segmento.
 
-**ESTRUTURA OBRIGATÓRIA para cada seção:**
+INICIE A RESPOSTA EXATAMENTE COM AS LINHAS ABAIXO (copie exatamente como está):
 
 ---
 
-## [Número]. [Título Específico da Funcionalidade]
+## {section_index}. [Título Específico da Funcionalidade]
 
-**Minutagem:** [XX:XX → XX:XX]
+**📋 METADADOS:**
+- **ID:** sec_{section_index}
+- **⏱️ Minutagem:** {minutagem}
+- **⏲️ Duração:** {duracao_segundos}s
+- **🎬 Link:** [Assistir este trecho]({jump_url})
+- **📦 Módulo:** [Nome do Módulo mencionado na transcrição]
+- **🏷️ Categorias:** [Liste 2-4 categorias relevantes separadas por vírgula]
+- **🔑 Palavras-chave:** [Liste 5-8 palavras-chave importantes separadas por vírgula]
+
+> **🔍 RESUMO EXECUTIVO:** [Escreva um resumo de 2-3 linhas explicando o que esta seção ensina e qual problema ela resolve]
 
 **Contexto:**
 [Explique brevemente onde estamos no sistema e o objetivo desta seção]
@@ -151,7 +237,7 @@ Abaixo está a **transcrição completa de um vídeo**:
    - Observações importantes: [Validações, restrições, dicas]
    - Resultado esperado: [O que acontece]
 
-[Continue para cada ação mostrada nos 2-3 minutos]
+[Continue para cada ação mostrada neste segmento]
 
 **Campos e Parâmetros:**
 
@@ -173,12 +259,12 @@ Abaixo está a **transcrição completa de um vídeo**:
 - **[Termo Técnico]**: [Definição clara]
 - **[Outro Termo]**: [Definição clara]
 
----
+**❓ PERGUNTAS QUE ESTA SEÇÃO RESPONDE:**
+- [Pergunta 1 que um usuário faria sobre este tópico?]
+- [Pergunta 2 que um usuário faria sobre este tópico?]
+- [Pergunta 3 que um usuário faria sobre este tópico?]
 
-**QUANTIDADE DE SEÇÕES:**
-- Para um vídeo de 50 minutos, crie PELO MENOS 20-25 seções
-- Para um vídeo de 30 minutos, crie PELO MENOS 12-15 seções
-- Para um vídeo de 15 minutos, crie PELO MENOS 6-8 seções
+---
 
 **NÍVEL DE DETALHE:**
 - Mencione TODOS os nomes de botões, menus, campos exatamente como aparecem
@@ -187,21 +273,56 @@ Abaixo está a **transcrição completa de um vídeo**:
 - Transcreva valores de exemplo mencionados
 - Explique o PORQUÊ de cada ação quando mencionado
 
-**FORMATO DA SAÍDA:**
+**FORMATO:**
 - Markdown limpo e bem formatado
 - Use tabelas para organizar informações estruturadas
 - Use listas com marcadores para enumerações
 - Use negrito para destacar elementos importantes da UI
 - Use código inline com crases para nomes técnicos de campos
 
+**IMPORTANTE PARA METADADOS:**
+- Categorias: Use termos como "Configuração", "Cadastro", "Relatório", "Administração", "Operacional", etc.
+- Palavras-chave: Use substantivos e verbos importantes mencionados (ex: "permissão", "usuário", "editar", "visualizar", "pasta")
+- Perguntas: Formule perguntas naturais que um usuário faria ao buscar essa informação
+
 NÃO invente informações. Use APENAS o que está na transcrição, mas inclua TUDO que está lá.
 Seja EXAUSTIVAMENTE detalhado - melhor pecar pelo excesso do que pela falta.
 """,
     )
 
+    # Cabeçalho do documento
+    documentacao_completa = [f"# 📚 Documentação: {titulo_video}\n"]
+    documentacao_completa.append(f"**🎥 Vídeo Original:** {video_url}\n")
+    documentacao_completa.append(f"**📊 Total de Seções:** {len(segmentos)}\n")
+    documentacao_completa.append("---\n")
+
+    # Gera cada seção
     chain = prompt | llm | parser
-    resultado = chain.invoke({"transcricao": transcricao})
-    return resultado.strip()
+    total = len(segmentos)
+    
+    for i, seg in enumerate(segmentos, start=1):
+        minutagem = f"{formatar_tempo(seg['start'])} → {formatar_tempo(seg['end'])}"
+        jump_url = build_timestamped_url(video_url, seg["start"])
+        duracao_segundos = int(seg['end'] - seg['start'])
+        
+        print(f"   📝 Gerando seção {i}/{total} ({minutagem})...")
+        
+        try:
+            secao_md = chain.invoke({
+                "transcricao_segmento": seg["texto"],
+                "minutagem": minutagem,
+                "jump_url": jump_url,
+                "section_index": str(i),
+                "total_sections": str(total),
+                "duracao_segundos": str(duracao_segundos),
+            })
+            documentacao_completa.append(secao_md.strip())
+            documentacao_completa.append("\n\n---\n\n")
+        except Exception as e:
+            print(f"   ⚠️ Erro ao gerar seção {i}: {e}")
+            documentacao_completa.append(f"<!-- Erro ao gerar seção {i}: {e} -->\n\n")
+
+    return "\n".join(documentacao_completa)
 
 
 # === 3. Gravar arquivo Markdown ===
@@ -236,11 +357,17 @@ if __name__ == "__main__":
             titulo = obter_titulo_video(url)
             print(f"📌 Título: {titulo}")
 
-            # Carrega a transcrição
-            transcricao = carregar_transcricao(url)
+            # Carrega a transcrição com timestamps
+            transcricao_entries = carregar_transcricao(url)
+            print(f"✅ Transcrição carregada: {len(transcricao_entries)} entradas")
+
+            # Segmenta a transcrição (padrão: 150 segundos = 2min30s por segmento)
+            print("📊 Segmentando transcrição...")
+            segmentos = segmentar_transcricao(transcricao_entries, segmento_segundos=150)
+            print(f"✅ {len(segmentos)} segmentos criados")
 
             # Gera a documentação
-            markdown = gerar_documentacao(transcricao)
+            markdown = gerar_documentacao(segmentos, url, titulo)
 
             # Salva o arquivo
             salvar_markdown(markdown, titulo)
@@ -249,6 +376,8 @@ if __name__ == "__main__":
 
         except Exception as e:
             print(f"❌ Erro ao processar vídeo {index}: {e}")
+            import traceback
+            traceback.print_exc()
             continue
 
     print(f"\n{'='*60}")

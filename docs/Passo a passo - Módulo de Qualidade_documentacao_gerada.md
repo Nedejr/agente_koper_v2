@@ -1,684 +1,565 @@
-## 1. Introdução ao Módulo Qualidade
+# 📚 Documentação: Passo a passo - Módulo de Qualidade
 
-**Minutagem:** 00:00 → 02:30
+**🎥 Vídeo Original:** https://youtu.be/lefybyzpmgY?si=YfjXcK_ZY3ZoekrC
+
+**📊 Total de Seções:** 5
+
+---
+
+---
+
+## 1. Cadastro de Categorias e Itens de Assistência no Módulo Qualidade
+
+**📋 METADADOS:**
+- **ID:** sec_1
+- **⏱️ Minutagem:** 00:01 → 02:33
+- **⏲️ Duração:** 152s
+- **🎬 Link:** [Assistir este trecho](https://youtu.be/lefybyzpmgY?si=YfjXcK_ZY3ZoekrC&t=1)
+- **📦 Módulo:** Módulo Qualidade
+- **🏷️ Categorias:** Cadastro, Configuração, Assistência, Garantia
+- **🔑 Palavras-chave:** categoria, subcategoria, item de assistência, cadastro, garantia, editar, excluir
+
+> **🔍 RESUMO EXECUTIVO:** Esta seção ensina como cadastrar categorias e itens de assistência no Módulo Qualidade, permitindo que os usuários gerenciem o fluxo do pós-vendas de forma eficiente.
 
 **Contexto:**
-Nesta seção, o apresentador introduz o módulo de qualidade, explicando seu objetivo principal, que é gerenciar o fluxo do pós-vendas. O foco inicial será nos cadastros necessários para o funcionamento do sistema.
+Estamos no Módulo Qualidade, que tem como objetivo gerenciar o fluxo do pós-vendas. Esta seção se concentra nos cadastros iniciais necessários para a configuração do sistema, começando pelas categorias de assistência.
 
 **Localização no Sistema:**
-- Menu Principal > Módulo Qualidade
+- Caminho de navegação: Menu Principal > Módulo Qualidade > Cadastros > Categorias de Assistências
+- Tela/interface específica: Tela de Cadastro de Categorias de Assistências
 
 **Funcionalidade Detalhada:**
-O módulo de qualidade é projetado para facilitar o gerenciamento das assistências técnicas após a venda de produtos ou serviços. O primeiro passo para utilizar este módulo é realizar os cadastros iniciais, que incluem categorias e subcategorias de assistência.
+O Módulo Qualidade permite o cadastro de categorias e subcategorias de assistência, que são essenciais para a definição dos itens que terão garantia. Os usuários podem visualizar categorias pré-cadastradas e adicionar novas, além de editar ou excluir categorias existentes.
 
 ### 🔹 Passo a Passo Detalhado:
 
 1. **Acessar o Módulo Qualidade**
    - Localização: Menu Principal
-   - Como fazer: Clique no menu **Módulo Qualidade**.
-   - Resultado esperado: O sistema exibirá a interface principal do módulo de qualidade.
+   - Como fazer: Clique no ícone do **Módulo Qualidade** para acessá-lo.
+   - Resultado esperado: O sistema exibe a interface do Módulo Qualidade.
 
----
+2. **Navegar até Cadastros**
+   - Localização: Menu lateral do Módulo Qualidade
+   - Como fazer: Clique na opção **Cadastros**.
+   - Resultado esperado: O sistema apresenta as opções de cadastro disponíveis.
 
-## 2. Acesso aos Cadastros de Assistências
+3. **Selecionar Categorias de Assistências**
+   - Localização: Aba de **Categorias de Assistências**
+   - Como fazer: Clique na aba **Categorias de Assistências**.
+   - Resultado esperado: A tela exibe as categorias de assistência já cadastradas e a opção de adicionar novas.
 
-**Minutagem:** 02:30 → 04:00
-
-**Contexto:**
-Após acessar o módulo de qualidade, o próximo passo é navegar até a seção de cadastros, onde será possível definir as categorias de assistência.
-
-**Localização no Sistema:**
-- Menu Principal > Módulo Qualidade > Cadastros
-
-**Funcionalidade Detalhada:**
-Nesta seção, o usuário pode cadastrar categorias e subcategorias de assistência, que são essenciais para a organização dos itens que receberão garantia.
-
-### 🔹 Passo a Passo Detalhado:
-
-1. **Acessar a Aba de Cadastros**
-   - Localização: Dentro do Módulo Qualidade
-   - Como fazer: Clique na aba **Cadastros**.
-   - Resultado esperado: A interface exibirá as opções de categorias de assistência.
-
----
-
-## 3. Cadastro de Categorias de Assistência
-
-**Minutagem:** 04:00 → 06:00
-
-**Contexto:**
-Aqui, o usuário irá cadastrar novas categorias de assistência, que são fundamentais para a organização dos itens que receberão garantia.
-
-**Localização no Sistema:**
-- Menu Principal > Módulo Qualidade > Cadastros > Categorias de Assistências
-
-**Funcionalidade Detalhada:**
-O cadastro de categorias permite que o usuário defina grupos de itens que podem ser assistidos. O sistema já possui algumas categorias pré-cadastradas.
-
-### 🔹 Passo a Passo Detalhado:
-
-1. **Cadastrar Nova Categoria**
+4. **Cadastrar uma Nova Categoria**
    - Localização: Tela de Categorias de Assistências
    - Como fazer: Clique no botão **Mais Categoria**.
    - Campos/Opções disponíveis:
-     * `Nome da Categoria`: Campo de texto para inserir o nome da nova categoria.
-   - Resultado esperado: Uma nova categoria será criada após o preenchimento e salvamento.
+     * `Nome da Categoria`: Campo de texto onde você deve inserir o nome da nova categoria.
+   - Resultado esperado: Uma nova categoria é criada após clicar em **Salvar**.
 
-2. **Salvar a Categoria**
-   - Localização: Após preencher o nome da categoria
-   - Como fazer: Clique no botão **Salvar**.
-   - Resultado esperado: A nova categoria é adicionada à lista de categorias existentes.
-
----
-
-## 4. Cadastro de Subcategorias de Assistência
-
-**Minutagem:** 06:00 → 08:00
-
-**Contexto:**
-Após cadastrar uma nova categoria, o usuário pode adicionar subcategorias, que oferecem um nível adicional de especificação.
-
-**Localização no Sistema:**
-- Menu Principal > Módulo Qualidade > Cadastros > Categorias de Assistências
-
-**Funcionalidade Detalhada:**
-As subcategorias permitem uma organização mais detalhada dos itens de assistência, facilitando a busca e o gerenciamento.
-
-### 🔹 Passo a Passo Detalhado:
-
-1. **Adicionar Subcategoria**
-   - Localização: Ao lado da categoria recém-cadastrada
-   - Como fazer: Clique no botão **Mais** ao lado da categoria.
+5. **Adicionar Subcategoria**
+   - Localização: Lateral da categoria recém-cadastrada
+   - Como fazer: Clique no botão **Mais** ao lado da categoria desejada.
    - Campos/Opções disponíveis:
-     * `Nome da Subcategoria`: Campo de texto para inserir o nome da nova subcategoria.
-   - Resultado esperado: A subcategoria será criada após o preenchimento e salvamento.
+     * `Nome da Subcategoria`: Campo de texto onde você deve inserir o nome da subcategoria.
+   - Resultado esperado: A subcategoria é adicionada à categoria selecionada após clicar em **Salvar**.
 
-2. **Salvar a Subcategoria**
-   - Localização: Após preencher o nome da subcategoria
-   - Como fazer: Clique no botão **Salvar**.
-   - Resultado esperado: A nova subcategoria é adicionada à lista de subcategorias da categoria selecionada.
+6. **Editar ou Excluir Categorias/Subcategorias**
+   - Localização: Lista de categorias/subcategorias
+   - Como fazer: Clique no ícone de **Editar** ou **Excluir** ao lado da categoria/subcategoria desejada.
+   - Resultado esperado: O sistema permite modificar ou remover a categoria/subcategoria selecionada.
 
----
-
-## 5. Edição e Exclusão de Categorias e Subcategorias
-
-**Minutagem:** 08:00 → 10:00
-
-**Contexto:**
-Nesta seção, o usuário aprenderá como editar ou excluir categorias e subcategorias já cadastradas no sistema.
-
-**Localização no Sistema:**
-- Menu Principal > Módulo Qualidade > Cadastros > Categorias de Assistências
-
-**Funcionalidade Detalhada:**
-O sistema permite que o usuário faça alterações ou remova categorias e subcategorias, garantindo que a base de dados esteja sempre atualizada.
-
-### 🔹 Passo a Passo Detalhado:
-
-1. **Editar Categoria ou Subcategoria**
-   - Localização: Na lista de categorias ou subcategorias
-   - Como fazer: Clique na opção de **Editar** ao lado da categoria ou subcategoria desejada.
-   - Resultado esperado: O sistema abrirá um formulário para edição.
-
-2. **Excluir Categoria ou Subcategoria**
-   - Localização: Na lista de categorias ou subcategorias
-   - Como fazer: Clique na opção de **Excluir** ao lado da categoria ou subcategoria desejada.
-   - Observações importantes: Uma confirmação pode ser solicitada para evitar exclusões acidentais.
-   - Resultado esperado: A categoria ou subcategoria será removida do sistema.
-
----
-
-## 6. Acesso aos Itens de Assistência
-
-**Minutagem:** 10:00 → 12:00
-
-**Contexto:**
-Após cadastrar as categorias e subcategorias, o próximo passo é definir os itens que receberão assistência e garantia.
-
-**Localização no Sistema:**
-- Menu Principal > Módulo Qualidade > Cadastros > Itens de Assistência
-
-**Funcionalidade Detalhada:**
-Nesta seção, o usuário pode cadastrar todos os itens que estão cobertos por garantia, vinculando-os às categorias e subcategorias previamente definidas.
-
-### 🔹 Passo a Passo Detalhado:
-
-1. **Acessar a Aba de Itens de Assistência**
-   - Localização: Dentro do Módulo Qualidade
+7. **Acessar Itens de Assistência**
+   - Localização: Aba de **Itens de Assistência**
    - Como fazer: Clique na aba **Itens de Assistência**.
-   - Resultado esperado: A interface exibirá a lista de itens de assistência.
+   - Resultado esperado: A tela exibe a opção de cadastrar novos itens de assistência.
 
-2. **Cadastrar Novo Item**
+8. **Cadastrar um Novo Item de Assistência**
    - Localização: Tela de Itens de Assistência
    - Como fazer: Clique no botão **Mais Item**.
    - Campos/Opções disponíveis:
-     * `Categoria`: Selecionar a categoria do item.
-     * `Subcategoria`: Selecionar a subcategoria do item.
-     * `Nome do Item`: Campo de texto para inserir o nome do novo item.
-   - Resultado esperado: O sistema permitirá a seleção da categoria e subcategoria para o novo item.
+     * `Categoria`: Seletor onde você deve escolher a categoria correspondente.
+     * `Subcategoria`: Seletor onde você deve escolher a subcategoria correspondente.
+     * `Nome do Item`: Campo de texto onde você deve inserir o nome do novo item.
+   - Resultado esperado: O novo item de assistência é cadastrado após selecionar as opções e clicar em **Salvar**.
+
+9. **Selecionar Empreendimentos**
+   - Localização: Tela de cadastro do item de assistência
+   - Como fazer: Arraste para o lado ou clique na mãozinha para selecionar os empreendimentos que oferecem garantia para o item.
+   - Resultado esperado: Os empreendimentos selecionados são associados ao item de assistência.
+
+10. **Definir Garantia**
+    - Localização: Tela de cadastro do item de assistência
+    - Como fazer: Escolha entre as opções de garantia, que podem ser até o ato da entrega pelo fabricante ou durante um período fornecido pela construtora.
+    - Resultado esperado: A garantia é definida para o item de assistência cadastrado.
+
+**Campos e Parâmetros:**
+
+| Campo                   | Tipo         | Obrigatório | Descrição                                                       | Exemplo                |
+|-------------------------|--------------|-------------|-----------------------------------------------------------------|------------------------|
+| Nome da Categoria       | Texto        | Sim         | Nome da nova categoria de assistência.                          | "Assistência Técnica"  |
+| Nome da Subcategoria    | Texto        | Sim         | Nome da nova subcategoria de assistência.                       | "Reparo Elétrico"      |
+| Categoria               | Dropdown     | Sim         | Seletor para escolher a categoria do item de assistência.      | "Assistência Técnica"  |
+| Subcategoria            | Dropdown     | Sim         | Seletor para escolher a subcategoria do item de assistência.   | "Reparo Elétrico"      |
+| Nome do Item            | Texto        | Sim         | Nome do novo item de assistência a ser cadastrado.            | "Ferro de Passar"      |
+| Empreendimentos         | Checkbox      | Não         | Seleção dos empreendimentos que oferecem garantia para o item. | "Empreendimento A"     |
+| Garantia                | Radio Button | Sim         | Opção para definir o tipo de garantia do item.                 | "Até entrega do fabricante" |
+
+**Regras de Negócio:**
+- As categorias e subcategorias devem ser cadastradas antes de cadastrar itens de assistência.
+- É possível editar ou excluir categorias e subcategorias já cadastradas.
+- Cada item de assistência deve estar associado a pelo menos uma categoria e subcategoria.
+- A garantia deve ser definida no momento do cadastro do item de assistência.
+
+**Observações Importantes:**
+- Sempre verifique se a categoria e subcategoria estão corretas antes de salvar.
+- Evite cadastrar categorias ou subcategorias duplicadas.
+- Utilize os ícones de editar e excluir com cautela, pois a exclusão é permanente.
+
+**Conceitos-Chave:**
+- **Categoria**: Classificação principal para agrupar itens de assistência.
+- **Subcategoria**: Classificação secundária que fornece mais detalhes sobre a categoria.
+
+**❓ PERGUNTAS QUE ESTA SEÇÃO RESPONDE:**
+- Como cadastrar uma nova categoria de assistência?
+- Quais são os passos para adicionar uma subcategoria?
+- Como posso cadastrar um item de assistência e definir sua garantia?
 
 ---
 
-## 7. Seleção de Empreendimentos para Itens de Assistência
 
-**Minutagem:** 12:00 → 14:00
+---
+
+
+---
+
+## 2. Configuração de Assistências Técnicas
+
+**📋 METADADOS:**
+- **ID:** sec_2
+- **⏱️ Minutagem:** 02:31 → 05:05
+- **⏲️ Duração:** 153s
+- **🎬 Link:** [Assistir este trecho](https://youtu.be/lefybyzpmgY?si=YfjXcK_ZY3ZoekrC&t=151)
+- **📦 Módulo:** Assistências Técnicas
+- **🏷️ Categorias:** Configuração, Operacional, Cadastro
+- **🔑 Palavras-chave:** assistência técnica, solicitação, garantia, editar, excluir
+
+> **🔍 RESUMO EXECUTIVO:** Esta seção detalha o processo de configuração e gerenciamento de assistências técnicas no sistema, desde a solicitação até a execução do serviço, permitindo que os usuários registrem e acompanhem as assistências de forma eficiente.
 
 **Contexto:**
-Após definir o nome do item, o usuário precisa selecionar os empreendimentos que oferecem garantia para esse item.
+Estamos no módulo de Assistências Técnicas, onde os usuários podem gerenciar solicitações de assistência relacionadas a itens garantidos. O objetivo desta seção é guiar o usuário através do processo de criação e acompanhamento de assistências técnicas.
 
 **Localização no Sistema:**
-- Menu Principal > Módulo Qualidade > Cadastros > Itens de Assistência
+- Caminho de navegação completo: Menu Principal > Módulo Assistências Técnicas > Submenu Criar Assistência
+- Tela/interface específica: Tela de Criação de Assistência Técnica
 
 **Funcionalidade Detalhada:**
-Esta funcionalidade permite que o usuário vincule os itens de assistência aos empreendimentos que oferecem garantia, facilitando o gerenciamento.
+A funcionalidade de Assistências Técnicas permite que os usuários registrem solicitações de assistência para itens garantidos. O fluxo inclui a definição do empreendimento, a unidade relacionada, a descrição do problema e a seleção dos itens que fazem parte da assistência. É possível marcar a assistência como urgente e acompanhar o status da solicitação.
 
 ### 🔹 Passo a Passo Detalhado:
 
-1. **Selecionar Empreendimentos**
-   - Localização: Na tela de cadastro do item
-   - Como fazer: Arraste para o lado ou clique na mãozinha ao lado dos empreendimentos listados.
-   - Resultado esperado: Os empreendimentos selecionados serão vinculados ao item.
+1. **Iniciar um Novo Fluxo de Assistência**
+   - Localização: Tela de Criação de Assistência Técnica
+   - Como fazer: Clique no botão **"Mais Assistência"** para iniciar um novo fluxo de assistência técnica.
+   - Resultado esperado: O sistema abrirá um formulário para preenchimento das informações da assistência.
 
-2. **Definir Garantia do Item**
-   - Localização: Abaixo da seleção de empreendimentos
-   - Como fazer: Escolha o tipo de garantia (até o ato da entrega ou período fornecido pela construtora).
+2. **Definir o Empreendimento e Unidade**
+   - Localização: Campo de seleção na tela de criação de assistência
+   - Como fazer: Selecione o empreendimento relacionado à assistência. Em seguida, escolha a unidade que foi entregue.
+   - Observações importantes: Apenas as unidades para as quais as chaves já foram entregues estarão disponíveis para seleção.
+   - Resultado esperado: A unidade selecionada será exibida no formulário.
+
+3. **Informar o Cliente Relacionado**
+   - Localização: Informativo na tela de criação de assistência
+   - Como fazer: O sistema automaticamente exibirá o cliente relacionado à unidade selecionada.
+   - Resultado esperado: O cliente associado à unidade será visível no formulário.
+
+4. **Definir a Data da Solicitação**
+   - Localização: Campo de data na tela de criação de assistência
+   - Como fazer: Insira a data em que a solicitação de assistência está sendo feita.
+   - Resultado esperado: A data da solicitação será registrada no sistema.
+
+5. **Marcar a Assistência como Urgente**
+   - Localização: Opção de seleção na tela de criação de assistência
+   - Como fazer: Marque a opção **"Urgente"** se a assistência requerer atenção imediata.
+   - Resultado esperado: A assistência será identificada como urgente no sistema.
+
+6. **Descrever o Problema**
+   - Localização: Campo de descrição na tela de criação de assistência
+   - Como fazer: Insira uma descrição detalhada do problema que requer assistência.
+   - Resultado esperado: A descrição do problema será registrada e associada à solicitação.
+
+7. **Selecionar Itens Relacionados à Assistência**
+   - Localização: Tela de seleção de itens
+   - Como fazer: Clique em **"Próximo"** para acessar a tela de seleção de itens. Filtre os itens pela categoria e subcategoria para localizar os itens garantidos relacionados à assistência.
    - Campos/Opções disponíveis:
-     * `Prazo de Garantia`: Definir em meses ou dias.
-   - Resultado esperado: O prazo de garantia será salvo junto ao item.
+     * `Categoria`: Selecione a categoria do item (ex: Eletrodomésticos, Móveis).
+     * `Subcategoria`: Selecione a subcategoria do item (ex: Refrigeradores, Sofás).
+   - Observações importantes: A seleção de itens é obrigatória e deve ser feita através do filtro.
+   - Resultado esperado: Os itens relacionados à categoria e subcategoria selecionadas serão exibidos.
+
+8. **Selecionar o Item para Assistência**
+   - Localização: Lista de itens filtrados
+   - Como fazer: Arraste o item desejado para o lado ou clique no ícone da mãozinha para selecioná-lo.
+   - Resultado esperado: O item será adicionado à solicitação de assistência.
+
+9. **Visualizar Informações do Item**
+   - Localização: Tela de seleção de itens
+   - Como fazer: Ao visualizar o item, verifique o tempo de garantia e o tempo restante de garantia para o empreendimento.
+   - Resultado esperado: As informações de garantia do item serão exibidas.
+
+10. **Salvar a Assistência**
+    - Localização: Botão **"Salvar"** na tela de criação de assistência
+    - Como fazer: Clique no botão **"Salvar"** para registrar a assistência técnica.
+    - Resultado esperado: A assistência será iniciada e aparecerá na lista de assistências com o status atualizado.
+
+11. **Visualizar Assistência Criada**
+    - Localização: Lista de assistências
+    - Como fazer: Clique na assistência recém-criada para visualizar detalhes adicionais.
+    - Resultado esperado: Detalhes da assistência, incluindo status, urgência e informativos gerais, serão exibidos.
+
+12. **Importar Arquivos Relacionados**
+    - Localização: Opção de importação na tela de detalhes da assistência
+    - Como fazer: Utilize a opção para importar arquivos relevantes à assistência.
+    - Resultado esperado: Os arquivos importados serão associados à assistência técnica.
+
+**Campos e Parâmetros:**
+
+| Campo                       | Tipo         | Obrigatório | Descrição                                               | Exemplo                |
+|-----------------------------|--------------|-------------|---------------------------------------------------------|------------------------|
+| Empreendimento               | Dropdown     | Sim         | Seleção do empreendimento relacionado à assistência      | Empreendimento A       |
+| Unidade                      | Dropdown     | Sim         | Seleção da unidade que foi entregue                     | Unidade 101            |
+| Data da Solicitação          | Data         | Sim         | Data em que a solicitação de assistência é feita        | 2023-10-01             |
+| Urgente                     | Checkbox     | Não         | Indica se a assistência é urgente                        | [X] Urgente            |
+| Descrição do Problema        | Texto livre  | Sim         | Descrição detalhada do problema a ser assistido        | "O refrigerador não liga." |
+| Categoria                    | Dropdown     | Sim         | Categoria do item relacionado à assistência             | Eletrodomésticos       |
+| Subcategoria                 | Dropdown     | Sim         | Subcategoria do item relacionado à assistência          | Refrigeradores         |
+| Item                         | Seleção      | Sim         | Item selecionado para a assistência                     | Refrigerador XYZ       |
+
+**Regras de Negócio:**
+- A unidade só pode ser selecionada se as chaves já tiverem sido entregues.
+- A descrição do problema é um campo obrigatório.
+- A seleção de itens deve ser feita através de filtros por categoria e subcategoria.
+
+**Observações Importantes:**
+- Certifique-se de que a descrição do problema seja clara e detalhada para facilitar a assistência.
+- Evite selecionar unidades que não tenham as chaves entregues, pois não aparecerão na lista.
+- Verifique sempre o tempo de garantia antes de registrar a assistência.
+
+**Conceitos-Chave:**
+- **Assistência Técnica**: Processo de solicitação e execução de serviços relacionados a itens garantidos.
+- **Urgente**: Classificação que indica que a assistência requer atenção imediata.
+
+**❓ PERGUNTAS QUE ESTA SEÇÃO RESPONDE:**
+- Como iniciar uma nova solicitação de assistência técnica?
+- Quais informações são necessárias para registrar uma assistência?
+- Como posso visualizar e acompanhar o status da assistência criada?
 
 ---
 
-## 8. Salvamento de Itens de Assistência
-
-**Minutagem:** 14:00 → 16:00
-
-**Contexto:**
-Após preencher todas as informações necessárias para o item de assistência, o usuário deve salvar as configurações.
-
-**Localização no Sistema:**
-- Menu Principal > Módulo Qualidade > Cadastros > Itens de Assistência
-
-**Funcionalidade Detalhada:**
-O salvamento do item de assistência garante que todas as informações inseridas sejam registradas no sistema.
-
-### 🔹 Passo a Passo Detalhado:
-
-1. **Salvar o Item de Assistência**
-   - Localização: Após preencher todos os campos necessários
-   - Como fazer: Clique no botão **Salvar**.
-   - Resultado esperado: O item de assistência será adicionado à lista de itens disponíveis no sistema.
 
 ---
 
-## 9. Edição e Exclusão de Itens de Assistência
-
-**Minutagem:** 16:00 → 18:00
-
-**Contexto:**
-Nesta seção, o usuário aprenderá como editar ou excluir itens de assistência já cadastrados.
-
-**Localização no Sistema:**
-- Menu Principal > Módulo Qualidade > Cadastros > Itens de Assistência
-
-**Funcionalidade Detalhada:**
-O sistema permite que o usuário faça alterações ou remova itens de assistência, garantindo que a base de dados esteja sempre atualizada.
-
-### 🔹 Passo a Passo Detalhado:
-
-1. **Editar Item de Assistência**
-   - Localização: Na lista de itens de assistência
-   - Como fazer: Clique na opção de **Editar** ao lado do item desejado.
-   - Resultado esperado: O sistema abrirá um formulário para edição.
-
-2. **Excluir Item de Assistência**
-   - Localização: Na lista de itens de assistência
-   - Como fazer: Clique na opção de **Excluir** ao lado do item desejado.
-   - Observações importantes: Uma confirmação pode ser solicitada para evitar exclusões acidentais.
-   - Resultado esperado: O item de assistência será removido do sistema.
 
 ---
 
-## 10. Início do Fluxo de Assistências Técnicas
+## 3. Análise de Garantia e Vistoria
 
-**Minutagem:** 18:00 → 20:00
+**📋 METADADOS:**
+- **ID:** sec_3
+- **⏱️ Minutagem:** 05:02 → 07:37
+- **⏲️ Duração:** 154s
+- **🎬 Link:** [Assistir este trecho](https://youtu.be/lefybyzpmgY?si=YfjXcK_ZY3ZoekrC&t=302)
+- **📦 Módulo:** Análise de Assistência Técnica
+- **🏷️ Categorias:** Análise, Vistoria, Aprovação, Materiais
+- **🔑 Palavras-chave:** análise, garantia, vistoria, aprovação, reprovação, materiais, assistência técnica, pré-vistoria
+
+> **🔍 RESUMO EXECUTIVO:** Esta seção detalha o processo de análise de garantia e vistoria em um sistema de assistência técnica, abordando desde a verificação da garantia até a aprovação ou reprovação do serviço, além da gestão de materiais necessários.
 
 **Contexto:**
-Após cadastrar os itens de assistência, o usuário pode iniciar o fluxo de assistências técnicas, que abrange desde a solicitação até a execução do serviço.
+Estamos na etapa de análise dentro do módulo de assistência técnica, onde o usuário deve verificar a garantia do produto, realizar uma vistoria e, em seguida, aprovar ou reprovar a assistência técnica solicitada.
 
 **Localização no Sistema:**
-- Menu Principal > Módulo Qualidade > Assistências Técnicas
+- Caminho de navegação completo: Menu Principal > Módulo Análise de Assistência Técnica > Submenu Análise de Garantia e Vistoria
+- Tela/interface específica: Tela de Análise de Garantia e Vistoria
 
 **Funcionalidade Detalhada:**
-O fluxo de assistências técnicas permite que o usuário registre solicitações, gerencie o status das assistências e acompanhe a execução dos serviços.
+A funcionalidade permite ao usuário verificar a garantia do produto, realizar uma vistoria e aprovar ou reprovar a assistência técnica. O usuário pode também documentar o processo através de comentários e gerenciar a solicitação de materiais necessários para a execução do serviço.
 
 ### 🔹 Passo a Passo Detalhado:
 
-1. **Iniciar Nova Assistência**
-   - Localização: Tela de Assistências Técnicas
-   - Como fazer: Clique no botão **Mais Assistência**.
-   - Resultado esperado: O sistema abrirá um formulário para registrar a nova assistência.
-
-2. **Definir Empreendimento e Unidade**
-   - Localização: No formulário de nova assistência
-   - Como fazer: Selecione o empreendimento e a unidade relacionada.
-   - Observações importantes: O sistema só exibirá unidades cuja entrega das chaves já foi realizada.
-   - Resultado esperado: A unidade será vinculada à nova assistência.
-
----
-
-## 11. Informações do Cliente e Data da Solicitação
-
-**Minutagem:** 20:00 → 22:00
-
-**Contexto:**
-Após definir o empreendimento e a unidade, o usuário deve preencher informações adicionais sobre o cliente e a data da solicitação.
-
-**Localização no Sistema:**
-- Menu Principal > Módulo Qualidade > Assistências Técnicas
-
-**Funcionalidade Detalhada:**
-Essas informações são essenciais para o registro da assistência e para o acompanhamento do atendimento ao cliente.
-
-### 🔹 Passo a Passo Detalhado:
-
-1. **Preencher Informações do Cliente**
-   - Localização: No formulário de nova assistência
-   - Como fazer: O sistema já exibirá o informativo quanto ao cliente relacionado.
-   - Resultado esperado: As informações do cliente serão automaticamente preenchidas.
-
-2. **Definir Data da Solicitação**
-   - Localização: No formulário de nova assistência
-   - Como fazer: Selecione a data da solicitação através do calendário.
-   - Resultado esperado: A data será registrada na nova assistência.
-
----
-
-## 12. Sinalização de Urgência e Descrição do Problema
-
-**Minutagem:** 22:00 → 24:00
-
-**Contexto:**
-Nesta seção, o usuário deve indicar se a assistência é urgente e descrever o problema a ser resolvido.
-
-**Localização no Sistema:**
-- Menu Principal > Módulo Qualidade > Assistências Técnicas
-
-**Funcionalidade Detalhada:**
-Essas informações ajudam a priorizar o atendimento e a entender melhor a natureza do problema.
-
-### 🔹 Passo a Passo Detalhado:
-
-1. **Sinalizar Urgência**
-   - Localização: No formulário de nova assistência
-   - Como fazer: Marque a opção **Urgente** se aplicável.
-   - Resultado esperado: A assistência será marcada como urgente.
-
-2. **Descrever o Problema**
-   - Localização: No formulário de nova assistência
-   - Como fazer: Preencha o campo **Descrição do Problema** com as informações relevantes.
-   - Resultado esperado: A descrição do problema será registrada na nova assistência.
-
----
-
-## 13. Seleção de Itens Relacionados à Assistência
-
-**Minutagem:** 24:00 → 26:00
-
-**Contexto:**
-Após preencher as informações iniciais da assistência, o usuário deve selecionar os itens que fazem parte da assistência e que estão cobertos pela garantia.
-
-**Localização no Sistema:**
-- Menu Principal > Módulo Qualidade > Assistências Técnicas
-
-**Funcionalidade Detalhada:**
-A seleção de itens é crucial para que o sistema possa gerenciar corretamente a assistência técnica e verificar a garantia.
-
-### 🔹 Passo a Passo Detalhado:
-
-1. **Filtrar por Categoria**
-   - Localização: Na tela de seleção de itens
-   - Como fazer: Utilize o filtro de **Categoria** para restringir os itens exibidos.
-   - Resultado esperado: O sistema mostrará apenas os itens relacionados à categoria selecionada.
-
-2. **Selecionar Itens**
-   - Localização: Na lista de itens filtrados
-   - Como fazer: Arraste para o lado ou clique na mãozinha ao lado dos itens desejados.
-   - Resultado esperado: Os itens selecionados serão vinculados à assistência.
-
----
-
-## 14. Visualização de Garantia e Tempo Restante
-
-**Minutagem:** 26:00 → 28:00
-
-**Contexto:**
-Nesta seção, o usuário pode visualizar informações sobre a garantia dos itens selecionados e o tempo restante de garantia.
-
-**Localização no Sistema:**
-- Menu Principal > Módulo Qualidade > Assistências Técnicas
-
-**Funcionalidade Detalhada:**
-Essas informações são importantes para determinar se a assistência pode ser coberta pela garantia.
-
-### 🔹 Passo a Passo Detalhado:
-
-1. **Visualizar Tempo de Garantia**
-   - Localização: Na tela de seleção de itens
-   - Como fazer: Observe as informações exibidas ao lado de cada item selecionado.
-   - Resultado esperado: O sistema mostrará o tempo de garantia e o tempo restante para cada item.
-
-2. **Salvar a Assistência**
-   - Localização: Após selecionar os itens
-   - Como fazer: Clique no botão **Salvar**.
-   - Resultado esperado: A assistência será registrada no sistema com todos os detalhes preenchidos.
-
----
-
-## 15. Visualização e Importação de Arquivos
-
-**Minutagem:** 28:00 → 30:00
-
-**Contexto:**
-Após salvar a assistência, o usuário pode visualizar as informações gerais e importar arquivos relacionados à assistência.
-
-**Localização no Sistema:**
-- Menu Principal > Módulo Qualidade > Assistências Técnicas
-
-**Funcionalidade Detalhada:**
-A importação de arquivos permite que o usuário anexe documentos ou imagens relevantes à assistência técnica.
-
-### 🔹 Passo a Passo Detalhado:
-
-1. **Visualizar Informações da Assistência**
-   - Localização: Na lista de assistências
-   - Como fazer: Clique na assistência recém-criada.
-   - Resultado esperado: O sistema exibirá todos os detalhes da assistência, incluindo status e urgência.
-
-2. **Importar Arquivos**
-   - Localização: Na tela de detalhes da assistência
-   - Como fazer: Clique na opção **Importar Arquivos**.
-   - Resultado esperado: O sistema permitirá que o usuário selecione e anexe arquivos relevantes.
-
----
-
-## 16. Início da Análise da Assistência
-
-**Minutagem:** 30:00 → 32:00
-
-**Contexto:**
-Com a assistência registrada, o próximo passo é iniciar a análise, que envolve verificar a garantia e realizar vistorias.
-
-**Localização no Sistema:**
-- Menu Principal > Módulo Qualidade > Assistências Técnicas
-
-**Funcionalidade Detalhada:**
-A análise é uma etapa crítica que determina se a assistência será aprovada ou reprovada com base nas informações coletadas.
-
-### 🔹 Passo a Passo Detalhado:
-
-1. **Iniciar Análise**
-   - Localização: Na tela de detalhes da assistência
-   - Como fazer: Clique no botão **Iniciar Análise**.
-   - Resultado esperado: O sistema abrirá a interface para análise da assistência.
+1. **Iniciar a Análise**
+   - Localização: Tela inicial da Análise de Assistência Técnica
+   - Como fazer: Clique no botão **Iniciar Análise** para começar o processo.
+   - Resultado esperado: O sistema inicia o processo de análise, levando o usuário à verificação da garantia.
 
 2. **Verificar Garantia**
-   - Localização: Na tela de análise
-   - Como fazer: Clique em **Analisar Garantia**.
-   - Resultado esperado: O sistema permitirá que o usuário verifique se a garantia está ativa.
-
----
-
-## 17. Comentários sobre a Análise de Garantia
-
-**Minutagem:** 32:00 → 34:00
-
-**Contexto:**
-Após verificar a garantia, o usuário pode adicionar comentários sobre a análise realizada.
-
-**Localização no Sistema:**
-- Menu Principal > Módulo Qualidade > Assistências Técnicas
-
-**Funcionalidade Detalhada:**
-Os comentários ajudam a documentar o raciocínio por trás da análise e podem ser úteis para futuras referências.
-
-### 🔹 Passo a Passo Detalhado:
-
-1. **Adicionar Comentários**
-   - Localização: Na tela de análise de garantia
-   - Como fazer: Preencha o campo de comentários com informações relevantes.
-   - Resultado esperado: O comentário será salvo junto à análise da assistência.
-
-2. **Salvar Análise de Garantia**
-   - Localização: Após adicionar comentários
-   - Como fazer: Clique no botão **Salvar**.
-   - Resultado esperado: A análise de garantia será registrada no sistema.
-
----
-
-## 18. Vistoria e Aprovação da Assistência
-
-**Minutagem:** 34:00 → 36:00
-
-**Contexto:**
-Após a análise da garantia, o usuário deve realizar uma vistoria, que pode ser uma pré-vistoria ou pular essa etapa.
-
-**Localização no Sistema:**
-- Menu Principal > Módulo Qualidade > Assistências Técnicas
-
-**Funcionalidade Detalhada:**
-A vistoria é uma etapa importante que ajuda a determinar se a assistência deve ser aprovada ou reprovada.
-
-### 🔹 Passo a Passo Detalhado:
-
-1. **Realizar Pré-Vistoria**
-   - Localização: Na tela de análise
-   - Como fazer: Selecione a opção de **Pré-Vistoria**.
+   - Localização: Seção de Verificação de Garantia
+   - Como fazer: Clique no botão **Analisar Garantia**.
    - Campos/Opções disponíveis:
-     * `Data da Pré-Vistoria`: Campo para inserir a data.
-     * `Comentários`: Campo para adicionar observações sobre a vistoria.
-   - Resultado esperado: A pré-vistoria será registrada no sistema.
+     * `Possui Garantia`: Selecione **Sim** ou **Não**.
+     * `Comentários`: Campo de texto para adicionar observações sobre a análise.
+   - Resultado esperado: O sistema registra a verificação da garantia e permite a adição de comentários.
 
-2. **Salvar Pré-Vistoria**
-   - Localização: Após preencher os campos
+3. **Salvar Análise de Garantia**
+   - Localização: Após a verificação da garantia
    - Como fazer: Clique no botão **Salvar**.
-   - Resultado esperado: A pré-vistoria será registrada e o usuário poderá prosseguir para a aprovação.
+   - Resultado esperado: As informações da análise de garantia são salvas no sistema.
+
+4. **Vistoria**
+   - Localização: Seção de Vistoria
+   - Como fazer: Escolha entre as opções:
+     * **Pular Etapa**: Se necessário, clique em **Pular** e forneça uma justificativa.
+     * **Pré-Vistoria**: Clique em **Realizar Pré-Vistoria**.
+   - Observações importantes: Se optar por pular, é necessário justificar a decisão.
+   - Resultado esperado: O sistema avança para a próxima etapa ou registra a pré-vistoria.
+
+5. **Realizar Pré-Vistoria**
+   - Localização: Tela de Pré-Vistoria
+   - Como fazer: Preencha os campos:
+     * `Data da Pré-Vistoria`: Selecione a data em que a vistoria foi realizada.
+     * `Comentários`: Campo de texto para descrever o processo da pré-vistoria.
+   - Resultado esperado: O sistema registra a pré-vistoria e permite a adição de comentários.
+
+6. **Salvar Pré-Vistoria**
+   - Localização: Após preencher os dados da pré-vistoria
+   - Como fazer: Clique no botão **Salvar**.
+   - Resultado esperado: As informações da pré-vistoria são salvas no sistema.
+
+7. **Aprovação da Assistência**
+   - Localização: Seção de Aprovação
+   - Como fazer: Escolha entre as opções:
+     * **Aprovar**: Clique em **Aprovar** e adicione um parecer sobre a decisão.
+     * **Reprovar**: Clique em **Reprovar** para interromper o fluxo de assistência.
+   - Observações importantes: Se a assistência for reprovada, o serviço não será executado.
+   - Resultado esperado: O sistema registra a decisão de aprovação ou reprovação.
+
+8. **Salvar Aprovação**
+   - Localização: Após a decisão de aprovação ou reprovação
+   - Como fazer: Clique no botão **Salvar**.
+   - Resultado esperado: A decisão é registrada no sistema.
+
+9. **Gerenciamento de Materiais**
+   - Localização: Seção de Materiais
+   - Como fazer: Escolha entre as opções:
+     * **Pular Etapa**: Clique em **Pular** e forneça uma justificativa.
+     * **Solicitar Material**: Clique em **Solicitar Material** para iniciar o fluxo de compras.
+     * **Compra Direta**: Clique em **Compra Direta** se o material já foi adquirido.
+   - Resultado esperado: O sistema avança conforme a opção escolhida.
+
+10. **Salvar Etapa de Materiais**
+    - Localização: Após a escolha na seção de materiais
+    - Como fazer: Clique no botão **Salvar**.
+    - Resultado esperado: As informações sobre materiais são salvas no sistema.
+
+**Campos e Parâmetros:**
+
+| Campo                | Tipo         | Obrigatório | Descrição                                               | Exemplo                |
+|----------------------|--------------|-------------|--------------------------------------------------------|------------------------|
+| `Possui Garantia`    | Dropdown     | Sim         | Indica se o produto possui garantia.                   | Sim / Não              |
+| `Comentários`        | Texto livre  | Não         | Observações sobre a análise de garantia ou vistoria.   | "Produto em garantia." |
+| `Data da Pré-Vistoria` | Data       | Sim         | Data em que a pré-vistoria foi realizada.             | 01/10/2023             |
+| `Parecer`            | Texto livre  | Não         | Observações sobre a decisão de aprovação ou reprovação. | "Aprovação necessária." |
+| `Justificativa`      | Texto livre  | Sim (se pular) | Justificativa para pular etapas.                       | "Produtos em estoque." |
+
+**Regras de Negócio:**
+- A verificação da garantia deve ser realizada antes de qualquer vistoria.
+- Se a assistência for reprovada, o fluxo de assistência é interrompido.
+- Justificativas são obrigatórias ao pular etapas.
+
+**Observações Importantes:**
+- É importante documentar todo o processo através de comentários.
+- Erros comuns incluem não salvar as etapas após preenchimento.
+- Verifique se todos os campos obrigatórios estão preenchidos antes de salvar.
+
+**Conceitos-Chave:**
+- **Pré-Vistoria**: Avaliação inicial do produto antes da execução do serviço.
+- **Aprovação/Reprovação**: Decisão final sobre a assistência técnica solicitada.
+
+**❓ PERGUNTAS QUE ESTA SEÇÃO RESPONDE:**
+- Como verificar a garantia de um produto no sistema?
+- O que fazer se a assistência técnica for reprovada?
+- Como gerenciar a solicitação de materiais necessários para a assistência?
 
 ---
 
-## 19. Aprovação ou Reprovação da Assistência
-
-**Minutagem:** 36:00 → 38:00
-
-**Contexto:**
-Após a pré-vistoria, o usuário deve decidir se a assistência será aprovada ou reprovada.
-
-**Localização no Sistema:**
-- Menu Principal > Módulo Qualidade > Assistências Técnicas
-
-**Funcionalidade Detalhada:**
-Essa decisão é crucial, pois determina se o serviço será executado ou não.
-
-### 🔹 Passo a Passo Detalhado:
-
-1. **Aprovar ou Reprovar Assistência**
-   - Localização: Na tela de aprovação
-   - Como fazer: Selecione a opção **Aprovar** ou **Reprovar**.
-   - Observações importantes: Caso a assistência seja reprovada, o fluxo será interrompido.
-   - Resultado esperado: A decisão será registrada no sistema.
-
-2. **Adicionar Parecer**
-   - Localização: Na tela de aprovação
-   - Como fazer: Preencha o campo de parecer com informações sobre a decisão.
-   - Resultado esperado: O parecer será salvo junto à decisão de aprovação ou reprovação.
 
 ---
 
-## 20. Gerenciamento de Materiais
-
-**Minutagem:** 38:00 → 40:00
-
-**Contexto:**
-Após a aprovação da assistência, o usuário deve gerenciar os materiais necessários para a execução do serviço.
-
-**Localização no Sistema:**
-- Menu Principal > Módulo Qualidade > Assistências Técnicas
-
-**Funcionalidade Detalhada:**
-O gerenciamento de materiais é essencial para garantir que todos os itens necessários estejam disponíveis para a execução do serviço.
-
-### 🔹 Passo a Passo Detalhado:
-
-1. **Pular Etapa de Materiais**
-   - Localização: Na tela de gerenciamento de materiais
-   - Como fazer: Selecione a opção **Pular esta Etapa**.
-   - Observações importantes: Uma justificativa pode ser solicitada.
-   - Resultado esperado: O sistema permitirá que o usuário avance para a próxima etapa.
-
-2. **Solicitar Material**
-   - Localização: Na tela de gerenciamento de materiais
-   - Como fazer: Selecione a opção **Solicitar Material**.
-   - Resultado esperado: O sistema iniciará o fluxo de compras para aquisição dos materiais necessários.
 
 ---
 
-## 21. Agendamento da Execução do Serviço
+## 4. Dinâmica de Serviços
 
-**Minutagem:** 40:00 → 42:00
+**📋 METADADOS:**
+- **ID:** sec_4
+- **⏱️ Minutagem:** 07:32 → 10:09
+- **⏲️ Duração:** 156s
+- **🎬 Link:** [Assistir este trecho](https://youtu.be/lefybyzpmgY?si=YfjXcK_ZY3ZoekrC&t=452)
+- **📦 Módulo:** Serviços
+- **🏷️ Categorias:** Operacional, Agendamento, Execução, Vistoria
+- **🔑 Palavras-chave:** agendamento, assistência técnica, execução de serviço, pós-vistoria, comentários
+
+> **🔍 RESUMO EXECUTIVO:** Esta seção detalha o processo de agendamento e execução de serviços de assistência técnica, incluindo a realização de vistorias e a documentação necessária. O objetivo é garantir que os usuários possam gerenciar eficientemente as assistências técnicas, desde o agendamento até a finalização.
 
 **Contexto:**
-Após gerenciar os materiais, o usuário deve agendar a execução do serviço com o cliente.
+Estamos no módulo de Serviços do sistema, onde o usuário pode gerenciar assistências técnicas. Esta seção foca na dinâmica de serviços, que envolve o agendamento, execução e vistoria das assistências.
 
 **Localização no Sistema:**
-- Menu Principal > Módulo Qualidade > Assistências Técnicas
+- Caminho de navegação completo: Menu Principal > Módulo Serviços > Dinâmica de Serviços
+- Tela/interface específica: Tela de Gestão de Assistências Técnicas
 
 **Funcionalidade Detalhada:**
-O agendamento é uma etapa crítica que garante que o cliente esteja ciente da data e horário em que o serviço será realizado.
+
+A funcionalidade de dinâmica de serviços permite ao usuário agendar, executar e realizar vistorias em serviços de assistência técnica. O processo começa com a aprovação de uma assistência técnica, seguido pelo agendamento com o cliente. Após a execução do serviço, o usuário pode finalizar o atendimento e registrar informações relevantes, incluindo comentários e arquivos relacionados.
 
 ### 🔹 Passo a Passo Detalhado:
 
-1. **Agendar Execução do Serviço**
-   - Localização: Na tela de serviços
-   - Como fazer: Clique no botão **Mais Agendamento**.
+1. **Agendar Serviço**
+   - Localização: Tela de Gestão de Assistências Técnicas
+   - Como fazer: Clique no botão **"Mais Agendamento"**.
    - Campos/Opções disponíveis:
-     * `Data do Agendamento`: Campo para selecionar a data.
+     * `Data`: Seletor de data para escolher o dia do agendamento.
      * `Horário`: Campo para inserir o horário do agendamento.
-     * `Comentários`: Campo para adicionar observações sobre o agendamento.
-   - Resultado esperado: O agendamento será registrado no sistema.
+     * `Comentários`: Campo de texto para adicionar observações sobre o que foi alinhado com o cliente.
+   - Resultado esperado: O agendamento é salvo e registrado no sistema.
 
-2. **Salvar Agendamento**
-   - Localização: Após preencher os campos
-   - Como fazer: Clique no botão **Salvar**.
-   - Resultado esperado: O agendamento será adicionado à lista de agendamentos da assistência.
+2. **Executar Serviço**
+   - Localização: Tela de Gestão de Assistências Técnicas, após o agendamento.
+   - Como fazer: Clique no botão **"Finalizar Serviço"**.
+   - Observações importantes: É necessário verificar se o serviço foi finalizado corretamente.
+   - Resultado esperado: O status do serviço é atualizado e comentários podem ser adicionados.
 
----
+3. **Registrar Informativos**
+   - Localização: Após a finalização do serviço.
+   - Como fazer: Utilize a opção para adicionar arquivos, como fotos ou documentos relacionados à execução do serviço.
+   - Resultado esperado: Os informativos são salvos e associados ao serviço.
 
-## 22. Finalização do Serviço
-
-**Minutagem:** 42:00 → 44:00
-
-**Contexto:**
-Após agendar a execução do serviço, o usuário deve finalizar o serviço após sua conclusão.
-
-**Localização no Sistema:**
-- Menu Principal > Módulo Qualidade > Assistências Técnicas
-
-**Funcionalidade Detalhada:**
-A finalização do serviço é a etapa onde o usuário confirma se o serviço foi concluído e registra informações relevantes.
-
-### 🔹 Passo a Passo Detalhado:
-
-1. **Finalizar Serviço**
-   - Localização: Na tela de serviços
-   - Como fazer: Clique no botão **Finalizar Serviço**.
-   - Observações importantes: O usuário deve indicar se o serviço foi finalizado com sucesso.
-   - Resultado esperado: O serviço será marcado como finalizado no sistema.
-
-2. **Adicionar Comentários sobre a Execução**
-   - Localização: Na tela de finalização
-   - Como fazer: Preencha o campo de comentários com informações sobre a execução do serviço.
-   - Resultado esperado: Os comentários serão salvos junto à finalização do serviço.
-
----
-
-## 23. Realização da Pós-Vistoria
-
-**Minutagem:** 44:00 → 46:00
-
-**Contexto:**
-Após a execução do serviço, o usuário deve realizar uma pós-vistoria para garantir que o problema foi resolvido.
-
-**Localização no Sistema:**
-- Menu Principal > Módulo Qualidade > Assistências Técnicas
-
-**Funcionalidade Detalhada:**
-A pós-vistoria é uma etapa final que confirma a qualidade do serviço realizado.
-
-### 🔹 Passo a Passo Detalhado:
-
-1. **Realizar Pós-Vistoria**
-   - Localização: Na tela de serviços
-   - Como fazer: Clique na opção **Realizar Pós-Vistoria**.
+4. **Realizar Pós-Vistoria**
+   - Localização: Tela de Gestão de Assistências Técnicas, após a execução do serviço.
+   - Como fazer: Clique em **"Realizar Pós-Vistoria"**.
    - Campos/Opções disponíveis:
-     * `Data da Pós-Vistoria`: Campo para inserir a data.
-     * `Aprovação`: Selecionar se a pós-vistoria foi aprovada ou não.
-     * `Comentários`: Campo para adicionar observações sobre a pós-vistoria.
-   - Resultado esperado: A pós-vistoria será registrada no sistema.
+     * `Data`: Seletor de data para registrar quando a vistoria foi realizada.
+     * `Aprovada`: Opção para indicar se a vistoria foi aprovada ou não.
+     * `Comentários`: Campo de texto para adicionar observações sobre a vistoria.
+   - Resultado esperado: A pós-vistoria é registrada e salva no sistema.
 
-2. **Salvar Pós-Vistoria**
-   - Localização: Após preencher os campos
-   - Como fazer: Clique no botão **Salvar**.
-   - Resultado esperado: A pós-vistoria será adicionada à assistência e o status será atualizado.
+5. **Reabrir Assistência (se necessário)**
+   - Localização: Tela de Gestão de Assistências Técnicas.
+   - Como fazer: Utilize a opção de reabrir a assistência, caso necessário.
+   - Resultado esperado: A assistência é reaberta para novas ações.
+
+6. **Finalizar Assistência Técnica**
+   - Localização: Após a aprovação da assistência técnica.
+   - Como fazer: Confirme a aprovação para concluir o processo.
+   - Resultado esperado: A assistência técnica é marcada como concluída.
+
+7. **Visualizar Assistências**
+   - Localização: Tela inicial do módulo de Serviços.
+   - Como fazer: Utilize os filtros e a pesquisa direta para visualizar assistências em aberto ou finalizadas.
+   - Resultado esperado: Uma listagem de todas as assistências, com seus respectivos status.
+
+**Campos e Parâmetros:**
+
+| Campo             | Tipo      | Obrigatório | Descrição                                        | Exemplo               |
+|-------------------|-----------|-------------|--------------------------------------------------|-----------------------|
+| `Data`            | Data      | Sim         | Data do agendamento ou da vistoria.             | 15/10/2023            |
+| `Horário`         | Horário   | Sim         | Horário do agendamento.                          | 14:00                 |
+| `Comentários`     | Texto     | Não         | Observações sobre o agendamento ou vistoria.    | "Cliente preferiu à tarde." |
+| `Aprovada`        | Checkbox  | Sim         | Indica se a vistoria foi aprovada.              | [ ] Sim / [ ] Não     |
+
+**Regras de Negócio:**
+- O agendamento deve ser realizado após a aprovação da assistência técnica.
+- A execução do serviço deve ser finalizada antes de registrar a pós-vistoria.
+- Comentários são opcionais, mas recomendados para melhor documentação.
+- A assistência pode ser reaberta se necessário, caso contrário, deve ser marcada como concluída.
+
+**Observações Importantes:**
+- Sempre verifique a data e horário do agendamento com o cliente.
+- Evite erros comuns, como não registrar a pós-vistoria.
+- Certifique-se de que todos os campos obrigatórios estão preenchidos antes de salvar.
+
+**Conceitos-Chave:**
+- **Agendamento**: Processo de marcar uma data e horário para a execução do serviço.
+- **Pós-Vistoria**: Avaliação realizada após a execução do serviço para verificar a qualidade do trabalho.
+
+**❓ PERGUNTAS QUE ESTA SEÇÃO RESPONDE:**
+- Como agendar um serviço de assistência técnica?
+- O que fazer após a execução do serviço?
+- Como registrar uma pós-vistoria e quais informações são necessárias?
 
 ---
 
-## 24. Reabertura da Assistência
 
-**Minutagem:** 46:00 → 48:00
+---
+
+
+---
+
+## 5. Assistência Técnica Após as Vendas
+
+**📋 METADADOS:**
+- **ID:** sec_5
+- **⏱️ Minutagem:** 10:04 → 10:09
+- **⏲️ Duração:** 5s
+- **🎬 Link:** [Assistir este trecho](https://youtu.be/lefybyzpmgY?si=YfjXcK_ZY3ZoekrC&t=604)
+- **📦 Módulo:** Assistência Técnica
+- **🏷️ Categorias:** Suporte, Pós-venda, Atendimento ao Cliente
+- **🔑 Palavras-chave:** assistência técnica, suporte, pós-venda, atendimento, cliente
+
+> **🔍 RESUMO EXECUTIVO:** Esta seção aborda a funcionalidade de assistência técnica após as vendas, destacando a importância do suporte ao cliente e como ele pode ser acessado.
 
 **Contexto:**
-Caso necessário, o usuário pode reabrir a assistência após a finalização do serviço.
+Estamos na interface do módulo de assistência técnica, onde os usuários podem acessar recursos e informações relacionadas ao suporte pós-venda. O objetivo desta seção é explicar como a assistência técnica é disponibilizada aos clientes após a conclusão de uma venda.
 
 **Localização no Sistema:**
-- Menu Principal > Módulo Qualidade > Assistências Técnicas
+- Caminho de navegação completo: Menu Principal > Módulo Assistência Técnica
+- Tela/interface específica: Tela de Assistência Técnica
 
 **Funcionalidade Detalhada:**
-A reabertura da assistência permite que o usuário retome o fluxo de atendimento caso o problema não tenha sido resolvido.
+
+A funcionalidade de assistência técnica após as vendas permite que os clientes tenham acesso a suporte e resolução de problemas relacionados aos produtos adquiridos. Este suporte é essencial para garantir a satisfação do cliente e a continuidade do uso dos produtos. A assistência técnica pode incluir desde orientações sobre o uso do produto até a resolução de problemas técnicos.
 
 ### 🔹 Passo a Passo Detalhado:
 
-1. **Reabrir Assistência**
-   - Localização: Na tela de detalhes da assistência
-   - Como fazer: Clique na opção **Reabrir Assistência**.
-   - Resultado esperado: O sistema permitirá que a assistência seja reaberta para novas ações.
+1. **Acessar a Assistência Técnica**
+   - Localização: Menu Principal > Módulo Assistência Técnica
+   - Como fazer: Clique no menu "Assistência Técnica" no painel lateral esquerdo da interface.
+   - Resultado esperado: A tela de assistência técnica será exibida, mostrando opções de suporte disponíveis.
+
+2. **Selecionar Tipo de Suporte**
+   - Localização: Tela de Assistência Técnica
+   - Como fazer: Na tela, você verá uma lista de opções de suporte, como "Suporte Técnico", "FAQ", "Contato com o Suporte".
+   - Observações importantes: Escolha a opção que melhor se adequa à sua necessidade.
+   - Resultado esperado: A seção correspondente ao tipo de suporte selecionado será aberta, apresentando informações detalhadas.
+
+**Campos e Parâmetros:**
+
+| Campo                  | Tipo       | Obrigatório | Descrição                                      | Exemplo                     |
+|------------------------|------------|-------------|------------------------------------------------|-----------------------------|
+| Tipo de Suporte        | Dropdown   | Sim         | Seleciona o tipo de suporte desejado           | Suporte Técnico, FAQ        |
+| Descrição do Problema  | Texto livre| Sim         | Campo para descrever o problema enfrentado     | "O produto não liga."      |
+| Contato                | Texto      | Não         | Informações de contato do cliente               | "cliente@exemplo.com"      |
+
+**Regras de Negócio:**
+- O cliente deve selecionar um tipo de suporte antes de prosseguir.
+- A descrição do problema deve ser clara e concisa para facilitar a assistência.
+- O contato é opcional, mas recomendado para um retorno mais rápido.
+
+**Observações Importantes:**
+- É importante que o cliente forneça o máximo de detalhes possível sobre o problema para uma melhor assistência.
+- Erros comuns a evitar incluem não selecionar um tipo de suporte ou deixar a descrição do problema em branco.
+- Dependências incluem ter um produto registrado no sistema para acessar a assistência técnica.
+
+**Conceitos-Chave:**
+- **Assistência Técnica**: Suporte oferecido aos clientes após a venda de um produto, visando resolver problemas e dúvidas.
+- **Suporte Pós-venda**: Conjunto de serviços e assistência fornecidos aos clientes após a compra, essencial para a satisfação do cliente.
+
+**❓ PERGUNTAS QUE ESTA SEÇÃO RESPONDE:**
+- Como posso acessar a assistência técnica após a compra?
+- Quais tipos de suporte estão disponíveis para mim?
+- O que devo incluir na descrição do meu problema para obter ajuda?
 
 ---
 
-## 25. Visualização de Assistências e Relatórios
-
-**Minutagem:** 48:00 → 50:00
-
-**Contexto:**
-Por fim, o usuário pode visualizar todas as assistências em aberto e finalizadas, além de gerar relatórios.
-
-**Localização no Sistema:**
-- Menu Principal > Módulo Qualidade > Assistências Técnicas
-
-**Funcionalidade Detalhada:**
-A visualização de assistências e a geração de relatórios ajudam a monitorar o desempenho do atendimento e a qualidade dos serviços prestados.
-
-### 🔹 Passo a Passo Detalhado:
-
-1. **Visualizar Assistências em Aberto**
-   - Localização: Na tela inicial do módulo de assistências
-   - Como fazer: Utilize os filtros disponíveis para buscar assistências específicas.
-   - Resultado esperado: O sistema exibirá uma lista de assistências em aberto com seus respectivos status.
-
-2. **Gerar Relatórios**
-   - Localização: Na tela inicial do módulo de assistências
-   - Como fazer: Clique na opção **Relatórios**.
-   - Resultado esperado: O sistema permitirá que o usuário gere relatórios detalhados sobre as assistências.
 
 ---
 
-**Observações Finais:**
-Com isso, o usuário tem um guia completo sobre como utilizar o módulo de qualidade para gerenciar assistências técnicas de forma eficaz.
