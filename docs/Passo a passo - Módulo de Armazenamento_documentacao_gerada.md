@@ -1,12 +1,10 @@
 # 📚 Documentação: Passo a passo - Módulo de Armazenamento
 
-
-[video:https://youtu.be/VC6EkQJoLEY?si=k9wjmlsuMeBR7kmV]
-
-
 **🎥 Vídeo Original:** https://youtu.be/VC6EkQJoLEY?si=k9wjmlsuMeBR7kmV
 
 **📊 Total de Seções:** 2
+
+**ℹ️ Nota:** Cada seção abaixo contém um link direto para o trecho específico do vídeo tutorial.
 
 ---
 

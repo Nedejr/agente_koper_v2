@@ -149,7 +149,8 @@ def _add_youtube_links_to_response(
     response: str, youtube_urls: dict, video_timestamps_map: dict
 ) -> str:
     """
-    Adiciona links do YouTube com timestamps nas menções de vídeo na resposta.
+    Adiciona embeds do YouTube com timestamps nas menções de vídeo na resposta.
+    Cria um player embedado que inicia no timestamp correto.
 
     Args:
         response: Resposta gerada
@@ -157,28 +158,55 @@ def _add_youtube_links_to_response(
         video_timestamps_map: Timestamps dos vídeos
 
     Returns:
-        Resposta com links do YouTube adicionados
+        Resposta com embeds do YouTube adicionados
     """
     if not response or not youtube_urls:
         return response
 
     # Procura por menções de vídeos na resposta
-    video_pattern = r"\[video:\s*([^\]#]+?)(?:#t=([^,]+),([^\]]+))?\]"
+    # Padrão atualizado para aceitar URLs completas com parâmetros (?, &, =)
+    video_pattern = r"\[video:\s*([^\]]+?)\]"
 
-    def replace_with_youtube_link(match):
-        video_name = match.group(1).strip()
-        start_time = match.group(2)
-        end_time = match.group(3)
+    def replace_with_youtube_embed(match):
+        video_content = match.group(1).strip()
+        
+        # Verifica se tem timestamp no formato #t=START,END
+        timestamp_match = re.search(r'#t=([^,]+),([^\s]+)', video_content)
+        start_time = timestamp_match.group(1) if timestamp_match else None
+        end_time = timestamp_match.group(2) if timestamp_match else None
+        
+        # Remove timestamp da URL se presente
+        video_url = re.sub(r'#t=[^,]+,[^\s]+', '', video_content).strip()
 
-        # Procura URL do YouTube nos metadados
-        youtube_url = None
-        for source, url in youtube_urls.items():
-            if video_name in source or source in video_name:
-                youtube_url = url
-                break
+        # Se já é uma URL do YouTube, usa diretamente
+        if 'youtube.com' in video_url or 'youtu.be' in video_url:
+            youtube_url = video_url
+        else:
+            # Caso contrário, procura URL nos metadados
+            youtube_url = None
+            for source, url in youtube_urls.items():
+                if video_content in source or source in video_content:
+                    youtube_url = url
+                    break
+            
+            if not youtube_url:
+                # Tenta encontrar qualquer URL do YouTube disponível
+                youtube_url = list(youtube_urls.values())[0] if youtube_urls else None
 
         if youtube_url:
+            # Se não tem timestamp especificado, tenta buscar do mapa de timestamps
+            if not start_time and video_timestamps_map:
+                # Procura timestamps relevantes para este vídeo
+                for video_name, ts_list in video_timestamps_map.items():
+                    if ts_list and len(ts_list) > 0:
+                        # Usa o primeiro timestamp disponível (mais relevante)
+                        first_ts = ts_list[0]
+                        start_time = first_ts.get('start', None)
+                        end_time = first_ts.get('end', None)
+                        break
+            
             # Converte timestamp para segundos se disponível
+            seconds = 0
             if start_time:
                 # Converte MM:SS ou HH:MM:SS para segundos
                 time_parts = start_time.split(":")
@@ -190,25 +218,31 @@ def _add_youtube_links_to_response(
                         + int(time_parts[1]) * 60
                         + int(time_parts[2])
                     )
-                else:
-                    seconds = 0
 
-                # Adiciona timestamp à URL do YouTube
-                if "?" in youtube_url:
-                    youtube_url = f"{youtube_url}&t={seconds}"
-                else:
-                    youtube_url = f"{youtube_url}?t={seconds}"
+            # Extrai o ID do vídeo do YouTube
+            video_id = None
+            if "youtube.com/watch?v=" in youtube_url:
+                video_id = youtube_url.split("watch?v=")[1].split("&")[0]
+            elif "youtu.be/" in youtube_url:
+                video_id = youtube_url.split("youtu.be/")[1].split("?")[0]
 
-            # Retorna link formatado
-            if start_time and end_time:
-                return f"\n\n🎬 **[Assistir vídeo tutorial ({start_time} → {end_time})]({youtube_url})**\n"
-            else:
-                return f"\n\n🎬 **[Assistir vídeo tutorial completo]({youtube_url})**\n"
+            if video_id:
+                # Cria embed do YouTube com timestamp
+                # Usa marcador especial YOUTUBE_EMBED que o frontend processará
+                embed_url = f"https://www.youtube.com/embed/{video_id}"
+                if seconds > 0:
+                    embed_url += f"?start={seconds}"
+                
+                # Retorna formato especial para o frontend processar
+                if start_time and end_time:
+                    return f"\n\n🎬 **Vídeo Tutorial ({start_time} → {end_time}):**\n\n[YOUTUBE_EMBED:{embed_url}]\n"
+                else:
+                    return f"\n\n🎬 **Vídeo Tutorial:**\n\n[YOUTUBE_EMBED:{embed_url}]\n"
 
         # Se não encontrou URL, retorna tag original
         return match.group(0)
 
-    response = re.sub(video_pattern, replace_with_youtube_link, response)
+    response = re.sub(video_pattern, replace_with_youtube_embed, response)
 
     return response
 
@@ -493,14 +527,13 @@ def ask_question(
                 response, youtube_urls, video_timestamps_map
             )
 
-        # NOVO: Garante que sempre haja um link do YouTube ao final se disponível
-        # Isso resolve o problema de respostas sem vídeo linkado
-        if youtube_urls and not any(url in response for url in youtube_urls.values()):
+        # CORREÇÃO INTELIGENTE: Adiciona vídeo SOMENTE se não houver nenhum embed na resposta
+        # Isso evita duplicação mas garante que sempre tenha pelo menos um vídeo
+        if youtube_urls and "[YOUTUBE_EMBED:" not in response:
             # Pega a primeira URL do YouTube disponível
             first_url = list(youtube_urls.values())[0]
 
-            # MELHORIA: Em vez de pegar qualquer timestamp, pega o timestamp do PRIMEIRO DOCUMENTO
-            # (que é o mais relevante segundo o RAG)
+            # Busca o timestamp do PRIMEIRO DOCUMENTO (mais relevante segundo o RAG)
             best_timestamp = None
             if video_timestamps_map and docs:
                 # Pega o source_name do primeiro documento (mais relevante)
@@ -510,47 +543,16 @@ def ask_question(
                 for video_name, ts_list in video_timestamps_map.items():
                     if video_name in first_doc_source or first_doc_source in video_name:
                         if ts_list and len(ts_list) > 0:
-                            # MELHORIA: Busca o timestamp mais relevante baseado no conteúdo do primeiro documento
-                            first_doc_content = docs[0].page_content.lower()
-
-                            best_score = -1
-                            best_ts = ts_list[0]  # Fallback para o primeiro
-
-                            for ts in ts_list:
-                                # Calcula score baseado em palavras-chave da query no timestamp
-                                ts_line = ts.get("line", "").lower()
-                                query_words = query.lower().split()
-
-                                # Score 1: Quantas palavras da query aparecem na descrição do timestamp
-                                score = sum(
-                                    1
-                                    for word in query_words
-                                    if len(word) > 3 and word in ts_line
-                                )
-
-                                # Score 2: Se a linha do timestamp aparece no conteúdo do documento
-                                if ts_line[:50] in first_doc_content:
-                                    score += 10
-
-                                if score > best_score:
-                                    best_score = score
-                                    best_ts = ts
-
-                            best_timestamp = best_ts
-                            break
-
-                # Se não encontrou timestamp do primeiro doc, usa o primeiro disponível
-                if not best_timestamp:
-                    for video_name, ts_list in video_timestamps_map.items():
-                        if ts_list and len(ts_list) > 0:
                             best_timestamp = ts_list[0]
                             break
 
-            # Adiciona o link ao final da resposta
+            # Adiciona o vídeo ao final da resposta
             response += "\n\n---\n\n"
 
             if best_timestamp:
                 start_time = best_timestamp.get("start", "00:00")
+                end_time = best_timestamp.get("end", "")
+                
                 # Converte para segundos
                 time_parts = start_time.split(":")
                 if len(time_parts) == 2:
@@ -564,32 +566,34 @@ def ask_question(
                 else:
                     seconds = 0
 
-                video_url = (
-                    f"{first_url}&t={seconds}"
-                    if "?" in first_url
-                    else f"{first_url}?t={seconds}"
-                )
-                response += "### 🎬 Vídeo Tutorial Relacionado\n\n"
-                response += f"📺 **[Assistir o tutorial em vídeo (a partir de {start_time})]({video_url})**\n\n"
+                # Extrai o ID do vídeo
+                video_id = None
+                if "youtube.com/watch?v=" in first_url:
+                    video_id = first_url.split("watch?v=")[1].split("&")[0]
+                elif "youtu.be/" in first_url:
+                    video_id = first_url.split("youtu.be/")[1].split("?")[0]
 
-                # Adiciona player embutido do YouTube
-                video_id = (
-                    first_url.split("youtu.be/")[1].split("?")[0]
-                    if "youtu.be/" in first_url
-                    else first_url.split("v=")[1].split("&")[0]
-                )
-                response += f'<iframe width="560" height="315" src="https://www.youtube.com/embed/{video_id}?start={seconds}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>\n'
+                if video_id:
+                    embed_url = f"https://www.youtube.com/embed/{video_id}?start={seconds}"
+                    
+                    if end_time:
+                        response += f"### 🎬 Vídeo Tutorial ({start_time} → {end_time})\n\n"
+                    else:
+                        response += f"### 🎬 Vídeo Tutorial (a partir de {start_time})\n\n"
+                    
+                    response += f"[YOUTUBE_EMBED:{embed_url}]\n"
             else:
-                response += "### 🎬 Vídeo Tutorial Completo\n\n"
-                response += f"📺 **[Assistir o tutorial completo]({first_url})**\n\n"
+                # Sem timestamp específico, adiciona vídeo completo
+                video_id = None
+                if "youtube.com/watch?v=" in first_url:
+                    video_id = first_url.split("watch?v=")[1].split("&")[0]
+                elif "youtu.be/" in first_url:
+                    video_id = first_url.split("youtu.be/")[1].split("?")[0]
 
-                # Adiciona player embutido do YouTube
-                video_id = (
-                    first_url.split("youtu.be/")[1].split("?")[0]
-                    if "youtu.be/" in first_url
-                    else first_url.split("v=")[1].split("&")[0]
-                )
-                response += f'<iframe width="560" height="315" src="https://www.youtube.com/embed/{video_id}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>\n'
+                if video_id:
+                    embed_url = f"https://www.youtube.com/embed/{video_id}"
+                    response += "### 🎬 Vídeo Tutorial Relacionado\n\n"
+                    response += f"[YOUTUBE_EMBED:{embed_url}]\n"
 
     except Exception as e:
         import traceback

@@ -1,12 +1,10 @@
 # 📚 Documentação: Passo a passo - Módulo de Suprimentos
 
-
-[video:https://youtu.be/6vX7wYe8cIw?si=5Xf_VmLvM7bj6M73]
-
-
 **🎥 Vídeo Original:** https://youtu.be/6vX7wYe8cIw?si=5Xf_VmLvM7bj6M73
 
 **📊 Total de Seções:** 11
+
+**ℹ️ Nota:** Cada seção abaixo contém um link direto para o trecho específico do vídeo tutorial.
 
 ---
 
@@ -1427,8 +1425,15 @@ Esta funcionalidade permite ao usuário criar relacionamentos entre diferentes o
 2. **Visualizar Histórico de Movimentação**
    - Localização: Tela de Estoque, seção "Histórico de Movimentação"
    - Como fazer: Role para baixo na tela de estoque até encontrar a seção "Histórico de Movimentação".
-   - Observações importantes: O histórico mostrará todas as alterações feitas no estoque, incluindo transferências, balanços, entradas e saídas.
-   - Resultado esperado: Uma lista com a data, hora e tipo de movimentação realizada.
+   - Campos/Opções disponíveis:
+     * `Data`: Data da movimentação realizada.
+     * `Hora`: Hora da movimentação realizada.
+     * `Tipo de Movimentação`: Tipo da operação (transferência, balanço, entrada, saída).
+     * `Produto`: Nome do produto movimentado.
+     * `Quantidade`: Quantidade do produto movimentado.
+     * `Usuário`: Usuário responsável pela movimentação.
+   - Observações importantes: O histórico mostrará todas as alterações feitas no estoque, incluindo transferências, balanços, entradas e saídas. Esta é a funcionalidade principal para verificar e auditar as movimentações do local de estoque.
+   - Resultado esperado: Uma lista completa e detalhada com a data, hora, tipo de movimentação, produto, quantidade e usuário responsável por cada operação realizada no estoque.
 
 3. **Criar Setores**
    - Localização: Tela de Estoque, botão **Mais Setor**
@@ -1465,8 +1470,9 @@ Esta funcionalidade permite ao usuário criar relacionamentos entre diferentes o
 - Erros comuns incluem não configurar a quantidade mínima, resultando em falta de produtos.
 
 **Conceitos-Chave:**
-- **Histórico de Movimentação**: Registro de todas as alterações feitas no estoque, incluindo transferências e balanços.
+- **Histórico de Movimentação**: Registro de todas as alterações feitas no estoque, incluindo transferências e balanços. É a funcionalidade utilizada para verificar e auditar todas as movimentações do local de estoque, mostrando data, hora, tipo de operação, produtos e quantidades movimentadas.
 - **Setor**: Divisão organizacional dentro do estoque para facilitar a consulta e o gerenciamento de produtos.
+- **Movimentação de Estoque**: Qualquer operação que altere a quantidade de produtos no estoque, como entrada, saída, transferência ou balanço.
 
 **🔧 SOLUÇÃO DE PROBLEMAS (Troubleshooting):**
 
@@ -1495,6 +1501,16 @@ Ação: Clique em **Mais Produto**, selecione "Cimento", e defina a quantidade m
 Resultado: O sistema gerará uma solicitação quando a quantidade de cimento ficar abaixo de 20.
 ```
 
+**Exemplo 3: Verificando Movimentações do Estoque**
+```
+Situação: Você precisa verificar todas as movimentações de produtos do estoque nos últimos dias.
+Ação: 
+  • Acesse Menu Principal > Módulo Suprimentos > Gerenciamento de Estoque
+  • Role até a seção "Histórico de Movimentação"
+  • Visualize a lista de movimentações com data, hora, tipo e produto
+Resultado: Uma lista completa de todas as entradas, saídas, transferências e balanços realizados no estoque é exibida, permitindo auditoria e controle total das movimentações.
+```
+
 **🔗 DEPENDÊNCIAS E RELAÇÕES:**
 - **Pré-requisitos:** As obras devem estar cadastradas antes de criar relacionamentos.
 - **Habilita:** A visualização do histórico de movimentação e a organização em setores.
@@ -1504,20 +1520,36 @@ Resultado: O sistema gerará uma solicitação quando a quantidade de cimento fi
 
 Esta seção responde perguntas formuladas de diferentes formas. Um usuário pode perguntar:
 - **Forma direta:** "Como criar um setor no estoque?"
+- **Forma direta:** "Como visualizar o histórico de movimentação?"
+- **Forma direta:** "Como verificar as movimentações do estoque?"
+- **Forma direta:** "Como consultar o histórico de movimentações?"
 - **Com problema:** "Não consigo visualizar o histórico de movimentação, o que fazer?"
+- **Com problema:** "Onde vejo as movimentações do estoque?"
 - **Informal:** "Como eu organizo os produtos no estoque?"
+- **Informal:** "Onde eu vejo o que movimentou no estoque?"
+- **Informal:** "Como eu verifico o que entrou e saiu do estoque?"
 - **Por sintoma:** "O que fazer se o sistema não gerar solicitações automáticas?"
+- **Por localização:** "Como acessar o histórico de movimentação do local de estoque?"
 
 **Termos alternativos e sinônimos usados para esta funcionalidade:**
 - "Adicionar setor", "Criar setor", "Organizar estoque", "Gerenciar produtos"
 - "Histórico de movimentação", "Registro de movimentação", "Controle de estoque"
+- "Verificar movimentações", "Consultar histórico", "Ver entradas e saídas"
+- "Movimentação de estoque", "Movimentação de produtos", "Rastreamento de estoque"
+- "Histórico de entradas", "Histórico de saídas", "Histórico de transferências"
 
 **❓ PERGUNTAS QUE ESTA SEÇÃO RESPONDE:**
 - Como criar um relacionamento entre obras?
 - Como visualizar o histórico de movimentação no estoque?
+- Como verificar as movimentações do local de estoque?
+- Como consultar o histórico de entradas e saídas?
+- Onde encontro o registro de movimentações do estoque?
+- Como acessar o histórico de transferências de produtos?
 - Como adicionar um novo setor no estoque?
 - O que fazer se o sistema não gerar solicitações automáticas?
 - O que preciso configurar antes de gerenciar o estoque?
+- Como ver todas as alterações feitas no estoque?
+- Onde verifico as movimentações de produtos entre obras?
 
 ---
 

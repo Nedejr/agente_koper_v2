@@ -1,12 +1,10 @@
 # 📚 Documentação: Passo a passo - Módulo de RH
 
-
-[video:https://youtu.be/0SpGZ3et0qs?si=o_T6kuqnOGErZtoO]
-
-
 **🎥 Vídeo Original:** https://youtu.be/0SpGZ3et0qs?si=o_T6kuqnOGErZtoO
 
 **📊 Total de Seções:** 17
+
+**ℹ️ Nota:** Cada seção abaixo contém um link direto para o trecho específico do vídeo tutorial.
 
 ---
 

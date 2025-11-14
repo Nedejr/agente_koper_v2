@@ -1,13 +1,39 @@
 import streamlit as st
 import sys
 from pathlib import Path
+import re
 
 # Adiciona o diretório raiz ao path para importar backend
 sys.path.append(str(Path(__file__).parent.parent))
 
-from backend.vector_store import create_vector_store, load_existing_vector_store
+from backend.vector_store import create_vector_store, load_existing_vector_store, get_loaded_documents, check_document_exists
 from backend.qa import ask_question
 from backend.processing import process_multiple_files
+
+
+def render_youtube_embed(content: str) -> None:
+    """
+    Processa o conteúdo para encontrar marcadores de embed do YouTube
+    e renderiza o vídeo embedado com o timestamp correto.
+    
+    Args:
+        content: Conteúdo da mensagem que pode conter [YOUTUBE_EMBED:url]
+    """
+    # Procura por marcadores de embed do YouTube
+    embed_pattern = r'\[YOUTUBE_EMBED:([^\]]+)\]'
+    
+    # Divide o conteúdo em partes (antes do embed, embed, depois do embed)
+    parts = re.split(embed_pattern, content)
+    
+    for i, part in enumerate(parts):
+        if i % 2 == 0:
+            # Parte normal (texto)
+            if part.strip():
+                st.markdown(part, unsafe_allow_html=True)
+        else:
+            # URL do embed do YouTube
+            st.video(part)
+
 
 # --- Configuração da página ---
 st.set_page_config(
@@ -171,7 +197,7 @@ class FileWrapper:
 
 
 def load_docs_folder():
-    """Carrega todos os documentos da pasta docs/"""
+    """Carrega todos os documentos da pasta docs/, ignorando duplicados"""
     try:
         docs_path = Path(__file__).parent.parent / "docs"
 
@@ -184,27 +210,103 @@ def load_docs_folder():
         if not doc_files:
             return False, "Nenhum arquivo .md encontrado na pasta 'docs'"
 
-        with st.spinner(f"📄 Processando {len(doc_files)} documentos da pasta docs..."):
-            # Converte Path para objetos file-like
-            file_objects = []
-            for doc_file in doc_files:
+        # Verifica documentos já carregados
+        vector_store = st.session_state.get("vector_store")
+        loaded_docs = get_loaded_documents(vector_store) if vector_store else []
+        loaded_filenames = {doc["source"] for doc in loaded_docs}
+        
+        # Filtra arquivos já carregados
+        new_files = []
+        duplicate_files = []
+        
+        for doc_file in doc_files:
+            filename = doc_file.name
+            if filename in loaded_filenames:
+                duplicate_files.append(filename)
+            else:
+                new_files.append(doc_file)
+        
+        # Alerta sobre duplicados
+        if duplicate_files:
+            duplicate_list = "\n- ".join(duplicate_files)
+            st.warning(
+                f"⚠️ **Documentos ignorados (já carregados):**\n- {duplicate_list}\n\n"
+                f"✅ Processando apenas os novos documentos..."
+            )
+        
+        # Se não há arquivos novos
+        if not new_files:
+            return False, "Todos os documentos da pasta 'docs' já foram carregados anteriormente."
+
+        with st.spinner(f"📄 Processando {len(new_files)} documento(s) novo(s) da pasta docs..."):
+            # NOVA ESTRATÉGIA: Processa arquivo por arquivo para evitar limite de tokens
+            all_chunks = []
+            progress_bar = st.progress(0)
+            status_text = st.empty()
+            
+            for idx, doc_file in enumerate(new_files):
+                # Atualiza progresso
+                progress = (idx + 1) / len(new_files)
+                progress_bar.progress(progress)
+                status_text.text(f"Processando {idx + 1}/{len(new_files)}: {doc_file.name}")
+                
+                # Processa um arquivo por vez
                 file_obj = FileWrapper(doc_file)
-                file_objects.append(file_obj)
-
-            # Processa os documentos
-            chunks = process_multiple_files(file_objects)
-
-            if not chunks:
-                return False, "Nenhum chunk foi gerado dos documentos"
-
-            # Cria vector store
-            vector_store = create_vector_store(chunks)
+                try:
+                    file_chunks = process_multiple_files([file_obj])
+                    all_chunks.extend(file_chunks)
+                    
+                    # Se acumular muitos chunks (>200k tokens estimados), 
+                    # adiciona ao vector store e limpa a memória
+                    total_chars = sum(len(c.page_content) for c in all_chunks)
+                    estimated_tokens = total_chars // 4  # Estimativa: 4 chars = 1 token
+                    
+                    if estimated_tokens > 200000:
+                        # Adiciona lote atual ao vector store
+                        if vector_store:
+                            from backend.vector_store import add_to_vector_store
+                            vector_store = add_to_vector_store(all_chunks, vector_store)
+                        else:
+                            vector_store = create_vector_store(all_chunks)
+                            st.session_state.vector_store = vector_store
+                        
+                        # Limpa chunks processados da memória
+                        all_chunks = []
+                        
+                except Exception as e:
+                    st.warning(f"⚠️ Erro ao processar {doc_file.name}: {e}")
+                    continue
+            
+            # Limpa indicadores de progresso
+            progress_bar.empty()
+            status_text.empty()
+            
+            # Processa chunks restantes (se houver)
+            if all_chunks:
+                if vector_store:
+                    from backend.vector_store import add_to_vector_store
+                    vector_store = add_to_vector_store(all_chunks, vector_store)
+                else:
+                    vector_store = create_vector_store(all_chunks)
 
             # Atualiza session state
             st.session_state.vector_store = vector_store
             st.session_state.docs_loaded = True
 
-            return True, len(chunks)
+            # Calcula total de chunks processados
+            if vector_store:
+                try:
+                    total_chunks = vector_store._collection.count()
+                    result_msg = f"{total_chunks} chunks totais de {len(new_files)} documento(s)"
+                except Exception:
+                    result_msg = f"{len(new_files)} documento(s) processado(s)"
+            else:
+                result_msg = f"{len(new_files)} documento(s) processado(s)"
+                
+            if duplicate_files:
+                result_msg += f" ({len(duplicate_files)} duplicado(s) ignorado(s))"
+            
+            return True, result_msg
     except Exception as e:
         return False, str(e)
 
@@ -224,20 +326,56 @@ def initialize_system():
 
 
 def process_uploaded_files(uploaded_files):
-    """Processa arquivos carregados e cria vector store"""
+    """Processa arquivos carregados e adiciona ao vector store"""
     try:
-        with st.spinner("📄 Processando documentos..."):
-            # Processa documentos diretamente
-            chunks = process_multiple_files(uploaded_files)
+        # Verifica se há documentos duplicados
+        vector_store = st.session_state.get("vector_store")
+        loaded_docs = get_loaded_documents(vector_store) if vector_store else []
+        loaded_filenames = {doc["source"] for doc in loaded_docs}
+        
+        # Filtra arquivos já carregados
+        new_files = []
+        duplicate_files = []
+        
+        for file in uploaded_files:
+            if file.name in loaded_filenames:
+                duplicate_files.append(file.name)
+            else:
+                new_files.append(file)
+        
+        # Alerta sobre duplicados
+        if duplicate_files:
+            duplicate_list = "\n- ".join(duplicate_files)
+            st.warning(
+                f"⚠️ **Documentos ignorados (já carregados):**\n- {duplicate_list}\n\n"
+                f"✅ Processando apenas os novos documentos..."
+            )
+        
+        # Se não há arquivos novos, retorna erro
+        if not new_files:
+            return False, "Todos os documentos já foram carregados anteriormente."
+        
+        with st.spinner(f"📄 Processando {len(new_files)} documento(s)..."):
+            # Processa apenas os documentos novos
+            chunks = process_multiple_files(new_files)
 
-            # Cria vector store
-            vector_store = create_vector_store(chunks)
+            if vector_store:
+                # Adiciona ao vector store existente
+                from backend.vector_store import add_to_vector_store
+                vector_store = add_to_vector_store(chunks, vector_store)
+            else:
+                # Cria novo vector store
+                vector_store = create_vector_store(chunks)
 
             # Atualiza session state
             st.session_state.vector_store = vector_store
             st.session_state.docs_loaded = True
 
-            return True, len(chunks)
+            result_msg = f"{len(chunks)} chunks de {len(new_files)} documento(s)"
+            if duplicate_files:
+                result_msg += f" ({len(duplicate_files)} duplicado(s) ignorado(s))"
+            
+            return True, result_msg
     except Exception as e:
         return False, str(e)
 
@@ -328,7 +466,8 @@ if menu == "💬 Chat":
             role = message.get("role", "user")
             content = message.get("content", "")
             with st.chat_message(role):
-                st.markdown(content, unsafe_allow_html=True)
+                # Usa a função de render para processar embeds do YouTube
+                render_youtube_embed(content)
 
         # Input do usuário
         prompt = st.chat_input("Digite sua pergunta aqui...")
@@ -375,6 +514,85 @@ elif menu == "📤 Upload de Documentos":
         '<div class="chat-subtitle">Carregue seus arquivos de documentação (.md, .txt, .pdf)</div>',
         unsafe_allow_html=True,
     )
+
+    # NOVA SEÇÃO: Mostrar documentos já carregados
+    st.markdown("### 📚 Documentos Já Carregados")
+    
+    # Obtém a lista de documentos carregados
+    vector_store = st.session_state.get("vector_store")
+    loaded_docs = get_loaded_documents(vector_store)
+    
+    if loaded_docs:
+        st.markdown(
+            f'<div class="info-box">✅ <b>Total:</b> {len(loaded_docs)} documento(s) indexado(s)</div>',
+            unsafe_allow_html=True,
+        )
+        
+        # Cria uma tabela com os documentos
+        with st.expander("📋 Ver lista completa de documentos", expanded=False):
+            for i, doc in enumerate(loaded_docs, 1):
+                col1, col2, col3 = st.columns([4, 2, 2])
+                
+                with col1:
+                    # Ícone baseado no tipo
+                    icon = "📄"
+                    if doc["type"] == "markdown":
+                        icon = "📝"
+                    elif doc["type"] == "pdf":
+                        icon = "📕"
+                    
+                    # Nome do arquivo com badges
+                    badges = ""
+                    if doc["has_video"]:
+                        badges += " 🎬"
+                    if doc["has_image"]:
+                        badges += " 🖼️"
+                    if doc["has_timestamps"]:
+                        badges += " ⏱️"
+                    
+                    st.markdown(f"{icon} **{doc['source']}** {badges}")
+                
+                with col2:
+                    st.markdown(f"📦 **{doc['chunks']}** chunks")
+                
+                with col3:
+                    if doc.get("module") and doc["module"] != "N/A":
+                        st.markdown(f"🏷️ {doc['module']}")
+                    else:
+                        st.markdown(f"📂 {doc['type']}")
+                
+                # Linha divisória, exceto no último item
+                if i < len(loaded_docs):
+                    st.markdown("---")
+            
+            # Botão para limpar base de dados
+            st.markdown("---")
+            col_clear1, col_clear2, col_clear3 = st.columns([1, 2, 1])
+            with col_clear2:
+                if st.button("🗑️ Limpar Base de Dados", type="secondary", help="Remove todos os documentos carregados"):
+                    if st.session_state.get("confirm_clear", False):
+                        # Confirmação ativada, executar limpeza
+                        from backend.vector_store import delete_vector_store
+                        try:
+                            delete_vector_store()
+                            st.session_state.vector_store = None
+                            st.session_state.docs_loaded = False
+                            st.session_state.confirm_clear = False
+                            st.success("✅ Base de dados limpa com sucesso!")
+                            st.rerun()
+                        except Exception as e:
+                            st.error(f"❌ Erro ao limpar base: {e}")
+                    else:
+                        # Primeira clique, pedir confirmação
+                        st.session_state.confirm_clear = True
+                        st.warning("⚠️ **Atenção!** Clique novamente para confirmar a remoção de todos os documentos.")
+    else:
+        st.markdown(
+            '<div class="warning-box">📭 <b>Nenhum documento carregado ainda.</b><br>Carregue documentos usando as opções abaixo.</div>',
+            unsafe_allow_html=True,
+        )
+    
+    st.divider()
 
     # Seção para carregar documentos da pasta docs
     st.markdown("### 📁 Carregar Documentos da Pasta `docs/`")

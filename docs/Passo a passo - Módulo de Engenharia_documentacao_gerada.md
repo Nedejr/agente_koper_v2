@@ -1,12 +1,10 @@
 # 📚 Documentação: Passo a passo - Módulo de Engenharia
 
-
-[video:https://youtu.be/BdLq4eBgfxQ?si=Sxmnm__Ai1ReGR0_]
-
-
 **🎥 Vídeo Original:** https://youtu.be/BdLq4eBgfxQ?si=Sxmnm__Ai1ReGR0_
 
 **📊 Total de Seções:** 22
+
+**ℹ️ Nota:** Cada seção abaixo contém um link direto para o trecho específico do vídeo tutorial.
 
 ---
 

@@ -14,6 +14,112 @@ from langchain_text_splitters import RecursiveCharacterTextSplitter
 from .config import Config
 from .metadata_enhancer import enhance_document_metadata
 
+# Importar tiktoken para contar tokens com precisão
+try:
+    import tiktoken
+    TIKTOKEN_AVAILABLE = True
+except ImportError:
+    TIKTOKEN_AVAILABLE = False
+    print("⚠️ tiktoken não disponível. Usando estimativa aproximada de tokens.")
+
+
+def count_tokens(text: str, model: str = "gpt-4o-mini") -> int:
+    """
+    Conta o número de tokens em um texto usando tiktoken.
+    Se tiktoken não estiver disponível, usa estimativa (1 token ≈ 4 caracteres).
+    
+    Args:
+        text: Texto para contar tokens
+        model: Nome do modelo (para usar o encoding correto)
+    
+    Returns:
+        Número estimado de tokens
+    """
+    if TIKTOKEN_AVAILABLE:
+        try:
+            encoding = tiktoken.encoding_for_model(model)
+            return len(encoding.encode(text))
+        except Exception:
+            # Fallback para estimativa se houver erro
+            pass
+    
+    # Estimativa: ~4 caracteres por token (regra geral)
+    return len(text) // 4
+
+
+def split_large_content(content: str, max_tokens: int = 250000) -> List[str]:
+    """
+    Divide um conteúdo grande em partes menores baseado no limite de tokens.
+    Tenta dividir em pontos naturais (seções markdown).
+    
+    Args:
+        content: Conteúdo a ser dividido
+        max_tokens: Máximo de tokens por parte (deixa margem de segurança)
+    
+    Returns:
+        Lista de strings, cada uma com menos de max_tokens
+    """
+    token_count = count_tokens(content)
+    
+    # Se o conteúdo está dentro do limite, retorna como está
+    if token_count <= max_tokens:
+        return [content]
+    
+    print(f"⚠️ Documento muito grande ({token_count:,} tokens). Dividindo em partes menores...")
+    
+    # Tenta dividir por seções principais (## )
+    sections = re.split(r'\n(?=## )', content)
+    
+    parts = []
+    current_part = ""
+    current_tokens = 0
+    
+    for section in sections:
+        section_tokens = count_tokens(section)
+        
+        # Se uma única seção é maior que o limite, divide ela também
+        if section_tokens > max_tokens:
+            # Se já temos algo no current_part, salva primeiro
+            if current_part:
+                parts.append(current_part)
+                current_part = ""
+                current_tokens = 0
+            
+            # Divide a seção em subseções menores
+            subsections = re.split(r'\n(?=### )', section)
+            for subsection in subsections:
+                subsection_tokens = count_tokens(subsection)
+                
+                if current_tokens + subsection_tokens > max_tokens:
+                    if current_part:
+                        parts.append(current_part)
+                    current_part = subsection
+                    current_tokens = subsection_tokens
+                else:
+                    current_part += "\n" + subsection
+                    current_tokens += subsection_tokens
+        else:
+            # Se adicionar esta seção ultrapassar o limite, salva a parte atual
+            if current_tokens + section_tokens > max_tokens:
+                if current_part:
+                    parts.append(current_part)
+                current_part = section
+                current_tokens = section_tokens
+            else:
+                current_part += "\n" + section
+                current_tokens += section_tokens
+    
+    # Adiciona a última parte
+    if current_part:
+        parts.append(current_part)
+    
+    print(f"✅ Documento dividido em {len(parts)} partes")
+    for i, part in enumerate(parts, 1):
+        part_tokens = count_tokens(part)
+        print(f"   Parte {i}: {part_tokens:,} tokens")
+    
+    return parts
+
 
 def process_pdf_file(file_like) -> List[Document]:
     """
@@ -84,6 +190,7 @@ def process_markdown_file(file_like) -> List[Document]:
     """
     Processa um arquivo Markdown mantendo estrutura, extrai imagens/vídeos e retorna chunks.
     Também extrai timestamps de vídeos quando disponíveis.
+    Implementa divisão automática de documentos grandes para evitar erro de limite de tokens.
 
     Args:
         file_like: Objeto file-like (ex: st.uploaded_file) que possui método .read()
@@ -95,6 +202,43 @@ def process_markdown_file(file_like) -> List[Document]:
     content = file_like.read()
     if isinstance(content, bytes):
         content = content.decode("utf-8")
+    
+    # Verifica o tamanho do documento
+    token_count = count_tokens(content)
+    print(f"📊 Documento: {file_like.name} - {token_count:,} tokens")
+    
+    # Se o documento for muito grande (>250k tokens), divide em partes
+    if token_count > 250000:
+        print("⚠️ Documento muito grande! Processando em partes separadas...")
+        content_parts = split_large_content(content, max_tokens=250000)
+        
+        # Processa cada parte separadamente e combina os chunks
+        all_chunks = []
+        for i, part_content in enumerate(content_parts, 1):
+            print(f"   Processando parte {i}/{len(content_parts)}...")
+            part_chunks = _process_markdown_content(part_content, file_like.name, part_index=i)
+            all_chunks.extend(part_chunks)
+        
+        print(f"✅ Total de {len(all_chunks)} chunks gerados")
+        return all_chunks
+    else:
+        # Documento de tamanho normal, processa diretamente
+        return _process_markdown_content(content, file_like.name)
+
+
+def _process_markdown_content(content: str, filename: str, part_index: int = None) -> List[Document]:
+    """
+    Função auxiliar que processa o conteúdo markdown.
+    Extraída para permitir processamento em partes.
+    
+    Args:
+        content: Conteúdo markdown
+        filename: Nome do arquivo original
+        part_index: Índice da parte (se documento foi dividido)
+    
+    Returns:
+        Lista de documentos (chunks) processados
+    """
 
     # Extrai o link do vídeo do YouTube se presente
     youtube_url = None
@@ -215,9 +359,16 @@ def process_markdown_file(file_like) -> List[Document]:
     # Cria um Document para cada chunk e associa os metadados corretos
     chunks = []
     for text_chunk in text_chunks:
+        # Cria o metadata base com o nome do arquivo
+        metadata = {"source": filename, "type": "markdown"}
+        
+        # Se é uma parte de documento grande, adiciona o índice da parte
+        if part_index is not None:
+            metadata["part"] = part_index
+        
         doc = Document(
             page_content=text_chunk,
-            metadata={"source": file_like.name, "type": "markdown"},
+            metadata=metadata
         )
         chunks.append(doc)
 

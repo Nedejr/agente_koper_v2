@@ -108,12 +108,14 @@ def load_existing_vector_store() -> Optional[Chroma]:
     return None
 
 
-def create_vector_store(chunks: List[Document]) -> Chroma:
+def create_vector_store(chunks: List[Document], batch_size: int = 100) -> Chroma:
     """
-    Cria um novo vector store a partir de chunks de documentos
+    Cria um novo vector store a partir de chunks de documentos.
+    Processa em lotes para evitar limite de tokens da API.
 
     Args:
         chunks: Lista de documentos
+        batch_size: Tamanho do lote para processamento (padrão: 100)
 
     Returns:
         Instância do Chroma
@@ -132,17 +134,29 @@ def create_vector_store(chunks: List[Document]) -> Chroma:
     print(f"📊 Permissões do diretório: {oct(stats.st_mode)[-3:]}")
 
     try:
-        print(f"🔮 Criando ChromaDB com {len(chunks)} chunks...")
+        print(f"🔮 Criando ChromaDB com {len(chunks)} chunks em lotes de {batch_size}...")
 
+        # Cria o vector store com o primeiro lote
+        first_batch = chunks[:batch_size]
         vector_store = Chroma.from_documents(
-            documents=chunks,
+            documents=first_batch,
             embedding=OpenAIEmbeddings(),
             persist_directory=persist_directory,
         )
+        print(f"  ✓ Lote 1/{(len(chunks) + batch_size - 1) // batch_size} processado ({len(first_batch)} chunks)")
+
+        # Adiciona os lotes restantes
+        for i in range(batch_size, len(chunks), batch_size):
+            batch = chunks[i:i + batch_size]
+            batch_num = (i // batch_size) + 1
+            total_batches = (len(chunks) + batch_size - 1) // batch_size
+            
+            vector_store.add_documents(batch)
+            print(f"  ✓ Lote {batch_num}/{total_batches} processado ({len(batch)} chunks)")
 
         # Verifica se o banco foi criado corretamente
         count = vector_store._collection.count()
-        print(f"✅ ChromaDB criado! Documentos: {count}")
+        print(f"✅ ChromaDB criado! Total de documentos: {count}")
 
         return vector_store
     except Exception as e:
@@ -156,26 +170,37 @@ def create_vector_store(chunks: List[Document]) -> Chroma:
 
 
 def add_to_vector_store(
-    chunks: List[Document], vector_store: Optional[Chroma] = None
+    chunks: List[Document], vector_store: Optional[Chroma] = None, batch_size: int = 100
 ) -> Chroma:
     """
     Adiciona documentos a um vector store existente ou cria um novo.
+    Processa em lotes para evitar limite de tokens da API.
     Se encontrar um banco readonly ou corrompido, remove e recria.
 
     Args:
         chunks: Lista de documentos para adicionar
         vector_store: Vector store existente (opcional)
+        batch_size: Tamanho do lote para processamento (padrão: 100)
 
     Returns:
         Instância do Chroma (existente ou novo)
     """
     if vector_store:
         try:
-            # Tenta adicionar ao vector store existente
-            vector_store.add_documents(chunks)
+            # Tenta adicionar ao vector store existente em lotes
+            print(f"➕ Adicionando {len(chunks)} chunks em lotes de {batch_size}...")
+            
+            for i in range(0, len(chunks), batch_size):
+                batch = chunks[i:i + batch_size]
+                batch_num = (i // batch_size) + 1
+                total_batches = (len(chunks) + batch_size - 1) // batch_size
+                
+                vector_store.add_documents(batch)
+                print(f"  ✓ Lote {batch_num}/{total_batches} adicionado ({len(batch)} chunks)")
 
             # Verifica se a adição foi bem-sucedida
-            vector_store._collection.count()
+            count = vector_store._collection.count()
+            print(f"✅ Chunks adicionados! Total de documentos: {count}")
 
             return vector_store
         except Exception as e:
@@ -307,3 +332,101 @@ def get_vector_store_stats(vector_store: Optional[Chroma]) -> dict:
         }
     except Exception as e:
         return {"exists": True, "total_documents": "unknown", "error": str(e)}
+
+
+def get_loaded_documents(vector_store: Optional[Chroma]) -> List[dict]:
+    """
+    Retorna a lista de documentos únicos já carregados no vector store.
+    Agrupa por arquivo source e retorna informações resumidas.
+
+    Args:
+        vector_store: Instância do Chroma
+
+    Returns:
+        Lista de dicionários com informações dos documentos:
+        [
+            {
+                "source": "nome_arquivo.md",
+                "chunks": 150,
+                "type": "markdown",
+                "module": "Compras",
+                "has_video": True,
+                "has_image": False
+            },
+            ...
+        ]
+    """
+    if not vector_store:
+        return []
+
+    try:
+        # Obtém todos os documentos da coleção
+        collection = vector_store._collection
+        result = collection.get(include=["metadatas"])
+        
+        if not result or not result.get("metadatas"):
+            return []
+        
+        metadatas = result["metadatas"]
+        
+        # Agrupa por source (nome do arquivo)
+        documents_dict = {}
+        
+        for metadata in metadatas:
+            source = metadata.get("source", "unknown")
+            
+            if source not in documents_dict:
+                documents_dict[source] = {
+                    "source": source,
+                    "chunks": 0,
+                    "type": metadata.get("type", "unknown"),
+                    "module": metadata.get("module", "N/A"),
+                    "has_video": False,
+                    "has_image": False,
+                    "has_timestamps": False,
+                    "youtube_url": metadata.get("youtube_url", None),
+                }
+            
+            # Incrementa contador de chunks
+            documents_dict[source]["chunks"] += 1
+            
+            # Atualiza flags se ainda não foram setadas
+            if not documents_dict[source]["has_video"]:
+                documents_dict[source]["has_video"] = metadata.get("has_video", False) or bool(metadata.get("videos"))
+            
+            if not documents_dict[source]["has_image"]:
+                documents_dict[source]["has_image"] = metadata.get("has_image", False) or bool(metadata.get("images"))
+            
+            if not documents_dict[source]["has_timestamps"]:
+                documents_dict[source]["has_timestamps"] = metadata.get("has_timestamps") == "true"
+        
+        # Converte para lista e ordena por nome
+        documents_list = sorted(documents_dict.values(), key=lambda x: x["source"])
+        
+        return documents_list
+        
+    except Exception as e:
+        print(f"❌ Erro ao listar documentos: {e}")
+        return []
+
+
+def check_document_exists(vector_store: Optional[Chroma], filename: str) -> bool:
+    """
+    Verifica se um documento com o nome dado já existe no vector store.
+
+    Args:
+        vector_store: Instância do Chroma
+        filename: Nome do arquivo a verificar
+
+    Returns:
+        True se o documento já existe, False caso contrário
+    """
+    if not vector_store:
+        return False
+
+    try:
+        loaded_docs = get_loaded_documents(vector_store)
+        return any(doc["source"] == filename for doc in loaded_docs)
+    except Exception:
+        return False
+

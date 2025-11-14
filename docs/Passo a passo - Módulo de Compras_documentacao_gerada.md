@@ -1,12 +1,10 @@
 # 📚 Documentação: Passo a passo - Módulo de Compras
 
-
-[video:https://youtu.be/qFzqzIoiVE4?si=YoVxiJOkipNVbQWb]
-
-
 **🎥 Vídeo Original:** https://youtu.be/qFzqzIoiVE4?si=YoVxiJOkipNVbQWb
 
 **📊 Total de Seções:** 14
+
+**ℹ️ Nota:** Cada seção abaixo contém um link direto para o trecho específico do vídeo tutorial.
 
 ---
 

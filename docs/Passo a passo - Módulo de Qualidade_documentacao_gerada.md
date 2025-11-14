@@ -1,12 +1,10 @@
 # 📚 Documentação: Passo a passo - Módulo de Qualidade
 
-
-[video:https://youtu.be/lefybyzpmgY?si=YfjXcK_ZY3ZoekrC]
-
-
 **🎥 Vídeo Original:** https://youtu.be/lefybyzpmgY?si=YfjXcK_ZY3ZoekrC
 
 **📊 Total de Seções:** 5
+
+**ℹ️ Nota:** Cada seção abaixo contém um link direto para o trecho específico do vídeo tutorial.
 
 ---
 

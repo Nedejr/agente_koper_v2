@@ -1,12 +1,10 @@
 # 📚 Documentação: Passo a passo - Módulo Financeiro
 
-
-[video:https://youtu.be/DMvowd7eCAA?si=qrXiuODXTH9y2zNZ]
-
-
 **🎥 Vídeo Original:** https://youtu.be/DMvowd7eCAA?si=qrXiuODXTH9y2zNZ
 
 **📊 Total de Seções:** 18
+
+**ℹ️ Nota:** Cada seção abaixo contém um link direto para o trecho específico do vídeo tutorial.
 
 ---
 
