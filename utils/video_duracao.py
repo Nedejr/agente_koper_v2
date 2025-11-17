@@ -1,5 +1,6 @@
 import json
 
+
 def parse_time(t: str) -> int:
     """Converte tempo MM:SS ou HH:MM:SS para segundos."""
     partes = list(map(int, t.split(":")))
@@ -33,17 +34,15 @@ def calcular_trecho(inicio: str, fim: str, url: str) -> dict:
     return {
         "minutagem": f"{inicio} → {fim}",
         "duracao_segundos": duracao,
-        "url": url_ajustada
+        "url": url_ajustada,
     }
-
-
-
-
 
 
 if __name__ == "__main__":
     # Testes adicionais
     # EXEMPLO:
-    resultado = calcular_trecho("20:18", "22:52", "https://youtu.be/6vX7wYe8cIw?si=5Xf_VmLvM7bj6M73")
+    resultado = calcular_trecho(
+        "21:45", "23:45", "https://youtu.be/6vX7wYe8cIw?si=5Xf_VmLvM7bj6M73"
+    )
 
     print(json.dumps(resultado, indent=4, ensure_ascii=False))

@@ -20,8 +20,8 @@ class Config:
     PERSIST_DIR = os.getenv("PERSIST_DIR", "db")
 
     # Modelos disponíveis
-    AVAILABLE_MODELS = ["gpt-4o-mini"]
-    DEFAULT_MODEL = "gpt-4o-mini"
+    AVAILABLE_MODELS = ["gpt-5-nano"]
+    DEFAULT_MODEL = "gpt-5-nano"
 
     # Processamento de documentos
     # Otimizado: chunks menores e mais focados melhoram precisão

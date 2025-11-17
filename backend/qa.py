@@ -145,8 +145,157 @@ def _add_timestamps_to_videos(response: str, video_timestamps_map: dict) -> str:
     return response
 
 
+def _find_relevant_timestamp_for_query(query: str, video_timestamps_map: dict) -> dict:
+    """
+    Busca o timestamp mais relevante do vídeo baseado na query do usuário.
+    Procura por palavras-chave da pergunta no conteúdo dos timestamps.
+
+    Args:
+        query: Pergunta do usuário
+        video_timestamps_map: Mapa de timestamps dos vídeos
+
+    Returns:
+        Dicionário com o timestamp mais relevante ou None
+    """
+    if not video_timestamps_map or not query:
+        return None
+
+    query_lower = query.lower()
+
+    # Remove palavras comuns (stopwords)
+    stopwords = [
+        "como",
+        "o",
+        "a",
+        "de",
+        "em",
+        "para",
+        "do",
+        "da",
+        "no",
+        "na",
+        "os",
+        "as",
+        "dos",
+        "das",
+        "nos",
+        "nas",
+        "um",
+        "uma",
+        "uns",
+        "umas",
+        "ao",
+        "aos",
+        "à",
+        "às",
+        "pelo",
+        "pela",
+        "pelos",
+        "pelas",
+        "é",
+        "são",
+        "foi",
+        "foram",
+        "fazer",
+        "eu",
+        "tu",
+        "ele",
+        "ela",
+        "nós",
+        "vós",
+        "eles",
+        "elas",
+        "que",
+        "qual",
+        "onde",
+        "quando",
+    ]
+
+    # Extrai palavras-chave da query
+    query_words = [
+        w.strip().rstrip("?!.,;:")
+        for w in query_lower.split()
+        if w.strip().rstrip("?!.,;:") not in stopwords and len(w.strip()) > 2
+    ]
+
+    # Palavras compostas importantes (bigramas)
+    bigramas_importantes = []
+    words_list = query_lower.split()
+    for i in range(len(words_list) - 1):
+        bigrama = f"{words_list[i]} {words_list[i+1]}"
+        # Remove pontuação
+        bigrama = bigrama.rstrip("?!.,;:")
+        if words_list[i] not in stopwords or words_list[i + 1] not in stopwords:
+            bigramas_importantes.append(bigrama)
+
+    best_timestamp = None
+    best_score = 0
+
+    # Para cada vídeo no mapa
+    for video_name, ts_list in video_timestamps_map.items():
+        if not ts_list:
+            continue
+
+        # Para cada timestamp deste vídeo
+        for ts_info in ts_list:
+            line = ts_info.get("line", "").lower()
+            if not line:
+                continue
+
+            score = 0
+
+            # 1. Bonus por bigramas (frases compostas) - PESO 5
+            for bigrama in bigramas_importantes:
+                if bigrama in line:
+                    score += 5
+
+            # 2. Bonus por palavras-chave individuais - PESO 1
+            for word in query_words:
+                if word in line:
+                    score += 1
+
+            # 3. BONUS EXTRA: Se a linha contém TODAS as palavras principais - PESO 10
+            palavras_principais = [
+                w for w in query_words if len(w) > 4
+            ]  # Palavras com mais de 4 letras
+            if palavras_principais and all(
+                palavra in line for palavra in palavras_principais
+            ):
+                score += 10
+
+            # 4. BONUS: Match exato de termos técnicos - PESO 8
+            termos_tecnicos = [
+                "histórico",
+                "movimentação",
+                "estoque",
+                "transferência",
+                "balanço",
+                "entrada",
+                "saída",
+                "solicitação",
+                "equipamento",
+            ]
+            for termo in termos_tecnicos:
+                if termo in query_lower and termo in line:
+                    score += 8
+
+            # Atualiza melhor timestamp se score for maior
+            if score > best_score:
+                best_score = score
+                best_timestamp = ts_info
+
+    # Se nenhum timestamp relevante foi encontrado, retorna o primeiro disponível
+    if not best_timestamp:
+        for ts_list in video_timestamps_map.values():
+            if ts_list and len(ts_list) > 0:
+                best_timestamp = ts_list[0]
+                break
+
+    return best_timestamp
+
+
 def _add_youtube_links_to_response(
-    response: str, youtube_urls: dict, video_timestamps_map: dict
+    response: str, youtube_urls: dict, video_timestamps_map: dict, query: str = ""
 ) -> str:
     """
     Adiciona embeds do YouTube com timestamps nas menções de vídeo na resposta.
@@ -156,6 +305,7 @@ def _add_youtube_links_to_response(
         response: Resposta gerada
         youtube_urls: Dicionário {source_name: youtube_url}
         video_timestamps_map: Timestamps dos vídeos
+        query: Pergunta original do usuário (para buscar timestamp relevante)
 
     Returns:
         Resposta com embeds do YouTube adicionados
@@ -169,17 +319,17 @@ def _add_youtube_links_to_response(
 
     def replace_with_youtube_embed(match):
         video_content = match.group(1).strip()
-        
+
         # Verifica se tem timestamp no formato #t=START,END
-        timestamp_match = re.search(r'#t=([^,]+),([^\s]+)', video_content)
+        timestamp_match = re.search(r"#t=([^,]+),([^\s]+)", video_content)
         start_time = timestamp_match.group(1) if timestamp_match else None
         end_time = timestamp_match.group(2) if timestamp_match else None
-        
+
         # Remove timestamp da URL se presente
-        video_url = re.sub(r'#t=[^,]+,[^\s]+', '', video_content).strip()
+        video_url = re.sub(r"#t=[^,]+,[^\s]+", "", video_content).strip()
 
         # Se já é uma URL do YouTube, usa diretamente
-        if 'youtube.com' in video_url or 'youtu.be' in video_url:
+        if "youtube.com" in video_url or "youtu.be" in video_url:
             youtube_url = video_url
         else:
             # Caso contrário, procura URL nos metadados
@@ -188,23 +338,21 @@ def _add_youtube_links_to_response(
                 if video_content in source or source in video_content:
                     youtube_url = url
                     break
-            
+
             if not youtube_url:
                 # Tenta encontrar qualquer URL do YouTube disponível
                 youtube_url = list(youtube_urls.values())[0] if youtube_urls else None
 
         if youtube_url:
-            # Se não tem timestamp especificado, tenta buscar do mapa de timestamps
+            # Se não tem timestamp especificado, busca o mais relevante para a query
             if not start_time and video_timestamps_map:
-                # Procura timestamps relevantes para este vídeo
-                for video_name, ts_list in video_timestamps_map.items():
-                    if ts_list and len(ts_list) > 0:
-                        # Usa o primeiro timestamp disponível (mais relevante)
-                        first_ts = ts_list[0]
-                        start_time = first_ts.get('start', None)
-                        end_time = first_ts.get('end', None)
-                        break
-            
+                relevant_ts = _find_relevant_timestamp_for_query(
+                    query, video_timestamps_map
+                )
+                if relevant_ts:
+                    start_time = relevant_ts.get("start", None)
+                    end_time = relevant_ts.get("end", None)
+
             # Converte timestamp para segundos se disponível
             seconds = 0
             if start_time:
@@ -232,12 +380,14 @@ def _add_youtube_links_to_response(
                 embed_url = f"https://www.youtube.com/embed/{video_id}"
                 if seconds > 0:
                     embed_url += f"?start={seconds}"
-                
+
                 # Retorna formato especial para o frontend processar
                 if start_time and end_time:
                     return f"\n\n🎬 **Vídeo Tutorial ({start_time} → {end_time}):**\n\n[YOUTUBE_EMBED:{embed_url}]\n"
                 else:
-                    return f"\n\n🎬 **Vídeo Tutorial:**\n\n[YOUTUBE_EMBED:{embed_url}]\n"
+                    return (
+                        f"\n\n🎬 **Vídeo Tutorial:**\n\n[YOUTUBE_EMBED:{embed_url}]\n"
+                    )
 
         # Se não encontrou URL, retorna tag original
         return match.group(0)
@@ -377,12 +527,13 @@ def ask_question(
 
     # Cria o retriever otimizado
     # Usa MMR (Maximal Marginal Relevance) para diversidade nos resultados
+    # MELHORADO: Busca mais documentos e prioriza relevância
     retriever = vector_store.as_retriever(
         search_type="mmr",
         search_kwargs={
-            "k": Config.K_RETRIEVER,
-            "fetch_k": Config.K_RETRIEVER * 2,  # Busca o dobro e filtra
-            "lambda_mult": 0.7,  # 0.7 = bom balanceamento entre relevância e diversidade
+            "k": Config.K_RETRIEVER + 2,  # Aumentado de 6 para 8 documentos
+            "fetch_k": (Config.K_RETRIEVER + 2) * 3,  # Busca 3x mais para filtrar
+            "lambda_mult": 0.85,  # 0.85 = mais peso para relevância (antes era 0.7)
         },
     )
 
@@ -524,7 +675,7 @@ def ask_question(
         # Adiciona links do YouTube com timestamps
         if youtube_urls:
             response = _add_youtube_links_to_response(
-                response, youtube_urls, video_timestamps_map
+                response, youtube_urls, video_timestamps_map, query
             )
 
         # CORREÇÃO INTELIGENTE: Adiciona vídeo SOMENTE se não houver nenhum embed na resposta
@@ -533,18 +684,12 @@ def ask_question(
             # Pega a primeira URL do YouTube disponível
             first_url = list(youtube_urls.values())[0]
 
-            # Busca o timestamp do PRIMEIRO DOCUMENTO (mais relevante segundo o RAG)
+            # Busca o timestamp mais relevante baseado na query do usuário
             best_timestamp = None
-            if video_timestamps_map and docs:
-                # Pega o source_name do primeiro documento (mais relevante)
-                first_doc_source = docs[0].metadata.get("source", "")
-
-                # Procura timestamps deste documento específico
-                for video_name, ts_list in video_timestamps_map.items():
-                    if video_name in first_doc_source or first_doc_source in video_name:
-                        if ts_list and len(ts_list) > 0:
-                            best_timestamp = ts_list[0]
-                            break
+            if video_timestamps_map:
+                best_timestamp = _find_relevant_timestamp_for_query(
+                    query, video_timestamps_map
+                )
 
             # Adiciona o vídeo ao final da resposta
             response += "\n\n---\n\n"
@@ -552,7 +697,7 @@ def ask_question(
             if best_timestamp:
                 start_time = best_timestamp.get("start", "00:00")
                 end_time = best_timestamp.get("end", "")
-                
+
                 # Converte para segundos
                 time_parts = start_time.split(":")
                 if len(time_parts) == 2:
@@ -574,13 +719,19 @@ def ask_question(
                     video_id = first_url.split("youtu.be/")[1].split("?")[0]
 
                 if video_id:
-                    embed_url = f"https://www.youtube.com/embed/{video_id}?start={seconds}"
-                    
+                    embed_url = (
+                        f"https://www.youtube.com/embed/{video_id}?start={seconds}"
+                    )
+
                     if end_time:
-                        response += f"### 🎬 Vídeo Tutorial ({start_time} → {end_time})\n\n"
+                        response += (
+                            f"### 🎬 Vídeo Tutorial ({start_time} → {end_time})\n\n"
+                        )
                     else:
-                        response += f"### 🎬 Vídeo Tutorial (a partir de {start_time})\n\n"
-                    
+                        response += (
+                            f"### 🎬 Vídeo Tutorial (a partir de {start_time})\n\n"
+                        )
+
                     response += f"[YOUTUBE_EMBED:{embed_url}]\n"
             else:
                 # Sem timestamp específico, adiciona vídeo completo

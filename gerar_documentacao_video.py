@@ -27,7 +27,7 @@ YOUTUBE_URLS = [
     "https://youtu.be/BdLq4eBgfxQ?si=Sxmnm__Ai1ReGR0_",  # Módulo de Engenharia
 ]
 
-MODEL_NAME = "gpt-4o-mini"  # pode usar gpt-4o ou gpt-3.5-turbo
+MODEL_NAME = "gpt-5-nano"  # pode usar gpt-4o ou gpt-3.5-turbo
 TEMPERATURE = 0.2
 MAX_TOKENS = 16000  # Tokens máximos para respostas detalhadas (aumentado para documentação completa)
 DOCS_FOLDER = "docs"  # Pasta onde os documentos serão salvos
