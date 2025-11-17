@@ -42,7 +42,7 @@ if __name__ == "__main__":
     # Testes adicionais
     # EXEMPLO:
     resultado = calcular_trecho(
-        "21:45", "23:45", "https://youtu.be/6vX7wYe8cIw?si=5Xf_VmLvM7bj6M73"
+        "25:00", "26:01", "https://youtu.be/6vX7wYe8cIw?si=5Xf_VmLvM7bj6M73"
     )
 
     print(json.dumps(resultado, indent=4, ensure_ascii=False))

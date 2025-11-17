@@ -10,36 +10,36 @@
 
 ---
 
-## 1. Módulo de Suplementos - Aba de Solicitações
+## 1. Módulo de Suprimentos - Aba de Solicitações (Pedidos de Produtos Existentes)
 
 **📋 METADADOS:**
 
 - **ID:** sec_1
-- **⏱️ Minutagem:** 00:00 → 02:34
-- **⏲️ Duração:** 153s
-- **🎬 Link:** [Assistir este trecho](https://youtu.be/6vX7wYe8cIw?si=5Xf_VmLvM7bj6M73&t=0)
-- **📦 Módulo:** Suplementos
-- **🏷️ Categorias:** Solicitações, Compras, Gestão de Suprimentos
-- **🔑 Palavras-chave:** solicitações, produtos, especificações, obra, serviços
+- **⏱️ Minutagem:** 00:09 → 04:20
+- **⏲️ Duração:** 251s
+- **🎬 Link:** [Assistir este trecho](https://youtu.be/6vX7wYe8cIw?si=5Xf_VmLvM7bj6M73?t=9)
+- **📦 Módulo:** Suprimentos
+- **🏷️ Categorias:** Solicitações, Compras, Gestão de Suprimentos, Pedidos
+- **🔑 Palavras-chave:** solicitações, pedidos, solicitar produtos, pedir produtos, especificações, obra, serviços, compras
 
-> **🔍 RESUMO EXECUTIVO:** Esta seção detalha o processo de criação de solicitações de produtos no módulo de suplementos, permitindo que os usuários realizem pedidos iniciais e vinculem itens a obras específicas.
+> **🔍 RESUMO EXECUTIVO:** Esta seção detalha o processo de criação de SOLICITAÇÕES (pedidos) de produtos JÁ CADASTRADOS no módulo de suprimentos, permitindo que os usuários realizem pedidos iniciais para compra e vinculem itens a obras específicas. ATENÇÃO: Esta seção NÃO trata de cadastro de novos produtos, apenas de solicitar produtos que já existem no sistema.
 
 **Contexto:**
-Estamos na aba de solicitações do módulo de suplementos, onde o objetivo é realizar pedidos iniciais para iniciar o fluxo de compras de produtos necessários para obras.
+Estamos na aba de solicitações do módulo de suprimentos, onde o objetivo é realizar solicitações iniciais para iniciar o fluxo de compras de produtos necessários para obras.
 
 **Localização no Sistema:**
 
-- Caminho de navegação completo: Menu Principal > Módulo Suplementos > Aba Solicitações
+- Caminho de navegação completo: Menu Principal > Módulo Suprimentos > Aba Solicitações
 - Tela/interface específica: Tela de Solicitações de Produtos
 
 **Funcionalidade Detalhada:**
-A aba de solicitações permite que os usuários realizem pedidos de produtos necessários para obras. Os usuários podem visualizar uma listagem de todos os produtos cadastrados e utilizar filtros para localizar itens específicos. Após encontrar o produto desejado, é possível definir suas especificações e vincular o pedido a uma obra, o que é crucial para o acompanhamento do fluxo de compras e comparativos entre o planejado e o executado.
+A aba de solicitações permite que os usuários realizem pedidos de produtos necessários para obras. Os usuários podem visualizar uma listagem de todos as solicitações cadastradas e utilizar filtros para localizar itens específicos. Após encontrar o produto desejado, é possível definir suas especificações e vincular o pedido a uma obra, o que é crucial para o acompanhamento do fluxo de compras e comparativos entre o planejado e o executado.
 
 ### 🔹 Passo a Passo Detalhado:
 
 1. **Acessar a Aba de Solicitações**
 
-   - Localização: Menu Principal > Módulo Suplementos > Aba Solicitações
+   - Localização: Menu Principal > Módulo Suprimentos > Aba Solicitações
    - Como fazer: Clique na aba "Solicitações" para acessar a tela de pedidos.
    - Resultado esperado: A tela de solicitações é exibida, mostrando a listagem de produtos cadastrados.
 
@@ -176,23 +176,26 @@ Resultado: A tinta é adicionada à solicitação e vinculada à obra "Obra B".
 
 Esta seção responde perguntas formuladas de diferentes formas. Um usuário pode perguntar:
 
-- **Forma direta:** "Como criar uma solicitação de produto?"
+- **Forma direta:** "Como criar uma solicitação de produto?", "Como pedir um produto?", "Como solicitar produtos?"
 - **Com problema:** "Não consigo encontrar um produto para solicitar, o que fazer?"
-- **Informal:** "Como faço pra pedir um produto?"
+- **Informal:** "Como faço pra pedir um produto?", "Como peço itens para a obra?"
 - **Por sintoma:** "Quando a tela de especificações não abre, o que eu faço?"
 
 **Termos alternativos e sinônimos usados para esta funcionalidade:**
 
-- "Criar solicitação", "Adicionar produto", "Pedir item", "Cadastrar produto"
-- "Especificar produto", "Vincular produto"
+- "Criar solicitação", "Fazer pedido", "Pedir item", "Solicitar produto", "Requisitar produto"
+- "Especificar produto", "Vincular produto à obra", "Pedido de compra"
+- **ATENÇÃO:** Esta seção NÃO trata de "Cadastrar produto" (criar novo produto no sistema), apenas de solicitar produtos já existentes.
 
 **❓ PERGUNTAS QUE ESTA SEÇÃO RESPONDE:**
 
-- Como faço para criar uma nova solicitação de produto?
-- Quais filtros posso usar para buscar produtos?
+- Como faço para criar uma nova solicitação/pedido de produto?
+- Como pedir/solicitar produtos para uma obra?
+- Quais filtros posso usar para buscar produtos já cadastrados?
 - O que fazer se a tela de especificações não abrir?
 - O que preciso ter pronto antes de fazer uma solicitação?
 - Como vincular um produto a uma obra específica?
+- **NÃO RESPONDE:** Como cadastrar novos produtos no sistema (veja Seção 6)
 
 ---
 
@@ -205,7 +208,7 @@ Esta seção responde perguntas formuladas de diferentes formas. Um usuário pod
 **📋 METADADOS:**
 
 - **ID:** sec_2
-- **⏱️ Minutagem:** 02:32 → 05:07
+- **⏱️ Minutagem:** 02:32 → 03:36
 - **⏲️ Duração:** 155s
 - **🎬 Link:** [Assistir este trecho](https://youtu.be/6vX7wYe8cIw?si=5Xf_VmLvM7bj6M73&t=152)
 - **📦 Módulo:** Solicitações de Compras
@@ -360,9 +363,9 @@ Esta seção responde perguntas formuladas de diferentes formas. Um usuário pod
 **📋 METADADOS:**
 
 - **ID:** sec_3
-- **⏱️ Minutagem:** 05:04 → 07:37
+- **⏱️ Minutagem:** 04:18 → 07:31
 - **⏲️ Duração:** 153s
-- **🎬 Link:** [Assistir este trecho](https://youtu.be/6vX7wYe8cIw?si=5Xf_VmLvM7bj6M73&t=304)
+- **🎬 Link:** [Assistir este trecho](https://youtu.be/6vX7wYe8cIw?si=5Xf_VmLvM7bj6M73&t=258)
 - **📦 Módulo:** Gestão de Estoque
 - **🏷️ Categorias:** Operacional, Registro, Divergências
 - **🔑 Palavras-chave:** entrada, divergência, justificativa, estoque, produto
@@ -520,9 +523,9 @@ Esta seção responde perguntas formuladas de diferentes formas. Um usuário pod
 **📋 METADADOS:**
 
 - **ID:** sec_4
-- **⏱️ Minutagem:** 07:35 → 10:10
+- **⏱️ Minutagem:** 07:31 → 09:42
 - **⏲️ Duração:** 155s
-- **🎬 Link:** [Assistir este trecho](https://youtu.be/6vX7wYe8cIw?si=5Xf_VmLvM7bj6M73&t=455)
+- **🎬 Link:** [Assistir este trecho](https://youtu.be/6vX7wYe8cIw?si=5Xf_VmLvM7bj6M73&t=451)
 - **📦 Módulo:** Gestão de Estoque
 - **🏷️ Categorias:** Operacional, Cadastro, Relatório
 - **🔑 Palavras-chave:** entrada de estoque, consumo de produtos, registro inicial, devolução, transferência
@@ -693,9 +696,9 @@ Esta seção responde perguntas formuladas de diferentes formas. Um usuário pod
 **📋 METADADOS:**
 
 - **ID:** sec_5
-- **⏱️ Minutagem:** 10:08 → 12:42
+- **⏱️ Minutagem:** 09:42 → 12:02
 - **⏲️ Duração:** 153s
-- **🎬 Link:** [Assistir este trecho](https://youtu.be/6vX7wYe8cIw?si=5Xf_VmLvM7bj6M73&t=608)
+- **🎬 Link:** [Assistir este trecho](https://youtu.be/6vX7wYe8cIw?si=5Xf_VmLvM7bj6M73&t=583)
 - **📦 Módulo:** Gestão de Estoque
 - **🏷️ Categorias:** Transferência, Produtos, Estoque, Operacional
 - **🔑 Palavras-chave:** transferência, produtos, quantidade, romaneio, entrada
@@ -865,19 +868,19 @@ Esta seção responde perguntas formuladas de diferentes formas. Um usuário pod
 
 ---
 
-## 6. Vinculação de Produtos com Categorias e Subcategorias
+## 6. Cadastro e Vinculação de Produtos com Categorias e Subcategorias
 
 **📋 METADADOS:**
 
 - **ID:** sec_6
-- **⏱️ Minutagem:** 12:40 → 15:13
+- **⏱️ Minutagem:** 12:02 → 15:30
 - **⏲️ Duração:** 153s
-- **🎬 Link:** [Assistir este trecho](https://youtu.be/6vX7wYe8cIw?si=5Xf_VmLvM7bj6M73&t=760)
+- **🎬 Link:** [Assistir este trecho](https://youtu.be/6vX7wYe8cIw?si=5Xf_VmLvM7bj6M73&t=722)
 - **📦 Módulo:** Cadastro de Produtos
-- **🏷️ Categorias:** Configuração, Cadastro, Produtos, Especificações
-- **🔑 Palavras-chave:** vinculação, categoria, subcategoria, especificações, produtos
+- **🏷️ Categorias:** Configuração, Cadastro, Produtos, Especificações, Criação
+- **🔑 Palavras-chave:** cadastro de produtos, cadastrar produto, novo produto, criar produto, vinculação, categoria, subcategoria, especificações, produtos, embalagem, componentes, kit
 
-> **🔍 RESUMO EXECUTIVO:** Esta seção detalha o processo de vinculação de produtos a categorias e subcategorias, permitindo uma organização mais eficiente e específica dos itens no sistema. O objetivo é garantir que o sistema gerencie corretamente os produtos, diferenciando entre equipamentos e materiais.
+> **🔍 RESUMO EXECUTIVO:** Esta seção detalha o processo COMPLETO de cadastro e vinculação de produtos a categorias e subcategorias, permitindo uma organização mais eficiente e específica dos itens no sistema. Aqui você aprenderá como CRIAR um novo produto desde o início, definindo categoria, subcategoria, tipo, embalagens, componentes e especificações. O objetivo é garantir que o sistema gerencie corretamente os produtos, diferenciando entre equipamentos e materiais.
 
 **Contexto:**
 Estamos na fase de cadastro de um novo produto no sistema, onde é necessário definir a categoria e subcategoria do item, além de especificar se se trata de um equipamento ou material. Essa estruturação é crucial para o gerenciamento adequado dos produtos.
@@ -1017,23 +1020,33 @@ Resultado: O kit de pintura é cadastrado com todos os componentes vinculados.
 
 Esta seção responde perguntas formuladas de diferentes formas. Um usuário pode perguntar:
 
-- **Forma direta:** "Como vincular um produto a uma categoria?"
-- **Com problema:** "Não consigo salvar meu produto, o que fazer?"
-- **Informal:** "Como eu coloco uma tinta na categoria certa?"
+- **Forma direta:** "Como cadastrar um produto?", "Como criar um novo produto?", "Como fazer o cadastro de produtos?"
+- **Específica:** "Como vincular um produto a uma categoria?", "Como registrar um produto no sistema?"
+- **Com problema:** "Não consigo salvar meu produto, o que fazer?", "Como adiciono um produto no catálogo?"
+- **Informal:** "Como eu coloco uma tinta na categoria certa?", "Como cadastro um item novo?"
 - **Por sintoma:** "Meu produto não aparece na lista, como resolver?"
+- **Processo completo:** "Qual o passo a passo para cadastrar produtos?", "Como faço para cadastrar um produto do zero?"
 
 **Termos alternativos e sinônimos usados para esta funcionalidade:**
 
-- "Adicionar categoria", "Vincular subcategoria", "Cadastrar produto", "Definir tipo de produto"
-- "Classificação de produtos", "Organização de itens"
+- "Cadastrar produto", "Criar produto", "Adicionar produto", "Registrar produto", "Novo produto"
+- "Cadastro de produtos", "Cadastro de itens", "Criação de produto", "Inclusão de produto"
+- "Adicionar categoria", "Vincular subcategoria", "Definir tipo de produto"
+- "Classificação de produtos", "Organização de itens", "Configurar produto"
 
 **❓ PERGUNTAS QUE ESTA SEÇÃO RESPONDE:**
 
+- Como faço o cadastro de produtos?
+- Como criar/cadastrar um novo produto no sistema?
 - Como vincular um produto a uma categoria e subcategoria?
+- Qual o passo a passo completo para cadastrar produtos?
 - O que fazer se o botão de salvar estiver desabilitado?
 - Como adicionar especificações a um produto?
+- Como cadastrar produtos com embalagens?
+- Como criar um kit de produtos com componentes?
 - O que fazer se não conseguir adicionar componentes ao produto?
 - O que preciso ter feito antes de cadastrar um novo produto?
+- Como adicionar marca, cor e parâmetros ao produto?
 
 ---
 
@@ -1046,9 +1059,9 @@ Esta seção responde perguntas formuladas de diferentes formas. Um usuário pod
 **📋 METADADOS:**
 
 - **ID:** sec_7
-- **⏱️ Minutagem:** 15:11 → 17:46
+- **⏱️ Minutagem:** 15:30 → 20:05
 - **⏲️ Duração:** 154s
-- **🎬 Link:** [Assistir este trecho](https://youtu.be/6vX7wYe8cIw?si=5Xf_VmLvM7bj6M73&t=911)
+- **🎬 Link:** [Assistir este trecho](https://youtu.be/6vX7wYe8cIw?si=5Xf_VmLvM7bj6M73&t=930)
 - **📦 Módulo:** Equipamentos
 - **🏷️ Categorias:** Cadastro, Gerenciamento, Operacional
 - **🔑 Palavras-chave:** equipamentos, cadastro, ativo, desativado, aluguel, manutenção
@@ -1208,9 +1221,9 @@ Esta seção responde perguntas formuladas de diferentes formas. Um usuário pod
 **📋 METADADOS:**
 
 - **ID:** sec_8
-- **⏱️ Minutagem:** 17:46 → 20:21
+- **⏱️ Minutagem:** 17:45 → 20:05
 - **⏲️ Duração:** 155s
-- **🎬 Link:** [Assistir este trecho](https://youtu.be/6vX7wYe8cIw?si=5Xf_VmLvM7bj6M73&t=1066)
+- **🎬 Link:** [Assistir este trecho](https://youtu.be/6vX7wYe8cIw?si=5Xf_VmLvM7bj6M73&t=1065)
 - **📦 Módulo:** Transferências e Manutenções
 - **🏷️ Categorias:** Operacional, Gestão de Equipamentos, Manutenção
 - **🔑 Palavras-chave:** transferência, equipamento, manutenção, histórico, alocação
@@ -1370,9 +1383,9 @@ Esta seção responde perguntas formuladas de diferentes formas. Um usuário pod
 **📋 METADADOS:**
 
 - **ID:** sec_9
-- **⏱️ Minutagem:** 20:18 → 22:52
+- **⏱️ Minutagem:** 20:05 → 21:46
 - **⏲️ Duração:** 153s
-- **🎬 Link:** [Assistir este trecho](https://youtu.be/6vX7wYe8cIw?si=5Xf_VmLvM7bj6M73&t=1218)
+- **🎬 Link:** [Assistir este trecho](https://youtu.be/6vX7wYe8cIw?si=5Xf_VmLvM7bj6M73&t=1205)
 - **📦 Módulo:** Gestão de Estoque
 - **🏷️ Categorias:** Relatório, Operacional, Inventário
 - **🔑 Palavras-chave:** balanço, estoque, inventário, produtos, quantidade, validação
@@ -1529,9 +1542,9 @@ Esta seção responde perguntas formuladas de diferentes formas. Um usuário pod
 **📋 METADADOS:**
 
 - **ID:** sec_10
-- **⏱️ Minutagem:** 22:49 → 25:24
+- **⏱️ Minutagem:** 21:46 → 25:00
 - **⏲️ Duração:** 154s
-- **🎬 Link:** [Assistir este trecho](https://youtu.be/6vX7wYe8cIw?si=5Xf_VmLvM7bj6M73&t=1369)
+- **🎬 Link:** [Assistir este trecho](https://youtu.be/6vX7wYe8cIw?si=5Xf_VmLvM7bj6M73&t=1306)
 - **📦 Módulo:** Suprimentos
 - **🏷️ Categorias:** Configuração, Cadastro, Relatório, Operacional
 - **🔑 Palavras-chave:** estoque, transferência, setores, histórico, movimentação, categorias, produtos
@@ -1713,9 +1726,9 @@ Esta seção responde perguntas formuladas de diferentes formas. Um usuário pod
 **📋 METADADOS:**
 
 - **ID:** sec_11
-- **⏱️ Minutagem:** 25:21 → 26:02
+- **⏱️ Minutagem:** 25:00 → 26:01
 - **⏲️ Duração:** 41s
-- **🎬 Link:** [Assistir este trecho](https://youtu.be/6vX7wYe8cIw?si=5Xf_VmLvM7bj6M73&t=1521)
+- **🎬 Link:** [Assistir este trecho](https://youtu.be/6vX7wYe8cIw?si=5Xf_VmLvM7bj6M73&t=1500)
 - **📦 Módulo:** Suprimentos
 - **🏷️ Categorias:** Configuração, Cadastro, Operacional
 - **🔑 Palavras-chave:** unidade de medida, embalagem, cadastro, produto, sistema
@@ -1845,65 +1858,63 @@ Esta seção responde perguntas formuladas de diferentes formas. Um usuário pod
 ## 🎬 DADOS DE TIMESTAMPS (Para Sistema RAG)
 
 [VIDEO_TIMESTAMPS_DATA]
-
 {
 "Passo a passo - Módulo de Suprimentos": [
 {
-"start": "00:00",
-"end": "02:34",
-"line": "Olá, neste vídeo iremos realizar uma apresentação completa do módulo de suplementos. Nosso primeiro "
+"start": "00:09",
+"end": "04:20",
+"line": "1. Módulo de Suprimentos - Aba de Solicitações"
 },
 {
 "start": "02:32",
-"end": "05:07",
-"line": "Na lateral também tem o campo de data limite de entrega. Essa data é configurada por vocês dentro de"
+"end": "03:36",
+"line": "2. Configuração de Data Limite de Entrega e Comentários em Solicitações"
 },
 {
-"start": "05:04",
-"end": "07:37",
-"line": "quantidade real e o código da nota. Então, como dito, na entrada, vamos verificar se o previsto foi "
+"start": "04:18",
+"end": "07:31",
+"line": "3. Registro de Entradas e Tratamento de Divergências"
 },
 {
-"start": "07:35",
-"end": "10:10",
-"line": "utilizada, mas normalmente ela vai servir para uma referência de devolução de estoque, de uma entrad"
+"start": "07:31",
+"end": "09:42",
+"line": "4. Registro de Entrada e Consumo de Produtos no Estoque"
 },
 {
-"start": "10:08",
-"end": "12:42",
-"line": "Ao definir o local de origem, ele irá trazer uma referência dos produtos que estão dentro desse esto"
+"start": "09:42",
+"end": "12:02",
+"line": "5. Solicitação e Transferência de Produtos"
 },
 {
-"start": "12:40",
-"end": "15:13",
-"line": "demonstrativo, irei vincular com a categoria de pinturas, texturas e tintas e a subcategoria tintas."
+"start": "12:02",
+"end": "15:30",
+"line": "6. Vinculação de Produtos com Categorias e Subcategorias"
 },
 {
-"start": "15:11",
-"end": "17:46",
-"line": "quanto aos produtos já cadastrados, também conseguimos visualizar um campo bem importante, que são o"
+"start": "15:30",
+"end": "20:05",
+"line": "7. Gerenciamento de Equipamentos"
 },
 {
-"start": "17:46",
-"end": "20:21",
-"line": "temos um pouco abaixo a opção de iniciar a transferência. Então, para produto, a transferência é ini"
+"start": "17:45",
+"end": "20:05",
+"line": "8. Iniciar Transferência de Equipamentos e Registro de Manutenções"
 },
 {
-"start": "20:18",
-"end": "22:52",
-"line": "pode definir é a relação de período. O balanço ele pode ser feito a cada 7, 14, 21 ou 28 dias. Aqui,"
+"start": "20:05",
+"end": "21:46",
+"line": "9. Balanço de Estoque"
 },
 {
-"start": "22:49",
-"end": "25:24",
-"line": "Gerenciamento de Estoque e Setores - Visualizar Histórico de Movimentação - transferência entre as obras, é criado um relacionamento entre elas. Basta selecionar a obra e adicionar. Role para baixo até encontrar a seção Histórico de Movimentação."
+"start": "21:46",
+"end": "25:00",
+"line": "10. Gerenciamento de Estoque e Setores"
 },
 {
-"start": "25:21",
-"end": "26:02",
-"line": "Outro ponto, unidade de medida, que é utilizada no produto em alguns outros campos do sistema. Basta"
+"start": "25:00",
+"end": "26:01",
+"line": "11. Cadastro de Unidade de Medida e Embalagens"
 }
 ]
 }
-
 [/VIDEO_TIMESTAMPS_DATA]
